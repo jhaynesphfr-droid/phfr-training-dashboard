@@ -411,6 +411,17 @@ const incidents = [
   },
   {
     "category": "lodd",
+    "state": "VA",
+    "sort": "2026-09-29",
+    "department": "Eagle Rock Volunteer Fire and Rescue (Eagle Rock, Virginia)",
+    "date": "September 29, 2026",
+    "outcome": "A firefighter died in the line of duty.",
+    "url": "https://apps.usfa.fema.gov/firefighter-fatalities/",
+    "count": 1,
+    "month": 9
+  },
+  {
+    "category": "lodd",
     "state": "FL",
     "sort": "2026-04-05",
     "month": 4,
@@ -1364,7 +1375,7 @@ const incidents = [
 ];
 
 const YTD_TOTALS = {
-  lodd: { total:39, sub:"5 FLORIDA · 34 NATIONAL" },
+  lodd: { total:40, sub:"5 FLORIDA · 35 NATIONAL" },
   crash: { total:30, sub:"7 FATAL · 14 SERIOUS · 9 MINOR" },
   rescue: { total:16, sub:"7 FLORIDA · 9 NATIONAL" },
   mayday: { total:14, sub:"8 VERIFIED · 6 UNVERIFIED" },
@@ -1417,7 +1428,7 @@ function drawCharts(){
   drawBars("severityChart",["Fatal","Serious","Minor"],[7,14,9],[p.red,"#d16a16",p.muted]);
   drawBars("rescueChart",months,countByMonth("rescue"),p.red);
   drawBars("maydayChart",months,countByMonth("mayday"),p.amber||"#d16a16");
-  drawGrouped("splitChart",["LODD","Crash","Rescue","Mayday","Close"],[5,0,7,0,5],[34,30,9,14,6]);
+  drawGrouped("splitChart",["LODD","Crash","Rescue","Mayday","Close"],[5,0,7,0,5],[35,30,9,14,6]);
 }
 let resizeTimer;window.addEventListener("resize",()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(drawCharts,120)});const mq=window.matchMedia("(prefers-color-scheme: dark)");if(mq.addEventListener)mq.addEventListener("change",drawCharts);
 renderStats();renderDailyDrills();renderDaily();renderIncidents();requestAnimationFrame(drawCharts);
