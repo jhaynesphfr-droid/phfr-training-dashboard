@@ -169,67 +169,64 @@
 /* DAILY-DRILLS-START — Replace only this object during the morning drill update. */
 const DAILY_DRILLS = {
   practical: {
-    title: "Irons in 60: Inward & Outward Door Force",
-    objective: "A two-firefighter team forces an inward-swinging and an outward-swinging door using irons and a hydra-ram while maintaining door control, tool discipline, and crew accountability.",
-    nfpa: "NFPA 1001 · NFPA 1500",
-    equipment: ["Forcible-entry door props (inward- and outward-swinging)", "Halligan bars and flathead axes (irons)", "Hydra-ram", "Full PPE and SCBA", "Door chocks/wedges", "Stopwatch"],
+    title: "Rip-Current Relay: Shore-Based Water Rescue",
+    objective: "Execute fast, safe shore-based rescues of distressed swimmers using reach-throw-row-go order of priority.",
+    nfpa: "NFPA 1006 water rescue · NFPA 2500 technical rescue operations",
+    equipment: ["PFDs for all water-edge participants", "Four 75-ft throw bags", "Ring buoy", "Rescue board or paddleboard", "Backboard with straps", "Victim manikin", "Cones", "AED", "EMS jump bag"],
     steps: [
-      "Size up each door: construction, swing direction, and lock type; verbalize the forcing plan and tool assignments with your partner.",
-      "Gap, set, force the inward-swinging door: create purchase with the adz, set the halligan fork beveled to the door, and drive it with the axe.",
-      "Maintain door control: chock the door as it opens so it never closes on a search crew or blocks a ventilation path.",
-      "Transition to the hydra-ram on the outward-swinging door: confirm ram placement per the prop's lock/hinge side and force under officer supervision.",
-      "Reset the props and rotate: a second team repeats with reversed roles while the officer critiques tool technique, body mechanics, and time."
+      "Throw-bag accuracy from shore at a target float.",
+      "Reach-throw-row progression from a dock or pier.",
+      "Tethered pair surf entry with board tow to shore.",
+      "In-water backboard packaging and carry to shore.",
+      "Near-drowning patient assessment and EMS handoff."
     ],
-    safety: "Full PPE with eye protection; keep all members clear of the swing arc and the fulcrum side before forcing; respect training-prop limits; stop immediately for tool damage or injury.",
-    benchmark: "Benchmark: both doors forced and controlled by a two-person team in 3:00 or less; either door alone in 0:60 or less.",
-    relatedSops: [
-      { number: "600-02", title: "Response, Placement, And Company Functions" },
-      { number: "359", title: "Personal Protective Equipment" },
-      { number: "600-04", title: "Protective Clothing Requirement And Scba Use" }
-    ]
+    safety: "No untethered swimming entries; assign a safety officer with a whistle; PFDs are mandatory in chest-deep water or deeper; complete personnel accountability before each evolution; stand down for lightning.",
+    benchmark: "Benchmark: victim packaged and on shore within 90 seconds of first splash; throw-bag first-throw hit rate at least 80 percent across the crew by the final round.",
+    relatedSops: ["SOP 600-22 — Water Rescue", "SOP 695 — Marine Response"]
   },
   tabletop: {
-    title: "Static in the Strip Mall",
-    scenario: "At 1 a.m., three companies are working a strip-mall fire: Engine 1 and Engine 2 are interior on the fire floor, Ladder 1 is opening up above them. Radio traffic is heavy, and Engine 2 just switched to Tac 2 to 'clear the air' — but command never acknowledged the switch.",
+    title: "The Unresponsive Teen on the Beach",
+    scenario: "At 3 p.m. on an unguarded Florida beach with thunderstorms nearby, a bystander-flagged teen pulled from a rip current is on shore, unresponsive, has vomited water, and has shallow breathing. The engine is 4 minutes out; the marine unit is 12 minutes out.",
     injects: [
-      { time: "0 MIN", text: "Engine 2 moves to Tac 2 without acknowledgment; command is still calling them on Tac 1 and getting no answer." },
-      { time: "5 MIN", text: "Command calls a PAR. Every unit answers except one member of Engine 2, who has been unaccounted for 90 seconds." },
-      { time: "10 MIN", text: "Dispatch relays a 911 call from a civilian claiming to hear banging from the rear of the building — contradicting what the interior crews report." }
+      { time: "0 MIN", text: "Dispatch: a bystander reports a teen pulled from a rip current, now unresponsive on shore with shallow breathing after vomiting water." },
+      { time: "4 MIN", text: "Arrival: the teen is apneic with a pulse." },
+      { time: "8 MIN", text: "The teen vomits again and has low SpO2 as the storm arrives overhead." },
+      { time: "12 MIN", text: "The marine unit asks whether the crew can remain on scene or must transport." }
     ],
     questions: [
-      { group: "Firefighters", items: ["What three pieces of information belong in every radio transmission?", "When do you call emergency traffic, and what channel do you use?", "How do you keep your crew's PAR current without being asked?"] },
-      { group: "Officers", items: ["How do you enforce channel discipline when crews self-switch without acknowledgment?", "When does an unaccounted member turn a PAR check into an emergency response?", "How do you reconcile conflicting civilian 911 information with interior reports?"] }
+      { group: "Firefighters", items: ["What are your first actions before a pulse oximeter is available?", "Which assessment finding determines immediate ventilation versus CPR?", "How do you protect the airway and continue oxygenation after vomiting?"] },
+      { group: "Officers", items: ["Who establishes command for this multi-agency water response, and how are incoming units assigned?", "Under the lightning stand-down rule, what factors drive an immediate transport versus continued treatment on scene?", "How do you communicate the operational stand-down while maintaining uninterrupted patient care?"] }
     ],
-    teachingPoints: ["Every transmission carries who you are, where you are, and what you need — no exceptions.", "An unacknowledged channel change breaks accountability; command owns the channels, not the crews.", "PAR runs on a timer — command initiates it on benchmarks, not when something feels wrong.", "Conflicting outside reports get verified by assigned crews, never assumed away."],
-    relatedSops: [
-      { number: "600-07", title: "Communications / Dispatch Operations" },
-      { number: "600-11", title: "Accountability System" },
-      { number: "600-28", title: "Mayday Operations" }
-    ]
+    teachingPoints: ["Drowning death is caused by hypoxia, so ventilation is the priority.", "An unresponsive patient with a pulse gets ventilated without delay.", "Assume spinal injury only when there is a dive mechanism.", "Hypothermia is secondary in Florida surf.", "So-called minor drowning injuries still require hospital evaluation because delayed pulmonary edema can kill hours later.", "Apply lightning stand-down rules to water operations."],
+    relatedSops: ["SOP 600-22 — Water Rescue"]
   }
 };
 /* DAILY-DRILLS-END */
 
 /* DAILY-DATA-START — Replace this one object during the morning artifact update. */
 const DASHBOARD_DATA = {
-  updatedThrough: "October 9, 2026",
+  updatedThrough: "October 10, 2026",
   drill: {
-    title: "Irons in 60: Inward & Outward Door Force",
-    intro: "Force an inward-swinging door with irons and an outward-swinging door with a hydra-ram while keeping every door under control.",
+    title: "Rip-Current Relay: Shore-Based Water Rescue",
+    intro: "Execute fast, safe shore-based rescues of distressed swimmers using reach-throw-row-go order of priority.",
     steps: [
-      "Size up both doors: construction, swing direction, and lock type; verbalize the forcing plan with your partner.",
-      "Gap, set, and force the inward-swinging door with the irons, chocking the door as it opens.",
-      "Deploy the hydra-ram on the outward-swinging door under officer supervision.",
-      "Reset the props, rotate roles, and debrief tool technique, body mechanics, and time."
+      "Throw a rescue line accurately from shore, then progress through reach, throw, and row options.",
+      "Make only tethered pair surf entries and tow with the rescue board.",
+      "Package the patient on a backboard in the water and carry to shore.",
+      "Assess the near-drowning patient, prepare the EMS handoff, and debrief the 90-second benchmark."
     ],
-    nfpa: "NFPA 1001 · NFPA 1500",
-    relatedSops: [
-      { number: "600-02", title: "Response, Placement, And Company Functions" },
-      { number: "359", title: "Personal Protective Equipment" },
-      { number: "600-04", title: "Protective Clothing Requirement And Scba Use" }
-    ]
+    nfpa: "NFPA 1006 water rescue · NFPA 2500 technical rescue operations",
+    relatedSops: ["SOP 600-22 — Water Rescue", "SOP 695 — Marine Response"]
   },
-  daily: []
+  daily: [
+    {
+      tag: "RESCUE",
+      department: "Minneapolis Fire Department (MN)",
+      date: "October 8, 2026",
+      outcome: "Firefighters pulled one resident from a burning home. The resident was transported in critical condition. Before crews arrived, a state patrol trooper rescued two other residents from the home and was treated for smoke inhalation.",
+      url: null
+    }
+  ]
 };
 /* DAILY-DATA-END */
 
@@ -1478,7 +1475,7 @@ incidents.forEach(incident=>{incident.sops=incidentSopBackfill(incident)});
 const YTD_TOTALS = {
   lodd: { total:40, sub:"5 FLORIDA · 35 NATIONAL" },
   crash: { total:30, sub:"7 FATAL · 14 SERIOUS · 9 MINOR" },
-  rescue: { total:16, sub:"7 FLORIDA · 9 NATIONAL" },
+  rescue: { total:17, sub:"7 FLORIDA · 10 NATIONAL" },
   mayday: { total:14, sub:"8 VERIFIED · 6 UNVERIFIED" },
   closecall: { total:11, sub:"5 FLORIDA · 6 NATIONAL" }
 };
@@ -1488,6 +1485,7 @@ let activeCategory="lodd",lastSopTrigger=null;
 const els={stats:document.getElementById("stats"),list:document.getElementById("incidentList"),meta:document.getElementById("resultMeta"),search:document.getElementById("search"),fl:document.getElementById("floridaOnly"),severity:document.getElementById("severity"),incidentFilters:document.getElementById("incidentFilters"),closecallOverview:document.getElementById("closecallOverview"),sopControls:document.getElementById("sopControls"),sopBrowser:document.getElementById("sopBrowser"),sopSearch:document.getElementById("sopSearch"),sopSource:document.getElementById("sopSource"),sopTopic:document.getElementById("sopTopic"),sopListWrap:document.getElementById("sopListWrap"),sopList:document.getElementById("sopList"),sopMeta:document.getElementById("sopResultMeta"),sopReader:document.getElementById("sopReader"),sopBack:document.getElementById("sopBack")};
 
 function sopLabel(sop){
+  if(typeof sop==="string")return sop.trim();
   if(!sop||typeof sop!=="object")return "";
   const number=sop.number??sop.sopNumber??sop.code;
   const title=sop.title??sop.name;
@@ -1497,7 +1495,7 @@ function sopLabel(sop){
 }
 function sopLabels(items){return Array.isArray(items)?items.map(sopLabel).filter(Boolean):[]}
 function sopLink(sop){
-  const label=sopLabel(sop),number=String(sop.number??sop.sopNumber??sop.code??"").replace(/^SOP\s*/i,"").trim(),title=String(sop.title??sop.name??"").trim();
+  const label=sopLabel(sop),parts=typeof sop==="string"?sop.match(/^SOP\s+(.+?)\s+—\s+(.+)$/i):null,number=parts?parts[1].trim():String(sop?.number??sop?.sopNumber??sop?.code??"").replace(/^SOP\s*/i,"").trim(),title=parts?parts[2].trim():String(sop?.title??sop?.name??"").trim();
   return label?`<a class="sop-chip sop-link" href="#sopBrowser" data-sop-number="${encodeURIComponent(number)}" data-sop-title="${encodeURIComponent(title)}">${label}</a>`:"";
 }
 function renderDrillSops(items){
@@ -1537,7 +1535,7 @@ function renderDailyDrills(){
 function renderDaily(){
   const d=DASHBOARD_DATA.drill;
   document.getElementById("dailyDrill").innerHTML=`<div class="eyebrow">Company drill · 35 minutes</div><h3>${d.title}</h3><p>${d.intro}</p><ol>${d.steps.map(s=>`<li>${s}</li>`).join("")}</ol>${renderDrillSops(d.relatedSops)}<div class="nfpa">${d.nfpa}</div>`;
-  document.getElementById("dailyItems").innerHTML=DASHBOARD_DATA.daily.map(x=>`<article class="latest-item"><span class="marker">${x.tag}</span><div><h4>${x.department}</h4><p><strong>${x.date}</strong> — ${x.outcome}</p><a href="${x.url}" target="_blank" rel="noopener">Source report ↗</a></div></article>`).join("");
+  document.getElementById("dailyItems").innerHTML=DASHBOARD_DATA.daily.map(x=>`<article class="latest-item"><span class="marker">${x.tag}</span><div><h4>${x.department}</h4><p><strong>${x.date}</strong> — ${x.outcome}</p>${x.url?`<a href="${x.url}" target="_blank" rel="noopener">Source report ↗</a>`:""}</div></article>`).join("");
 }
 function renderIncidents(){
   const isSop=activeCategory==="sop";
