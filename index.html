@@ -234,14 +234,6 @@ const DASHBOARD_DATA = {
       outcome: "A firefighter/paramedic with 19 years of service suffered an on-duty medical emergency (stroke) while working a structure fire on October 5 and died in the hospital on October 8.",
       url: "https://www.firehouse.com/lodds/news/55410725/council-bluffs-ia-firefighter-dies-after-responding-to-fire",
       sops: ["SOP 223A — 223A Ff Lodd", "SOP 223 — Ff Serious Injury"]
-    },
-    {
-      tag: "CRASH",
-      department: "Clarington Emergency and Fire Services (Ontario, Canada)",
-      date: "October 10, 2026",
-      outcome: "A tractor-trailer struck the department's apparatus as it blocked for an accident scene on Highway 401 near Newtonville Road; two of the four firefighters aboard were transported with non-life-threatening injuries; the apparatus sustained extensive damage.",
-      url: "https://www.fireapparatusmagazine.com/fire-apparatus/two-ffs-injured-when-tractor-trailer-strikes-fire-apparatus-at-accident-scene/",
-      sops: ["SOP 355 — Apparatus Safety", "SOP 362 — Traffic Safety Vests"]
     }
   ]
 };
@@ -2592,7 +2584,7 @@ incidents.forEach(incident=>{incident.sops=incidentSopBackfill(incident)});
 
 const YTD_TOTALS = {
   lodd: { total:68, sub:"29 INCIDENT-RELATED · 32 MEDICAL · 7 CAUSE PENDING · 5 FLORIDA · 63 NATIONAL" },
-  crash: { total:31, sub:"7 FATAL · 15 SERIOUS · 9 MINOR" },
+  crash: { total:30, sub:"7 FATAL · 14 SERIOUS · 9 MINOR" },
   rescue: { total:17, sub:"7 FLORIDA · 10 NATIONAL" },
   mayday: { total:79, sub:"73 VERIFIED · 6 UNVERIFIED" },
   closecall: { total:11, sub:"5 FLORIDA · 6 NATIONAL" }
