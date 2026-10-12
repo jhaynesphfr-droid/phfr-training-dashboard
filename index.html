@@ -417,7 +417,15 @@ const DASHBOARD_DATA = {
     nfpa: "NFPA 1001 · NFPA 1410 · NFPA 1500",
     relatedSops: ["SOP 689 — Water Supply", "SOP 903 — Pump And Nozzle Maintenance", "SOP 359 — Personal Protective Equipment"]
   },
-  daily: []
+  daily: [
+    {
+      tag: "RESCUE",
+      department: "DC Fire and EMS",
+      date: "October 11, 2026",
+      outcome: "At an early-morning house fire in the 600 block of Geranium Street NW in Northwest Washington, DC, one civilian died at the scene and six civilians were hospitalized: three in critical condition (two adults and one child) and three with non-life-threatening injuries (one adult and two children). Cause under investigation.",
+      url: "https://fox5dc.com/news/1-dead-northwest-dc-fire-injured-6-more-including-children"
+    }
+  ]
 };
 /* DAILY-DATA-END */
 
@@ -426,6 +434,17 @@ const SOP_LIBRARY = [{"sop":"223","title":"Ff Serious Injury","label":"SOP 223 �
 /* SOP-LIBRARY-END */
 
 const incidents = [
+  {
+    "category": "rescue",
+    "state": "DC",
+    "sort": "2026-10-11",
+    "month": 10,
+    "department": "DC Fire and EMS",
+    "date": "October 11, 2026",
+    "outcome": "At an early-morning house fire in the 600 block of Geranium Street NW in Northwest Washington, DC, one civilian died at the scene and six civilians were hospitalized: three in critical condition (two adults and one child) and three with non-life-threatening injuries (one adult and two children). Cause under investigation.",
+    "url": "https://dailydispatch.com/fire-news/district-of-columbia/1-dead-6-residents-taken-to-hospital-after-house-fire-in-northwest-dc/",
+    "sops": ["SOP 697 — Thermal Imaging Cameras (Tic)", "SOP 404 — Fire And Explosion Investigations"]
+  },
   {
     "category": "rescue",
     "state": "FL",
@@ -2762,12 +2781,12 @@ function incidentSopBackfill(incident){
   }
   return [];
 }
-incidents.forEach(incident=>{incident.sops=incidentSopBackfill(incident)});
+incidents.forEach(incident=>{incident.sops=Array.isArray(incident.sops)&&incident.sops.length?incident.sops:incidentSopBackfill(incident)});
 
 const YTD_TOTALS = {
   lodd: { total:68, sub:"29 INCIDENT-RELATED · 32 MEDICAL · 7 CAUSE PENDING · 5 FLORIDA · 63 NATIONAL" },
   crash: { total:30, sub:"7 FATAL · 14 SERIOUS · 9 MINOR" },
-  rescue: { total:17, sub:"7 FLORIDA · 10 NATIONAL" },
+  rescue: { total:18, sub:"7 FLORIDA · 11 NATIONAL" },
   mayday: { total:79, sub:"73 VERIFIED · 6 UNVERIFIED" },
   closecall: { total:11, sub:"5 FLORIDA · 6 NATIONAL" }
 };
