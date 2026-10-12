@@ -149,13 +149,13 @@
   </section>
 
   <section class="section" aria-labelledby="charts-title">
-    <div class="section-head"><div><div class="eyebrow">Pattern recognition</div><h2 id="charts-title">Year-to-date picture</h2></div><p>All charts cover data through October 10, 2026; monthly charts place reports in the stated event month.</p></div>
+    <div class="section-head"><div><div class="eyebrow">Pattern recognition</div><h2 id="charts-title">Year-to-date picture</h2></div><p>All charts cover data through October 12, 2026; monthly charts place reports in the stated event month.</p></div>
     <div class="charts">
-      <article class="chart-card"><h3>LODDs by month</h3><p>Death count through October 10, 2026; reports with approximate dates are placed in the reported month.</p><div class="chart-wrap"><canvas id="loddChart" role="img" aria-label="Bar chart of LODD records by month"></canvas></div></article>
-      <article class="chart-card"><h3>Apparatus crashes by severity</h3><p>Fatal, serious-injury, and minor or other events through October 10, 2026.</p><div class="chart-wrap"><canvas id="severityChart" role="img" aria-label="Bar chart of apparatus crashes by severity"></canvas></div></article>
-      <article class="chart-card"><h3>Structure-fire rescues by month</h3><p>Linked structure-fire rescue incidents through October 10, 2026.</p><div class="chart-wrap"><canvas id="rescueChart" role="img" aria-label="Bar chart of structure-fire rescue incidents by month"></canvas></div></article>
-      <article class="chart-card"><h3>Firefighter maydays by month</h3><p>79 firefighter maydays through October 10, 2026: 73 verified and 6 unverified, incorporating the validated Firefighter Mayday Survey monthly snapshots (March–September 2026) backfill.</p><div class="chart-wrap"><canvas id="maydayChart" role="img" aria-label="Bar chart of firefighter mayday incidents by month"></canvas></div></article>
-      <article class="chart-card"><h3>Florida / national split</h3><p>Florida and national totals through October 10, 2026.</p><div class="chart-wrap"><canvas id="splitChart" role="img" aria-label="Grouped bar chart comparing Florida and national incident counts"></canvas></div><div class="legend"><span class="key"><i class="swatch"></i>Florida</span><span class="key"><i class="swatch national"></i>Outside Florida</span></div></article>
+      <article class="chart-card"><h3>LODDs by month</h3><p>Death count through October 12, 2026; reports with approximate dates are placed in the reported month.</p><div class="chart-wrap"><canvas id="loddChart" role="img" aria-label="Bar chart of LODD records by month"></canvas></div></article>
+      <article class="chart-card"><h3>Apparatus crashes by severity</h3><p>Fatal, serious-injury, and minor or other events through October 12, 2026.</p><div class="chart-wrap"><canvas id="severityChart" role="img" aria-label="Bar chart of apparatus crashes by severity"></canvas></div></article>
+      <article class="chart-card"><h3>Structure-fire rescues by month</h3><p>Linked structure-fire rescue incidents through October 12, 2026.</p><div class="chart-wrap"><canvas id="rescueChart" role="img" aria-label="Bar chart of structure-fire rescue incidents by month"></canvas></div></article>
+      <article class="chart-card"><h3>Firefighter maydays by month</h3><p>79 firefighter maydays through October 12, 2026: 73 verified and 6 unverified, incorporating the validated Firefighter Mayday Survey monthly snapshots (March–September 2026) backfill.</p><div class="chart-wrap"><canvas id="maydayChart" role="img" aria-label="Bar chart of firefighter mayday incidents by month"></canvas></div></article>
+      <article class="chart-card"><h3>Florida / national split</h3><p>Florida and national totals through October 12, 2026.</p><div class="chart-wrap"><canvas id="splitChart" role="img" aria-label="Grouped bar chart comparing Florida and national incident counts"></canvas></div><div class="legend"><span class="key"><i class="swatch"></i>Florida</span><span class="key"><i class="swatch national"></i>Outside Florida</span></div></article>
     </div>
   </section>
 
@@ -194,44 +194,97 @@
 <script>
 /* DAILY-DRILLS-START — Replace only this object during the morning drill update. */
 const DAILY_DRILLS = {
+  updatedThrough: "October 12, 2026",
   practical: {
-    title: "Blocking-Position Defense: Highway Apparatus Placement",
-    objective: "Position the apparatus as a protective shield at a roadway incident so the rig — not the crew — absorbs an impact.",
-    nfpa: "NFPA 1451 vehicle operations training · NFPA 1500 occupational safety",
-    equipment: ["Engine or ladder for blocking", "20+ traffic cones", "Reflective traffic safety vests for every participant", "Arrow board or emergency scene lighting", "Wheel chocks", "Portable radio", "Stopwatch", "Training manikin or gear pile marking the 'work zone'"],
+    duration: "20–45 minutes",
+    title: "Nozzle Up: 150-Foot Interior Push",
+    objective: "Build a fast, kink-free 1-3/4 inch stretch and controlled nozzle advance through a single-story slab-on-grade residential layout, typical of Florida construction, ending with a controlled flow and a coordinated withdrawal.",
+    nfpa: "NFPA 1001 · NFPA 1410 · NFPA 1500",
+    equipment: ["Engine company with 150 ft 1-3/4 inch preconnect", "Combination or smooth-bore nozzle", "Hydrant wrench", "Thermal imaging camera", "Cones or tape for layout marking", "Stopwatch", "Radio for PAR"],
     steps: [
-      "Spot the blocking apparatus upstream of the incident zone on the closed course: 45-degree angle, wheels turned away from traffic, parking brake set, wheels chocked.",
-      "Build the advance-warning taper: first cone placed for speed, full taper complete before anyone exits the cab.",
-      "Exit and work only on the non-traffic side; establish the work zone behind the apparatus.",
-      "Post a lookout upstream with a whistle; when the lookout signals a breach, everyone moves to the pre-planned shelter side.",
-      "Demonstrate the lighting wall: full emergency lighting on, arrow board directing traffic away from the closed lane.",
-      "Pick up the taper in reverse order — cone truck last, never a person walking a live lane."
+      "Stretch: from apparatus stop, the nozzle team shoulders and stretches the full 150 ft to the simulated entry door, flaking hose to eliminate kinks and keeping the line off sharp corners.",
+      "Door control: control the door, check heat at the door with the back of a gloved hand and a TIC sweep, sound the floor, and enter low and together.",
+      "Advance and flow: move as a pair to the simulated fire room; open the nozzle in short bursts to check pattern and reach, then apply a controlled straight stream to the seat.",
+      "Leapfrog: a second team relieves the nozzle team at the shoulder, advancing the line deeper while the first team backs up the line and watches for kinks.",
+      "Withdraw and redeploy: on the officer's call, both teams back out staying low, reposition to a secondary entry point, and re-advance.",
+      "Supply: the driver secures water from a hydrant, sets pump discharge pressure, and maintains a PAR with dispatch."
     ],
-    safety: "Closed course only — no live-traffic blocking drills. Vests on every participant; assigned safety officer; stand down for lightning; treat the shelter drill as a no-fail evolution.",
-    benchmark: "Full blocking position established within 90 seconds of arrival; zero personnel crossings of the traffic lane during setup and teardown.",
-    relatedSops: ["SOP 355 — Apparatus Safety", "SOP 362 — Traffic Safety Vests"]
+    safety: "Full PPE and SCBA on air for all interior participants; simulated fire only, no live burn; driver manages charged-line pressure; monitor for heat stress given Florida heat and enforce rehab after each rotation; maintain accountability with a charged backup line staged.",
+    benchmark: "150 ft line stretched, charged, and flowing within 3 minutes of apparatus stop; nozzle team holds a controlled pattern on target for 30 seconds. Advanced: under 2 minutes 30 seconds.",
+    relatedSops: ["SOP 689 — Water Supply", "SOP 903 — Pump And Nozzle Maintenance", "SOP 359 — Personal Protective Equipment"]
   },
   tabletop: {
-    title: "The Medical Mayday: Firefighter Down, No Collapse",
-    scenario: "On a working structure fire in a single-story Florida slab-on-grade home, a 19-year veteran on Engine 1 begins showing signs of distress during knockdown, stays on the line, and waves off concern. Two hours later, on a medical call, he shows signs of a stroke. You are his crew.",
+    duration: "15–20 minutes",
+    title: "The LUNAR Call: RIT Deployment",
+    scenario: "2:00 AM. Crews are working a garden-apartment fire, second-floor unit with extension into a lightweight truss attic. Two interior firefighters conducting primary search on Division 2 get cut off by a flashover in the hallway. One firefighter's low-air alarm is sounding and the other is disoriented in zero visibility. The company officer declares a mayday. You are the incident commander and the RIT officer.",
+    nfpa: "NFPA 1407 · NFPA 1561 · NFPA 1500",
     injects: [
-      { time: "0 MIN", text: "On the porch during overhaul, the veteran firefighter is pale and quiet, tells you he's 'just overheated.'" },
-      { time: "2 MIN", text: "Back in quarters, he is slow to answer questions and his speech sounds off." },
-      { time: "6 MIN", text: "On the next medical call, his face droops on one side and he can't hold the radio upright." },
-      { time: "10 MIN", text: "He is being transported. The chief asks what the department does next — and what it should have done an hour ago." }
+      { time: "T+0", text: "The mayday transmission is garbled; only “Mayday, Mayday, Mayday... Division 2” is heard. What does command do in the next 60 seconds to obtain a full LUNAR?" },
+      { time: "T+5", text: "RIT deploys from staging with a RIC bag. Command must designate a RIC group supervisor, assign a dedicated channel, and order a PAR of all interior crews." },
+      { time: "T+10", text: "RIT reports contact with the downed firefighter, but air is critically low and the hallway is untenable. Command must choose: commit a second RIT team, order a tactical withdrawal of the rest of the building, or both." },
+      { time: "T+15", text: "The firefighter is packaged and out, and EMS is working on the front lawn. Command shifts to recovery: a second PAR, department notification per SOP, and securing the scene for investigation." }
     ],
     questions: [
-      { group: "Firefighters", items: ["When does 'I'm fine' stop being an acceptable answer from a crew member on scene?", "What stroke signs can you check in under 60 seconds with no tools?", "Who speaks up first — the officer, the senior firefighter, or the closest buddy?"] },
-      { group: "Officers", items: ["At what point do you pull a firefighter off the line over their own objection?", "How does rehab medical monitoring change when a member shows distress?", "What are your first four moves after a serious firefighter injury — notification, scene preservation, family, CISM?"] }
+      { group: "Firefighters", items: ["When do you push the emergency button versus calling a verbal mayday?", "What is your personal LUNAR, right now, without looking it up?", "How does PASS discipline help or hurt a RIT search?", "At what point do you declare yourself lost instead of pushing deeper?"] },
+      { group: "Officers", items: ["Who owns the mayday channel, and who keeps running the rest of the fire?", "What are the RIC group supervisor's first five actions?", "How fast is your RIT really ready, from staging to entry?", "How do you balance continuing the fire attack against pulling everyone back during a mayday?"] }
     ],
-    teachingPoints: ["A firefighter in medical distress who stays working is a mayday the same as a collapse — intervene early.", "Stroke and cardiac events are the leading fire-service killers; learn the FAST screen and act on it.", "On-scene rehab includes medical monitoring of our own — not just water and rest.", "Serious injury and LODD response starts with notification discipline: family before media, every time.", "Return to duty after cancer or cardiac treatment is never the end of the watch."],
-    relatedSops: ["SOP 223 — Ff Serious Injury", "SOP 223A — 223A Ff Lodd"]
+    teachingPoints: ["LUNAR (Location, Unit, Name, Assignment, Resources) is the price of a rescue.", "The emergency button is a supplement, not a substitute, for a clear verbal report.", "One channel goes quiet for the mayday and a RIC group supervisor runs it.", "RIT is assigned and ready on every working fire, not assembled after the call.", "PAR before RIT enters and after they exit.", "The PASS device is a last line, never a plan."],
+    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 351 — General Department Safety", "SOP 359 — Personal Protective Equipment"]
   }
 };
 /* DAILY-DRILLS-END */
 
 /* DRILL-LIBRARY-START — Prepend each morning's two drills to this array, newest first. */
 const DRILL_LIBRARY = [
+  {
+    updatedThrough: "October 12, 2026",
+    dateSort: "2026-10-12",
+    date: "October 12, 2026",
+    type: "Practical",
+    title: "Nozzle Up: 150-Foot Interior Push",
+    topic: "Hose-line stretch and nozzle advance",
+    summary: "Build a fast, kink-free 1-3/4 inch stretch and controlled nozzle advance through a single-story slab-on-grade residential layout, typical of Florida construction, ending with a controlled flow and a coordinated withdrawal.",
+    nfpa: ["NFPA 1001", "NFPA 1410", "NFPA 1500"],
+    relatedSops: ["SOP 689 — Water Supply", "SOP 903 — Pump And Nozzle Maintenance", "SOP 359 — Personal Protective Equipment"],
+    details: {
+      equipment: ["Engine company with 150 ft 1-3/4 inch preconnect", "Combination or smooth-bore nozzle", "Hydrant wrench", "Thermal imaging camera", "Cones or tape for layout marking", "Stopwatch", "Radio for PAR"],
+      evolutions: [
+        "Stretch: from apparatus stop, the nozzle team shoulders and stretches the full 150 ft to the simulated entry door, flaking hose to eliminate kinks and keeping the line off sharp corners.",
+        "Door control: control the door, check heat at the door with the back of a gloved hand and a TIC sweep, sound the floor, and enter low and together.",
+        "Advance and flow: move as a pair to the simulated fire room; open the nozzle in short bursts to check pattern and reach, then apply a controlled straight stream to the seat.",
+        "Leapfrog: a second team relieves the nozzle team at the shoulder, advancing the line deeper while the first team backs up the line and watches for kinks.",
+        "Withdraw and redeploy: on the officer's call, both teams back out staying low, reposition to a secondary entry point, and re-advance.",
+        "Supply: the driver secures water from a hydrant, sets pump discharge pressure, and maintains a PAR with dispatch."
+      ],
+      safety: "Full PPE and SCBA on air for all interior participants; simulated fire only, no live burn; driver manages charged-line pressure; monitor for heat stress given Florida heat and enforce rehab after each rotation; maintain accountability with a charged backup line staged.",
+      benchmark: "150 ft line stretched, charged, and flowing within 3 minutes of apparatus stop; nozzle team holds a controlled pattern on target for 30 seconds. Advanced: under 2 minutes 30 seconds."
+    }
+  },
+  {
+    updatedThrough: "October 12, 2026",
+    dateSort: "2026-10-12",
+    date: "October 12, 2026",
+    type: "Tabletop",
+    title: "The LUNAR Call: RIT Deployment",
+    topic: "Mayday and RIT deployment",
+    summary: "2:00 AM. Crews are working a garden-apartment fire, second-floor unit with extension into a lightweight truss attic. Two interior firefighters conducting primary search on Division 2 get cut off by a flashover in the hallway. One firefighter's low-air alarm is sounding and the other is disoriented in zero visibility. The company officer declares a mayday. You are the incident commander and the RIT officer.",
+    nfpa: ["NFPA 1407", "NFPA 1561", "NFPA 1500"],
+    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 351 — General Department Safety", "SOP 359 — Personal Protective Equipment"],
+    details: {
+      scenario: "2:00 AM. Crews are working a garden-apartment fire, second-floor unit with extension into a lightweight truss attic. Two interior firefighters conducting primary search on Division 2 get cut off by a flashover in the hallway. One firefighter's low-air alarm is sounding and the other is disoriented in zero visibility. The company officer declares a mayday. You are the incident commander and the RIT officer.",
+      injects: [
+        { time: "T+0", text: "The mayday transmission is garbled; only “Mayday, Mayday, Mayday... Division 2” is heard. What does command do in the next 60 seconds to obtain a full LUNAR?" },
+        { time: "T+5", text: "RIT deploys from staging with a RIC bag. Command must designate a RIC group supervisor, assign a dedicated channel, and order a PAR of all interior crews." },
+        { time: "T+10", text: "RIT reports contact with the downed firefighter, but air is critically low and the hallway is untenable. Command must choose: commit a second RIT team, order a tactical withdrawal of the rest of the building, or both." },
+        { time: "T+15", text: "The firefighter is packaged and out, and EMS is working on the front lawn. Command shifts to recovery: a second PAR, department notification per SOP, and securing the scene for investigation." }
+      ],
+      questions: [
+        { group: "Firefighters", items: ["When do you push the emergency button versus calling a verbal mayday?", "What is your personal LUNAR, right now, without looking it up?", "How does PASS discipline help or hurt a RIT search?", "At what point do you declare yourself lost instead of pushing deeper?"] },
+        { group: "Officers", items: ["Who owns the mayday channel, and who keeps running the rest of the fire?", "What are the RIC group supervisor's first five actions?", "How fast is your RIT really ready, from staging to entry?", "How do you balance continuing the fire attack against pulling everyone back during a mayday?"] }
+      ],
+      teachingPoints: ["LUNAR (Location, Unit, Name, Assignment, Resources) is the price of a rescue.", "The emergency button is a supplement, not a substitute, for a clear verbal report.", "One channel goes quiet for the mayday and a RIC group supervisor runs it.", "RIT is assigned and ready on every working fire, not assembled after the call.", "PAR before RIT enters and after they exit.", "The PASS device is a last line, never a plan."]
+    }
+  },
   {
     dateSort: "2026-10-11",
     date: "October 11, 2026",
@@ -350,29 +403,21 @@ const DRILL_LIBRARY = [
 
 /* DAILY-DATA-START — Replace this one object during the morning artifact update. */
 const DASHBOARD_DATA = {
-  updatedThrough: "October 11, 2026",
+  updatedThrough: "October 12, 2026",
   drill: {
-    title: "Blocking-Position Defense: Highway Apparatus Placement",
-    intro: "Position the apparatus as a protective shield at a roadway incident so the rig — not the crew — absorbs an impact.",
+    duration: "20–45 minutes",
+    title: "Nozzle Up: 150-Foot Interior Push",
+    intro: "Build a fast, kink-free 1-3/4 inch stretch and controlled nozzle advance through a single-story slab-on-grade residential layout, typical of Florida construction, ending with a controlled flow and a coordinated withdrawal.",
     steps: [
-      "Angle the blocking apparatus upstream of the incident zone, wheels turned away from traffic, brake set, wheels chocked.",
-      "Build a full advance-warning taper with cones and arrow lighting before any crew exits the cab.",
-      "Exit and work only on the non-traffic side; keep the crew in the work zone behind the apparatus.",
-      "Post an upstream lookout and rehearse the shelter drill for a taper breach; tear the taper down in reverse order."
+      "Stretch the full 150 ft to the simulated entry door, flaking hose to eliminate kinks and keeping the line off sharp corners.",
+      "Control the door, check heat with the back of a gloved hand and a TIC sweep, sound the floor, and enter low and together.",
+      "Advance as a pair, check the stream's pattern and reach, and apply a controlled straight stream to the seat.",
+      "Relieve the nozzle team, then withdraw, redeploy, secure water, and maintain a PAR."
     ],
-    nfpa: "NFPA 1451 vehicle operations training · NFPA 1500 occupational safety",
-    relatedSops: ["SOP 355 — Apparatus Safety", "SOP 362 — Traffic Safety Vests"]
+    nfpa: "NFPA 1001 · NFPA 1410 · NFPA 1500",
+    relatedSops: ["SOP 689 — Water Supply", "SOP 903 — Pump And Nozzle Maintenance", "SOP 359 — Personal Protective Equipment"]
   },
-  daily: [
-    {
-      tag: "LODD",
-      department: "Council Bluffs Fire Department (IA)",
-      date: "October 8, 2026",
-      outcome: "A firefighter/paramedic with 19 years of service suffered an on-duty medical emergency (stroke) while working a structure fire on October 5 and died in the hospital on October 8.",
-      url: "https://www.firehouse.com/lodds/news/55410725/council-bluffs-ia-firefighter-dies-after-responding-to-fire",
-      sops: ["SOP 223A — 223A Ff Lodd", "SOP 223 — Ff Serious Injury"]
-    }
-  ]
+  daily: []
 };
 /* DAILY-DATA-END */
 
@@ -2776,8 +2821,8 @@ function renderStats(){
 function renderDailyDrills(){
   const p=DAILY_DRILLS.practical,t=DAILY_DRILLS.tabletop;
   document.getElementById("dailyDrills").innerHTML=`
-    <article class="drill-card"><div class="drill-card-head"><div class="eyebrow">Today’s practical drill</div><h3>${p.title}</h3><p>${p.objective}</p></div><div class="drill-body"><div class="drill-meta"><span class="nfpa-badge">${p.nfpa}</span><span class="benchmark">${p.benchmark}</span></div>${renderDrillSops(p.relatedSops)}<section class="drill-block"><h4>Equipment needed</h4><ul>${p.equipment.map(x=>`<li>${x}</li>`).join("")}</ul></section><section class="drill-block"><h4>Evolution</h4><ol>${p.steps.map(x=>`<li>${x}</li>`).join("")}</ol></section><section class="drill-block safety-note"><h4>Safety notes</h4><p>${p.safety}</p></section></div></article>
-    <article class="drill-card"><div class="drill-card-head"><div class="eyebrow">Today’s tabletop drill</div><h3>${t.title}</h3><p>${t.scenario}</p></div><div class="drill-body">${renderDrillSops(t.relatedSops)}<section class="drill-block"><h4>Timed injects</h4>${t.injects.map(x=>`<div class="inject"><time>${x.time}</time><span>${x.text}</span></div>`).join("")}</section><section class="drill-block"><h4>Discussion questions</h4><div class="question-groups">${t.questions.map(q=>`<div><strong>${q.group}</strong><ul>${q.items.map(x=>`<li>${x}</li>`).join("")}</ul></div>`).join("")}</div></section><section class="drill-block"><h4>Key teaching points</h4><ul>${t.teachingPoints.map(x=>`<li>${x}</li>`).join("")}</ul></section></div></article>`;
+    <article class="drill-card"><div class="drill-card-head"><div class="eyebrow">Today’s practical drill · ${p.duration}</div><h3>${p.title}</h3><p>${p.objective}</p></div><div class="drill-body"><div class="drill-meta"><span class="nfpa-badge">${p.nfpa}</span><span class="benchmark">${p.benchmark}</span></div>${renderDrillSops(p.relatedSops)}<section class="drill-block"><h4>Equipment needed</h4><ul>${p.equipment.map(x=>`<li>${x}</li>`).join("")}</ul></section><section class="drill-block"><h4>Evolution</h4><ol>${p.steps.map(x=>`<li>${x}</li>`).join("")}</ol></section><section class="drill-block safety-note"><h4>Safety notes</h4><p>${p.safety}</p></section></div></article>
+    <article class="drill-card"><div class="drill-card-head"><div class="eyebrow">Today’s tabletop drill · ${t.duration}</div><h3>${t.title}</h3><p>${t.scenario}</p></div><div class="drill-body"><div class="drill-meta"><span class="nfpa-badge">${t.nfpa}</span></div>${renderDrillSops(t.relatedSops)}<section class="drill-block"><h4>Timed injects</h4>${t.injects.map(x=>`<div class="inject"><time>${x.time}</time><span>${x.text}</span></div>`).join("")}</section><section class="drill-block"><h4>Discussion questions</h4><div class="question-groups">${t.questions.map(q=>`<div><strong>${q.group}</strong><ul>${q.items.map(x=>`<li>${x}</li>`).join("")}</ul></div>`).join("")}</div></section><section class="drill-block"><h4>Key teaching points</h4><ul>${t.teachingPoints.map(x=>`<li>${x}</li>`).join("")}</ul></section></div></article>`;
 }
 function renderDrillArchiveDetails(drill){
   if(!drill.details)return `<p class="archive-note">${drill.archiveNote}</p>`;
@@ -2805,8 +2850,8 @@ function initializeDrillLibrary(){
 }
 function renderDaily(){
   const d=DASHBOARD_DATA.drill;
-  document.getElementById("dailyDrill").innerHTML=`<div class="eyebrow">Company drill · 35 minutes</div><h3>${d.title}</h3><p>${d.intro}</p><ol>${d.steps.map(s=>`<li>${s}</li>`).join("")}</ol>${renderDrillSops(d.relatedSops)}<div class="nfpa">${d.nfpa}</div>`;
-  document.getElementById("dailyItems").innerHTML=DASHBOARD_DATA.daily.map(x=>`<article class="latest-item"><span class="marker">${x.tag}</span><div><h4>${x.department}</h4><p><strong>${x.date}</strong> — ${x.outcome}</p>${x.url?`<a href="${x.url}" target="_blank" rel="noopener">Source report ↗</a>`:""}</div></article>`).join("");
+  document.getElementById("dailyDrill").innerHTML=`<div class="eyebrow">Company drill · ${d.duration}</div><h3>${d.title}</h3><p>${d.intro}</p><ol>${d.steps.map(s=>`<li>${s}</li>`).join("")}</ol>${renderDrillSops(d.relatedSops)}<div class="nfpa">${d.nfpa}</div>`;
+  document.getElementById("dailyItems").innerHTML=DASHBOARD_DATA.daily.length?DASHBOARD_DATA.daily.map(x=>`<article class="latest-item"><span class="marker">${x.tag}</span><div><h4>${x.department}</h4><p><strong>${x.date}</strong> — ${x.outcome}</p>${x.url?`<a href="${x.url}" target="_blank" rel="noopener">Source report ↗</a>`:""}</div></article>`).join(""):`<div class="empty">No new dashboard-scope incidents were identified in the last 48 hours.</div>`;
 }
 function renderIncidents(){
   const isSop=activeCategory==="sop";
