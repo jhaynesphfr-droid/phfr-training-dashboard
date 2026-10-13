@@ -194,48 +194,97 @@
 <script>
 /* DAILY-DRILLS-START — Replace only this object during the morning drill update. */
 const DAILY_DRILLS = {
-  updatedThrough: "October 12, 2026",
+  updatedThrough: "October 13, 2026",
   practical: {
     duration: "20–45 minutes",
-    title: "Nozzle Up: 150-Foot Interior Push",
-    objective: "Build a fast, kink-free 1-3/4 inch stretch and controlled nozzle advance through a single-story slab-on-grade residential layout, typical of Florida construction, ending with a controlled flow and a coordinated withdrawal.",
-    nfpa: "NFPA 1001 · NFPA 1410 · NFPA 1500",
-    equipment: ["Engine company with 150 ft 1-3/4 inch preconnect", "Combination or smooth-bore nozzle", "Hydrant wrench", "Thermal imaging camera", "Cones or tape for layout marking", "Stopwatch", "Radio for PAR"],
+    title: "Window Rescue: Ground Ladders and Victim Removal",
+    objective: "Raise ground ladders to a first and second story window of a single-story and two-story Florida residential layout, enter, locate a victim with a TIC, and remove the victim safely through the window and down the ladder.",
+    nfpa: "NFPA 1001 · NFPA 1500",
+    equipment: ["24 ft and 14 ft ground ladders", "Rescue manikin", "Thermal imaging camera", "Webbing and carabiners", "Cones or tape for layout marking", "Stopwatch", "Radio for PAR"],
     steps: [
-      "Stretch: from apparatus stop, the nozzle team shoulders and stretches the full 150 ft to the simulated entry door, flaking hose to eliminate kinks and keeping the line off sharp corners.",
-      "Door control: control the door, check heat at the door with the back of a gloved hand and a TIC sweep, sound the floor, and enter low and together.",
-      "Advance and flow: move as a pair to the simulated fire room; open the nozzle in short bursts to check pattern and reach, then apply a controlled straight stream to the seat.",
-      "Leapfrog: a second team relieves the nozzle team at the shoulder, advancing the line deeper while the first team backs up the line and watches for kinks.",
-      "Withdraw and redeploy: on the officer's call, both teams back out staying low, reposition to a secondary entry point, and re-advance.",
-      "Supply: the driver secures water from a hydrant, sets pump discharge pressure, and maintains a PAR with dispatch."
+      "Size up: officer confirms window, ladder length, footing on slab or pavement, overhead wires, and assigns a ladder team and an interior team.",
+      "Raise: two firefighters raise the 24 ft ladder to the second-story window, heel and secure it, and climb with a TIC and webbing.",
+      "Enter and search: enter the window, isolate the room if possible, sweep with the TIC, and locate the manikin.",
+      "Package: secure the manikin with webbing, communicate the removal plan and a PAR to command.",
+      "Remove: move the manikin through the window and down the ladder with a firefighter controlling the descent, keeping three points of contact.",
+      "Reset and rotate: lower, inspect the ladder and beams for damage, and rotate crews so every member raises, climbs, and controls a removal."
     ],
-    safety: "Full PPE and SCBA on air for all interior participants; simulated fire only, no live burn; driver manages charged-line pressure; monitor for heat stress given Florida heat and enforce rehab after each rotation; maintain accountability with a charged backup line staged.",
-    benchmark: "150 ft line stretched, charged, and flowing within 3 minutes of apparatus stop; nozzle team holds a controlled pattern on target for 30 seconds. Advanced: under 2 minutes 30 seconds.",
-    relatedSops: ["SOP 689 — Water Supply", "SOP 903 — Pump And Nozzle Maintenance", "SOP 359 — Personal Protective Equipment"]
+    safety: "Full PPE and SCBA on air for entry crews; no live fire; spotter heels every ladder at all times; check for overhead power lines before raising; enforce rehab and hydration for Florida heat; stop the evolution for any ladder footing slip.",
+    benchmark: "Two-firefighter 24 ft ladder raise and secured in under 90 seconds; manikin located, packaged, and removed through the window in under 5 minutes per rotation.",
+    relatedSops: ["SOP 354 — Ladder- Safety Belts", "SOP 359 — Personal Protective Equipment", "SOP 351 — General Department Safety"]
   },
   tabletop: {
     duration: "15–20 minutes",
-    title: "The 3 W's Call: RIT Deployment",
-    scenario: "2:00 AM. Crews are working a garden-apartment fire, second-floor unit with extension into a lightweight truss attic. Two interior firefighters conducting primary search on Division 2 get cut off by a flashover in the hallway. One firefighter's low-air alarm is sounding and the other is disoriented in zero visibility. The company officer declares a mayday. You are the incident commander and the RIT officer.",
-    nfpa: "NFPA 1407 · NFPA 1561 · NFPA 1500",
+    title: "Left the Roadway: Rollover Prevention and Post-Crash Response",
+    scenario: "9:40 PM. Your engine is responding lights and sirens on a wet two-lane rural road to a vehicle and grass fire. The driver is experienced but tired at the end of a busy shift. A pickup pulls out from a side road, the engine swerves, the right wheels drop off the pavement, and the apparatus rolls onto its side in a ditch. One firefighter is trapped and unresponsive, one is ambulatory, and the driver is dazed. You are the company officer.",
+    nfpa: "NFPA 1451 · NFPA 1500",
     injects: [
-      { time: "T+0", text: "The mayday transmission is garbled; only “Mayday, Mayday, Mayday... Division 2” is heard. What does command do in the next 60 seconds to obtain a full 3 W's report?" },
-      { time: "T+5", text: "RIT deploys from staging with a RIC bag. Command must designate a RIC group supervisor, assign a dedicated channel, and order a PAR of all interior crews." },
-      { time: "T+10", text: "RIT reports contact with the downed firefighter, but air is critically low and the hallway is untenable. Command must choose: commit a second RIT team, order a tactical withdrawal of the rest of the building, or both." },
-      { time: "T+15", text: "The firefighter is packaged and out, and EMS is working on the front lawn. Command shifts to recovery: a second PAR, department notification per SOP, and securing the scene for investigation." }
+      { time: "T+0", text: "You are first to regain your bearings inside the rolled apparatus. What are your first five actions in order, including seatbelt status, a mayday or emergency traffic call using the 3 W's, and shutting down the apparatus?" },
+      { time: "T+5", text: "Dispatch confirms help is coming but the location is rural and the next engine is 12 minutes out. A civilian bystander is trying to climb on the apparatus. How do you control the scene, traffic, and bystanders with an injured crew?" },
+      { time: "T+10", text: "Command arrives and confirms one firefighter has died at the scene. What notifications, scene preservation, and documentation steps start now, and what is NOT said on the radio or to media?" },
+      { time: "T+15", text: "Back at the station the next morning, the crew asks what could have prevented this. Walk through speed for conditions, seatbelt discipline, fatigue, load and tire checks, and what the department reviews after any apparatus crash." }
     ],
     questions: [
-      { group: "Firefighters", items: ["When do you push the emergency button versus calling a verbal mayday?", "Can you give your 3 W's right now, without looking them up: who you are, what happened and what you need, and where you are?", "How does PASS discipline help or hurt a RIT search?", "At what point do you declare yourself lost instead of pushing deeper?"] },
-      { group: "Officers", items: ["Who owns the mayday channel, and who keeps running the rest of the fire?", "What are the RIC group supervisor's first five actions?", "How fast is your RIT really ready, from staging to entry?", "How do you balance continuing the fire attack against pulling everyone back during a mayday?"] }
+      { group: "Firefighters", items: ["Are you belted every time the apparatus moves, including short repositioning moves?", "What does dropping a wheel off the pavement demand: steer back hard, or slow, hold, and ease back?", "What do you do in the first minute after a rollover involving your own crew?"] },
+      { group: "Officers", items: ["How do you enforce seatbelt and speed discipline without waiting for a crash?", "Who owns notifications, family liaison, and scene preservation after a fatal apparatus crash?", "When is an apparatus placed out of service and investigated before anyone moves it?"] }
     ],
-    teachingPoints: ["The 3 W's (Who you are, What happened and what you need, Where you are) is the price of a rescue.", "The emergency button is a supplement, not a substitute, for a clear verbal report.", "One channel goes quiet for the mayday and a RIC group supervisor runs it.", "RIT is assigned and ready on every working fire, not assembled after the call.", "PAR before RIT enters and after they exit.", "The PASS device is a last line, never a plan."],
-    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 351 — General Department Safety", "SOP 359 — Personal Protective Equipment"]
+    teachingPoints: ["Seatbelts are the single biggest survival factor in a rollover; no belt, no move.", "Slow for wet rural roads at night; arriving 30 seconds later beats not arriving.", "If a wheel drops off the pavement, slow and ease back; a hard swerve back is what rolls apparatus.", "First actions after a crash: account for the crew, call for help with the 3 W's, control traffic, and preserve the scene.", "Fatal crash notifications follow department SOP and family notification comes before any public release."],
+    relatedSops: ["SOP 355 — Apparatus Safety", "SOP 350 — Accident- Injury Investigation", "SOP 223 — Ff Lodd"]
   }
 };
 /* DAILY-DRILLS-END */
 
 /* DRILL-LIBRARY-START — Prepend each morning's two drills to this array, newest first. */
 const DRILL_LIBRARY = [
+  {
+    updatedThrough: "October 13, 2026",
+    dateSort: "2026-10-13",
+    date: "October 13, 2026",
+    type: "Practical",
+    title: "Window Rescue: Ground Ladders and Victim Removal",
+    topic: "Ladder operations and window victim removal",
+    summary: "Raise ground ladders to a first and second story window of a single-story and two-story Florida residential layout, enter, locate a victim with a TIC, and remove the victim safely through the window and down the ladder.",
+    nfpa: ["NFPA 1001", "NFPA 1500"],
+    relatedSops: ["SOP 354 — Ladder- Safety Belts", "SOP 359 — Personal Protective Equipment", "SOP 351 — General Department Safety"],
+    details: {
+      equipment: ["24 ft and 14 ft ground ladders", "Rescue manikin", "Thermal imaging camera", "Webbing and carabiners", "Cones or tape for layout marking", "Stopwatch", "Radio for PAR"],
+      evolutions: [
+        "Size up: officer confirms window, ladder length, footing on slab or pavement, overhead wires, and assigns a ladder team and an interior team.",
+        "Raise: two firefighters raise the 24 ft ladder to the second-story window, heel and secure it, and climb with a TIC and webbing.",
+        "Enter and search: enter the window, isolate the room if possible, sweep with the TIC, and locate the manikin.",
+        "Package: secure the manikin with webbing, communicate the removal plan and a PAR to command.",
+        "Remove: move the manikin through the window and down the ladder with a firefighter controlling the descent, keeping three points of contact.",
+        "Reset and rotate: lower, inspect the ladder and beams for damage, and rotate crews so every member raises, climbs, and controls a removal."
+      ],
+      safety: "Full PPE and SCBA on air for entry crews; no live fire; spotter heels every ladder at all times; check for overhead power lines before raising; enforce rehab and hydration for Florida heat; stop the evolution for any ladder footing slip.",
+      benchmark: "Two-firefighter 24 ft ladder raise and secured in under 90 seconds; manikin located, packaged, and removed through the window in under 5 minutes per rotation."
+    }
+  },
+  {
+    updatedThrough: "October 13, 2026",
+    dateSort: "2026-10-13",
+    date: "October 13, 2026",
+    type: "Tabletop",
+    title: "Left the Roadway: Rollover Prevention and Post-Crash Response",
+    topic: "Apparatus rollover prevention and post-crash response",
+    summary: "9:40 PM. Your engine is responding lights and sirens on a wet two-lane rural road to a vehicle and grass fire. The driver is experienced but tired at the end of a busy shift. A pickup pulls out from a side road, the engine swerves, the right wheels drop off the pavement, and the apparatus rolls onto its side in a ditch. One firefighter is trapped and unresponsive, one is ambulatory, and the driver is dazed. You are the company officer.",
+    nfpa: ["NFPA 1451", "NFPA 1500"],
+    relatedSops: ["SOP 355 — Apparatus Safety", "SOP 350 — Accident- Injury Investigation", "SOP 223 — Ff Lodd"],
+    details: {
+      scenario: "9:40 PM. Your engine is responding lights and sirens on a wet two-lane rural road to a vehicle and grass fire. The driver is experienced but tired at the end of a busy shift. A pickup pulls out from a side road, the engine swerves, the right wheels drop off the pavement, and the apparatus rolls onto its side in a ditch. One firefighter is trapped and unresponsive, one is ambulatory, and the driver is dazed. You are the company officer.",
+      injects: [
+        { time: "T+0", text: "You are first to regain your bearings inside the rolled apparatus. What are your first five actions in order, including seatbelt status, a mayday or emergency traffic call using the 3 W's, and shutting down the apparatus?" },
+        { time: "T+5", text: "Dispatch confirms help is coming but the location is rural and the next engine is 12 minutes out. A civilian bystander is trying to climb on the apparatus. How do you control the scene, traffic, and bystanders with an injured crew?" },
+        { time: "T+10", text: "Command arrives and confirms one firefighter has died at the scene. What notifications, scene preservation, and documentation steps start now, and what is NOT said on the radio or to media?" },
+        { time: "T+15", text: "Back at the station the next morning, the crew asks what could have prevented this. Walk through speed for conditions, seatbelt discipline, fatigue, load and tire checks, and what the department reviews after any apparatus crash." }
+      ],
+      questions: [
+        { group: "Firefighters", items: ["Are you belted every time the apparatus moves, including short repositioning moves?", "What does dropping a wheel off the pavement demand: steer back hard, or slow, hold, and ease back?", "What do you do in the first minute after a rollover involving your own crew?"] },
+        { group: "Officers", items: ["How do you enforce seatbelt and speed discipline without waiting for a crash?", "Who owns notifications, family liaison, and scene preservation after a fatal apparatus crash?", "When is an apparatus placed out of service and investigated before anyone moves it?"] }
+      ],
+      teachingPoints: ["Seatbelts are the single biggest survival factor in a rollover; no belt, no move.", "Slow for wet rural roads at night; arriving 30 seconds later beats not arriving.", "If a wheel drops off the pavement, slow and ease back; a hard swerve back is what rolls apparatus.", "First actions after a crash: account for the crew, call for help with the 3 W's, control traffic, and preserve the scene.", "Fatal crash notifications follow department SOP and family notification comes before any public release."]
+    }
+  },
   {
     updatedThrough: "October 12, 2026",
     dateSort: "2026-10-12",
@@ -403,27 +452,50 @@ const DRILL_LIBRARY = [
 
 /* DAILY-DATA-START — Replace this one object during the morning artifact update. */
 const DASHBOARD_DATA = {
-  updatedThrough: "October 12, 2026",
+  updatedThrough: "October 13, 2026",
   drill: {
     duration: "20–45 minutes",
-    title: "Nozzle Up: 150-Foot Interior Push",
-    intro: "Build a fast, kink-free 1-3/4 inch stretch and controlled nozzle advance through a single-story slab-on-grade residential layout, typical of Florida construction, ending with a controlled flow and a coordinated withdrawal.",
+    title: "Window Rescue: Ground Ladders and Victim Removal",
+    intro: "Raise ground ladders to a first and second story window of a single-story and two-story Florida residential layout, enter, locate a victim with a TIC, and remove the victim safely through the window and down the ladder.",
     steps: [
-      "Stretch the full 150 ft to the simulated entry door, flaking hose to eliminate kinks and keeping the line off sharp corners.",
-      "Control the door, check heat with the back of a gloved hand and a TIC sweep, sound the floor, and enter low and together.",
-      "Advance as a pair, check the stream's pattern and reach, and apply a controlled straight stream to the seat.",
-      "Relieve the nozzle team, then withdraw, redeploy, secure water, and maintain a PAR."
+      "Size up: officer confirms window, ladder length, footing on slab or pavement, overhead wires, and assigns a ladder team and an interior team.",
+      "Raise: two firefighters raise the 24 ft ladder to the second-story window, heel and secure it, and climb with a TIC and webbing.",
+      "Enter and search: enter the window, isolate the room if possible, sweep with the TIC, and locate the manikin.",
+      "Package: secure the manikin with webbing, communicate the removal plan and a PAR to command.",
+      "Remove: move the manikin through the window and down the ladder with a firefighter controlling the descent, keeping three points of contact.",
+      "Reset and rotate: lower, inspect the ladder and beams for damage, and rotate crews so every member raises, climbs, and controls a removal."
     ],
-    nfpa: "NFPA 1001 · NFPA 1410 · NFPA 1500",
-    relatedSops: ["SOP 689 — Water Supply", "SOP 903 — Pump And Nozzle Maintenance", "SOP 359 — Personal Protective Equipment"]
+    nfpa: "NFPA 1001 · NFPA 1500",
+    relatedSops: ["SOP 354 — Ladder- Safety Belts", "SOP 359 — Personal Protective Equipment", "SOP 351 — General Department Safety"]
   },
   daily: [
     {
-      tag: "RESCUE",
-      department: "DC Fire and EMS",
+      tag: "LODD",
+      department: "Buckholts Volunteer Fire Department (TX)",
       date: "October 11, 2026",
-      outcome: "At an early-morning house fire in the 600 block of Geranium Street NW in Northwest Washington, DC, one civilian died at the scene and six civilians were hospitalized: three in critical condition (two adults and one child) and three with non-life-threatening injuries (one adult and two children). Cause under investigation.",
-      url: "https://fox5dc.com/news/1-dead-northwest-dc-fire-injured-6-more-including-children"
+      outcome: "A firefighter driver was killed when the apparatus left the roadway and rolled over while responding to a vehicle and grass fire near Holland. The crash is under investigation.",
+      url: "https://www.firerescue1.com/line-of-duty-death-lodd/texas-firefighter-dies-in-rollover-crash-responding-to-fire"
+    },
+    {
+      tag: "CRASH",
+      department: "Buckholts Volunteer Fire Department (TX)",
+      date: "October 11, 2026",
+      outcome: "Single-vehicle apparatus rollover while responding to a vehicle and grass fire near Holland; the firefighter driver was killed. Severity: fatal. The crash is under investigation.",
+      url: "https://www.fireengineering.com/news/tx-firefighter-dies-in-apparatus-rollover-responding-to-fire/"
+    },
+    {
+      tag: "RESCUE",
+      department: "West Valley City Fire Department (UT)",
+      date: "October 11, 2026",
+      outcome: "Crews rescued three children and two adults trapped in a fully engulfed home, removing the children through a small basement window and the adults via the stairs; a third adult escaped on their own. All six were transported for smoke inhalation with minor injuries.",
+      url: "https://gephardtdaily.com/local/3-children-2-adults-rescued-from-west-valley-city-house-fire/"
+    },
+    {
+      tag: "CLOSE CALL",
+      department: "Kansas City Fire Department (MO)",
+      date: "October 11, 2026",
+      outcome: "At a second-alarm apartment fire with heavy fire on the third floor, crews evacuated to a defensive attack, then re-entered for secondary search and overhaul; one firefighter was hospitalized with minor injuries. Twenty-two units were left uninhabitable; the fire was ruled an accidental cooking fire.",
+      url: "https://gray-kctv-prod.gtv-cdn.com/2026/10/12/second-alarm-apartment-fire-kansas-city-sends-firefighter-hospital/"
     }
   ]
 };
@@ -434,6 +506,54 @@ const SOP_LIBRARY = [{"sop":"223","title":"Ff Serious Injury","label":"SOP 223 �
 /* SOP-LIBRARY-END */
 
 const incidents = [
+  {
+    "category": "lodd",
+    "state": "TX",
+    "sort": "2026-10-11",
+    "month": 10,
+    "department": "Buckholts Volunteer Fire Department",
+    "date": "October 11, 2026",
+    "outcome": "A firefighter driver was killed when the apparatus left the roadway and rolled over while responding to a vehicle and grass fire near Holland. The crash is under investigation.",
+    "url": "https://www.firerescue1.com/line-of-duty-death-lodd/texas-firefighter-dies-in-rollover-crash-responding-to-fire",
+    "count": 1,
+    "cause": "incident",
+    "sops": ["SOP 355 — Apparatus Safety", "SOP 223 — Ff Lodd", "SOP 350 — Accident- Injury Investigation"]
+  },
+  {
+    "category": "crash",
+    "severity": "fatal",
+    "state": "TX",
+    "sort": "2026-10-11",
+    "month": 10,
+    "department": "Buckholts Volunteer Fire Department",
+    "date": "October 11, 2026",
+    "outcome": "Single-vehicle apparatus rollover while responding to a vehicle and grass fire near Holland; the firefighter driver was killed. The crash is under investigation.",
+    "url": "https://www.fireengineering.com/news/tx-firefighter-dies-in-apparatus-rollover-responding-to-fire/",
+    "sops": ["SOP 355 — Apparatus Safety", "SOP 350 — Accident- Injury Investigation"]
+  },
+  {
+    "category": "rescue",
+    "state": "UT",
+    "sort": "2026-10-11",
+    "month": 10,
+    "department": "West Valley City Fire Department",
+    "date": "October 11, 2026",
+    "outcome": "Crews rescued three children and two adults trapped in a fully engulfed home, removing the children through a small basement window and the adults via the stairs; a third adult escaped on their own. All six were transported for smoke inhalation with minor injuries. The home was destroyed and a neighboring home was heavily damaged.",
+    "url": "https://gephardtdaily.com/local/3-children-2-adults-rescued-from-west-valley-city-house-fire/",
+    "sops": ["SOP 354 — Ladder- Safety Belts", "SOP 697 — Thermal Imaging Cameras (Tic)"]
+  },
+  {
+    "category": "closecall",
+    "state": "MO",
+    "sort": "2026-10-11",
+    "month": 10,
+    "department": "Kansas City Fire Department (MO)",
+    "date": "October 11, 2026",
+    "outcome": "At a second-alarm apartment fire with heavy fire on the third floor, crews evacuated to a defensive attack, then re-entered for secondary search and overhaul; one firefighter was hospitalized with minor injuries. Twenty-two units were left uninhabitable; the fire was ruled an accidental cooking fire.",
+    "lesson": "Recognize changing conditions early, evacuate on command, and complete a PAR before re-entry.",
+    "url": "https://gray-kctv-prod.gtv-cdn.com/2026/10/12/second-alarm-apartment-fire-kansas-city-sends-firefighter-hospital/",
+    "sops": ["SOP 365 — Incident Safety Officer", "SOP 220 — Post Incident Analysis"]
+  },
   {
     "category": "rescue",
     "state": "DC",
@@ -2784,11 +2904,11 @@ function incidentSopBackfill(incident){
 incidents.forEach(incident=>{incident.sops=Array.isArray(incident.sops)&&incident.sops.length?incident.sops:incidentSopBackfill(incident)});
 
 const YTD_TOTALS = {
-  lodd: { total:68, sub:"29 INCIDENT-RELATED · 32 MEDICAL · 7 CAUSE PENDING · 5 FLORIDA · 63 NATIONAL" },
-  crash: { total:30, sub:"7 FATAL · 14 SERIOUS · 9 MINOR" },
-  rescue: { total:18, sub:"7 FLORIDA · 11 NATIONAL" },
+  lodd: { total:69, sub:"30 INCIDENT-RELATED · 32 MEDICAL · 7 CAUSE PENDING · 5 FLORIDA · 64 NATIONAL" },
+  crash: { total:31, sub:"8 FATAL · 14 SERIOUS · 9 MINOR" },
+  rescue: { total:19, sub:"7 FLORIDA · 12 NATIONAL" },
   mayday: { total:79, sub:"73 VERIFIED · 6 UNVERIFIED" },
-  closecall: { total:11, sub:"5 FLORIDA · 6 NATIONAL" }
+  closecall: { total:12, sub:"5 FLORIDA · 7 NATIONAL" }
 };
 
 const labels={lodd:"LODD source records",crash:"Apparatus crashes",rescue:"Structure-fire rescues",mayday:"Firefighter maydays",closecall:"Firefighter close calls"};
