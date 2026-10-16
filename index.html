@@ -637,6 +637,18 @@ const incidents = [
   },
   {
     "category": "lodd",
+    "state": "LA",
+    "sort": "2026-10-14",
+    "month": 10,
+    "department": "U.S. Forest Service, Kisatchie National Forest (LA)",
+    "date": "October 14, 2026",
+    "outcome": "A wildland firefighter was struck and killed by a falling tree while responding to the Broken Creek Fire, a 10-acre wildfire in the Kisatchie National Forest, Rapides Parish, Louisiana.",
+    "url": "https://apps.usfa.fema.gov/firefighter-fatalities/",
+    "count": 1,
+    "cause": "incident"
+  },
+  {
+    "category": "lodd",
     "state": "TX",
     "sort": "2026-10-11",
     "month": 10,
@@ -3033,7 +3045,7 @@ function incidentSopBackfill(incident){
 incidents.forEach(incident=>{incident.sops=Array.isArray(incident.sops)&&incident.sops.length?incident.sops:incidentSopBackfill(incident)});
 
 const YTD_TOTALS = {
-  lodd: { total:69, sub:"30 INCIDENT-RELATED · 32 MEDICAL · 7 CAUSE PENDING · 5 FLORIDA · 64 NATIONAL" },
+  lodd: { total:70, sub:"31 INCIDENT-RELATED · 32 MEDICAL · 7 CAUSE PENDING · 5 FLORIDA · 65 NATIONAL" },
   crash: { total:31, sub:"8 FATAL · 14 SERIOUS · 9 MINOR" },
   rescue: { total:20, sub:"7 FLORIDA · 13 NATIONAL" },
   mayday: { total:79, sub:"73 VERIFIED · 6 UNVERIFIED" },
