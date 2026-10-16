@@ -194,48 +194,97 @@
 <script>
 /* DAILY-DRILLS-START — Replace only this object during the morning drill update. */
 const DAILY_DRILLS = {
-  updatedThrough: "October 15, 2026",
+  updatedThrough: "October 16, 2026",
   practical: {
     duration: "20–45 minutes",
-    title: "Open It Up Right: Coordinated Ventilation and Reading Fire Behavior",
-    objective: "Coordinate ventilation with fire attack and search at a Florida garden apartment fire, timing openings with water application, reading smoke and fire behavior, and checking floor integrity before entry.",
-    nfpa: "NFPA 1001 · NFPA 1500",
-    equipment: ["Positive-pressure fan", "Thermal imaging camera", "Charged hose line", "Ground ladder", "Radio", "Stopwatch"],
+    title: "Pump It Right: Hydrant to Standpipe in a Florida Condo",
+    objective: "Establish a reliable water supply at a Florida condo fire, from hydrant hookup through standpipe connection and pump pressures, so attack crews never lose water when sprinklers are flowing.",
+    nfpa: "NFPA 1001 · NFPA 1500 · NFPA 1410",
+    equipment: ["Engine with pump panel trainer or live engine", "Hydrant wrench and hydrant bag", "Standpipe bag with spanners and adapters", "Charged attack line", "Pressure gauges", "Radio", "Stopwatch"],
     steps: [
-      "Size up smoke, fire behavior, and wind, and name the ventilation plan and who controls each opening.",
-      "Position the fan and create the exhaust opening only on command, coordinated with the attack crew ready to apply water.",
-      "Sound the floor at the entry and sweep with the TIC before committing crews inside.",
-      "Ventilate one room at a time, report conditions change after each opening, and keep crew integrity and an exit path.",
-      "Practice the stop call: shut down ventilation and withdraw if fire behavior worsens, the floor feels unsound, or accountability is lost.",
-      "Reset and rotate so every member sets the fan, makes an opening, and gives the conditions report."
+      "Size up the condo: locate the hydrant, the fire department connection, and the standpipe outlet, and name who owns each task.",
+      "Hook the hydrant, charge the supply line, and confirm steady intake pressure and tank-to-hydrant transition without losing water.",
+      "Connect to the fire department connection, charge the standpipe, and check pressure at the outlet gauge before the attack crew calls for water.",
+      "Advance the attack line from the standpipe outlet, set the correct pump discharge pressure for the elevation and hose layout, and report pressures by radio.",
+      "Simulate a failure: kink, burst section, or low hydrant pressure. Troubleshoot, switch supply, and restore water without abandoning the attack crew.",
+      "Reset and rotate so every member hooks the hydrant, connects the standpipe, and runs the pump panel."
     ],
-    safety: "Full PPE and SCBA. Never ventilate without command approval and an attack line ready. Sound floors before entry and stay off fire-weakened flooring.",
-    benchmark: "Crew completes coordinated ventilation, entry check, and TIC sweep in under 6 minutes with correct radio reports and no uncommanded openings.",
-    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 351 — General Department Safety", "SOP 359 — Personal Protective Equipment"]
+    safety: "Full PPE. Never charge a line with a member standing over it. Confirm the standpipe zone and sprinkler status with command before connecting, and chock and flag supply lines crossing traffic lanes.",
+    benchmark: "Crew establishes hydrant supply and a charged standpipe attack line with correct pressures in under 5 minutes, with clear radio reports and no loss of water during the transition.",
+    relatedSops: ["SOP 689 — Water Supply", "SOP 698 — Standpipe Gauge Utilization", "SOP 903 — Pump And Nozzle Maintenance"]
   },
   tabletop: {
     duration: "15–20 minutes",
-    title: "Second Alarm and Still Working: Rehab, PAR, and Crew Rotation at an Extended Apartment Fire",
-    scenario: "A fire in a vacant Florida garden apartment building spreads through floor and roof voids on a warm morning. The response grows to three alarms, crews rotate for hours, and command must protect firefighters from heat, injury, and accountability gaps.",
-    nfpa: "NFPA 1500 · NFPA 1584 · NFPA 1561",
+    title: "First Five Minutes at a Fatal House Fire",
+    scenario: "Crews arrive at a single-story Florida slab-on-grade home with heavy fire and reports of occupants inside. The primary search finds victims who do not survive, and command must shift from rescue to recovery, notifications, and scene preservation without losing accountability or compassion for the family on scene.",
+    nfpa: "NFPA 1561 · NFPA 1500",
     injects: [
-      { time: "0 min", text: "First alarm working fire, heavy flames, boarded units. Set command, accountability, and an early rehab area." },
-      { time: "5 min", text: "A firefighter falls through a weakened floor and is removed by ladder with no serious injury; another reports minor hand burns. What notifications, medical care, and PAR follow?" },
-      { time: "10 min", text: "Second and third alarms arrive, heat builds, and crews have been working without rotation. How are rehab, hydration, vitals, and work-rest cycles enforced?" },
-      { time: "15 min", text: "Floor and roof sections collapse and command goes defensive. How is a full PAR completed and the strategy change communicated to every crew?" }
+      { time: "0 min", text: "Working fire, occupants reported inside. Assign search, attack, and ventilation, and state the risk profile and the initial strategy." },
+      { time: "5 min", text: "Search crews locate victims and begin removal and resuscitation efforts. What is reported to command, what medical resources are requested, and who meets the family outside?" },
+      { time: "10 min", text: "Resuscitation is unsuccessful. How does command shift assignments, preserve the scene for investigators, and start department notifications?" },
+      { time: "15 min", text: "Neighbors and media gather and a crew member is visibly shaken. What are the next steps for the family liaison, crew support, and a post-incident analysis?" }
     ],
     questions: [
-      { group: "Firefighters", items: ["What are the signs that you or your partner need rehab now, not at the next rotation?", "What do you report and do immediately after a fall-through or a burn injury, even a minor one?", "How do you answer a PAR quickly and accurately when crews have been split and rotated?"] },
-      { group: "Officers", items: ["How do you staff and enforce rehab so no crew self-selects out of it during an extended operation?", "After an injury, what notifications and documentation are started, and what equipment is preserved?", "How do you verify every crew heard and acted on a defensive transition and a PAR?"] }
+      { group: "Firefighters", items: ["How do you report a victim find clearly without tying up the tactical channel?", "What do you protect and avoid disturbing once a fire turns fatal?", "When do you speak up if you or your partner need to step out after a fatal call?"] },
+      { group: "Officers", items: ["How do you balance an aggressive search against crew risk when survival is unlikely?", "What notifications, liaison assignments, and documentation start in the first hour after a fatal fire?", "How do you schedule and frame the post-incident analysis so lessons are captured without blame?"] }
     ],
-    teachingPoints: ["Rehab is an assignment, not a break: crews report when ordered and stay until released.", "Minor burns and near-miss falls get medical evaluation, notification, and documentation the same as serious injuries.", "Complete a PAR after every alarm upgrade, injury, and strategy change.", "Extended operations need planned crew rotation before heat illness appears."],
-    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 351 — General Department Safety", "SOP 359 — Personal Protective Equipment"]
+    teachingPoints: ["Report victim finds early and plainly: location, number, and what help is needed.", "A fatal outcome changes the mission, not the discipline: accountability, scene preservation, and notifications all tighten.", "Family liaison is assigned early and is the single point of contact.", "Every fatal fire gets a post-incident analysis and a crew wellness check."],
+    relatedSops: ["SOP 223 — Ff Lodd", "SOP 220 — Post Incident Analysis", "SOP 365 — Incident Safety Officer"]
   }
 };
 /* DAILY-DRILLS-END */
 
 /* DRILL-LIBRARY-START — Prepend each morning's two drills to this array, newest first. */
 const DRILL_LIBRARY = [
+  {
+    updatedThrough: "October 16, 2026",
+    dateSort: "2026-10-16",
+    date: "October 16, 2026",
+    type: "Practical",
+    title: "Pump It Right: Hydrant to Standpipe in a Florida Condo",
+    topic: "Pump operations and water supply",
+    summary: "Establish a reliable water supply at a Florida condo fire, from hydrant hookup through standpipe connection and pump pressures, so attack crews never lose water when sprinklers are flowing.",
+    nfpa: ["NFPA 1001", "NFPA 1500", "NFPA 1410"],
+    relatedSops: ["SOP 689 — Water Supply", "SOP 698 — Standpipe Gauge Utilization", "SOP 903 — Pump And Nozzle Maintenance"],
+    details: {
+      equipment: ["Engine with pump panel trainer or live engine", "Hydrant wrench and hydrant bag", "Standpipe bag with spanners and adapters", "Charged attack line", "Pressure gauges", "Radio", "Stopwatch"],
+      evolutions: [
+        "Size up the condo: locate the hydrant, the fire department connection, and the standpipe outlet, and name who owns each task.",
+        "Hook the hydrant, charge the supply line, and confirm steady intake pressure and tank-to-hydrant transition without losing water.",
+        "Connect to the fire department connection, charge the standpipe, and check pressure at the outlet gauge before the attack crew calls for water.",
+        "Advance the attack line from the standpipe outlet, set the correct pump discharge pressure for the elevation and hose layout, and report pressures by radio.",
+        "Simulate a failure: kink, burst section, or low hydrant pressure. Troubleshoot, switch supply, and restore water without abandoning the attack crew.",
+        "Reset and rotate so every member hooks the hydrant, connects the standpipe, and runs the pump panel."
+      ],
+      safety: "Full PPE. Never charge a line with a member standing over it. Confirm the standpipe zone and sprinkler status with command before connecting, and chock and flag supply lines crossing traffic lanes.",
+      benchmark: "Crew establishes hydrant supply and a charged standpipe attack line with correct pressures in under 5 minutes, with clear radio reports and no loss of water during the transition."
+    }
+  },
+  {
+    updatedThrough: "October 16, 2026",
+    dateSort: "2026-10-16",
+    date: "October 16, 2026",
+    type: "Tabletop",
+    title: "First Five Minutes at a Fatal House Fire",
+    topic: "Fatal fire command, notifications, and post-incident analysis",
+    summary: "Crews arrive at a single-story Florida slab-on-grade home with heavy fire and reports of occupants inside. The primary search finds victims who do not survive, and command must shift from rescue to recovery, notifications, and scene preservation without losing accountability or compassion for the family on scene.",
+    nfpa: ["NFPA 1561", "NFPA 1500"],
+    relatedSops: ["SOP 223 — Ff Lodd", "SOP 220 — Post Incident Analysis", "SOP 365 — Incident Safety Officer"],
+    details: {
+      scenario: "Crews arrive at a single-story Florida slab-on-grade home with heavy fire and reports of occupants inside. The primary search finds victims who do not survive, and command must shift from rescue to recovery, notifications, and scene preservation without losing accountability or compassion for the family on scene.",
+      injects: [
+        { time: "0 min", text: "Working fire, occupants reported inside. Assign search, attack, and ventilation, and state the risk profile and the initial strategy." },
+        { time: "5 min", text: "Search crews locate victims and begin removal and resuscitation efforts. What is reported to command, what medical resources are requested, and who meets the family outside?" },
+        { time: "10 min", text: "Resuscitation is unsuccessful. How does command shift assignments, preserve the scene for investigators, and start department notifications?" },
+        { time: "15 min", text: "Neighbors and media gather and a crew member is visibly shaken. What are the next steps for the family liaison, crew support, and a post-incident analysis?" }
+      ],
+      questions: [
+        { group: "Firefighters", items: ["How do you report a victim find clearly without tying up the tactical channel?", "What do you protect and avoid disturbing once a fire turns fatal?", "When do you speak up if you or your partner need to step out after a fatal call?"] },
+        { group: "Officers", items: ["How do you balance an aggressive search against crew risk when survival is unlikely?", "What notifications, liaison assignments, and documentation start in the first hour after a fatal fire?", "How do you schedule and frame the post-incident analysis so lessons are captured without blame?"] }
+      ],
+      teachingPoints: ["Report victim finds early and plainly: location, number, and what help is needed.", "A fatal outcome changes the mission, not the discipline: accountability, scene preservation, and notifications all tighten.", "Family liaison is assigned early and is the single point of contact.", "Every fatal fire gets a post-incident analysis and a crew wellness check."]
+    }
+  },
   {
     updatedThrough: "October 15, 2026",
     dateSort: "2026-10-15",
@@ -550,32 +599,23 @@ const DRILL_LIBRARY = [
 
 /* DAILY-DATA-START — Replace this one object during the morning artifact update. */
 const DASHBOARD_DATA = {
-  updatedThrough: "October 15, 2026",
+  updatedThrough: "October 16, 2026",
   drill: {
     duration: "20–45 minutes",
-    title: "Open It Up Right: Coordinated Ventilation and Reading Fire Behavior",
-    intro: "Coordinate ventilation with fire attack and search at a Florida garden apartment fire, timing openings with water application, reading smoke and fire behavior, and checking floor integrity before entry.",
+    title: "Pump It Right: Hydrant to Standpipe in a Florida Condo",
+    intro: "Establish a reliable water supply at a Florida condo fire, from hydrant hookup through standpipe connection and pump pressures, so attack crews never lose water when sprinklers are flowing.",
     steps: [
-      "Size up smoke, fire behavior, and wind, and name the ventilation plan and who controls each opening.",
-      "Position the fan and create the exhaust opening only on command, coordinated with the attack crew ready to apply water.",
-      "Sound the floor at the entry and sweep with the TIC before committing crews inside.",
-      "Ventilate one room at a time, report conditions change after each opening, and keep crew integrity and an exit path.",
-      "Practice the stop call: shut down ventilation and withdraw if fire behavior worsens, the floor feels unsound, or accountability is lost.",
-      "Reset and rotate so every member sets the fan, makes an opening, and gives the conditions report."
+      "Size up the condo: locate the hydrant, the fire department connection, and the standpipe outlet, and name who owns each task.",
+      "Hook the hydrant, charge the supply line, and confirm steady intake pressure and tank-to-hydrant transition without losing water.",
+      "Connect to the fire department connection, charge the standpipe, and check pressure at the outlet gauge before the attack crew calls for water.",
+      "Advance the attack line from the standpipe outlet, set the correct pump discharge pressure for the elevation and hose layout, and report pressures by radio.",
+      "Simulate a failure: kink, burst section, or low hydrant pressure. Troubleshoot, switch supply, and restore water without abandoning the attack crew.",
+      "Reset and rotate so every member hooks the hydrant, connects the standpipe, and runs the pump panel."
     ],
-    nfpa: "NFPA 1001 · NFPA 1500",
-    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 351 — General Department Safety", "SOP 359 — Personal Protective Equipment"]
+    nfpa: "NFPA 1001 · NFPA 1500 · NFPA 1410",
+    relatedSops: ["SOP 689 — Water Supply", "SOP 698 — Standpipe Gauge Utilization", "SOP 903 — Pump And Nozzle Maintenance"]
   },
-  daily: [
-    {
-      tag: "CLOSE CALL",
-      department: "San Antonio Fire Department (TX)",
-      date: "October 14, 2026",
-      outcome: "At a three-alarm fire in a vacant apartment complex, a firefighter fell through a fire-weakened floor while sounding it during a search and was rescued quickly with a ladder, with no serious injury and no hospitalization; a second firefighter suffered minor burns to the hands and was taken to a hospital for treatment and evaluation as a precaution. Crews later moved to an exterior attack as floor and roof sections collapsed.",
-      url: "https://dailydispatch.com/fire-news/national/videos-firefighter-falls-through-floor-as-3-alarm-fire-tears-through-vacant-apartment-building-in-texas/",
-      sops: ["SOP 365 — Incident Safety Officer", "SOP 351 — General Department Safety", "SOP 223 — Ff Serious Injury"]
-    }
-  ]
+  daily: []
 };
 /* DAILY-DATA-END */
 
