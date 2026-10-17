@@ -194,48 +194,97 @@
 <script>
 /* DAILY-DRILLS-START — Replace only this object during the morning drill update. */
 const DAILY_DRILLS = {
-  updatedThrough: "October 16, 2026",
+  updatedThrough: "October 17, 2026",
   practical: {
     duration: "20–45 minutes",
-    title: "Pump It Right: Hydrant to Standpipe in a Florida Condo",
-    objective: "Establish a reliable water supply at a Florida condo fire, from hydrant hookup through standpipe connection and pump pressures, so attack crews never lose water when sprinklers are flowing.",
-    nfpa: "NFPA 1001 · NFPA 1500 · NFPA 1410",
-    equipment: ["Engine with pump panel trainer or live engine", "Hydrant wrench and hydrant bag", "Standpipe bag with spanners and adapters", "Charged attack line", "Pressure gauges", "Radio", "Stopwatch"],
+    title: "Protect the Interface: WUI Structure Protection and Mobile Attack",
+    objective: "Protect exposures and attack a wind-driven wildland-urban interface fire in a Florida subdivision, prioritizing life safety, structure triage, and crew accountability in heat and wind.",
+    nfpa: "NFPA 1144 · NFPA 1051 · NFPA 1500",
+    equipment: ["Engine with pump panel", "Wildland PPE and structural PPE", "Hand tools and hose packs", "Portable radios", "Thermal imaging camera", "Water supply / hydrant kit", "Stopwatch"],
     steps: [
-      "Size up the condo: locate the hydrant, the fire department connection, and the standpipe outlet, and name who owns each task.",
-      "Hook the hydrant, charge the supply line, and confirm steady intake pressure and tank-to-hydrant transition without losing water.",
-      "Connect to the fire department connection, charge the standpipe, and check pressure at the outlet gauge before the attack crew calls for water.",
-      "Advance the attack line from the standpipe outlet, set the correct pump discharge pressure for the elevation and hose layout, and report pressures by radio.",
-      "Simulate a failure: kink, burst section, or low hydrant pressure. Troubleshoot, switch supply, and restore water without abandoning the attack crew.",
-      "Reset and rotate so every member hooks the hydrant, connects the standpipe, and runs the pump panel."
+      "Size up the interface: identify wind direction, fuel, threatened structures, escape routes, and safety zones, and assign structure-protection groups.",
+      "Triage structures as defensible or non-defensible and state the trigger points for withdrawal out loud to command.",
+      "Deploy a mobile attack: advance with the engine, protect the crew with a charged line, and knock down spot fires threatening the assigned structure.",
+      "Reposition on command when wind shifts: account for every member, move to the next defensible structure, and report PAR after the move.",
+      "Rotate crews through rehab: check vitals, hydrate, and cool before returning to work, and report any heat symptoms early.",
+      "Reset and rotate so every member performs triage, mobile attack, pump operation, and the PAR report."
     ],
-    safety: "Full PPE. Never charge a line with a member standing over it. Confirm the standpipe zone and sprinkler status with command before connecting, and chock and flag supply lines crossing traffic lanes.",
-    benchmark: "Crew establishes hydrant supply and a charged standpipe attack line with correct pressures in under 5 minutes, with clear radio reports and no loss of water during the transition.",
-    relatedSops: ["SOP 689 — Water Supply", "SOP 698 — Standpipe Gauge Utilization", "SOP 903 — Pump And Nozzle Maintenance"]
+    safety: "Full wildland or structural PPE as assigned. Never work ahead of an unburned escape route. Watch for heat exhaustion: any member with altered mentation, hot dry skin, or collapse is a medical emergency, cool rapidly and transport. Maintain crew integrity in smoke and wind shifts.",
+    benchmark: "Crew completes triage of three simulated structures, a mobile-attack knockdown, and a wind-shift repositioning with a complete PAR in under 12 minutes, with no member unaccounted for.",
+    relatedSops: ["SOP 351 — General Department Safety", "SOP 365 — Incident Safety Officer", "SOP 359 — Personal Protective Equipment"]
   },
   tabletop: {
     duration: "15–20 minutes",
-    title: "First Five Minutes at a Fatal House Fire",
-    scenario: "Crews arrive at a single-story Florida slab-on-grade home with heavy fire and reports of occupants inside. The primary search finds victims who do not survive, and command must shift from rescue to recovery, notifications, and scene preservation without losing accountability or compassion for the family on scene.",
-    nfpa: "NFPA 1561 · NFPA 1500",
+    title: "Let It Burn or Contain It: Diesel Tanker Fire Decision",
+    scenario: "A diesel tanker trailer is fully involved near a creek in your first-due area. Command must decide whether to attack, protect exposures, or let the fuel burn under control to prevent contaminated runoff, while managing HazMat notifications and public safety.",
+    nfpa: "NFPA 470 · NFPA 1561",
     injects: [
-      { time: "0 min", text: "Working fire, occupants reported inside. Assign search, attack, and ventilation, and state the risk profile and the initial strategy." },
-      { time: "5 min", text: "Search crews locate victims and begin removal and resuscitation efforts. What is reported to command, what medical resources are requested, and who meets the family outside?" },
-      { time: "10 min", text: "Resuscitation is unsuccessful. How does command shift assignments, preserve the scene for investigators, and start department notifications?" },
-      { time: "15 min", text: "Neighbors and media gather and a crew member is visibly shaken. What are the next steps for the family liaison, crew support, and a post-incident analysis?" }
+      { time: "0–4 min", text: "First engine arrives, tanker fully involved, no exposures immediately threatened, creek is downhill from the scene. What is the initial strategy and who is notified?" },
+      { time: "5–9 min", text: "Wind pushes smoke over a nearby roadway and residents begin self-evacuating. Do you expand the hot zone and request HazMat and law enforcement?" },
+      { time: "10–14 min", text: "A foam supply is limited and the fuel load is unknown. Attack, contain runoff with dikes, or controlled burn: defend the choice." },
+      { time: "15–20 min", text: "Fire is diminishing but runoff is sheening toward the creek. What decon, environmental notifications, and post-incident analysis are required?" }
     ],
     questions: [
-      { group: "Firefighters", items: ["How do you report a victim find clearly without tying up the tactical channel?", "What do you protect and avoid disturbing once a fire turns fatal?", "When do you speak up if you or your partner need to step out after a fatal call?"] },
-      { group: "Officers", items: ["How do you balance an aggressive search against crew risk when survival is unlikely?", "What notifications, liaison assignments, and documentation start in the first hour after a fatal fire?", "How do you schedule and frame the post-incident analysis so lessons are captured without blame?"] }
+      { group: "Firefighters", items: ["What cues tell you diesel runoff is a bigger long-term problem than the fire itself?", "Where do you place apparatus and crews relative to wind, slope, and the creek?"] },
+      { group: "Officers", items: ["When is a controlled burn the most defensible command decision, and how do you document it?", "Which notifications (HazMat, environmental, dispatch, neighboring agencies) must happen in the first 15 minutes?"] }
     ],
-    teachingPoints: ["Report victim finds early and plainly: location, number, and what help is needed.", "A fatal outcome changes the mission, not the discipline: accountability, scene preservation, and notifications all tighten.", "Family liaison is assigned early and is the single point of contact.", "Every fatal fire gets a post-incident analysis and a crew wellness check."],
-    relatedSops: ["SOP 223 — Ff Lodd", "SOP 220 — Post Incident Analysis", "SOP 365 — Incident Safety Officer"]
+    teachingPoints: ["Life safety first, then environmental protection: contaminated runoff can create a larger incident than the fire.", "Use foam, diking, and distance before committing crews close to a fully involved fuel tanker.", "Early HazMat and environmental notifications protect the community and the department's decision record."],
+    relatedSops: ["SOP 693 — Foam Operations", "SOP 365 — Incident Safety Officer", "SOP 351 — General Department Safety"]
   }
 };
 /* DAILY-DRILLS-END */
 
 /* DRILL-LIBRARY-START — Prepend each morning's two drills to this array, newest first. */
 const DRILL_LIBRARY = [
+  {
+    updatedThrough: "October 17, 2026",
+    dateSort: "2026-10-17",
+    date: "October 17, 2026",
+    type: "Practical",
+    title: "Protect the Interface: WUI Structure Protection and Mobile Attack",
+    topic: "Wildland-urban interface structure protection and mobile attack",
+    summary: "Protect exposures and attack a wind-driven wildland-urban interface fire in a Florida subdivision, prioritizing life safety, structure triage, and crew accountability in heat and wind.",
+    nfpa: ["NFPA 1144", "NFPA 1051", "NFPA 1500"],
+    relatedSops: ["SOP 351 — General Department Safety", "SOP 365 — Incident Safety Officer", "SOP 359 — Personal Protective Equipment"],
+    details: {
+      equipment: ["Engine with pump panel", "Wildland PPE and structural PPE", "Hand tools and hose packs", "Portable radios", "Thermal imaging camera", "Water supply / hydrant kit", "Stopwatch"],
+      evolutions: [
+        "Size up the interface: identify wind direction, fuel, threatened structures, escape routes, and safety zones, and assign structure-protection groups.",
+        "Triage structures as defensible or non-defensible and state the trigger points for withdrawal out loud to command.",
+        "Deploy a mobile attack: advance with the engine, protect the crew with a charged line, and knock down spot fires threatening the assigned structure.",
+        "Reposition on command when wind shifts: account for every member, move to the next defensible structure, and report PAR after the move.",
+        "Rotate crews through rehab: check vitals, hydrate, and cool before returning to work, and report any heat symptoms early.",
+        "Reset and rotate so every member performs triage, mobile attack, pump operation, and the PAR report."
+      ],
+      safety: "Full wildland or structural PPE as assigned. Never work ahead of an unburned escape route. Watch for heat exhaustion: any member with altered mentation, hot dry skin, or collapse is a medical emergency, cool rapidly and transport. Maintain crew integrity in smoke and wind shifts.",
+      benchmark: "Crew completes triage of three simulated structures, a mobile-attack knockdown, and a wind-shift repositioning with a complete PAR in under 12 minutes, with no member unaccounted for."
+    }
+  },
+  {
+    updatedThrough: "October 17, 2026",
+    dateSort: "2026-10-17",
+    date: "October 17, 2026",
+    type: "Tabletop",
+    title: "Let It Burn or Contain It: Diesel Tanker Fire Decision",
+    topic: "Fuel tanker fire strategy and runoff control",
+    summary: "A diesel tanker trailer is fully involved near a creek in your first-due area. Command must decide whether to attack, protect exposures, or let the fuel burn under control to prevent contaminated runoff, while managing HazMat notifications and public safety.",
+    nfpa: ["NFPA 470", "NFPA 1561"],
+    relatedSops: ["SOP 693 — Foam Operations", "SOP 365 — Incident Safety Officer", "SOP 351 — General Department Safety"],
+    details: {
+      scenario: "A diesel tanker trailer is fully involved near a creek in your first-due area. Command must decide whether to attack, protect exposures, or let the fuel burn under control to prevent contaminated runoff, while managing HazMat notifications and public safety.",
+      injects: [
+        { time: "0–4 min", text: "First engine arrives, tanker fully involved, no exposures immediately threatened, creek is downhill from the scene. What is the initial strategy and who is notified?" },
+        { time: "5–9 min", text: "Wind pushes smoke over a nearby roadway and residents begin self-evacuating. Do you expand the hot zone and request HazMat and law enforcement?" },
+        { time: "10–14 min", text: "A foam supply is limited and the fuel load is unknown. Attack, contain runoff with dikes, or controlled burn: defend the choice." },
+        { time: "15–20 min", text: "Fire is diminishing but runoff is sheening toward the creek. What decon, environmental notifications, and post-incident analysis are required?" }
+      ],
+      questions: [
+        { group: "Firefighters", items: ["What cues tell you diesel runoff is a bigger long-term problem than the fire itself?", "Where do you place apparatus and crews relative to wind, slope, and the creek?"] },
+        { group: "Officers", items: ["When is a controlled burn the most defensible command decision, and how do you document it?", "Which notifications (HazMat, environmental, dispatch, neighboring agencies) must happen in the first 15 minutes?"] }
+      ],
+      teachingPoints: ["Life safety first, then environmental protection: contaminated runoff can create a larger incident than the fire.", "Use foam, diking, and distance before committing crews close to a fully involved fuel tanker.", "Early HazMat and environmental notifications protect the community and the department's decision record."]
+    }
+  },
   {
     updatedThrough: "October 16, 2026",
     dateSort: "2026-10-16",
@@ -599,23 +648,25 @@ const DRILL_LIBRARY = [
 
 /* DAILY-DATA-START — Replace this one object during the morning artifact update. */
 const DASHBOARD_DATA = {
-  updatedThrough: "October 16, 2026",
+  updatedThrough: "October 17, 2026",
   drill: {
     duration: "20–45 minutes",
-    title: "Pump It Right: Hydrant to Standpipe in a Florida Condo",
-    intro: "Establish a reliable water supply at a Florida condo fire, from hydrant hookup through standpipe connection and pump pressures, so attack crews never lose water when sprinklers are flowing.",
+    title: "Protect the Interface: WUI Structure Protection and Mobile Attack",
+    intro: "Protect exposures and attack a wind-driven wildland-urban interface fire in a Florida subdivision, prioritizing life safety, structure triage, and crew accountability in heat and wind.",
     steps: [
-      "Size up the condo: locate the hydrant, the fire department connection, and the standpipe outlet, and name who owns each task.",
-      "Hook the hydrant, charge the supply line, and confirm steady intake pressure and tank-to-hydrant transition without losing water.",
-      "Connect to the fire department connection, charge the standpipe, and check pressure at the outlet gauge before the attack crew calls for water.",
-      "Advance the attack line from the standpipe outlet, set the correct pump discharge pressure for the elevation and hose layout, and report pressures by radio.",
-      "Simulate a failure: kink, burst section, or low hydrant pressure. Troubleshoot, switch supply, and restore water without abandoning the attack crew.",
-      "Reset and rotate so every member hooks the hydrant, connects the standpipe, and runs the pump panel."
+      "Size up the interface: identify wind direction, fuel, threatened structures, escape routes, and safety zones, and assign structure-protection groups.",
+      "Triage structures as defensible or non-defensible and state the trigger points for withdrawal out loud to command.",
+      "Deploy a mobile attack: advance with the engine, protect the crew with a charged line, and knock down spot fires threatening the assigned structure.",
+      "Reposition on command when wind shifts: account for every member, move to the next defensible structure, and report PAR after the move.",
+      "Rotate crews through rehab: check vitals, hydrate, and cool before returning to work, and report any heat symptoms early.",
+      "Reset and rotate so every member performs triage, mobile attack, pump operation, and the PAR report."
     ],
-    nfpa: "NFPA 1001 · NFPA 1500 · NFPA 1410",
-    relatedSops: ["SOP 689 — Water Supply", "SOP 698 — Standpipe Gauge Utilization", "SOP 903 — Pump And Nozzle Maintenance"]
+    nfpa: "NFPA 1144 · NFPA 1051 · NFPA 1500",
+    relatedSops: ["SOP 351 — General Department Safety", "SOP 365 — Incident Safety Officer", "SOP 359 — Personal Protective Equipment"]
   },
-  daily: []
+  daily: [
+    {"category": "rescue", "state": "PA", "sort": "2026-10-15", "month": 10, "department": "Edinboro Fire Department (PA)", "date": "October 15, 2026", "outcome": "Crews forced entry into a house fire with reports of occupants trapped, found a civilian on the first floor, removed the civilian from the building, and the civilian was flown to a burn center in critical condition.", "url": "https://www.goerie.com/story/news/fire/2026/10/16/fire-residential-structure-edinboro-man-critical-condition/92279874007/", "sops": ["SOP 697 — Thermal Imaging Cameras (Tic)", "SOP 359 — Personal Protective Equipment", "SOP 365 — Incident Safety Officer"], "tag": "RESCUE"}
+  ]
 };
 /* DAILY-DATA-END */
 
@@ -624,6 +675,21 @@ const SOP_LIBRARY = [{"sop":"223","title":"Ff Serious Injury","label":"SOP 223 �
 /* SOP-LIBRARY-END */
 
 const incidents = [
+  {
+    "category": "rescue",
+    "state": "PA",
+    "sort": "2026-10-15",
+    "month": 10,
+    "department": "Edinboro Fire Department (PA)",
+    "date": "October 15, 2026",
+    "outcome": "Crews forced entry into a house fire with reports of occupants trapped, found a civilian on the first floor, removed the civilian from the building, and the civilian was flown to a burn center in critical condition.",
+    "url": "https://www.goerie.com/story/news/fire/2026/10/16/fire-residential-structure-edinboro-man-critical-condition/92279874007/",
+    "sops": [
+      "SOP 697 — Thermal Imaging Cameras (Tic)",
+      "SOP 359 — Personal Protective Equipment",
+      "SOP 365 — Incident Safety Officer"
+    ]
+  },
   {
     "category": "closecall",
     "state": "TX",
@@ -3047,7 +3113,7 @@ incidents.forEach(incident=>{incident.sops=Array.isArray(incident.sops)&&inciden
 const YTD_TOTALS = {
   lodd: { total:70, sub:"31 INCIDENT-RELATED · 32 MEDICAL · 7 CAUSE PENDING · 5 FLORIDA · 65 NATIONAL" },
   crash: { total:31, sub:"8 FATAL · 14 SERIOUS · 9 MINOR" },
-  rescue: { total:20, sub:"7 FLORIDA · 13 NATIONAL" },
+  rescue: { total:21, sub:"7 FLORIDA · 14 NATIONAL" },
   mayday: { total:79, sub:"73 VERIFIED · 6 UNVERIFIED" },
   closecall: { total:14, sub:"5 FLORIDA · 9 NATIONAL" }
 };
