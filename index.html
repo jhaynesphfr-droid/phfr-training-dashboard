@@ -194,48 +194,97 @@
 <script>
 /* DAILY-DRILLS-START — Replace only this object during the morning drill update. */
 const DAILY_DRILLS = {
-  updatedThrough: "October 18, 2026",
+  updatedThrough: "October 19, 2026",
   practical: {
     duration: "20–45 minutes",
-    title: "Catch It Right: Hydrant Inspection, Flush, and Forward Lay",
-    objective: "Inspect, flush, and flow a hydrant, then establish a forward-lay water supply and calculate available flow, so the first-due engine never waits on water at a working fire.",
-    nfpa: "NFPA 1001 · NFPA 291 · NFPA 1500",
-    equipment: ["Engine with pump panel", "Hydrant wrench and spanners", "Cap gauge and pitot gauge", "5-inch LDH supply line", "Portable radios", "Hydrant inspection form", "Stopwatch"],
+    title: "Out and Treated in 10: Victim Removal, Airway, and Transport Handoff",
+    objective: "Remove a downed occupant from a Florida townhouse-style prop, begin airway and oxygen care for smoke inhalation, package the victim, and deliver a complete transport handoff, all inside 10 minutes.",
+    nfpa: "NFPA 1001 · NFPA 1500",
+    equipment: ["Adult and child rescue manikins", "TIC", "Full PPE and SCBA", "Oxygen and airway kit", "Backboard or drag device", "Radio"],
     steps: [
-      "Inspect the assigned hydrant: check caps, gaskets, operating nut, paint and flow color coding, clearance from obstructions, and visible damage, and log every deficiency on the inspection form.",
-      "Flush the hydrant until the water runs clear, then take a static pressure reading with the cap gauge.",
-      "Flow the hydrant with the pitot gauge: record static, residual, and pitot pressures and calculate the available flow at a 20 psi residual.",
-      "Run a forward lay: a member wraps the hydrant, the engine lays 300 feet of 5-inch LDH to a simulated fire building, and the crew charges the line and flows an attack line.",
-      "Work the troubleshooting injects: a stuck cap, a low residual reading, and a hydrant found out of service. Tag the bad hydrant, notify dispatch and the water department, and shift to the alternate hydrant.",
-      "Reset and document: drain and recap the hydrant, reload the LDH, and complete the inspection log before leaving."
+      "Officer assigns removal, care, and handoff roles on arrival and confirms the victim location report.",
+      "Crew removes the adult manikin from a second-floor or rear-bedroom position using a drag device, maintaining airway awareness during the move.",
+      "At the door, care crew opens the airway, applies high-flow oxygen, and completes a rapid assessment for burns, trauma, and smoke inhalation signs.",
+      "Victim is packaged, kept warm, and moved to the simulated transport unit position.",
+      "A radio handoff is delivered: location found, time down estimate if known, airway status, injuries found, and care started.",
+      "Reset and repeat with the child manikin and rotated roles."
     ],
-    safety: "Wear a traffic vest and block the hydrant with the apparatus on any roadway. Never stand over a cap or outlet while the hydrant is pressurized. Open and close the hydrant slowly to avoid water hammer. Report a damaged or out-of-service hydrant to dispatch before leaving the area.",
-    benchmark: "Crew completes the inspection, flush, and flow calculation and is flowing an attack line from the forward lay in under 8 minutes, with the calculated available flow within 10 percent of the instructor's figure.",
-    relatedSops: ["SOP 689 — Water Supply", "SOP 905 — Vehicle And Equipment Inspection", "SOP 903 — Pump And Nozzle Maintenance"]
+    safety: "Lift with legs and communicate the move. No live victims. Stop the evolution for any real injury or equipment failure. Gloves and eye protection for all patient-care steps.",
+    benchmark: "Victim out, oxygen flowing, and handoff started within 10 minutes of arrival, with no missed step on the handoff checklist.",
+    relatedSops: ["SOP 697 — Thermal Imaging Cameras (Tic)", "SOP 359 — Personal Protective Equipment", "SOP 503 — Bloodborne Pathogen And Training Guidance"]
   },
   tabletop: {
     duration: "15–20 minutes",
-    title: "Heavy Fire on Arrival, Occupant Out Front",
-    scenario: "At 11:50 p.m. your first engine arrives at a single-story Florida home with heavy flames from the front windows and door. The sole occupant is out front with serious injuries and says a dog is still inside. No other occupants are reported. Crews begin an interior push while a second company treats the occupant.",
-    nfpa: "NFPA 1500 · NFPA 1561 · NFPA 1584",
+    title: "Blocked at the Crossing: Delayed Arrival at a Working House Fire",
+    scenario: "Your engine is first due to a reported house fire with a person trapped, two minutes from quarters. A stopped freight train blocks the only direct crossing. Dispatch advises the second-due mutual aid company is coming from the opposite side and will likely arrive first. Bystanders report a victim in a rear bedroom, and the arriving crew finds the normal route into that bedroom compromised by fire damage. Tied to the October 18, 2026 Lockland, Ohio fire, where a stopped train added several minutes to the response and the victim removed from the home later died at the hospital.",
+    nfpa: "NFPA 1561 · NFPA 1620",
     injects: [
-      { time: "0–4 min", text: "Heavy fire is venting from the front of the house and the occupant is your only source of information. What are your first three actions, and who interviews the occupant before transport?" },
-      { time: "5–9 min", text: "Interior crews report they have rescued several animals but fire conditions are worsening at the front door. Does the occupant's report change your risk profile, and do you stay interior or go transitional?" },
-      { time: "10–14 min", text: "One firefighter reports a minor injury and a second says he feels unwell. What happens next: PAR, treatment, transport, notifications, and documentation?" },
-      { time: "15–20 min", text: "The fire is out and investigators find no working smoke alarms anywhere in the home. What follow-up does your department owe this street beyond the incident report?" }
+      { time: "Minute 0", text: "Crossing blocked, train stopped with no crew visible; dispatch asks for your plan." },
+      { time: "Minute 5", text: "Second-due company arrives first and reports heavy fire and a known victim in the rear bedroom, with the hallway route compromised." },
+      { time: "Minute 9", text: "Your engine reaches the scene by an alternate route as family members arrive and a news crew begins filming." },
+      { time: "Minute 14", text: "The victim is removed in critical condition; later-arriving units are still routing around the crossing and command must assign them without stacking up apparatus." }
     ],
     questions: [
-      { group: "Firefighters", items: ["What can a self-escaped occupant tell you in 60 seconds that changes your search and attack plan?", "Why do minor injuries get reported the moment they happen instead of after the fire?"] },
-      { group: "Officers", items: ["With limited staffing, how do you split crews between the injured occupant and the fire attack without losing either?", "What notifications and documentation are required when two firefighters are transported from the same incident?"] }
+      { group: "Firefighters", items: ["What do you do in the first 60 seconds when the crossing is blocked, sit and wait, or move?", "What information does the first-arriving crew need from you by radio?", "What alternate removal points do you check when the normal bedroom route is compromised?"] },
+      { group: "Officers", items: ["When do you request mutual aid and an alternate-route assignment, at dispatch, at the blocked crossing, or on arrival?", "How do you keep command clear when the second-due company arrives first?", "What rail crossings in your first-due area can block you, and are alternate routes preplanned and shared with dispatch?"] }
     ],
-    teachingPoints: ["A self-escaped occupant is both a patient and the best intelligence source on the scene: interview early, before transport.", "Minor firefighter injuries reported early keep them minor: pull, treat, transport, and document, then run a PAR.", "A home with no working smoke alarms is a community risk reduction follow-up, not just a line in the report: plan an alarm canvass of the street."],
-    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 223 — Ff Serious Injury", "SOP 351 — General Department Safety"]
+    teachingPoints: ["Never wait idle at a blocked crossing without telling dispatch; the delay, the alternate route, and the new arrival order all go out by radio at once.", "Preplan rail crossings, bridges, and gated entries, and keep the alternate routes where every crew member can find them.", "A known victim changes the risk picture, but a compromised route means checking windows and secondary entry points early, not forcing the blocked path.", "Reassign companies cleanly when arrival order flips, and keep apparatus from stacking on the wrong side of the blockage."],
+    relatedSops: ["SOP 402 — Pre-Incident Planning", "SOP 200 — Chain Of Command", "SOP 365 — Incident Safety Officer"]
   }
 };
 /* DAILY-DRILLS-END */
 
 /* DRILL-LIBRARY-START — Prepend each morning's two drills to this array, newest first. */
 const DRILL_LIBRARY = [
+  {
+    updatedThrough: "October 19, 2026",
+    dateSort: "2026-10-19",
+    date: "October 19, 2026",
+    type: "Practical",
+    title: "Out and Treated in 10: Victim Removal, Airway, and Transport Handoff",
+    topic: "Victim removal, airway care, and transport handoff",
+    summary: "Remove a downed occupant from a Florida townhouse-style prop, begin airway and oxygen care for smoke inhalation, package the victim, and deliver a complete transport handoff, all inside 10 minutes.",
+    nfpa: ["NFPA 1001", "NFPA 1500"],
+    relatedSops: ["SOP 697 — Thermal Imaging Cameras (Tic)", "SOP 359 — Personal Protective Equipment", "SOP 503 — Bloodborne Pathogen And Training Guidance"],
+    details: {
+      equipment: ["Adult and child rescue manikins", "TIC", "Full PPE and SCBA", "Oxygen and airway kit", "Backboard or drag device", "Radio"],
+      evolutions: [
+        "Officer assigns removal, care, and handoff roles on arrival and confirms the victim location report.",
+        "Crew removes the adult manikin from a second-floor or rear-bedroom position using a drag device, maintaining airway awareness during the move.",
+        "At the door, care crew opens the airway, applies high-flow oxygen, and completes a rapid assessment for burns, trauma, and smoke inhalation signs.",
+        "Victim is packaged, kept warm, and moved to the simulated transport unit position.",
+        "A radio handoff is delivered: location found, time down estimate if known, airway status, injuries found, and care started.",
+        "Reset and repeat with the child manikin and rotated roles."
+      ],
+      safety: "Lift with legs and communicate the move. No live victims. Stop the evolution for any real injury or equipment failure. Gloves and eye protection for all patient-care steps.",
+      benchmark: "Victim out, oxygen flowing, and handoff started within 10 minutes of arrival, with no missed step on the handoff checklist."
+    }
+  },
+  {
+    updatedThrough: "October 19, 2026",
+    dateSort: "2026-10-19",
+    date: "October 19, 2026",
+    type: "Tabletop",
+    title: "Blocked at the Crossing: Delayed Arrival at a Working House Fire",
+    topic: "Delayed arrival, rail crossings, and alternate-route preplanning",
+    summary: "Your engine is first due to a reported house fire with a person trapped, two minutes from quarters. A stopped freight train blocks the only direct crossing. Dispatch advises the second-due mutual aid company is coming from the opposite side and will likely arrive first. Bystanders report a victim in a rear bedroom, and the arriving crew finds the normal route into that bedroom compromised by fire damage. Tied to the October 18, 2026 Lockland, Ohio fire, where a stopped train added several minutes to the response and the victim removed from the home later died at the hospital.",
+    nfpa: ["NFPA 1561", "NFPA 1620"],
+    relatedSops: ["SOP 402 — Pre-Incident Planning", "SOP 200 — Chain Of Command", "SOP 365 — Incident Safety Officer"],
+    details: {
+      scenario: "Your engine is first due to a reported house fire with a person trapped, two minutes from quarters. A stopped freight train blocks the only direct crossing. Dispatch advises the second-due mutual aid company is coming from the opposite side and will likely arrive first. Bystanders report a victim in a rear bedroom, and the arriving crew finds the normal route into that bedroom compromised by fire damage. Tied to the October 18, 2026 Lockland, Ohio fire, where a stopped train added several minutes to the response and the victim removed from the home later died at the hospital.",
+      injects: [
+        { time: "Minute 0", text: "Crossing blocked, train stopped with no crew visible; dispatch asks for your plan." },
+        { time: "Minute 5", text: "Second-due company arrives first and reports heavy fire and a known victim in the rear bedroom, with the hallway route compromised." },
+        { time: "Minute 9", text: "Your engine reaches the scene by an alternate route as family members arrive and a news crew begins filming." },
+        { time: "Minute 14", text: "The victim is removed in critical condition; later-arriving units are still routing around the crossing and command must assign them without stacking up apparatus." }
+      ],
+      questions: [
+        { group: "Firefighters", items: ["What do you do in the first 60 seconds when the crossing is blocked, sit and wait, or move?", "What information does the first-arriving crew need from you by radio?", "What alternate removal points do you check when the normal bedroom route is compromised?"] },
+        { group: "Officers", items: ["When do you request mutual aid and an alternate-route assignment, at dispatch, at the blocked crossing, or on arrival?", "How do you keep command clear when the second-due company arrives first?", "What rail crossings in your first-due area can block you, and are alternate routes preplanned and shared with dispatch?"] }
+      ],
+      teachingPoints: ["Never wait idle at a blocked crossing without telling dispatch; the delay, the alternate route, and the new arrival order all go out by radio at once.", "Preplan rail crossings, bridges, and gated entries, and keep the alternate routes where every crew member can find them.", "A known victim changes the risk picture, but a compromised route means checking windows and secondary entry points early, not forcing the blocked path.", "Reassign companies cleanly when arrival order flips, and keep apparatus from stacking on the wrong side of the blockage."]
+    }
+  },
   {
     updatedThrough: "October 18, 2026",
     dateSort: "2026-10-18",
@@ -697,23 +746,38 @@ const DRILL_LIBRARY = [
 
 /* DAILY-DATA-START — Replace this one object during the morning artifact update. */
 const DASHBOARD_DATA = {
-  updatedThrough: "October 18, 2026",
+  updatedThrough: "October 19, 2026",
   drill: {
     duration: "20-45 minutes",
-    title: "Catch It Right: Hydrant Inspection, Flush, and Forward Lay",
-    intro: "Inspect, flush, and flow a hydrant, then establish a forward-lay water supply and calculate available flow, so the first-due engine never waits on water at a working fire.",
+    title: "Out and Treated in 10: Victim Removal, Airway, and Transport Handoff",
+    intro: "Remove a downed occupant from a Florida townhouse-style prop, begin airway and oxygen care for smoke inhalation, package the victim, and deliver a complete transport handoff, all inside 10 minutes.",
     steps: [
-      "Inspect the assigned hydrant: check caps, gaskets, operating nut, paint and flow color coding, clearance from obstructions, and visible damage, and log every deficiency on the inspection form.",
-      "Flush the hydrant until the water runs clear, then take a static pressure reading with the cap gauge.",
-      "Flow the hydrant with the pitot gauge: record static, residual, and pitot pressures and calculate the available flow at a 20 psi residual.",
-      "Run a forward lay: a member wraps the hydrant, the engine lays 300 feet of 5-inch LDH to a simulated fire building, and the crew charges the line and flows an attack line.",
-      "Work the troubleshooting injects: a stuck cap, a low residual reading, and a hydrant found out of service. Tag the bad hydrant, notify dispatch and the water department, and shift to the alternate hydrant.",
-      "Reset and document: drain and recap the hydrant, reload the LDH, and complete the inspection log before leaving."
+      "Officer assigns removal, care, and handoff roles on arrival and confirms the victim location report.",
+      "Crew removes the adult manikin from a second-floor or rear-bedroom position using a drag device, maintaining airway awareness during the move.",
+      "At the door, care crew opens the airway, applies high-flow oxygen, and completes a rapid assessment for burns, trauma, and smoke inhalation signs.",
+      "Victim is packaged, kept warm, and moved to the simulated transport unit position.",
+      "A radio handoff is delivered: location found, time down estimate if known, airway status, injuries found, and care started.",
+      "Reset and repeat with the child manikin and rotated roles."
     ],
-    nfpa: "NFPA 1001 · NFPA 291 · NFPA 1500",
-    relatedSops: ["SOP 689 — Water Supply", "SOP 905 — Vehicle And Equipment Inspection", "SOP 903 — Pump And Nozzle Maintenance"]
+    nfpa: "NFPA 1001 · NFPA 1500",
+    relatedSops: ["SOP 697 — Thermal Imaging Cameras (Tic)", "SOP 359 — Personal Protective Equipment", "SOP 503 — Bloodborne Pathogen And Training Guidance"]
   },
-  daily: []
+  daily: [
+    {
+      tag: "RESCUE",
+      department: "Fairfax County Fire and Rescue Department (VA)",
+      date: "October 18, 2026",
+      outcome: "First-arriving crew located and removed two occupants trapped by a two-alarm townhouse fire in Springfield before additional units arrived; both occupants were transported with life-threatening injuries; a kitchen fire was then located and extinguished; no firefighter injuries.",
+      url: "https://annandaletoday.com/two-people-seriously-injured-in-house-fire/"
+    },
+    {
+      tag: "RESCUE",
+      department: "Joliet Fire Department (IL)",
+      date: "October 18, 2026",
+      outcome: "Crews rescued a resident reported sleeping on the second floor of a house fire on Herkimer Street, and then located and removed multiple pets from upstairs; the resident and pets were unharmed and no injuries were reported; fire under control in about 20 minutes.",
+      url: "https://fox32chicago.com/news/woman-pets-rescued-from-house-fire-joliet"
+    }
+  ]
 };
 /* DAILY-DATA-END */
 
@@ -3172,7 +3236,7 @@ incidents.forEach(incident=>{incident.sops=Array.isArray(incident.sops)&&inciden
 const YTD_TOTALS = {
   lodd: { total:70, sub:"31 INCIDENT-RELATED · 32 MEDICAL · 7 CAUSE PENDING · 5 FLORIDA · 65 NATIONAL" },
   crash: { total:31, sub:"8 FATAL · 14 SERIOUS · 9 MINOR" },
-  rescue: { total:21, sub:"7 FLORIDA · 14 NATIONAL" },
+  rescue: { total:23, sub:"7 FLORIDA · 16 NATIONAL" },
   mayday: { total:79, sub:"73 VERIFIED · 6 UNVERIFIED" },
   closecall: { total:15, sub:"6 FLORIDA · 9 NATIONAL" }
 };
