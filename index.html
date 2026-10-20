@@ -194,48 +194,97 @@
 <script>
 /* DAILY-DRILLS-START — Replace only this object during the morning drill update. */
 const DAILY_DRILLS = {
-  updatedThrough: "October 19, 2026",
+  updatedThrough: "October 20, 2026",
   practical: {
     duration: "20–45 minutes",
-    title: "Out and Treated in 10: Victim Removal, Airway, and Transport Handoff",
-    objective: "Remove a downed occupant from a Florida townhouse-style prop, begin airway and oxygen care for smoke inhalation, package the victim, and deliver a complete transport handoff, all inside 10 minutes.",
-    nfpa: "NFPA 1001 · NFPA 1500",
-    equipment: ["Adult and child rescue manikins", "TIC", "Full PPE and SCBA", "Oxygen and airway kit", "Backboard or drag device", "Radio"],
+    title: "Found by Sound: PASS Check, Firefighter Drag, and Rear-Exit Removal",
+    objective: "Locate a downed firefighter in a single-story Florida ranch prop using PASS sound, communicate a mayday update using the 3 Ws (Who you are, What happened / what you need, Where you are), and remove the firefighter through a rear exit within 8 minutes of the mayday. Tied to the October 19, 2026 Atoka, Tennessee mayday, where a firefighter trapped by a partial roof collapse was located by PASS chirping and removed 11 minutes after the mayday.",
+    nfpa: "NFPA 1407 · NFPA 1500 · NFPA 1001",
+    equipment: ["Downed-firefighter manikin or member in full PPE and SCBA with PASS", "TIC", "RIT pack or spare SCBA", "Drag device or webbing", "Radios", "Cones to mark the rear exit route"],
     steps: [
-      "Officer assigns removal, care, and handoff roles on arrival and confirms the victim location report.",
-      "Crew removes the adult manikin from a second-floor or rear-bedroom position using a drag device, maintaining airway awareness during the move.",
-      "At the door, care crew opens the airway, applies high-flow oxygen, and completes a rapid assessment for burns, trauma, and smoke inhalation signs.",
-      "Victim is packaged, kept warm, and moved to the simulated transport unit position.",
-      "A radio handoff is delivered: location found, time down estimate if known, airway status, injuries found, and care started.",
-      "Reset and repeat with the child manikin and rotated roles."
+      "Officer confirms PASS function and SCBA status for every member at the door, names the removal crew, and states the rear exit route.",
+      "A mayday is transmitted using the 3 Ws: who you are, what happened and what you need, where you are in the structure.",
+      "Removal crew follows the PASS chirping and the TIC to the downed firefighter in the rear bedroom area and reports location and air status.",
+      "Crew checks air, places the drag device, and removes the firefighter through the rear exit, communicating progress at the hallway and at the door.",
+      "At the door, the crew delivers a handoff: time of mayday, time out, air remaining, injuries found, and care started.",
+      "Reset and repeat with roles rotated and the downed firefighter in a second location."
     ],
-    safety: "Lift with legs and communicate the move. No live victims. Stop the evolution for any real injury or equipment failure. Gloves and eye protection for all patient-care steps.",
-    benchmark: "Victim out, oxygen flowing, and handoff started within 10 minutes of arrival, with no missed step on the handoff checklist.",
-    relatedSops: ["SOP 697 — Thermal Imaging Cameras (Tic)", "SOP 359 — Personal Protective Equipment", "SOP 503 — Bloodborne Pathogen And Training Guidance"]
+    safety: "No live fire. Stop the evolution for any real distress or any low-air alarm that is not part of the drill. Members removing the firefighter stay on air until clear of the prop. Drag with the legs and protect the neck.",
+    benchmark: "Firefighter located within 3 minutes of entry and out the rear exit within 8 minutes of the mayday, with PASS verified for every member before entry.",
+    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 359 — Personal Protective Equipment", "SOP 351 — General Department Safety"]
   },
   tabletop: {
     duration: "15–20 minutes",
-    title: "Blocked at the Crossing: Delayed Arrival at a Working House Fire",
-    scenario: "Your engine is first due to a reported house fire with a person trapped, two minutes from quarters. A stopped freight train blocks the only direct crossing. Dispatch advises the second-due mutual aid company is coming from the opposite side and will likely arrive first. Bystanders report a victim in a rear bedroom, and the arriving crew finds the normal route into that bedroom compromised by fire damage. Tied to the October 18, 2026 Lockland, Ohio fire, where a stopped train added several minutes to the response and the victim removed from the home later died at the hospital.",
-    nfpa: "NFPA 1561 · NFPA 1620",
+    title: "Struck While Loading: Protecting the Patient-Loading Zone",
+    scenario: "Your rescue is parked on a main street at 2:15 AM loading a patient on a stretcher, emergency lights activated, when a passing car strikes the rear of the unit and the stretcher is ejected. The same weekend, an ambulance moving through an intersection in another city is struck by a car whose occupants flee on foot. Tied to Bay Shore, New York (Islip Fire Department) and Troy, New York, both October 18, 2026: the Bay Shore patient sustained additional non-life-threatening injuries and was transported by a second ambulance, and two Troy firefighters were treated for minor injuries after the hit-and-run.",
+    nfpa: "NFPA 1451 · NFPA 1500 · NFPA 1561",
     injects: [
-      { time: "Minute 0", text: "Crossing blocked, train stopped with no crew visible; dispatch asks for your plan." },
-      { time: "Minute 5", text: "Second-due company arrives first and reports heavy fire and a known victim in the rear bedroom, with the hallway route compromised." },
-      { time: "Minute 9", text: "Your engine reaches the scene by an alternate route as family members arrive and a news crew begins filming." },
-      { time: "Minute 14", text: "The victim is removed in critical condition; later-arriving units are still routing around the crossing and command must assign them without stacking up apparatus." }
+      { time: "Minute 0", text: "Impact at the rear while the stretcher is halfway in. The patient is on the ground, your crew is uninjured, and the striking driver is still in the car." },
+      { time: "Minute 5", text: "A second unit is called for the patient. Traffic is stacking up, a bystander is filming, and police have not yet arrived." },
+      { time: "Minute 9", text: "In the intersection case, the striking driver has fled on foot. Your officer must give police a description and preserve the scene without delaying patient care." },
+      { time: "Minute 14", text: "The chief asks what changes on the next night shift: parking angle, blocking unit, cone placement, and who watches traffic during loading." }
     ],
     questions: [
-      { group: "Firefighters", items: ["What do you do in the first 60 seconds when the crossing is blocked, sit and wait, or move?", "What information does the first-arriving crew need from you by radio?", "What alternate removal points do you check when the normal bedroom route is compromised?"] },
-      { group: "Officers", items: ["When do you request mutual aid and an alternate-route assignment, at dispatch, at the blocked crossing, or on arrival?", "How do you keep command clear when the second-due company arrives first?", "What rail crossings in your first-due area can block you, and are alternate routes preplanned and shared with dispatch?"] }
+      { group: "Firefighters", items: ["Who watches traffic while the rest of the crew loads, and is that job assigned by name or just assumed?", "What do you do in the first 60 seconds after a strike: patient, crew check, or scene security, and in what order?", "Where do you stand so you are never between the unit and moving traffic?"] },
+      { group: "Officers", items: ["When do you request a blocking engine or a police unit for a main-street load, at dispatch or on arrival?", "What notifications and reports follow an apparatus strike, and what is preserved for the investigation?", "How do you brief crews after two strikes in one weekend without turning it into blame?"] }
     ],
-    teachingPoints: ["Never wait idle at a blocked crossing without telling dispatch; the delay, the alternate route, and the new arrival order all go out by radio at once.", "Preplan rail crossings, bridges, and gated entries, and keep the alternate routes where every crew member can find them.", "A known victim changes the risk picture, but a compromised route means checking windows and secondary entry points early, not forcing the blocked path.", "Reassign companies cleanly when arrival order flips, and keep apparatus from stacking on the wrong side of the blockage."],
-    relatedSops: ["SOP 402 — Pre-Incident Planning", "SOP 200 — Chain Of Command", "SOP 365 — Incident Safety Officer"]
+    teachingPoints: ["Loading a patient is a roadway work zone. Assign a traffic watcher by name before the stretcher moves.", "Park to protect the loading door, use a blocking unit on fast or busy roads, and keep members off the traffic side.", "After any strike: crew accountability first, patient care continues with a second unit, police and chief notifications, and preserve the scene and the apparatus.", "Impaired and fleeing drivers are a nighttime pattern. Raise roadway protection after dark, not just on highways."],
+    relatedSops: ["SOP 355 — Apparatus Safety", "SOP 362 — Traffic Safety Vests", "SOP 350 — Accident- Injury Investigation"]
   }
 };
 /* DAILY-DRILLS-END */
 
 /* DRILL-LIBRARY-START — Prepend each morning's two drills to this array, newest first. */
 const DRILL_LIBRARY = [
+  {
+    updatedThrough: "October 20, 2026",
+    dateSort: "2026-10-20",
+    date: "October 20, 2026",
+    type: "Practical",
+    title: "Found by Sound: PASS Check, Firefighter Drag, and Rear-Exit Removal",
+    topic: "PASS location, firefighter removal, and the 3 Ws mayday update",
+    summary: "Locate a downed firefighter in a single-story Florida ranch prop using PASS sound, communicate a mayday update using the 3 Ws (Who you are, What happened / what you need, Where you are), and remove the firefighter through a rear exit within 8 minutes of the mayday. Tied to the October 19, 2026 Atoka, Tennessee mayday, where a firefighter trapped by a partial roof collapse was located by PASS chirping and removed 11 minutes after the mayday.",
+    nfpa: ["NFPA 1407", "NFPA 1500", "NFPA 1001"],
+    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 359 — Personal Protective Equipment", "SOP 351 — General Department Safety"],
+    details: {
+      equipment: ["Downed-firefighter manikin or member in full PPE and SCBA with PASS", "TIC", "RIT pack or spare SCBA", "Drag device or webbing", "Radios", "Cones to mark the rear exit route"],
+      evolutions: [
+        "Officer confirms PASS function and SCBA status for every member at the door, names the removal crew, and states the rear exit route.",
+        "A mayday is transmitted using the 3 Ws: who you are, what happened and what you need, where you are in the structure.",
+        "Removal crew follows the PASS chirping and the TIC to the downed firefighter in the rear bedroom area and reports location and air status.",
+        "Crew checks air, places the drag device, and removes the firefighter through the rear exit, communicating progress at the hallway and at the door.",
+        "At the door, the crew delivers a handoff: time of mayday, time out, air remaining, injuries found, and care started.",
+        "Reset and repeat with roles rotated and the downed firefighter in a second location."
+      ],
+      safety: "No live fire. Stop the evolution for any real distress or any low-air alarm that is not part of the drill. Members removing the firefighter stay on air until clear of the prop. Drag with the legs and protect the neck.",
+      benchmark: "Firefighter located within 3 minutes of entry and out the rear exit within 8 minutes of the mayday, with PASS verified for every member before entry."
+    }
+  },
+  {
+    updatedThrough: "October 20, 2026",
+    dateSort: "2026-10-20",
+    date: "October 20, 2026",
+    type: "Tabletop",
+    title: "Struck While Loading: Protecting the Patient-Loading Zone",
+    topic: "Roadway protection during patient loading and post-strike actions",
+    summary: "Your rescue is parked on a main street at 2:15 AM loading a patient on a stretcher, emergency lights activated, when a passing car strikes the rear of the unit and the stretcher is ejected. The same weekend, an ambulance moving through an intersection in another city is struck by a car whose occupants flee on foot. Tied to Bay Shore, New York (Islip Fire Department) and Troy, New York, both October 18, 2026: the Bay Shore patient sustained additional non-life-threatening injuries and was transported by a second ambulance, and two Troy firefighters were treated for minor injuries after the hit-and-run.",
+    nfpa: ["NFPA 1451", "NFPA 1500", "NFPA 1561"],
+    relatedSops: ["SOP 355 — Apparatus Safety", "SOP 362 — Traffic Safety Vests", "SOP 350 — Accident- Injury Investigation"],
+    details: {
+      scenario: "Your rescue is parked on a main street at 2:15 AM loading a patient on a stretcher, emergency lights activated, when a passing car strikes the rear of the unit and the stretcher is ejected. The same weekend, an ambulance moving through an intersection in another city is struck by a car whose occupants flee on foot. Tied to Bay Shore, New York (Islip Fire Department) and Troy, New York, both October 18, 2026: the Bay Shore patient sustained additional non-life-threatening injuries and was transported by a second ambulance, and two Troy firefighters were treated for minor injuries after the hit-and-run.",
+      injects: [
+        { time: "Minute 0", text: "Impact at the rear while the stretcher is halfway in. The patient is on the ground, your crew is uninjured, and the striking driver is still in the car." },
+        { time: "Minute 5", text: "A second unit is called for the patient. Traffic is stacking up, a bystander is filming, and police have not yet arrived." },
+        { time: "Minute 9", text: "In the intersection case, the striking driver has fled on foot. Your officer must give police a description and preserve the scene without delaying patient care." },
+        { time: "Minute 14", text: "The chief asks what changes on the next night shift: parking angle, blocking unit, cone placement, and who watches traffic during loading." }
+      ],
+      questions: [
+        { group: "Firefighters", items: ["Who watches traffic while the rest of the crew loads, and is that job assigned by name or just assumed?", "What do you do in the first 60 seconds after a strike: patient, crew check, or scene security, and in what order?", "Where do you stand so you are never between the unit and moving traffic?"] },
+        { group: "Officers", items: ["When do you request a blocking engine or a police unit for a main-street load, at dispatch or on arrival?", "What notifications and reports follow an apparatus strike, and what is preserved for the investigation?", "How do you brief crews after two strikes in one weekend without turning it into blame?"] }
+      ],
+      teachingPoints: ["Loading a patient is a roadway work zone. Assign a traffic watcher by name before the stretcher moves.", "Park to protect the loading door, use a blocking unit on fast or busy roads, and keep members off the traffic side.", "After any strike: crew accountability first, patient care continues with a second unit, police and chief notifications, and preserve the scene and the apparatus.", "Impaired and fleeing drivers are a nighttime pattern. Raise roadway protection after dark, not just on highways."]
+    }
+  },
   {
     updatedThrough: "October 19, 2026",
     dateSort: "2026-10-19",
@@ -746,36 +795,43 @@ const DRILL_LIBRARY = [
 
 /* DAILY-DATA-START — Replace this one object during the morning artifact update. */
 const DASHBOARD_DATA = {
-  updatedThrough: "October 19, 2026",
+  updatedThrough: "October 20, 2026",
   drill: {
     duration: "20-45 minutes",
-    title: "Out and Treated in 10: Victim Removal, Airway, and Transport Handoff",
-    intro: "Remove a downed occupant from a Florida townhouse-style prop, begin airway and oxygen care for smoke inhalation, package the victim, and deliver a complete transport handoff, all inside 10 minutes.",
+    title: "Found by Sound: PASS Check, Firefighter Drag, and Rear-Exit Removal",
+    intro: "Locate a downed firefighter in a single-story Florida ranch prop using PASS sound, communicate a mayday update using the 3 Ws (Who you are, What happened / what you need, Where you are), and remove the firefighter through a rear exit within 8 minutes of the mayday. Tied to the October 19, 2026 Atoka, Tennessee mayday, where a firefighter trapped by a partial roof collapse was located by PASS chirping and removed 11 minutes after the mayday.",
     steps: [
-      "Officer assigns removal, care, and handoff roles on arrival and confirms the victim location report.",
-      "Crew removes the adult manikin from a second-floor or rear-bedroom position using a drag device, maintaining airway awareness during the move.",
-      "At the door, care crew opens the airway, applies high-flow oxygen, and completes a rapid assessment for burns, trauma, and smoke inhalation signs.",
-      "Victim is packaged, kept warm, and moved to the simulated transport unit position.",
-      "A radio handoff is delivered: location found, time down estimate if known, airway status, injuries found, and care started.",
-      "Reset and repeat with the child manikin and rotated roles."
+      "Officer confirms PASS function and SCBA status for every member at the door, names the removal crew, and states the rear exit route.",
+      "A mayday is transmitted using the 3 Ws: who you are, what happened and what you need, where you are in the structure.",
+      "Removal crew follows the PASS chirping and the TIC to the downed firefighter in the rear bedroom area and reports location and air status.",
+      "Crew checks air, places the drag device, and removes the firefighter through the rear exit, communicating progress at the hallway and at the door.",
+      "At the door, the crew delivers a handoff: time of mayday, time out, air remaining, injuries found, and care started.",
+      "Reset and repeat with roles rotated and the downed firefighter in a second location."
     ],
-    nfpa: "NFPA 1001 · NFPA 1500",
-    relatedSops: ["SOP 697 — Thermal Imaging Cameras (Tic)", "SOP 359 — Personal Protective Equipment", "SOP 503 — Bloodborne Pathogen And Training Guidance"]
+    nfpa: "NFPA 1407 · NFPA 1500 · NFPA 1001",
+    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 359 — Personal Protective Equipment", "SOP 351 — General Department Safety"]
   },
   daily: [
     {
-      tag: "RESCUE",
-      department: "Fairfax County Fire and Rescue Department (VA)",
-      date: "October 18, 2026",
-      outcome: "First-arriving crew located and removed two occupants trapped by a two-alarm townhouse fire in Springfield before additional units arrived; both occupants were transported with life-threatening injuries; a kitchen fire was then located and extinguished; no firefighter injuries.",
-      url: "https://annandaletoday.com/two-people-seriously-injured-in-house-fire/"
+      tag: "MAYDAY",
+      department: "Atoka Fire Department (TN)",
+      date: "October 19, 2026",
+      outcome: "A firefighter became trapped after a partial roof collapse at a house fire, called a mayday at 4:51 AM, was located by PASS device chirping, and was removed at 5:02 AM with burns; the firefighter was treated and released. The family was already outside the home.",
+      url: "https://www.firefighterclosecalls.com/firefighter-burned-mayday-at-house-fire-tennessee/"
     },
     {
-      tag: "RESCUE",
-      department: "Joliet Fire Department (IL)",
+      tag: "CRASH",
+      department: "Troy Fire Department (NY)",
       date: "October 18, 2026",
-      outcome: "Crews rescued a resident reported sleeping on the second floor of a house fire on Herkimer Street, and then located and removed multiple pets from upstairs; the resident and pets were unharmed and no injuries were reported; fire under control in about 20 minutes.",
-      url: "https://fox32chicago.com/news/woman-pets-rescued-from-house-fire-joliet"
+      outcome: "A city ambulance was struck at 10th Street and Peoples Avenue at about 8:00 PM by a car whose occupants fled on foot; two firefighters were treated for minor injuries and released; the ambulance was heavily damaged and believed totaled; a driver was arrested Monday and charged with leaving the scene and failure to stop at a stop sign.",
+      url: "https://www.firehouse.com/apparatus/type/ambulance/video/55412994/man-charged-for-hit-and-run-ambulance-crash-that-injured-troy-ny-firefighters"
+    },
+    {
+      tag: "CRASH",
+      department: "Islip Fire Department (NY)",
+      date: "October 18, 2026",
+      outcome: "A parked fire department ambulance with its emergency lights activated was struck at 2:15 AM in Bay Shore by an alleged intoxicated driver while the crew was loading a patient; the stretcher was ejected and the patient sustained additional non-life-threatening injuries and was transported by a second ambulance; no firefighter injuries; the driver was arrested on DWI charges.",
+      url: "https://thecrimebrief.cfx.bz/blog/woman-accused-of-drunk-driving-crashes-honda-into-ambulance-injuring-patient-being-loaded-inside"
     }
   ]
 };
@@ -786,6 +842,54 @@ const SOP_LIBRARY = [{"sop":"223","title":"Ff Serious Injury","label":"SOP 223 �
 /* SOP-LIBRARY-END */
 
 const incidents = [
+  {
+    "category": "mayday",
+    "state": "TN",
+    "sort": "2026-10-19",
+    "month": 10,
+    "department": "Atoka Fire Department (TN)",
+    "date": "October 19, 2026",
+    "outcome": "A firefighter became trapped after a partial roof collapse at a house fire, called a mayday at 4:51 AM, was located by PASS device chirping, and was removed at 5:02 AM with burns; the firefighter was treated and released. The family was already outside the home.",
+    "url": "https://www.firefighterclosecalls.com/firefighter-burned-mayday-at-house-fire-tennessee/",
+    "verification": "verified",
+    "sops": [
+      "SOP 365 — Incident Safety Officer",
+      "SOP 351 — General Department Safety",
+      "SOP 223 — Ff Serious Injury"
+    ]
+  },
+  {
+    "category": "crash",
+    "severity": "minor",
+    "state": "NY",
+    "sort": "2026-10-18",
+    "month": 10,
+    "department": "Troy Fire Department (NY)",
+    "date": "October 18, 2026",
+    "outcome": "A city ambulance was struck at 10th Street and Peoples Avenue at about 8:00 PM by a car whose occupants fled on foot; two firefighters were treated for minor injuries and released; the ambulance was heavily damaged and believed totaled; a driver was arrested Monday and charged with leaving the scene and failure to stop at a stop sign.",
+    "url": "https://www.firehouse.com/apparatus/type/ambulance/video/55412994/man-charged-for-hit-and-run-ambulance-crash-that-injured-troy-ny-firefighters",
+    "sops": [
+      "SOP 355 — Apparatus Safety",
+      "SOP 350 — Accident- Injury Investigation",
+      "SOP 362 — Traffic Safety Vests"
+    ]
+  },
+  {
+    "category": "crash",
+    "severity": "minor",
+    "state": "NY",
+    "sort": "2026-10-18",
+    "month": 10,
+    "department": "Islip Fire Department (NY)",
+    "date": "October 18, 2026",
+    "outcome": "A parked fire department ambulance with its emergency lights activated was struck at 2:15 AM in Bay Shore by an alleged intoxicated driver while the crew was loading a patient; the stretcher was ejected and the patient sustained additional non-life-threatening injuries and was transported by a second ambulance; no firefighter injuries; the driver was arrested on DWI charges.",
+    "url": "https://thecrimebrief.cfx.bz/blog/woman-accused-of-drunk-driving-crashes-honda-into-ambulance-injuring-patient-being-loaded-inside",
+    "sops": [
+      "SOP 355 — Apparatus Safety",
+      "SOP 362 — Traffic Safety Vests",
+      "SOP 350 — Accident- Injury Investigation"
+    ]
+  },
   {
     "category": "rescue",
     "state": "PA",
@@ -3235,9 +3339,9 @@ incidents.forEach(incident=>{incident.sops=Array.isArray(incident.sops)&&inciden
 
 const YTD_TOTALS = {
   lodd: { total:70, sub:"31 INCIDENT-RELATED · 32 MEDICAL · 7 CAUSE PENDING · 5 FLORIDA · 65 NATIONAL" },
-  crash: { total:31, sub:"8 FATAL · 14 SERIOUS · 9 MINOR" },
+  crash: { total:33, sub:"8 FATAL · 14 SERIOUS · 11 MINOR" },
   rescue: { total:23, sub:"7 FLORIDA · 16 NATIONAL" },
-  mayday: { total:79, sub:"73 VERIFIED · 6 UNVERIFIED" },
+  mayday: { total:80, sub:"74 VERIFIED · 6 UNVERIFIED" },
   closecall: { total:15, sub:"6 FLORIDA · 9 NATIONAL" }
 };
 
