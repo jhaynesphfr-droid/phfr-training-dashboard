@@ -194,48 +194,97 @@
 <script>
 /* DAILY-DRILLS-START — Replace only this object during the morning drill update. */
 const DAILY_DRILLS = {
-  updatedThrough: "October 20, 2026",
+  updatedThrough: "October 21, 2026",
   practical: {
     duration: "20–45 minutes",
-    title: "Found by Sound: PASS Check, Firefighter Drag, and Rear-Exit Removal",
-    objective: "Locate a downed firefighter in a single-story Florida ranch prop using PASS sound, communicate a mayday update using the 3 Ws (Who you are, What happened / what you need, Where you are), and remove the firefighter through a rear exit within 8 minutes of the mayday. Tied to the October 19, 2026 Atoka, Tennessee mayday, where a firefighter trapped by a partial roof collapse was located by PASS chirping and removed 11 minutes after the mayday.",
-    nfpa: "NFPA 1407 · NFPA 1500 · NFPA 1001",
-    equipment: ["Downed-firefighter manikin or member in full PPE and SCBA with PASS", "TIC", "RIT pack or spare SCBA", "Drag device or webbing", "Radios", "Cones to mark the rear exit route"],
+    title: "Collapse Watch: Sound the Floor, Read the Building, Pull Out on Time",
+    objective: "At a Florida single-story slab-on-grade ranch prop with a simulated fire-weakened floor and wall section, crews sound floors before entry and at each doorway, call out three collapse indicators, and complete a full crew withdrawal to the exterior within 2 minutes of the pull-out order. Tied to Wilmington, Delaware, October 20, 2026, where crews making an aggressive interior attack at a three-story townhome were driven back when the second floor collapsed, and to Plano, Texas, where a roof collapsed onto firefighters with no injuries.",
+    nfpa: "NFPA 1500 · NFPA 1561 · NFPA 1001",
+    equipment: ["Training prop with a marked weak-floor zone", "Pike poles and flat-head axes for sounding", "TIC", "Radios and PASS devices", "Cones marking the collapse zone", "Accountability board"],
     steps: [
-      "Officer confirms PASS function and SCBA status for every member at the door, names the removal crew, and states the rear exit route.",
-      "A mayday is transmitted using the 3 Ws: who you are, what happened and what you need, where you are in the structure.",
-      "Removal crew follows the PASS chirping and the TIC to the downed firefighter in the rear bedroom area and reports location and air status.",
-      "Crew checks air, places the drag device, and removes the firefighter through the rear exit, communicating progress at the hallway and at the door.",
-      "At the door, the crew delivers a handoff: time of mayday, time out, air remaining, injuries found, and care started.",
-      "Reset and repeat with roles rotated and the downed firefighter in a second location."
+      "Officer gives a size-up from the street, names the collapse zone, states the pull-out triggers (sagging floor, cracked or leaning walls, heavy fire in voids, water adding weight), and confirms PASS and accountability.",
+      "First crew sounds the floor at the door and at each step into the front room using a tool, calling out solid or spongy findings on the radio.",
+      "Instructor reveals a hidden indicator card (sagging ceiling, cracked masonry, smoke from cracks, distorted door frame). The crew that finds it reports it in plain language and recommends withdrawal.",
+      "Command orders a full withdrawal. All crews exit by the nearest safe route, a PAR is completed at the door, and times are recorded.",
+      "Crews reposition to a defensive position outside the collapse zone, set a master stream position, and state what would have to change before anyone re-enters.",
+      "Reset with indicators in new locations and roles rotated; the second crew must beat the first crew's withdrawal time."
     ],
-    safety: "No live fire. Stop the evolution for any real distress or any low-air alarm that is not part of the drill. Members removing the firefighter stay on air until clear of the prop. Drag with the legs and protect the neck.",
-    benchmark: "Firefighter located within 3 minutes of entry and out the rear exit within 8 minutes of the mayday, with PASS verified for every member before entry.",
-    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 359 — Personal Protective Equipment", "SOP 351 — General Department Safety"]
+    safety: "No live fire and no actual weakened floors. Nobody stands in the marked collapse zone during the defensive phase. Stop for any real injury or distress. Tools are carried low and sounding is done from a protected position where possible.",
+    benchmark: "Every floor sounded before weight is committed, all three planted indicators found and reported, and full crew out with PAR complete within 2 minutes of the pull-out order.",
+    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 351 — General Department Safety", "SOP 359 — Personal Protective Equipment"]
   },
   tabletop: {
     duration: "15–20 minutes",
-    title: "Struck While Loading: Protecting the Patient-Loading Zone",
-    scenario: "Your rescue is parked on a main street at 2:15 AM loading a patient on a stretcher, emergency lights activated, when a passing car strikes the rear of the unit and the stretcher is ejected. The same weekend, an ambulance moving through an intersection in another city is struck by a car whose occupants flee on foot. Tied to Bay Shore, New York (Islip Fire Department) and Troy, New York, both October 18, 2026: the Bay Shore patient sustained additional non-life-threatening injuries and was transported by a second ambulance, and two Troy firefighters were treated for minor injuries after the hit-and-run.",
-    nfpa: "NFPA 1451 · NFPA 1500 · NFPA 1561",
+    title: "Shots at the Station: Tanker Out of Service, Crew Safe, Coverage Holds",
+    scenario: "On a Monday morning a deputy parking at your station discovers seven bullet holes in the station and one round through both windshields of the tanker parked inside. No member was present and nobody is injured, but the tanker is out of service and the station is a crime scene. Tied to Leon County, Florida, October 19, 2026, where the Lake Talquin Volunteer Fire Department found its Station 32 and tanker struck by bullets sometime between Friday night and Monday morning, with a second tanker available at a sister station adding response time.",
+    nfpa: "NFPA 1500 · NFPA 1561",
     injects: [
-      { time: "Minute 0", text: "Impact at the rear while the stretcher is halfway in. The patient is on the ground, your crew is uninjured, and the striking driver is still in the car." },
-      { time: "Minute 5", text: "A second unit is called for the patient. Traffic is stacking up, a bystander is filming, and police have not yet arrived." },
-      { time: "Minute 9", text: "In the intersection case, the striking driver has fled on foot. Your officer must give police a description and preserve the scene without delaying patient care." },
-      { time: "Minute 14", text: "The chief asks what changes on the next night shift: parking angle, blocking unit, cone placement, and who watches traffic during loading." }
+      { time: "0-5 min", text: "First member arrives, confirms no injuries, and finds a second hole through the tank area. Who is notified first, what gets touched, and what stays untouched as evidence?" },
+      { time: "5-10 min", text: "Dispatch reports a working house fire in that station's first-due area. The tanker is out of service. Where does water come from, what mutual aid is started, and who tells the public?" },
+      { time: "10-15 min", text: "A reporter and several residents are at the fence asking if the station is closing, and a member wants to post photos on social media. What is released, by whom, and what stays off social media?" },
+      { time: "15-20 min", text: "The sheriff clears the building but the tanker needs a windshield and a tank inspection before it can return. What inspections, documentation, and investigation steps close the loop?" }
     ],
     questions: [
-      { group: "Firefighters", items: ["Who watches traffic while the rest of the crew loads, and is that job assigned by name or just assumed?", "What do you do in the first 60 seconds after a strike: patient, crew check, or scene security, and in what order?", "Where do you stand so you are never between the unit and moving traffic?"] },
-      { group: "Officers", items: ["When do you request a blocking engine or a police unit for a main-street load, at dispatch or on arrival?", "What notifications and reports follow an apparatus strike, and what is preserved for the investigation?", "How do you brief crews after two strikes in one weekend without turning it into blame?"] }
+      { group: "Firefighters", items: ["What do you protect first at a station crime scene, people, evidence, or apparatus, and in what order?", "What is your water plan when your tanker is down?"] },
+      { group: "Officers", items: ["Who owns notifications (chief, law enforcement, PIO, insurance, neighboring departments)?", "When do you place an apparatus out of service and what documentation follows?", "How do you keep coverage whole without burning out the sister station?"] }
     ],
-    teachingPoints: ["Loading a patient is a roadway work zone. Assign a traffic watcher by name before the stretcher moves.", "Park to protect the loading door, use a blocking unit on fast or busy roads, and keep members off the traffic side.", "After any strike: crew accountability first, patient care continues with a second unit, police and chief notifications, and preserve the scene and the apparatus.", "Impaired and fleeing drivers are a nighttime pattern. Raise roadway protection after dark, not just on highways."],
-    relatedSops: ["SOP 355 — Apparatus Safety", "SOP 362 — Traffic Safety Vests", "SOP 350 — Accident- Injury Investigation"]
+    teachingPoints: ["Treat the station as a crime scene until law enforcement clears it; touch nothing that could be evidence.", "Apparatus out of service is a formal step with inspection and documentation, not a guess.", "Water supply and mutual aid get rebuilt the same morning, before the next fire.", "Only the PIO or chief speaks publicly; member social media posts can compromise an investigation."],
+    relatedSops: ["SOP 904 — Vehicle Out-Of-Service Guide", "SOP 905 — Vehicle And Equipment Inspection", "SOP 350 — Accident- Injury Investigation"]
   }
 };
 /* DAILY-DRILLS-END */
 
 /* DRILL-LIBRARY-START — Prepend each morning's two drills to this array, newest first. */
 const DRILL_LIBRARY = [
+  {
+    updatedThrough: "October 21, 2026",
+    dateSort: "2026-10-21",
+    date: "October 21, 2026",
+    type: "Practical",
+    title: "Collapse Watch: Sound the Floor, Read the Building, Pull Out on Time",
+    topic: "Collapse indicators, floor sounding, and defensive withdrawal",
+    summary: "At a Florida single-story slab-on-grade ranch prop with a simulated fire-weakened floor and wall section, crews sound floors before entry and at each doorway, call out three collapse indicators, and complete a full crew withdrawal to the exterior within 2 minutes of the pull-out order. Tied to Wilmington, Delaware, October 20, 2026, where crews making an aggressive interior attack at a three-story townhome were driven back when the second floor collapsed, and to Plano, Texas, where a roof collapsed onto firefighters with no injuries.",
+    nfpa: ["NFPA 1500", "NFPA 1561", "NFPA 1001"],
+    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 351 — General Department Safety", "SOP 359 — Personal Protective Equipment"],
+    details: {
+      equipment: ["Training prop with a marked weak-floor zone", "Pike poles and flat-head axes for sounding", "TIC", "Radios and PASS devices", "Cones marking the collapse zone", "Accountability board"],
+      evolutions: [
+        "Officer gives a size-up from the street, names the collapse zone, states the pull-out triggers (sagging floor, cracked or leaning walls, heavy fire in voids, water adding weight), and confirms PASS and accountability.",
+        "First crew sounds the floor at the door and at each step into the front room using a tool, calling out solid or spongy findings on the radio.",
+        "Instructor reveals a hidden indicator card (sagging ceiling, cracked masonry, smoke from cracks, distorted door frame). The crew that finds it reports it in plain language and recommends withdrawal.",
+        "Command orders a full withdrawal. All crews exit by the nearest safe route, a PAR is completed at the door, and times are recorded.",
+        "Crews reposition to a defensive position outside the collapse zone, set a master stream position, and state what would have to change before anyone re-enters.",
+        "Reset with indicators in new locations and roles rotated; the second crew must beat the first crew's withdrawal time."
+      ],
+      safety: "No live fire and no actual weakened floors. Nobody stands in the marked collapse zone during the defensive phase. Stop for any real injury or distress. Tools are carried low and sounding is done from a protected position where possible.",
+      benchmark: "Every floor sounded before weight is committed, all three planted indicators found and reported, and full crew out with PAR complete within 2 minutes of the pull-out order."
+    }
+  },
+  {
+    updatedThrough: "October 21, 2026",
+    dateSort: "2026-10-21",
+    date: "October 21, 2026",
+    type: "Tabletop",
+    title: "Shots at the Station: Tanker Out of Service, Crew Safe, Coverage Holds",
+    topic: "Station crime scene, apparatus out of service, and coverage",
+    summary: "On a Monday morning a deputy parking at your station discovers seven bullet holes in the station and one round through both windshields of the tanker parked inside. No member was present and nobody is injured, but the tanker is out of service and the station is a crime scene. Tied to Leon County, Florida, October 19, 2026, where the Lake Talquin Volunteer Fire Department found its Station 32 and tanker struck by bullets sometime between Friday night and Monday morning, with a second tanker available at a sister station adding response time.",
+    nfpa: ["NFPA 1500", "NFPA 1561"],
+    relatedSops: ["SOP 904 — Vehicle Out-Of-Service Guide", "SOP 905 — Vehicle And Equipment Inspection", "SOP 350 — Accident- Injury Investigation"],
+    details: {
+      scenario: "On a Monday morning a deputy parking at your station discovers seven bullet holes in the station and one round through both windshields of the tanker parked inside. No member was present and nobody is injured, but the tanker is out of service and the station is a crime scene. Tied to Leon County, Florida, October 19, 2026, where the Lake Talquin Volunteer Fire Department found its Station 32 and tanker struck by bullets sometime between Friday night and Monday morning, with a second tanker available at a sister station adding response time.",
+      injects: [
+        { time: "0-5 min", text: "First member arrives, confirms no injuries, and finds a second hole through the tank area. Who is notified first, what gets touched, and what stays untouched as evidence?" },
+        { time: "5-10 min", text: "Dispatch reports a working house fire in that station's first-due area. The tanker is out of service. Where does water come from, what mutual aid is started, and who tells the public?" },
+        { time: "10-15 min", text: "A reporter and several residents are at the fence asking if the station is closing, and a member wants to post photos on social media. What is released, by whom, and what stays off social media?" },
+        { time: "15-20 min", text: "The sheriff clears the building but the tanker needs a windshield and a tank inspection before it can return. What inspections, documentation, and investigation steps close the loop?" }
+      ],
+      questions: [
+        { group: "Firefighters", items: ["What do you protect first at a station crime scene, people, evidence, or apparatus, and in what order?", "What is your water plan when your tanker is down?"] },
+        { group: "Officers", items: ["Who owns notifications (chief, law enforcement, PIO, insurance, neighboring departments)?", "When do you place an apparatus out of service and what documentation follows?", "How do you keep coverage whole without burning out the sister station?"] }
+      ],
+      teachingPoints: ["Treat the station as a crime scene until law enforcement clears it; touch nothing that could be evidence.", "Apparatus out of service is a formal step with inspection and documentation, not a guess.", "Water supply and mutual aid get rebuilt the same morning, before the next fire.", "Only the PIO or chief speaks publicly; member social media posts can compromise an investigation."]
+    }
+  },
   {
     updatedThrough: "October 20, 2026",
     dateSort: "2026-10-20",
@@ -795,43 +844,38 @@ const DRILL_LIBRARY = [
 
 /* DAILY-DATA-START — Replace this one object during the morning artifact update. */
 const DASHBOARD_DATA = {
-  updatedThrough: "October 20, 2026",
+  updatedThrough: "October 21, 2026",
   drill: {
     duration: "20-45 minutes",
-    title: "Found by Sound: PASS Check, Firefighter Drag, and Rear-Exit Removal",
-    intro: "Locate a downed firefighter in a single-story Florida ranch prop using PASS sound, communicate a mayday update using the 3 Ws (Who you are, What happened / what you need, Where you are), and remove the firefighter through a rear exit within 8 minutes of the mayday. Tied to the October 19, 2026 Atoka, Tennessee mayday, where a firefighter trapped by a partial roof collapse was located by PASS chirping and removed 11 minutes after the mayday.",
+    title: "Collapse Watch: Sound the Floor, Read the Building, Pull Out on Time",
+    intro: "At a Florida single-story slab-on-grade ranch prop with a simulated fire-weakened floor and wall section, crews sound floors before entry and at each doorway, call out three collapse indicators, and complete a full crew withdrawal to the exterior within 2 minutes of the pull-out order. Tied to Wilmington, Delaware, October 20, 2026, where crews making an aggressive interior attack at a three-story townhome were driven back when the second floor collapsed, and to Plano, Texas, where a roof collapsed onto firefighters with no injuries.",
     steps: [
-      "Officer confirms PASS function and SCBA status for every member at the door, names the removal crew, and states the rear exit route.",
-      "A mayday is transmitted using the 3 Ws: who you are, what happened and what you need, where you are in the structure.",
-      "Removal crew follows the PASS chirping and the TIC to the downed firefighter in the rear bedroom area and reports location and air status.",
-      "Crew checks air, places the drag device, and removes the firefighter through the rear exit, communicating progress at the hallway and at the door.",
-      "At the door, the crew delivers a handoff: time of mayday, time out, air remaining, injuries found, and care started.",
-      "Reset and repeat with roles rotated and the downed firefighter in a second location."
+      "Officer gives a size-up from the street, names the collapse zone, states the pull-out triggers (sagging floor, cracked or leaning walls, heavy fire in voids, water adding weight), and confirms PASS and accountability.",
+      "First crew sounds the floor at the door and at each step into the front room using a tool, calling out solid or spongy findings on the radio.",
+      "Instructor reveals a hidden indicator card (sagging ceiling, cracked masonry, smoke from cracks, distorted door frame). The crew that finds it reports it in plain language and recommends withdrawal.",
+      "Command orders a full withdrawal. All crews exit by the nearest safe route, a PAR is completed at the door, and times are recorded.",
+      "Crews reposition to a defensive position outside the collapse zone, set a master stream position, and state what would have to change before anyone re-enters.",
+      "Reset with indicators in new locations and roles rotated; the second crew must beat the first crew's withdrawal time."
     ],
-    nfpa: "NFPA 1407 · NFPA 1500 · NFPA 1001",
-    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 359 — Personal Protective Equipment", "SOP 351 — General Department Safety"]
+    nfpa: "NFPA 1500 · NFPA 1561 · NFPA 1001",
+    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 351 — General Department Safety", "SOP 359 — Personal Protective Equipment"]
   },
   daily: [
     {
-      tag: "MAYDAY",
-      department: "Atoka Fire Department (TN)",
-      date: "October 19, 2026",
-      outcome: "A firefighter became trapped after a partial roof collapse at a house fire, called a mayday at 4:51 AM, was located by PASS device chirping, and was removed at 5:02 AM with burns; the firefighter was treated and released. The family was already outside the home.",
-      url: "https://www.firefighterclosecalls.com/firefighter-burned-mayday-at-house-fire-tennessee/"
+      tag: "RESCUE",
+      department: "Suffolk Fire & Rescue (VA)",
+      date: "October 18, 2026",
+      outcome: "Crews dispatched at 5:12 AM to a multi-family condominium fire on Nicklaus Drive found flames from the rear and all exits blocked by heavy flames; two adults and a child were rescued by ground ladders and transported with serious but non-life-threatening injuries; the fire went to three alarms and was under control at 6:28 AM.",
+      url: "https://dailydispatch.com/fire-news/virginia/two-adults-and-a-child-rescued-by-ladder-during-suffolk-condo-fire/",
+      sops: ["SOP 354 — Ladder- Safety Belts", "SOP 359 — Personal Protective Equipment", "SOP 365 — Incident Safety Officer"]
     },
     {
-      tag: "CRASH",
-      department: "Troy Fire Department (NY)",
-      date: "October 18, 2026",
-      outcome: "A city ambulance was struck at 10th Street and Peoples Avenue at about 8:00 PM by a car whose occupants fled on foot; two firefighters were treated for minor injuries and released; the ambulance was heavily damaged and believed totaled; a driver was arrested Monday and charged with leaving the scene and failure to stop at a stop sign.",
-      url: "https://www.firehouse.com/apparatus/type/ambulance/video/55412994/man-charged-for-hit-and-run-ambulance-crash-that-injured-troy-ny-firefighters"
-    },
-    {
-      tag: "CRASH",
-      department: "Islip Fire Department (NY)",
-      date: "October 18, 2026",
-      outcome: "A parked fire department ambulance with its emergency lights activated was struck at 2:15 AM in Bay Shore by an alleged intoxicated driver while the crew was loading a patient; the stretcher was ejected and the patient sustained additional non-life-threatening injuries and was transported by a second ambulance; no firefighter injuries; the driver was arrested on DWI charges.",
-      url: "https://thecrimebrief.cfx.bz/blog/woman-accused-of-drunk-driving-crashes-honda-into-ambulance-injuring-patient-being-loaded-inside"
+      tag: "RESCUE",
+      department: "Plano Fire-Rescue (TX)",
+      date: "October 21, 2026",
+      outcome: "A man was rescued by ladder from a second-story balcony at the Villas at Chase Oaks apartments after a fire that started around midnight, and was transported with minor injuries; a roof collapsed onto firefighters during the incident with no firefighter injuries; 10 units were left uninhabitable; the fire is being investigated as arson and police have a person of interest in custody.",
+      url: "https://fox4news.com/news/plano-apartment-fire-investigated-arson-person-interest-custody",
+      sops: ["SOP 354 — Ladder- Safety Belts", "SOP 365 — Incident Safety Officer", "SOP 351 — General Department Safety"]
     }
   ]
 };
@@ -842,6 +886,21 @@ const SOP_LIBRARY = [{"sop":"223","title":"Ff Serious Injury","label":"SOP 223 �
 /* SOP-LIBRARY-END */
 
 const incidents = [
+  {
+    "category": "rescue",
+    "state": "TX",
+    "sort": "2026-10-21",
+    "month": 10,
+    "department": "Plano Fire-Rescue (TX)",
+    "date": "October 21, 2026",
+    "outcome": "A man was rescued by ladder from a second-story balcony at the Villas at Chase Oaks apartments after a fire that started around midnight, and was transported with minor injuries; a roof collapsed onto firefighters during the incident with no firefighter injuries; 10 units were left uninhabitable; the fire is being investigated as arson and police have a person of interest in custody.",
+    "url": "https://fox4news.com/news/plano-apartment-fire-investigated-arson-person-interest-custody",
+    "sops": [
+      "SOP 354 — Ladder- Safety Belts",
+      "SOP 365 — Incident Safety Officer",
+      "SOP 351 — General Department Safety"
+    ]
+  },
   {
     "category": "mayday",
     "state": "TN",
@@ -856,6 +915,21 @@ const incidents = [
       "SOP 365 — Incident Safety Officer",
       "SOP 351 — General Department Safety",
       "SOP 223 — Ff Serious Injury"
+    ]
+  },
+  {
+    "category": "rescue",
+    "state": "VA",
+    "sort": "2026-10-18",
+    "month": 10,
+    "department": "Suffolk Fire & Rescue (VA)",
+    "date": "October 18, 2026",
+    "outcome": "Crews dispatched at 5:12 AM to a multi-family condominium fire on Nicklaus Drive found flames from the rear and all exits blocked by heavy flames; two adults and a child were rescued by ground ladders and transported with serious but non-life-threatening injuries; the fire went to three alarms and was under control at 6:28 AM.",
+    "url": "https://dailydispatch.com/fire-news/virginia/two-adults-and-a-child-rescued-by-ladder-during-suffolk-condo-fire/",
+    "sops": [
+      "SOP 354 — Ladder- Safety Belts",
+      "SOP 359 — Personal Protective Equipment",
+      "SOP 365 — Incident Safety Officer"
     ]
   },
   {
@@ -3340,7 +3414,7 @@ incidents.forEach(incident=>{incident.sops=Array.isArray(incident.sops)&&inciden
 const YTD_TOTALS = {
   lodd: { total:70, sub:"31 INCIDENT-RELATED · 32 MEDICAL · 7 CAUSE PENDING · 5 FLORIDA · 65 NATIONAL" },
   crash: { total:33, sub:"8 FATAL · 14 SERIOUS · 11 MINOR" },
-  rescue: { total:23, sub:"7 FLORIDA · 16 NATIONAL" },
+  rescue: { total:25, sub:"7 FLORIDA · 18 NATIONAL" },
   mayday: { total:80, sub:"74 VERIFIED · 6 UNVERIFIED" },
   closecall: { total:15, sub:"6 FLORIDA · 9 NATIONAL" }
 };
