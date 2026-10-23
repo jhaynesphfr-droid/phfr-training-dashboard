@@ -194,48 +194,97 @@
 <script>
 /* DAILY-DRILLS-START — Replace only this object during the morning drill update. */
 const DAILY_DRILLS = {
-  updatedThrough: "October 22, 2026",
+  updatedThrough: "October 23, 2026",
   practical: {
     duration: "20–45 minutes",
-    title: "Move Them Out: Assisted Living Evacuation, Window Rescue, and Resident Accountability",
-    objective: "At a Florida single-story assisted living and garden apartment style prop, crews evacuate eight simulated residents with mixed mobility (independent, walker, wheelchair, and one bed-bound resident on an evacuation sled), complete two window removals by ground ladder, and account for every resident by roster at the reunification point within 15 minutes. Tied to Clinton, Mississippi, October 21, 2026, where firefighters rescued residents through windows at a senior living fire that displaced more than 100 people and destroyed most of the building, and to balcony and interior rescues the same day in McHenry, Illinois, and Detroit, Michigan.",
-    nfpa: "NFPA 1001 · NFPA 1500 · NFPA 1620",
-    equipment: ["Ground ladders", "Evacuation sled and evacuation chair", "Wheelchair and walker props", "Resident roster and accountability board", "TIC", "Radios and PASS devices", "Simulated resident cards marked with mobility levels"],
+    title: "Breach and Reach: Exterior Wall Breach for Trapped Occupants in a Manufactured Home",
+    objective: "At a Florida single-story manufactured home / slab-on-grade prop with a partly boarded window and blocked doorway, crews size up an alternate entry point, breach a marked section of exterior wall, enter, locate two simulated trapped occupants in the bedroom area, and remove both through the breach within 12 minutes. Tied to Van Zandt County, Texas, October 21, 2026, where crews breached an exterior wall to reach four trapped children.",
+    nfpa: "NFPA 1001 · NFPA 1500",
+    equipment: ["Rotary saw and chainsaw (training props)", "Irons and hand tools", "Ground ladder", "TIC", "Radios and PASS", "Mannequins", "Marking tape", "Full PPE and SCBA"],
     steps: [
-      "Officer takes the facility roster from the staff role player, assigns one crew to the fire room hallway, one crew to window removals, and one member to the reunification point with the roster board.",
-      "Interior crew moves the walker and wheelchair residents first using the evacuation chair and team carries, calling each room clear by number on the radio as they go.",
-      "Ladder crew raises a ground ladder to the marked window, removes the window, and brings two simulated residents down with a ladder assist, keeping three points of contact and a heel check on the ladder.",
-      "Bed-bound resident is moved on the evacuation sled by two members down the hallway to the exit, with one member watching the airway and head end the whole way.",
-      "Reunification member checks every arriving resident against the roster by room number, reports any missing room to command at once, and a second crew re-checks that room with a TIC before anyone calls the building clear.",
-      "Reset with mobility levels and room locations changed, roles rotated, and the second run timed against the first."
+      "Officer completes a 360, identifies the occupant location and blocked entries, and marks the safest breach point.",
+      "Shut off simulated utilities, complete a TIC and sounding check of the wall, and call the breach plan and exit route.",
+      "Saw crew opens the marked wall in controlled cuts while a second member clears insulation and paneling; confirm the opening fits an SCBA firefighter and victim removal.",
+      "Search crew enters through the breach, searches the bedroom area, reports rooms clear by number, and locates both occupants.",
+      "Remove both occupants through the breach using a drag and team carry, and hand off for simulated airway care and transport.",
+      "Reset with occupant locations changed, rotate roles, and time the second run."
     ],
-    safety: "No live fire. Use team lifts and proper body mechanics for every carry; stop the evolution for any real pain or distress. Ladders are footed and heeled before anyone climbs. Nobody carries a resident down a ladder alone.",
-    benchmark: "All eight simulated residents out and accounted for by roster within 15 minutes, each window removal completed in under 3 minutes, and zero missed rooms on the final accountability check.",
-    relatedSops: ["SOP 402 — Pre-Incident Planning", "SOP 354 — Ladder- Safety Belts", "SOP 359 — Personal Protective Equipment"]
+    safety: "No live fire. Power tools only by qualified members with full PPE and a tool safety officer; stop for real injury, tool problem, or loss of accountability. PAR before entry and after exit; no solo breach entry.",
+    benchmark: "Breach opened and both occupants out within 12 minutes, PAR on entry and exit, zero missed rooms.",
+    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 359 — Personal Protective Equipment", "SOP 351 — General Department Safety"]
   },
   tabletop: {
     duration: "15–20 minutes",
-    title: "One of Our Own Down at Training",
-    scenario: "During a scheduled Wednesday afternoon training evolution, a firefighter suffers a sudden medical emergency and is critically injured. Crewmates start care at once and the member is transported to a nearby hospital in critical condition, while neighboring departments cover the stations. Tied to Gilberts, Illinois, October 21, 2026, where a Rutland and Dundee Townships firefighter was critically injured by a medical emergency during a scheduled training exercise and fellow firefighters began care before transport.",
+    title: "18 Hurt at a 2-Alarm Apartment Fire: Triage, Transport, and Partial Vacate",
+    scenario: "A second-alarm Florida garden apartment fire is controlled in about 35 minutes, leaving 18 patients with minor injuries, including two firefighters. A partial vacate is in effect for three units, and displaced residents are gathering with no clear count. Tied to Bronx, New York, October 22, 2026, Crotona Avenue.",
     nfpa: "NFPA 1500 · NFPA 1561",
     injects: [
-      { time: "0-5 min", text: "The member is down and care is underway. Who stops the evolution and secures the training site, who calls for transport, and what information goes out on the radio, and what does not?" },
-      { time: "5-10 min", text: "The member is transported in critical condition and word is spreading among off-duty members by text. Who notifies the family, in what order, and what is held back from social media and the press until the family is notified?" },
-      { time: "10-15 min", text: "Neighboring departments are covering the stations and the crew that witnessed it is shaken. Who gets relieved, what support is offered that shift, and who documents times, witnesses, and the training plan that was in use?" },
-      { time: "15-20 min", text: "The next morning, training is scheduled again. What investigation and post incident steps must happen before the same evolution runs again, and who decides when training resumes?" }
+      { time: "0-5 min", text: "Patients are self-presenting. Set a single triage and treatment area, start the patient count, and count and care for the two injured firefighters without breaking accountability." },
+      { time: "5-10 min", text: "Transport units are limited. Decide the transport order and grouping, and make the first hospital notification." },
+      { time: "10-15 min", text: "A partial vacate is in effect for three units, and residents want re-entry for medicine and pets. Who owns re-entry, and who owns the unit documentation?" },
+      { time: "15-20 min", text: "Closing counts must match: treated, transported, refused, displaced, and firefighters evaluated. Who owns the post incident review?" }
     ],
     questions: [
-      { group: "Firefighters", items: ["What care starts in the first minute when a member goes down at training, and where is the nearest AED on your training site?", "What do you say, and not say, when members start texting about it?"] },
-      { group: "Officers", items: ["Who owns family notification, hospital liaison, and media holding statements, and in what order do they happen?", "What gets preserved for the investigation (training plan, attendance, radio traffic, equipment)?", "How do you cover the district without pulling the affected crew back too soon?"] }
+      { group: "Firefighters", items: ["How do you keep a walk-up patient count from drifting?", "How do you report your own injury mid-incident, and when?"] },
+      { group: "Officers", items: ["When does a working fire become a mass-casualty EMS operation, and who declares it?", "How do you protect injured members' evaluation while keeping accountability?", "What documentation closes a partial vacate?"] }
     ],
-    teachingPoints: ["Training is an on-duty operation, so a member down at training gets the same immediate care, notifications, and documentation as a member down at a fire.", "Family notification comes before any public release of information.", "Preserve the training plan, roster, and radio traffic the same day.", "Coverage and crew relief are command decisions made early, not after the crew is exhausted."],
-    relatedSops: ["SOP 223 — Ff Serious Injury", "SOP 368 — Training", "SOP 350 — Accident- Injury Investigation"]
+    teachingPoints: ["Minor injuries still need one triage point, one count, and one transport log.", "Injured firefighters are patients and accountability entries at the same time.", "A partial vacate is a documented unit-by-unit decision.", "Re-entry is escorted and logged with the building official."],
+    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 351 — General Department Safety", "SOP 223 — Ff Serious Injury"]
   }
 };
 /* DAILY-DRILLS-END */
 
 /* DRILL-LIBRARY-START — Prepend each morning's two drills to this array, newest first. */
 const DRILL_LIBRARY = [
+  {
+    updatedThrough: "October 23, 2026",
+    dateSort: "2026-10-23",
+    date: "October 23, 2026",
+    type: "Practical",
+    title: "Breach and Reach: Exterior Wall Breach for Trapped Occupants in a Manufactured Home",
+    topic: "Exterior wall breach and occupant removal",
+    summary: "At a Florida single-story manufactured home / slab-on-grade prop with a partly boarded window and blocked doorway, crews size up an alternate entry point, breach a marked section of exterior wall, enter, locate two simulated trapped occupants in the bedroom area, and remove both through the breach within 12 minutes. Tied to Van Zandt County, Texas, October 21, 2026, where crews breached an exterior wall to reach four trapped children.",
+    nfpa: ["NFPA 1001", "NFPA 1500"],
+    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 359 — Personal Protective Equipment", "SOP 351 — General Department Safety"],
+    details: {
+      equipment: ["Rotary saw and chainsaw (training props)", "Irons and hand tools", "Ground ladder", "TIC", "Radios and PASS", "Mannequins", "Marking tape", "Full PPE and SCBA"],
+      evolutions: [
+        "Officer completes a 360, identifies the occupant location and blocked entries, and marks the safest breach point.",
+        "Shut off simulated utilities, complete a TIC and sounding check of the wall, and call the breach plan and exit route.",
+        "Saw crew opens the marked wall in controlled cuts while a second member clears insulation and paneling; confirm the opening fits an SCBA firefighter and victim removal.",
+        "Search crew enters through the breach, searches the bedroom area, reports rooms clear by number, and locates both occupants.",
+        "Remove both occupants through the breach using a drag and team carry, and hand off for simulated airway care and transport.",
+        "Reset with occupant locations changed, rotate roles, and time the second run."
+      ],
+      safety: "No live fire. Power tools only by qualified members with full PPE and a tool safety officer; stop for real injury, tool problem, or loss of accountability. PAR before entry and after exit; no solo breach entry.",
+      benchmark: "Breach opened and both occupants out within 12 minutes, PAR on entry and exit, zero missed rooms."
+    }
+  },
+  {
+    updatedThrough: "October 23, 2026",
+    dateSort: "2026-10-23",
+    date: "October 23, 2026",
+    type: "Tabletop",
+    title: "18 Hurt at a 2-Alarm Apartment Fire: Triage, Transport, and Partial Vacate",
+    topic: "Apartment fire triage, transport, and partial vacate",
+    summary: "A second-alarm Florida garden apartment fire is controlled in about 35 minutes, leaving 18 patients with minor injuries, including two firefighters. A partial vacate is in effect for three units, and displaced residents are gathering with no clear count. Tied to Bronx, New York, October 22, 2026, Crotona Avenue.",
+    nfpa: ["NFPA 1500", "NFPA 1561"],
+    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 351 — General Department Safety", "SOP 223 — Ff Serious Injury"],
+    details: {
+      scenario: "A second-alarm Florida garden apartment fire is controlled in about 35 minutes, leaving 18 patients with minor injuries, including two firefighters. A partial vacate is in effect for three units, and displaced residents are gathering with no clear count. Tied to Bronx, New York, October 22, 2026, Crotona Avenue.",
+      injects: [
+        { time: "0-5 min", text: "Patients are self-presenting. Set a single triage and treatment area, start the patient count, and count and care for the two injured firefighters without breaking accountability." },
+        { time: "5-10 min", text: "Transport units are limited. Decide the transport order and grouping, and make the first hospital notification." },
+        { time: "10-15 min", text: "A partial vacate is in effect for three units, and residents want re-entry for medicine and pets. Who owns re-entry, and who owns the unit documentation?" },
+        { time: "15-20 min", text: "Closing counts must match: treated, transported, refused, displaced, and firefighters evaluated. Who owns the post incident review?" }
+      ],
+      questions: [
+        { group: "Firefighters", items: ["How do you keep a walk-up patient count from drifting?", "How do you report your own injury mid-incident, and when?"] },
+        { group: "Officers", items: ["When does a working fire become a mass-casualty EMS operation, and who declares it?", "How do you protect injured members' evaluation while keeping accountability?", "What documentation closes a partial vacate?"] }
+      ],
+      teachingPoints: ["Minor injuries still need one triage point, one count, and one transport log.", "Injured firefighters are patients and accountability entries at the same time.", "A partial vacate is a documented unit-by-unit decision.", "Re-entry is escorted and logged with the building official."]
+    }
+  },
   {
     updatedThrough: "October 22, 2026",
     dateSort: "2026-10-22",
@@ -893,62 +942,30 @@ const DRILL_LIBRARY = [
 
 /* DAILY-DATA-START — Replace this one object during the morning artifact update. */
 const DASHBOARD_DATA = {
-  updatedThrough: "October 22, 2026",
+  updatedThrough: "October 23, 2026",
   drill: {
     duration: "20-45 minutes",
-    title: "Move Them Out: Assisted Living Evacuation, Window Rescue, and Resident Accountability",
-    intro: "At a Florida single-story assisted living and garden apartment style prop, crews evacuate eight simulated residents with mixed mobility (independent, walker, wheelchair, and one bed-bound resident on an evacuation sled), complete two window removals by ground ladder, and account for every resident by roster at the reunification point within 15 minutes. Tied to Clinton, Mississippi, October 21, 2026, where firefighters rescued residents through windows at a senior living fire that displaced more than 100 people and destroyed most of the building, and to balcony and interior rescues the same day in McHenry, Illinois, and Detroit, Michigan.",
+    title: "Breach and Reach: Exterior Wall Breach for Trapped Occupants in a Manufactured Home",
+    intro: "At a Florida single-story manufactured home / slab-on-grade prop with a partly boarded window and blocked doorway, crews size up an alternate entry point, breach a marked section of exterior wall, enter, locate two simulated trapped occupants in the bedroom area, and remove both through the breach within 12 minutes. Tied to Van Zandt County, Texas, October 21, 2026, where crews breached an exterior wall to reach four trapped children.",
     steps: [
-      "Officer takes the facility roster from the staff role player, assigns one crew to the fire room hallway, one crew to window removals, and one member to the reunification point with the roster board.",
-      "Interior crew moves the walker and wheelchair residents first using the evacuation chair and team carries, calling each room clear by number on the radio as they go.",
-      "Ladder crew raises a ground ladder to the marked window, removes the window, and brings two simulated residents down with a ladder assist, keeping three points of contact and a heel check on the ladder.",
-      "Bed-bound resident is moved on the evacuation sled by two members down the hallway to the exit, with one member watching the airway and head end the whole way.",
-      "Reunification member checks every arriving resident against the roster by room number, reports any missing room to command at once, and a second crew re-checks that room with a TIC before anyone calls the building clear.",
-      "Reset with mobility levels and room locations changed, roles rotated, and the second run timed against the first."
+      "Officer completes a 360, identifies the occupant location and blocked entries, and marks the safest breach point.",
+      "Shut off simulated utilities, complete a TIC and sounding check of the wall, and call the breach plan and exit route.",
+      "Saw crew opens the marked wall in controlled cuts while a second member clears insulation and paneling; confirm the opening fits an SCBA firefighter and victim removal.",
+      "Search crew enters through the breach, searches the bedroom area, reports rooms clear by number, and locates both occupants.",
+      "Remove both occupants through the breach using a drag and team carry, and hand off for simulated airway care and transport.",
+      "Reset with occupant locations changed, rotate roles, and time the second run."
     ],
-    nfpa: "NFPA 1001 · NFPA 1500 · NFPA 1620",
-    relatedSops: ["SOP 402 — Pre-Incident Planning", "SOP 354 — Ladder- Safety Belts", "SOP 359 — Personal Protective Equipment"]
+    nfpa: "NFPA 1001 · NFPA 1500",
+    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 359 — Personal Protective Equipment", "SOP 351 — General Department Safety"]
   },
   daily: [
     {
-      tag: "LODD",
-      department: "Baltimore City Fire Department (MD)",
-      date: "October 21, 2026",
-      outcome: "A pump operator with 21 years of service died of occupational esophageal cancer, announced on October 21, 2026 as a line of duty death by the department union. The firefighter had been forced into medical retirement by the diagnosis and had led esophageal cancer screening awareness for members. Not yet listed by USFA.",
-      url: "https://facebook.com/100064310484586/posts/pfbid02nED989uXgu19uVCuyxtG3gMwFMXjy4KqXGjmWdyiBxn8Z8LtGpAWDSitK7FmX84ql/",
-      sops: ["SOP 223 — Ff Serious Injury", "SOP 369 — Post Fire Hygine And Cancer Prevention", "SOP 351 — General Department Safety"]
-    },
-    {
       tag: "RESCUE",
       department: "Detroit Fire Department (MI)",
-      date: "October 21, 2026",
-      outcome: "Firefighters rescued a woman from an apartment fire in the 17000 block of Plymouth Road shortly after midnight by breaking down a door, and she was transported in critical condition. The fire was contained to one unit. Three police officers were treated for smoke inhalation.",
-      url: "https://fox2detroit.com/news/detroit-firefighters-rescue-woman-from-apartment-fire-citys-west-side",
-      sops: ["SOP 697 — Thermal Imaging Cameras (Tic)", "SOP 359 — Personal Protective Equipment", "SOP 365 — Incident Safety Officer"]
-    },
-    {
-      tag: "RESCUE",
-      department: "McHenry Fire Protection District (IL)",
-      date: "October 21, 2026",
-      outcome: "Firefighters rescued two people trapped on a second-floor balcony at a four-unit condominium fire on West Oakwood Drive at about 9:48 AM. Both were transported for evaluation of smoke inhalation and distress, non-life-threatening. A third person was transported with an ankle injury from evacuating. All four units were left uninhabitable.",
-      url: "https://fox32chicago.com/news/firefighters-rescue-2-from-balcony-during-mchenry-condo-fire",
-      sops: ["SOP 354 — Ladder- Safety Belts", "SOP 359 — Personal Protective Equipment", "SOP 365 — Incident Safety Officer"]
-    },
-    {
-      tag: "RESCUE",
-      department: "Clinton Fire Department (MS)",
-      date: "October 21, 2026",
-      outcome: "Firefighters rescued residents through windows at a senior living facility fire on Northside Drive at about 5:00 PM. The building housed more than 100 residents, most of the building was destroyed, residents were bused to a reunification point, and crews searched into the night to account for everyone. No immediate injury reports.",
-      url: "https://www.firerescue1.com/structure-fire/fire-destroys-miss-senior-living-center-displacing-100-residents",
-      sops: ["SOP 402 — Pre-Incident Planning", "SOP 354 — Ladder- Safety Belts", "SOP 359 — Personal Protective Equipment"]
-    },
-    {
-      tag: "CLOSE CALL",
-      department: "Rutland and Dundee Townships Fire Protection District (IL)",
-      date: "October 21, 2026",
-      outcome: "A firefighter was critically injured after a medical emergency during a scheduled training exercise in Gilberts on Wednesday afternoon. Fellow firefighters began medical care before transport to a nearby hospital. Neighboring departments are covering the district stations.",
-      url: "https://fox32chicago.com/news/illinois-firefighter-critically-hurt-during-training-exercise",
-      sops: ["SOP 223 — Ff Serious Injury", "SOP 368 — Training", "SOP 351 — General Department Safety"]
+      date: "October 22, 2026",
+      outcome: "Firefighters used ladders to rescue 2 residents who were preparing to jump from second-floor windows of a two-story apartment building on Webb Street at about 5:00 AM, with fire through the roof. Both residents were transported for smoke inhalation. The fire was contained to 10 to 12 units.",
+      url: "https://www.firehouse.com/community-risk/investigation-equipment/video/55413701/detroit-firefighters-rescue-two-from-apartment-building-fire",
+      sops: ["SOP 354 — Ladder- Safety Belts", "SOP 359 — Personal Protective Equipment"]
     }
   ]
 };
@@ -959,6 +976,20 @@ const SOP_LIBRARY = [{"sop":"223","title":"Ff Serious Injury","label":"SOP 223 �
 /* SOP-LIBRARY-END */
 
 const incidents = [
+  {
+    "category": "rescue",
+    "state": "MI",
+    "sort": "2026-10-22",
+    "month": 10,
+    "department": "Detroit Fire Department (MI)",
+    "date": "October 22, 2026",
+    "outcome": "Firefighters used ladders to rescue 2 residents who were preparing to jump from second-floor windows of a two-story apartment building on Webb Street at about 5:00 AM, with fire through the roof. Both residents were transported for smoke inhalation. The fire was contained to 10 to 12 units.",
+    "url": "https://www.firehouse.com/community-risk/investigation-equipment/video/55413701/detroit-firefighters-rescue-two-from-apartment-building-fire",
+    "sops": [
+      "SOP 354 — Ladder- Safety Belts",
+      "SOP 359 — Personal Protective Equipment"
+    ]
+  },
   {
     "category": "lodd",
     "state": "MD",
@@ -3564,7 +3595,7 @@ incidents.forEach(incident=>{incident.sops=Array.isArray(incident.sops)&&inciden
 const YTD_TOTALS = {
   lodd: { total:71, sub:"31 INCIDENT-RELATED · 33 MEDICAL · 7 CAUSE PENDING · 5 FLORIDA · 66 NATIONAL" },
   crash: { total:33, sub:"8 FATAL · 14 SERIOUS · 11 MINOR" },
-  rescue: { total:28, sub:"7 FLORIDA · 21 NATIONAL" },
+  rescue: { total:29, sub:"7 FLORIDA · 22 NATIONAL" },
   mayday: { total:80, sub:"74 VERIFIED · 6 UNVERIFIED" },
   closecall: { total:16, sub:"6 FLORIDA · 10 NATIONAL" }
 };
