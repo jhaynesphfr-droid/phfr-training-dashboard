@@ -194,48 +194,97 @@
 <script>
 /* DAILY-DRILLS-START — Replace only this object during the morning drill update. */
 const DAILY_DRILLS = {
-  updatedThrough: "October 23, 2026",
+  updatedThrough: "October 24, 2026",
   practical: {
     duration: "20–45 minutes",
-    title: "Breach and Reach: Exterior Wall Breach for Trapped Occupants in a Manufactured Home",
-    objective: "At a Florida single-story manufactured home / slab-on-grade prop with a partly boarded window and blocked doorway, crews size up an alternate entry point, breach a marked section of exterior wall, enter, locate two simulated trapped occupants in the bedroom area, and remove both through the breach within 12 minutes. Tied to Van Zandt County, Texas, October 21, 2026, where crews breached an exterior wall to reach four trapped children.",
-    nfpa: "NFPA 1001 · NFPA 1500",
-    equipment: ["Rotary saw and chainsaw (training props)", "Irons and hand tools", "Ground ladder", "TIC", "Radios and PASS", "Mannequins", "Marking tape", "Full PPE and SCBA"],
+    title: "Read the Smoke, Control the Door: Fire Behavior and Flow Path in a Single-Story Florida Home",
+    objective: "At a Florida single-story slab-on-grade home prop with a smoke machine (no live fire), crews read smoke and thermal conditions with a TIC, control the front door to limit the flow path, locate the simulated seat of the fire, and confirm conditions improve or worsen with each door and ventilation action, completing three full read-control-report cycles within 30 minutes. Tied to San Antonio, Texas, October 23, 2026, and the Bronx, New York, October 23, 2026 top-floor fire.",
+    nfpa: "NFPA 1001 · NFPA 1500 · NFPA 1700",
+    equipment: ["Smoke machine or training smoke", "TIC", "Full PPE and SCBA", "Radios and PASS devices", "Hoseline", "Door chocks and door-control strap", "Cones marking the simulated seat", "Stopwatch"],
     steps: [
-      "Officer completes a 360, identifies the occupant location and blocked entries, and marks the safest breach point.",
-      "Shut off simulated utilities, complete a TIC and sounding check of the wall, and call the breach plan and exit route.",
-      "Saw crew opens the marked wall in controlled cuts while a second member clears insulation and paneling; confirm the opening fits an SCBA firefighter and victim removal.",
-      "Search crew enters through the breach, searches the bedroom area, reports rooms clear by number, and locates both occupants.",
-      "Remove both occupants through the breach using a drag and team carry, and hand off for simulated airway care and transport.",
-      "Reset with occupant locations changed, rotate roles, and time the second run."
+      "Officer completes a 360, gives a size-up with smoke color, volume, velocity, and density from each opening, and states the likely flow path before anyone opens a door.",
+      "First crew takes TIC readings at the front door, a side window, and the rear, reports the thermal picture in plain language, and marks the simulated seat with a cone.",
+      "Door crew opens the front door on command only, holds door control with the strap, and the officer calls out how smoke behavior changes while the nozzle team advances to the marked seat area.",
+      "Crews close and control the door, reset the smoke, and repeat with the simulated seat moved to a rear bedroom, roles rotated, no door opened without an officer order.",
+      "Final cycle adds a window opened by the instructor without warning; crews identify the new exhaust opening, report the changed flow path, and regain door and window control.",
+      "Officer completes a closing report for each cycle: what the smoke said, what the TIC confirmed or contradicted, and what action changed conditions."
     ],
-    safety: "No live fire. Power tools only by qualified members with full PPE and a tool safety officer; stop for real injury, tool problem, or loss of accountability. PAR before entry and after exit; no solo breach entry.",
-    benchmark: "Breach opened and both occupants out within 12 minutes, PAR on entry and exit, zero missed rooms.",
-    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 359 — Personal Protective Equipment", "SOP 351 — General Department Safety"]
+    safety: "No live fire. Training smoke only in a cleared prop. Full PPE and SCBA on air inside. PAR before entry and after exit. Stop for any real injury, SCBA problem, or loss of accountability. Nobody works alone inside.",
+    benchmark: "Three read-control-report cycles in 30 minutes, simulated seat correctly located by TIC on at least two of three cycles, no uncontrolled door opening, PAR on every entry and exit.",
+    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 697 — Thermal Imaging Cameras (Tic)", "SOP 359 — Personal Protective Equipment"]
   },
   tabletop: {
     duration: "15–20 minutes",
-    title: "18 Hurt at a 2-Alarm Apartment Fire: Triage, Transport, and Partial Vacate",
-    scenario: "A second-alarm Florida garden apartment fire is controlled in about 35 minutes, leaving 18 patients with minor injuries, including two firefighters. A partial vacate is in effect for three units, and displaced residents are gathering with no clear count. Tied to Bronx, New York, October 22, 2026, Crotona Avenue.",
+    title: "Top Floor Working, Fire in the Exposure: Apartment Extension and Occupant Accountability",
+    scenario: "A 3-alarm fire is working in the top floor of a Florida garden apartment building and has extended to the adjacent building. Four civilians are hurt, three seriously, neighbors are removing neighbors before crews arrive, and one firefighter reports a minor injury. Tied to the Bronx, New York, October 23, 2026 fire near Wright and Tillotson Avenues.",
     nfpa: "NFPA 1500 · NFPA 1561",
     injects: [
-      { time: "0-5 min", text: "Patients are self-presenting. Set a single triage and treatment area, start the patient count, and count and care for the two injured firefighters without breaking accountability." },
-      { time: "5-10 min", text: "Transport units are limited. Decide the transport order and grouping, and make the first hospital notification." },
-      { time: "10-15 min", text: "A partial vacate is in effect for three units, and residents want re-entry for medicine and pets. Who owns re-entry, and who owns the unit documentation?" },
-      { time: "15-20 min", text: "Closing counts must match: treated, transported, refused, displaced, and firefighters evaluated. Who owns the post incident review?" }
+      { time: "0-5 min", text: "First crew finds top-floor fire with extension already in the exposure. Who takes the original building, who takes the exposure, and what is the first radio report that keeps both problems from being worked as one?" },
+      { time: "5-10 min", text: "Neighbors report removing two occupants, but no one can say which units are clear. How do you build an occupant count by unit, and which units get a primary search first when crews are limited?" },
+      { time: "10-15 min", text: "The injured firefighter wants to keep working and three seriously hurt civilians need transport now. Who removes the firefighter from the assignment, who owns the transport order, and what changes on the accountability board?" },
+      { time: "15-20 min", text: "Fire is controlled in the original building but still working in the exposure. What must be confirmed before any crew is released (searches by unit, utilities, extension checks in both buildings, patient count), and who declares it?" }
     ],
     questions: [
-      { group: "Firefighters", items: ["How do you keep a walk-up patient count from drifting?", "How do you report your own injury mid-incident, and when?"] },
-      { group: "Officers", items: ["When does a working fire become a mass-casualty EMS operation, and who declares it?", "How do you protect injured members' evaluation while keeping accountability?", "What documentation closes a partial vacate?"] }
+      { group: "Firefighters", items: ["What do you report the moment you see fire already in an exposure, and why does that change your assignment?", "How do you mark and report a unit as searched so the next crew does not have to guess?"] },
+      { group: "Officers", items: ["When do you split command or add a division for the exposure building, and what triggers it?", "How do you keep a neighbor-reported removal from being counted as a firefighter-confirmed rescue or a cleared unit?"] }
     ],
-    teachingPoints: ["Minor injuries still need one triage point, one count, and one transport log.", "Injured firefighters are patients and accountability entries at the same time.", "A partial vacate is a documented unit-by-unit decision.", "Re-entry is escorted and logged with the building official."],
-    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 351 — General Department Safety", "SOP 223 — Ff Serious Injury"]
+    teachingPoints: ["Fire in an exposure on arrival is a second problem, not an extension of the first assignment; it needs its own crew, its own search report, and its own extension checks.", "Occupant accountability is by unit, not by a crowd count out front.", "A minor firefighter injury still removes that member from the assignment and updates accountability and patient records at the same time.", "No crew releases until searches, utilities, and extension checks are confirmed in both buildings."],
+    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 402 — Pre-Incident Planning", "SOP 200 — Chain Of Command"]
   }
 };
 /* DAILY-DRILLS-END */
 
 /* DRILL-LIBRARY-START — Prepend each morning's two drills to this array, newest first. */
 const DRILL_LIBRARY = [
+  {
+    updatedThrough: "October 24, 2026",
+    dateSort: "2026-10-24",
+    date: "October 24, 2026",
+    type: "Practical",
+    title: "Read the Smoke, Control the Door: Fire Behavior and Flow Path in a Single-Story Florida Home",
+    topic: "Fire behavior, smoke reading, and door control",
+    summary: "At a Florida single-story slab-on-grade home prop with a smoke machine (no live fire), crews read smoke and thermal conditions with a TIC, control the front door to limit the flow path, locate the simulated seat of the fire, and confirm conditions improve or worsen with each door and ventilation action, completing three full read-control-report cycles within 30 minutes. Tied to San Antonio, Texas, October 23, 2026, and the Bronx, New York, October 23, 2026 top-floor fire.",
+    nfpa: ["NFPA 1001", "NFPA 1500", "NFPA 1700"],
+    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 697 — Thermal Imaging Cameras (Tic)", "SOP 359 — Personal Protective Equipment"],
+    details: {
+      equipment: ["Smoke machine or training smoke", "TIC", "Full PPE and SCBA", "Radios and PASS devices", "Hoseline", "Door chocks and door-control strap", "Cones marking the simulated seat", "Stopwatch"],
+      evolutions: [
+        "Officer completes a 360, gives a size-up with smoke color, volume, velocity, and density from each opening, and states the likely flow path before anyone opens a door.",
+        "First crew takes TIC readings at the front door, a side window, and the rear, reports the thermal picture in plain language, and marks the simulated seat with a cone.",
+        "Door crew opens the front door on command only, holds door control with the strap, and the officer calls out how smoke behavior changes while the nozzle team advances to the marked seat area.",
+        "Crews close and control the door, reset the smoke, and repeat with the simulated seat moved to a rear bedroom, roles rotated, no door opened without an officer order.",
+        "Final cycle adds a window opened by the instructor without warning; crews identify the new exhaust opening, report the changed flow path, and regain door and window control.",
+        "Officer completes a closing report for each cycle: what the smoke said, what the TIC confirmed or contradicted, and what action changed conditions."
+      ],
+      safety: "No live fire. Training smoke only in a cleared prop. Full PPE and SCBA on air inside. PAR before entry and after exit. Stop for any real injury, SCBA problem, or loss of accountability. Nobody works alone inside.",
+      benchmark: "Three read-control-report cycles in 30 minutes, simulated seat correctly located by TIC on at least two of three cycles, no uncontrolled door opening, PAR on every entry and exit."
+    }
+  },
+  {
+    updatedThrough: "October 24, 2026",
+    dateSort: "2026-10-24",
+    date: "October 24, 2026",
+    type: "Tabletop",
+    title: "Top Floor Working, Fire in the Exposure: Apartment Extension and Occupant Accountability",
+    topic: "Apartment fire extension and occupant accountability",
+    summary: "A 3-alarm fire is working in the top floor of a Florida garden apartment building and has extended to the adjacent building. Four civilians are hurt, three seriously, neighbors are removing neighbors before crews arrive, and one firefighter reports a minor injury. Tied to the Bronx, New York, October 23, 2026 fire near Wright and Tillotson Avenues.",
+    nfpa: ["NFPA 1500", "NFPA 1561"],
+    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 402 — Pre-Incident Planning", "SOP 200 — Chain Of Command"],
+    details: {
+      scenario: "A 3-alarm fire is working in the top floor of a Florida garden apartment building and has extended to the adjacent building. Four civilians are hurt, three seriously, neighbors are removing neighbors before crews arrive, and one firefighter reports a minor injury. Tied to the Bronx, New York, October 23, 2026 fire near Wright and Tillotson Avenues.",
+      injects: [
+        { time: "0-5 min", text: "First crew finds top-floor fire with extension already in the exposure. Who takes the original building, who takes the exposure, and what is the first radio report that keeps both problems from being worked as one?" },
+        { time: "5-10 min", text: "Neighbors report removing two occupants, but no one can say which units are clear. How do you build an occupant count by unit, and which units get a primary search first when crews are limited?" },
+        { time: "10-15 min", text: "The injured firefighter wants to keep working and three seriously hurt civilians need transport now. Who removes the firefighter from the assignment, who owns the transport order, and what changes on the accountability board?" },
+        { time: "15-20 min", text: "Fire is controlled in the original building but still working in the exposure. What must be confirmed before any crew is released (searches by unit, utilities, extension checks in both buildings, patient count), and who declares it?" }
+      ],
+      questions: [
+        { group: "Firefighters", items: ["What do you report the moment you see fire already in an exposure, and why does that change your assignment?", "How do you mark and report a unit as searched so the next crew does not have to guess?"] },
+        { group: "Officers", items: ["When do you split command or add a division for the exposure building, and what triggers it?", "How do you keep a neighbor-reported removal from being counted as a firefighter-confirmed rescue or a cleared unit?"] }
+      ],
+      teachingPoints: ["Fire in an exposure on arrival is a second problem, not an extension of the first assignment; it needs its own crew, its own search report, and its own extension checks.", "Occupant accountability is by unit, not by a crowd count out front.", "A minor firefighter injury still removes that member from the assignment and updates accountability and patient records at the same time.", "No crew releases until searches, utilities, and extension checks are confirmed in both buildings."]
+    }
+  },
   {
     updatedThrough: "October 23, 2026",
     dateSort: "2026-10-23",
@@ -942,30 +991,30 @@ const DRILL_LIBRARY = [
 
 /* DAILY-DATA-START — Replace this one object during the morning artifact update. */
 const DASHBOARD_DATA = {
-  updatedThrough: "October 23, 2026",
+  updatedThrough: "October 24, 2026",
   drill: {
     duration: "20-45 minutes",
-    title: "Breach and Reach: Exterior Wall Breach for Trapped Occupants in a Manufactured Home",
-    intro: "At a Florida single-story manufactured home / slab-on-grade prop with a partly boarded window and blocked doorway, crews size up an alternate entry point, breach a marked section of exterior wall, enter, locate two simulated trapped occupants in the bedroom area, and remove both through the breach within 12 minutes. Tied to Van Zandt County, Texas, October 21, 2026, where crews breached an exterior wall to reach four trapped children.",
+    title: "Read the Smoke, Control the Door: Fire Behavior and Flow Path in a Single-Story Florida Home",
+    intro: "At a Florida single-story slab-on-grade home prop with a smoke machine (no live fire), crews read smoke and thermal conditions with a TIC, control the front door to limit the flow path, locate the simulated seat of the fire, and confirm conditions improve or worsen with each door and ventilation action, completing three full read-control-report cycles within 30 minutes. Tied to San Antonio, Texas, October 23, 2026, and the Bronx, New York, October 23, 2026 top-floor fire.",
     steps: [
-      "Officer completes a 360, identifies the occupant location and blocked entries, and marks the safest breach point.",
-      "Shut off simulated utilities, complete a TIC and sounding check of the wall, and call the breach plan and exit route.",
-      "Saw crew opens the marked wall in controlled cuts while a second member clears insulation and paneling; confirm the opening fits an SCBA firefighter and victim removal.",
-      "Search crew enters through the breach, searches the bedroom area, reports rooms clear by number, and locates both occupants.",
-      "Remove both occupants through the breach using a drag and team carry, and hand off for simulated airway care and transport.",
-      "Reset with occupant locations changed, rotate roles, and time the second run."
+      "Officer completes a 360, gives a size-up with smoke color, volume, velocity, and density from each opening, and states the likely flow path before anyone opens a door.",
+      "First crew takes TIC readings at the front door, a side window, and the rear, reports the thermal picture in plain language, and marks the simulated seat with a cone.",
+      "Door crew opens the front door on command only, holds door control with the strap, and the officer calls out how smoke behavior changes while the nozzle team advances to the marked seat area.",
+      "Crews close and control the door, reset the smoke, and repeat with the simulated seat moved to a rear bedroom, roles rotated, no door opened without an officer order.",
+      "Final cycle adds a window opened by the instructor without warning; crews identify the new exhaust opening, report the changed flow path, and regain door and window control.",
+      "Officer completes a closing report for each cycle: what the smoke said, what the TIC confirmed or contradicted, and what action changed conditions."
     ],
-    nfpa: "NFPA 1001 · NFPA 1500",
-    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 359 — Personal Protective Equipment", "SOP 351 — General Department Safety"]
+    nfpa: "NFPA 1001 · NFPA 1500 · NFPA 1700",
+    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 697 — Thermal Imaging Cameras (Tic)", "SOP 359 — Personal Protective Equipment"]
   },
   daily: [
     {
       tag: "RESCUE",
-      department: "Detroit Fire Department (MI)",
-      date: "October 22, 2026",
-      outcome: "Firefighters used ladders to rescue 2 residents who were preparing to jump from second-floor windows of a two-story apartment building on Webb Street at about 5:00 AM, with fire through the roof. Both residents were transported for smoke inhalation. The fire was contained to 10 to 12 units.",
-      url: "https://www.firehouse.com/community-risk/investigation-equipment/video/55413701/detroit-firefighters-rescue-two-from-apartment-building-fire",
-      sops: ["SOP 354 — Ladder- Safety Belts", "SOP 359 — Personal Protective Equipment"]
+      department: "San Antonio Fire Department (TX)",
+      date: "October 23, 2026",
+      outcome: "Firefighters rescued 1 resident (and a pet) from a heavily involved house fire in the 200 block of Blakeley Drive shortly after midnight; a second resident died; the rescued resident was transported for smoke inhalation.",
+      url: "https://www.ktsa.com/one-dead-another-hospitalized-after-northeast-side-house-fire/",
+      sops: ["SOP 697 — Thermal Imaging Cameras (Tic)", "SOP 359 — Personal Protective Equipment"]
     }
   ]
 };
@@ -3595,7 +3644,7 @@ incidents.forEach(incident=>{incident.sops=Array.isArray(incident.sops)&&inciden
 const YTD_TOTALS = {
   lodd: { total:71, sub:"31 INCIDENT-RELATED · 33 MEDICAL · 7 CAUSE PENDING · 5 FLORIDA · 66 NATIONAL" },
   crash: { total:33, sub:"8 FATAL · 14 SERIOUS · 11 MINOR" },
-  rescue: { total:29, sub:"7 FLORIDA · 22 NATIONAL" },
+  rescue: { total:30, sub:"7 FLORIDA · 23 NATIONAL" },
   mayday: { total:80, sub:"74 VERIFIED · 6 UNVERIFIED" },
   closecall: { total:16, sub:"6 FLORIDA · 10 NATIONAL" }
 };
