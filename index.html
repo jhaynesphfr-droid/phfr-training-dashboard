@@ -194,48 +194,97 @@
 <script>
 /* DAILY-DRILLS-START — Replace only this object during the morning drill update. */
 const DAILY_DRILLS = {
-  updatedThrough: "October 25, 2026",
+  updatedThrough: "October 26, 2026",
   practical: {
     duration: "20\u201345 minutes",
-    title: "Found in the Bunk Room: Crew CPR, AED, and Member-Down Response in Quarters",
-    objective: "In quarters, crews discover a simulated unresponsive member in the bunk room, start CPR within 1 minute, deliver the first training AED analysis within 3 minutes, rotate compressors every 2 minutes with pauses under 10 seconds, and complete the member-down notification sequence, repeating the evolution in a second location (apparatus bay). Tied to St. Lucie County Fire District, Florida, October 24, 2026, where a firefighter-paramedic was found unresponsive in quarters in cardiac arrest and died at the hospital in a death the district announced as a line-of-duty death.",
-    nfpa: "NFPA 1500 \u00b7 NFPA 1001",
-    equipment: ["CPR manikin", "Training AED", "Bag-valve mask and oxygen trainer", "Radios", "Stopwatch", "Member-down notification checklist card", "Gloves"],
+    title: "Search First, Count Every Time: VES and Oriented Search in a Slab-on-Grade Home",
+    objective: "Crews perform vent-enter-search and oriented search in a simulated single-story slab-on-grade Florida home, locate and remove 2 simulated occupants, and report each find by room so no occupant is counted twice. Tied to Sevier County, Tennessee, October 25, 2026, where crews searched a heavily involved home, located 2 occupants, removed them and began care, and to Boston, Massachusetts, October 24, 2026, where firefighters rescued 6 people from an apartment fire.",
+    nfpa: "NFPA 1001 \u00b7 NFPA 1500 \u00b7 NFPA 1700",
+    equipment: ["Thermal imaging camera", "Hand tools", "Ground ladder", "Webbing or search rope", "Simulated occupants (manikins)", "Radios", "Accountability tags"],
     steps: [
-      "Instructor places the manikin in the bunk room. The discovering member checks responsiveness and breathing, shouts for help, and sends a second member to call for an ambulance and bring the AED and oxygen.",
-      "First rescuer starts compressions within 1 minute of discovery while a second member opens the airway and prepares the bag-valve mask.",
-      "On AED arrival, a third member applies the training pads, clears the patient, and delivers the first analysis within 3 minutes of discovery, with compressions paused only for the analysis.",
-      "Crews rotate compressors every 2 minutes on the officer count, keep every pause under 10 seconds, and the officer starts a written timeline (discovery, CPR start, AED, transport).",
-      "Crews package and move the manikin to the simulated transport position, give a handoff report (down time, CPR start, AED result, interventions), and the officer completes the notification sequence from the checklist card, with no information released before family notification.",
-      "Reset in the apparatus bay with roles rotated and a compressor fatigued at the 4-minute mark; the crew must call the rotation early rather than let compression quality fall."
+      "Officer gives a size-up and a search plan by room. Crew A is assigned VES of the primary bedroom through the window, Crew B is assigned an oriented interior search from the front door, each with a TIC and a radio.",
+      "VES crew raises the ladder, enters the window, isolates the room by closing the door, searches the bed and floor, and reports the room status before exiting or handing a found occupant out the window.",
+      "Oriented crew enters on a wall, maintains orientation by voice and contact, searches in a stated direction, and calls each room clear, not clear, or victim found, with the location repeated back by the officer.",
+      "On a victim find, the crew reports who found the occupant, what room, and what exit will be used, removes the manikin by that exit, and hands off to a simulated EMS point where the occupant is tagged and counted once.",
+      "Crews swap roles and repeat in a second layout with one occupant under a bed and one in a closet, with low visibility simulated. The officer reconciles the count: found, removed, handed off, and still reported inside must match before the search is called complete.",
+      "Final evolution: a bystander report adds a third occupant who was already removed. Crews must clear or confirm that report by room-by-room secondary search results, not by assumption."
     ],
-    safety: "Training manikin and training AED only, no live defibrillation. Use gloves. Team lifts for moves. Stop immediately for any real emergency or real injury; a real call cancels the drill.",
-    benchmark: "Compressions started within 1 minute of discovery, first AED analysis within 3 minutes, no pause over 10 seconds, compressor rotation every 2 minutes, notification checklist completed with no step out of order.",
-    relatedSops: ["SOP 223 — Ff Serious Injury", "SOP 351 — General Department Safety", "SOP 368 — Training"]
+    safety: "No live fire or smoke. Full PPE and SCBA worn as in training policy, air tracked. Ladder work with a spotter at the base. Stop for any real emergency, real injury, or low-air alarm that is not part of the drill.",
+    benchmark: "First room searched within 3 minutes of entry, every room reported by name, both occupants removed and handed off within 12 minutes, and the final occupant count reconciles with zero double counts.",
+    relatedSops: ["SOP 697 — Thermal Imaging Cameras (Tic)", "SOP 359 — Personal Protective Equipment", "SOP 365 — Incident Safety Officer"]
   },
   tabletop: {
     duration: "15\u201320 minutes",
-    title: "Fire Below the Stairs: Upper-Floor Occupants at the Windows",
-    scenario: "Fire is burning at the bottom of the only stairwell of a three-story Florida garden apartment building at about 09:00. Residents are at second and third floor windows calling for help, six occupants will need removal, one resident will need transport for smoke inhalation, and nine people will be displaced. Tied to Hazleton, Pennsylvania, October 24, 2026, and Cincinnati, Ohio, October 24, 2026.",
-    nfpa: "NFPA 1500 \u00b7 NFPA 1561",
+    title: "Third Alarm, Six Rescues, One on the Roof: Communications and Accountability When the Count Keeps Changing",
+    scenario: "A three-alarm apartment fire in a Florida garden apartment complex at about 03:45. Heavy fire is showing, firefighters rescue 6 occupants, 2 are transported, 1 occupant is sheltering on the roof because of heavy smoke, and about 20 other occupants and pets self-evacuate. Tied to Boston, Massachusetts, October 24, 2026, Brainerd Road, where Boston firefighters rescued 6 people at a third-alarm fire, 2 were hospitalized, 1 person sheltered on the roof, and about 20 people self-evacuated.",
+    nfpa: "NFPA 1561 \u00b7 NFPA 1500",
     injects: [
-      { time: "0-5 min", text: "First crew arrives to occupants at upper windows and fire at the base of the stairs. What is the first report, who goes to the windows by ladder, and who is assigned to protect or retake the stairwell, and in what order?" },
-      { time: "5-10 min", text: "Six occupants need removal but ladders and crews are limited. How do you sequence removals (most threatened first), and how is each removed occupant marked, counted, and handed to EMS or accountability?" },
-      { time: "10-15 min", text: "One removed resident needs transport for smoke inhalation and bystanders report another occupant still inside. How do you confirm or clear that report without double-counting the six already removed?" },
-      { time: "15-20 min", text: "Fire is controlled and nine residents are displaced. What must be confirmed before release: primary and secondary searches by floor and unit, utilities, Red Cross count matched to the occupant count, and cause referral for an electrical fire?" }
+      { time: "0-5 min", text: "First crews report heavy fire and occupants needing rescue on multiple sides. What must the first rescue reports contain (unit, floor, side, number of occupants, exit used), and who starts the occupant count?" },
+      { time: "5-10 min", text: "Six occupants have been rescued, 2 need transport, and a report comes in of an occupant on the roof. How do you assign the roof occupant without pulling a crew already counted in a PAR, and how is that occupant kept separate from the rescued and self-evacuated counts?" },
+      { time: "10-15 min", text: "A neighbor reports another occupant still inside a unit that a crew already reported clear. What do you require before re-entering that unit, and how do you record the re-check so the count does not change twice for the same person?" },
+      { time: "15-20 min", text: "Fire is under control. What must be reconciled before release: rescued count, transported count, self-evacuated count, roof occupant outcome, primary and secondary search by unit, and a PAR for every crew that made a rescue?" }
     ],
     questions: [
-      { group: "Firefighters", items: ["What do you report the moment you see the stairwell itself is the fire problem, and why does that change every assignment?", "How do you communicate from a window rescue so command knows which occupant, from which floor, is coming down?"] },
-      { group: "Officers", items: ["When do you commit a crew to retaking the stairwell versus working only from ladders and windows?", "How do you keep removed, self-evacuated, and still-missing occupants in three separate counts that never merge?"] }
+      { group: "Firefighters", items: ["What is the minimum content of a rescue report so command can count you and the occupant correctly the first time?", "How do you call a roof-shelter occupant so it is not heard as another interior victim?"] },
+      { group: "Officers", items: ["How do you keep rescued, transported, self-evacuated, and still-reported occupants in four separate counts that never merge?", "When does a changing occupant count require a PAR, and who do you PAR first?"] }
     ],
-    teachingPoints: ["Fire at the base of the only stairwell turns an apartment fire into a window-rescue problem first and an interior fire second.", "Removal order follows threat, not convenience: closest to the fire and smoke travel first.", "Removed, self-evacuated, and unaccounted occupants are three separate counts, reconciled by unit before anyone is declared missing or cleared.", "The stairwell is not retaken until a charged line and a crew are committed to it, and that decision belongs to command."],
-    relatedSops: ["SOP 354 — Ladder- Safety Belts", "SOP 697 — Thermal Imaging Cameras (Tic)", "SOP 365 — Incident Safety Officer"]
+    teachingPoints: ["A rescue that is not reported by unit, floor, and exit cannot be counted, and an uncounted rescue creates a false still-inside report.", "Roof shelter is a location to protect and remove on purpose, not a self-evacuation.", "Four separate occupant counts, rescued, transported, self-evacuated, and still reported, are reconciled by unit before any all-clear.", "A PAR follows any phase where crews split for simultaneous rescues."],
+    relatedSops: ["SOP 200 — Chain Of Command", "SOP 365 — Incident Safety Officer", "SOP 351 — General Department Safety"]
   }
 };
 /* DAILY-DRILLS-END */
 
 /* DRILL-LIBRARY-START — Prepend each morning's two drills to this array, newest first. */
 const DRILL_LIBRARY = [
+  {
+    updatedThrough: "October 26, 2026",
+    dateSort: "2026-10-26",
+    date: "October 26, 2026",
+    type: "Practical",
+    title: "Search First, Count Every Time: VES and Oriented Search in a Slab-on-Grade Home",
+    topic: "VES and oriented search techniques",
+    summary: "Crews perform vent-enter-search and oriented search in a simulated single-story slab-on-grade Florida home, locate and remove 2 simulated occupants, and report each find by room so no occupant is counted twice. Tied to Sevier County, Tennessee, October 25, 2026, where crews searched a heavily involved home, located 2 occupants, removed them and began care, and to Boston, Massachusetts, October 24, 2026, where firefighters rescued 6 people from an apartment fire.",
+    nfpa: ["NFPA 1001", "NFPA 1500", "NFPA 1700"],
+    relatedSops: ["SOP 697 — Thermal Imaging Cameras (Tic)", "SOP 359 — Personal Protective Equipment", "SOP 365 — Incident Safety Officer"],
+    details: {
+      equipment: ["Thermal imaging camera", "Hand tools", "Ground ladder", "Webbing or search rope", "Simulated occupants (manikins)", "Radios", "Accountability tags"],
+      evolutions: [
+        "Officer gives a size-up and a search plan by room. Crew A is assigned VES of the primary bedroom through the window, Crew B is assigned an oriented interior search from the front door, each with a TIC and a radio.",
+        "VES crew raises the ladder, enters the window, isolates the room by closing the door, searches the bed and floor, and reports the room status before exiting or handing a found occupant out the window.",
+        "Oriented crew enters on a wall, maintains orientation by voice and contact, searches in a stated direction, and calls each room clear, not clear, or victim found, with the location repeated back by the officer.",
+        "On a victim find, the crew reports who found the occupant, what room, and what exit will be used, removes the manikin by that exit, and hands off to a simulated EMS point where the occupant is tagged and counted once.",
+        "Crews swap roles and repeat in a second layout with one occupant under a bed and one in a closet, with low visibility simulated. The officer reconciles the count: found, removed, handed off, and still reported inside must match before the search is called complete.",
+        "Final evolution: a bystander report adds a third occupant who was already removed. Crews must clear or confirm that report by room-by-room secondary search results, not by assumption."
+      ],
+      safety: "No live fire or smoke. Full PPE and SCBA worn as in training policy, air tracked. Ladder work with a spotter at the base. Stop for any real emergency, real injury, or low-air alarm that is not part of the drill.",
+      benchmark: "First room searched within 3 minutes of entry, every room reported by name, both occupants removed and handed off within 12 minutes, and the final occupant count reconciles with zero double counts."
+    }
+  },
+  {
+    updatedThrough: "October 26, 2026",
+    dateSort: "2026-10-26",
+    date: "October 26, 2026",
+    type: "Tabletop",
+    title: "Third Alarm, Six Rescues, One on the Roof: Communications and Accountability When the Count Keeps Changing",
+    topic: "Fireground communications and accountability/PAR",
+    summary: "A three-alarm apartment fire in a Florida garden apartment complex at about 03:45. Heavy fire is showing, firefighters rescue 6 occupants, 2 are transported, 1 occupant is sheltering on the roof because of heavy smoke, and about 20 other occupants and pets self-evacuate. Tied to Boston, Massachusetts, October 24, 2026, Brainerd Road, where Boston firefighters rescued 6 people at a third-alarm fire, 2 were hospitalized, 1 person sheltered on the roof, and about 20 people self-evacuated.",
+    nfpa: ["NFPA 1561", "NFPA 1500"],
+    relatedSops: ["SOP 200 — Chain Of Command", "SOP 365 — Incident Safety Officer", "SOP 351 — General Department Safety"],
+    details: {
+      scenario: "A three-alarm apartment fire in a Florida garden apartment complex at about 03:45. Heavy fire is showing, firefighters rescue 6 occupants, 2 are transported, 1 occupant is sheltering on the roof because of heavy smoke, and about 20 other occupants and pets self-evacuate. Tied to Boston, Massachusetts, October 24, 2026, Brainerd Road, where Boston firefighters rescued 6 people at a third-alarm fire, 2 were hospitalized, 1 person sheltered on the roof, and about 20 people self-evacuated.",
+      injects: [
+        { time: "0-5 min", text: "First crews report heavy fire and occupants needing rescue on multiple sides. What must the first rescue reports contain (unit, floor, side, number of occupants, exit used), and who starts the occupant count?" },
+        { time: "5-10 min", text: "Six occupants have been rescued, 2 need transport, and a report comes in of an occupant on the roof. How do you assign the roof occupant without pulling a crew already counted in a PAR, and how is that occupant kept separate from the rescued and self-evacuated counts?" },
+        { time: "10-15 min", text: "A neighbor reports another occupant still inside a unit that a crew already reported clear. What do you require before re-entering that unit, and how do you record the re-check so the count does not change twice for the same person?" },
+        { time: "15-20 min", text: "Fire is under control. What must be reconciled before release: rescued count, transported count, self-evacuated count, roof occupant outcome, primary and secondary search by unit, and a PAR for every crew that made a rescue?" }
+      ],
+      questions: [
+        { group: "Firefighters", items: ["What is the minimum content of a rescue report so command can count you and the occupant correctly the first time?", "How do you call a roof-shelter occupant so it is not heard as another interior victim?"] },
+        { group: "Officers", items: ["How do you keep rescued, transported, self-evacuated, and still-reported occupants in four separate counts that never merge?", "When does a changing occupant count require a PAR, and who do you PAR first?"] }
+      ],
+      teachingPoints: ["A rescue that is not reported by unit, floor, and exit cannot be counted, and an uncounted rescue creates a false still-inside report.", "Roof shelter is a location to protect and remove on purpose, not a self-evacuation.", "Four separate occupant counts, rescued, transported, self-evacuated, and still reported, are reconciled by unit before any all-clear.", "A PAR follows any phase where crews split for simultaneous rescues."]
+    }
+  },
   {
     updatedThrough: "October 25, 2026",
     dateSort: "2026-10-25",
@@ -1040,46 +1089,47 @@ const DRILL_LIBRARY = [
 
 /* DAILY-DATA-START — Replace this one object during the morning artifact update. */
 const DASHBOARD_DATA = {
-  updatedThrough: "October 25, 2026",
+  updatedThrough: "October 26, 2026",
   drill: {
     duration: "20-45 minutes",
-    title: "Found in the Bunk Room: Crew CPR, AED, and Member-Down Response in Quarters",
-    intro: "In quarters, crews discover a simulated unresponsive member in the bunk room, start CPR within 1 minute, deliver the first training AED analysis within 3 minutes, rotate compressors every 2 minutes with pauses under 10 seconds, and complete the member-down notification sequence, repeating the evolution in a second location (apparatus bay). Tied to St. Lucie County Fire District, Florida, October 24, 2026, where a firefighter-paramedic was found unresponsive in quarters in cardiac arrest and died at the hospital in a death the district announced as a line-of-duty death.",
+    title: "Search First, Count Every Time: VES and Oriented Search in a Slab-on-Grade Home",
+    intro: "Crews perform vent-enter-search and oriented search in a simulated single-story slab-on-grade Florida home, locate and remove 2 simulated occupants, and report each find by room so no occupant is counted twice. Tied to Sevier County, Tennessee, October 25, 2026, where crews searched a heavily involved home, located 2 occupants, removed them and began care, and to Boston, Massachusetts, October 24, 2026, where firefighters rescued 6 people from an apartment fire.",
     steps: [
-      "Instructor places the manikin in the bunk room. The discovering member checks responsiveness and breathing, shouts for help, and sends a second member to call for an ambulance and bring the AED and oxygen.",
-      "First rescuer starts compressions within 1 minute of discovery while a second member opens the airway and prepares the bag-valve mask.",
-      "On AED arrival, a third member applies the training pads, clears the patient, and delivers the first analysis within 3 minutes of discovery, with compressions paused only for the analysis.",
-      "Crews rotate compressors every 2 minutes on the officer count, keep every pause under 10 seconds, and the officer starts a written timeline (discovery, CPR start, AED, transport).",
-      "Crews package and move the manikin to the simulated transport position, give a handoff report (down time, CPR start, AED result, interventions), and the officer completes the notification sequence from the checklist card, with no information released before family notification.",
-      "Reset in the apparatus bay with roles rotated and a compressor fatigued at the 4-minute mark; the crew must call the rotation early rather than let compression quality fall."
+      "Officer gives a size-up and a search plan by room. Crew A is assigned VES of the primary bedroom through the window, Crew B is assigned an oriented interior search from the front door, each with a TIC and a radio.",
+      "VES crew raises the ladder, enters the window, isolates the room by closing the door, searches the bed and floor, and reports the room status before exiting or handing a found occupant out the window.",
+      "Oriented crew enters on a wall, maintains orientation by voice and contact, searches in a stated direction, and calls each room clear, not clear, or victim found, with the location repeated back by the officer.",
+      "On a victim find, the crew reports who found the occupant, what room, and what exit will be used, removes the manikin by that exit, and hands off to a simulated EMS point where the occupant is tagged and counted once.",
+      "Crews swap roles and repeat in a second layout with one occupant under a bed and one in a closet, with low visibility simulated. The officer reconciles the count: found, removed, handed off, and still reported inside must match before the search is called complete.",
+      "Final evolution: a bystander report adds a third occupant who was already removed. Crews must clear or confirm that report by room-by-room secondary search results, not by assumption."
     ],
-    nfpa: "NFPA 1500 \u00b7 NFPA 1001",
-    relatedSops: ["SOP 223 — Ff Serious Injury", "SOP 351 — General Department Safety", "SOP 368 — Training"]
+    nfpa: "NFPA 1001 \u00b7 NFPA 1500 \u00b7 NFPA 1700",
+    relatedSops: ["SOP 697 — Thermal Imaging Cameras (Tic)", "SOP 359 — Personal Protective Equipment", "SOP 365 — Incident Safety Officer"]
   },
   daily: [
     {
       tag: "LODD",
-      department: "St. Lucie County Fire District (FL)",
-      date: "October 24, 2026",
-      outcome: "A firefighter-paramedic was found unresponsive in quarters in cardiac arrest; the crew began resuscitation and transported the member, who died at the hospital. The district announced the death as a line-of-duty death; circumstances are under investigation and the death is not yet listed by USFA.",
-      url: "https://www.tcpalm.com/story/news/local/st-lucie-county/2026/10/24/firefighter-paramedic-in-florida-dies-on-duty/92420846007/",
-      sops: ["SOP 223 — Ff Serious Injury"]
+      department: "Rutland-Dundee Fire Protection District (IL)",
+      date: "October 25, 2026",
+      outcome: "A firefighter died Sunday after suffering cardiac arrest during a scheduled training exercise on October 21; crewmates began care and the member was hospitalized; the district announced the death on October 25; not yet listed by USFA.",
+      url: "https://www.firehouse.com/lodds/news/55414249/rutland-dundee-il-firefighter-dies-after-collapsing-during-training-last-week",
+      sops: ["SOP 223 — Ff Serious Injury", "SOP 368 — Training"]
     },
     {
       tag: "RESCUE",
-      department: "Cincinnati Fire Department (OH)",
+      department: "Boston Fire Department (MA)",
       date: "October 24, 2026",
-      outcome: "Firefighters pulled 3 people from a top-floor apartment fire on Westwood Northern Boulevard just before 4:00 AM; 2 were checked at the scene and 1 was transported and later died; no firefighter injuries.",
-      url: "https://www.cincinnati.com/story/news/2026/10/24/westwood-apartment-fire-leaves-man-dead-2-others-injured/92414969007/",
+      outcome: "Firefighters rescued 6 people from a third-alarm apartment fire on Brainerd Road at about 3:45 AM; 2 were hospitalized, 1 person sheltered on the roof due to heavy smoke, and about 20 people and pets self-evacuated.",
+      url: "https://dailydispatch.com/fire-news/massachusetts/2-hospitalized-after-firefighters-rescue-6-people-from-burning-building-in-boston/",
       sops: ["SOP 697 — Thermal Imaging Cameras (Tic)", "SOP 359 — Personal Protective Equipment"]
     },
     {
-      tag: "RESCUE",
-      department: "Hazleton Fire Department (PA)",
-      date: "October 24, 2026",
-      outcome: "Firefighters rescued 6 residents from the second and third floors of an apartment building on South Cedar Street at about 9:00 AM, with residents at windows and fire at the bottom of the stairs trapping them; 1 resident was transported for smoke inhalation; 9 people displaced; cause ruled electrical.",
-      url: "https://www.2822news.com/news/local-news/six-rescued-from-hazelton-fire-one-hospitalized/",
-      sops: ["SOP 354 — Ladder- Safety Belts", "SOP 359 — Personal Protective Equipment"]
+      tag: "CRASH",
+      severity: "minor",
+      department: "Wheeling Fire Department (WV)",
+      date: "October 23, 2026",
+      outcome: "A tow truck towing a utility vehicle struck Engine 2 on I-470 near Exit 2 at about 3:50 PM; at least 1 firefighter was injured and in stable condition at a hospital; state police are investigating.",
+      url: "https://www.firefighterclosecalls.com/engine-involved-in-crash-with-tow-truck-west-virginia/",
+      sops: ["SOP 355 — Apparatus Safety", "SOP 350 — Accident- Injury Investigation"]
     }
   ]
 };
@@ -1090,6 +1140,51 @@ const SOP_LIBRARY = [{"sop":"223","title":"Ff Serious Injury","label":"SOP 223 �
 /* SOP-LIBRARY-END */
 
 const incidents = [
+  {
+    "category": "lodd",
+    "state": "IL",
+    "sort": "2026-10-25",
+    "month": 10,
+    "department": "Rutland-Dundee Fire Protection District (IL)",
+    "date": "October 25, 2026",
+    "outcome": "A firefighter died Sunday after suffering cardiac arrest during a scheduled training exercise on October 21; crewmates began care and the member was hospitalized; the district announced the death on October 25; not yet listed by USFA.",
+    "url": "https://www.firehouse.com/lodds/news/55414249/rutland-dundee-il-firefighter-dies-after-collapsing-during-training-last-week",
+    "count": 1,
+    "cause": "medical",
+    "sops": [
+      "SOP 223 — Ff Serious Injury",
+      "SOP 368 — Training"
+    ]
+  },
+  {
+    "category": "rescue",
+    "state": "MA",
+    "sort": "2026-10-24",
+    "month": 10,
+    "department": "Boston Fire Department (MA)",
+    "date": "October 24, 2026",
+    "outcome": "Firefighters rescued 6 people from a third-alarm apartment fire on Brainerd Road at about 3:45 AM; 2 were hospitalized, 1 person sheltered on the roof due to heavy smoke, and about 20 people and pets self-evacuated.",
+    "url": "https://dailydispatch.com/fire-news/massachusetts/2-hospitalized-after-firefighters-rescue-6-people-from-burning-building-in-boston/",
+    "sops": [
+      "SOP 697 — Thermal Imaging Cameras (Tic)",
+      "SOP 359 — Personal Protective Equipment"
+    ]
+  },
+  {
+    "category": "crash",
+    "severity": "minor",
+    "state": "WV",
+    "sort": "2026-10-23",
+    "month": 10,
+    "department": "Wheeling Fire Department (WV)",
+    "date": "October 23, 2026",
+    "outcome": "A tow truck towing a utility vehicle struck Engine 2 on I-470 near Exit 2 at about 3:50 PM; at least 1 firefighter was injured and in stable condition at a hospital; state police are investigating.",
+    "url": "https://www.firefighterclosecalls.com/engine-involved-in-crash-with-tow-truck-west-virginia/",
+    "sops": [
+      "SOP 355 — Apparatus Safety",
+      "SOP 350 — Accident- Injury Investigation"
+    ]
+  },
   {
     "category": "lodd",
     "state": "FL",
@@ -3750,9 +3845,9 @@ function incidentSopBackfill(incident){
 incidents.forEach(incident=>{incident.sops=Array.isArray(incident.sops)&&incident.sops.length?incident.sops:incidentSopBackfill(incident)});
 
 const YTD_TOTALS = {
-  lodd: { total:72, sub:"31 INCIDENT-RELATED · 33 MEDICAL · 8 CAUSE PENDING · 6 FLORIDA · 66 NATIONAL" },
-  crash: { total:33, sub:"8 FATAL · 14 SERIOUS · 11 MINOR" },
-  rescue: { total:32, sub:"7 FLORIDA · 25 NATIONAL" },
+  lodd: { total:73, sub:"31 INCIDENT-RELATED · 34 MEDICAL · 8 CAUSE PENDING · 6 FLORIDA · 67 NATIONAL" },
+  crash: { total:34, sub:"8 FATAL · 14 SERIOUS · 12 MINOR" },
+  rescue: { total:33, sub:"7 FLORIDA · 26 NATIONAL" },
   mayday: { total:80, sub:"74 VERIFIED · 6 UNVERIFIED" },
   closecall: { total:16, sub:"6 FLORIDA · 10 NATIONAL" }
 };
