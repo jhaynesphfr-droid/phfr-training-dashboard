@@ -194,48 +194,97 @@
 <script>
 /* DAILY-DRILLS-START — Replace only this object during the morning drill update. */
 const DAILY_DRILLS = {
-  updatedThrough: "October 27, 2026",
+  updatedThrough: "October 28, 2026",
   practical: {
     duration: "20\u201345 minutes",
-    title: "Low Air, Call It Early: SCBA Air Management, the 3 Ws Mayday, and Window-to-Ladder Self-Rescue",
-    objective: "Crews manage SCBA air during a simulated second-floor search in a Florida garden apartment, call a mayday using the 3 Ws (Who you are, What happened / what you need, Where you are) at the low-air warning, and self-rescue through a window onto a ground ladder while the rapid intervention crew responds. Tied to Brockton, Massachusetts, October 26, 2026, where a firefighter searching the second floor for a reported trapped child ran low on air, called a mayday, broke a window, and escaped down a ground ladder.",
-    nfpa: "NFPA 1001 · NFPA 1500 · NFPA 1407",
-    equipment: ["SCBA with PASS", "Thermal imaging camera", "Ground ladder placed at a window", "Radios", "Accountability tags", "Simulated occupant (manikin)"],
+    title: "Stop, Look, Live: Intersection Discipline and Rollover Prevention on an Emergency Response",
+    objective: "Drivers and officers practice full-stop or controlled intersection approaches with verbal cross-traffic callouts on a closed course, and review the roadway-departure recovery that prevents a rollover. Tied to Wichita, Kansas, October 27, 2026, and Madison County, Ohio, October 26, 2026.",
+    nfpa: "NFPA 1451 · NFPA 1500",
+    equipment: ["Engine or brush truck", "Cones marking a simulated intersection course on a closed lot", "Radios", "Seatbelts for every rider", "Spotter at each simulated intersection"],
     steps: [
-      "Officer gives a size-up and a search assignment by room. Each firefighter states a starting air pressure and an exit pressure out loud, and the officer records both on the accountability board before entry.",
-      "Search crew advances on a wall with a TIC, calls each room status by radio, and checks air at every room change. The officer calls a PAR and an air check at the halfway point of the evolution.",
-      "On the low-air warning (instructor-triggered if needed), the affected firefighter stops, activates PASS control as trained, and transmits the mayday using the 3 Ws: who they are, what happened (low air during search), and where they are (floor, room, window side).",
-      "Command acknowledges the mayday, clears the channel, deploys the rapid intervention crew to the ladder side, and keeps suppression and search assignments separate from the rescue assignment.",
-      "The firefighter moves to the window, signals the ladder crew, exits onto the ground ladder, and descends with a spotter below. The rapid intervention crew meets the firefighter at the base, confirms air status and injuries, and reports the mayday cleared with a PAR.",
-      "Crews swap roles and repeat with the reported trapped occupant found during the search, so the crew must pass the occupant information to command without delaying the low-air mayday or the self-rescue."
+      "Officer briefs the route, drill speed, seatbelt check, and the stop rule for real traffic.",
+      "Driver approaches with lights on, officer calls cross traffic left and right, driver makes a complete stop, and proceeds only on the officer clear call.",
+      "Repeat with simulated blind-side cross traffic: driver stops and waits for the spotter all-clear. Any roll-through repeats from the start.",
+      "Rollover-prevention walk-around segment: state the correct roadway-departure recovery out loud: ease off the throttle, hold the wheel steady, slow gradually, steer back only when speed is controlled. No live departure driving.",
+      "Apparatus inspection together: tires, load security, loose cab equipment, and seatbelt function.",
+      "Swap driver and officer roles and repeat."
     ],
-    safety: "No live fire or smoke. Full PPE and SCBA worn as in training policy, air tracked for real. Ladder work with a spotter at the base and a belay where policy requires. Stop for any real emergency, real injury, or a low-air alarm that is not part of the drill. Any firefighter who feels unwell exits immediately and is evaluated.",
-    benchmark: "Mayday transmitted within 15 seconds of the low-air warning with a complete 3 Ws report, self-rescue onto the ladder and down within 3 minutes of the mayday, and a full PAR with matching air readings within 1 minute of the mayday being cleared.",
-    relatedSops: ["SOP 359 — Personal Protective Equipment", "SOP 365 — Incident Safety Officer", "SOP 351 — General Department Safety"]
+    safety: "Closed course only, drill speed only, spotters at every simulated intersection, seatbelts for every movement, no live traffic, no abrupt steering at any speed, and stop for any real emergency.",
+    benchmark: "Every crew completes two approaches with a full stop, a verbal left-right-left callout, and an officer clear call before proceeding, with zero roll-throughs, and every member states the recovery sequence correctly.",
+    relatedSops: ["SOP 355 — Apparatus Safety", "SOP 350 — Accident- Injury Investigation", "SOP 692 — Traffic Preemption"]
   },
   tabletop: {
     duration: "15\u201320 minutes",
-    title: "Fully Involved on Arrival: Explosion in the First Minutes at a Detached Garage",
-    scenario: "A detached garage behind a single-story slab-on-grade Florida home is fully involved on arrival at about 21:10. Dispatch notes flag repeat responses to this address for illegal burning over the past six months. Shortly after crews and police arrive, an explosion damages nearby homes and injures a firefighter, two officers, and a civilian, all non-life-threatening. Tied to Springfield, Illinois, October 25, 2026.",
-    nfpa: "NFPA 1500 · NFPA 1561",
+    title: "11th Floor, Battery in the Room: High-Rise Apartment Fire with a Lithium-Ion Battery Present",
+    scenario: "About 00:50, an 11th-floor apartment fire in a Florida mid/high-rise: working fire in one unit, multiple occupants reported inside, a lithium-ion e-bike battery in the fire unit, hazmat requested, and five occupants removed in critical condition. Tied to Bronx, New York, October 28, 2026.",
+    nfpa: "NFPA 1561 · NFPA 1500",
     injects: [
-      { time: "0-5 min", text: "First crew reports a fully involved detached garage with exposures on two sides. What apparatus placement, first line choice, and standoff distance do you set before anyone is committed close to the structure, and how do you use the repeat-address flag from dispatch?" },
-      { time: "5-10 min", text: "An explosion occurs. A firefighter, two officers, and a civilian are hurt and nearby homes are damaged. What are your first five transmissions, who treats and transports, and how do you account for every responder who was in the blast area?" },
-      { time: "10-15 min", text: "The occupant is detained and investigators are requested. What do you preserve, what do you keep crews out of, and how do you handle overhaul when the scene is now a criminal investigation?" },
-      { time: "15-20 min", text: "Fire is out. What must be documented before release: injury reports, exposure and blast-area roster, damaged structures checked, notifications, and the post-incident analysis referral?" }
+      { time: "0-5 min", text: "First engine reports an 11th-floor fire. Standpipe and elevator versus stairs decisions: first assignments for attack, search, and lobby control, and who confirms standpipe pressure." },
+      { time: "5-10 min", text: "Search crews remove multiple critical occupants including children while a battery is reported in the fire unit. Who handles the battery, what do you keep people away from, and how do you keep the stairwell clear for removal and EMS?" },
+      { time: "10-15 min", text: "One removed child has died at the hospital and the others are critical. What notifications, documentation, and scene preservation start now, and what are the overhaul limits in a unit that may hold a damaged battery?" },
+      { time: "15-20 min", text: "Fire is under control. Verify the battery is isolated by hazmat, set a rekindle watch, complete occupant accountability by unit, hand displaced residents off, and complete injury and exposure reports." }
     ],
     questions: [
-      { group: "Firefighters", items: ["What garage contents change your standoff distance on sight (fuel containers, propane, vehicles, fireworks)?", "After an explosion, what do you report about yourself and your crew before you go back to work?"] },
-      { group: "Officers", items: ["How does a repeat-response history at an address change your size-up and your first assignments?", "When do you move from fire attack to a defensive, investigative posture, and who makes that call with law enforcement on scene?"] }
+      { group: "Firefighters", items: ["What changes in a high-rise search when the hallway is the only way out for occupants and crews?", "What are your first three actions on finding a damaged or off-gassing battery during overhaul?"] },
+      { group: "Officers", items: ["How do you keep search, attack, and EMS transport from competing for the same stairwell and elevator?", "When does the battery make this a combined fire and hazmat problem, and who is notified?"] }
     ],
-    teachingPoints: ["A fully involved detached garage is a defensive fire until exposures and contents say otherwise; nobody needs to be close to a structure that is already lost.", "Repeat-address information is a size-up input, not background noise, and it belongs in the first radio report.", "An explosion triggers accountability first: a PAR, a blast-area roster, and medical evaluation for everyone in it, including police and civilians.", "Once arson is suspected, overhaul stops being routine; preserve the scene and let investigators direct disturbance."],
-    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 402 — Pre-Incident Planning", "SOP 351 — General Department Safety"]
+    teachingPoints: ["The stairwell is a shared lifeline: protect it and assign its control early.", "A battery found at a fire is a hazmat input, not a cause determination: isolate it and expect rekindle risk.", "Critical removals need a transport log from the first removal.", "A death after removal starts notification, documentation, and scene preservation while operations continue."],
+    relatedSops: ["SOP 372 — Lithium-Ion Battery - Mobility Device Fires", "SOP 365 — Incident Safety Officer", "SOP 359 — Personal Protective Equipment"]
   }
 };
 /* DAILY-DRILLS-END */
 
 /* DRILL-LIBRARY-START — Prepend each morning's two drills to this array, newest first. */
 const DRILL_LIBRARY = [
+  {
+    updatedThrough: "October 28, 2026",
+    dateSort: "2026-10-28",
+    date: "October 28, 2026",
+    type: "Practical",
+    title: "Stop, Look, Live: Intersection Discipline and Rollover Prevention on an Emergency Response",
+    topic: "Intersection discipline and rollover prevention",
+    summary: "Drivers and officers practice full-stop or controlled intersection approaches with verbal cross-traffic callouts on a closed course, and review the roadway-departure recovery that prevents a rollover. Tied to Wichita, Kansas, October 27, 2026, and Madison County, Ohio, October 26, 2026.",
+    nfpa: ["NFPA 1451", "NFPA 1500"],
+    relatedSops: ["SOP 355 — Apparatus Safety", "SOP 350 — Accident- Injury Investigation", "SOP 692 — Traffic Preemption"],
+    details: {
+      equipment: ["Engine or brush truck", "Cones marking a simulated intersection course on a closed lot", "Radios", "Seatbelts for every rider", "Spotter at each simulated intersection"],
+      evolutions: [
+        "Officer briefs the route, drill speed, seatbelt check, and the stop rule for real traffic.",
+        "Driver approaches with lights on, officer calls cross traffic left and right, driver makes a complete stop, and proceeds only on the officer clear call.",
+        "Repeat with simulated blind-side cross traffic: driver stops and waits for the spotter all-clear. Any roll-through repeats from the start.",
+        "Rollover-prevention walk-around segment: state the correct roadway-departure recovery out loud: ease off the throttle, hold the wheel steady, slow gradually, steer back only when speed is controlled. No live departure driving.",
+        "Apparatus inspection together: tires, load security, loose cab equipment, and seatbelt function.",
+        "Swap driver and officer roles and repeat."
+      ],
+      safety: "Closed course only, drill speed only, spotters at every simulated intersection, seatbelts for every movement, no live traffic, no abrupt steering at any speed, and stop for any real emergency.",
+      benchmark: "Every crew completes two approaches with a full stop, a verbal left-right-left callout, and an officer clear call before proceeding, with zero roll-throughs, and every member states the recovery sequence correctly."
+    }
+  },
+  {
+    updatedThrough: "October 28, 2026",
+    dateSort: "2026-10-28",
+    date: "October 28, 2026",
+    type: "Tabletop",
+    title: "11th Floor, Battery in the Room: High-Rise Apartment Fire with a Lithium-Ion Battery Present",
+    topic: "High-rise apartment fire with a lithium-ion battery",
+    summary: "About 00:50, an 11th-floor apartment fire in a Florida mid/high-rise: working fire in one unit, multiple occupants reported inside, a lithium-ion e-bike battery in the fire unit, hazmat requested, and five occupants removed in critical condition. Tied to Bronx, New York, October 28, 2026.",
+    nfpa: ["NFPA 1561", "NFPA 1500"],
+    relatedSops: ["SOP 372 — Lithium-Ion Battery - Mobility Device Fires", "SOP 365 — Incident Safety Officer", "SOP 359 — Personal Protective Equipment"],
+    details: {
+      scenario: "About 00:50, an 11th-floor apartment fire in a Florida mid/high-rise: working fire in one unit, multiple occupants reported inside, a lithium-ion e-bike battery in the fire unit, hazmat requested, and five occupants removed in critical condition. Tied to Bronx, New York, October 28, 2026.",
+      injects: [
+        { time: "0-5 min", text: "First engine reports an 11th-floor fire. Standpipe and elevator versus stairs decisions: first assignments for attack, search, and lobby control, and who confirms standpipe pressure." },
+        { time: "5-10 min", text: "Search crews remove multiple critical occupants including children while a battery is reported in the fire unit. Who handles the battery, what do you keep people away from, and how do you keep the stairwell clear for removal and EMS?" },
+        { time: "10-15 min", text: "One removed child has died at the hospital and the others are critical. What notifications, documentation, and scene preservation start now, and what are the overhaul limits in a unit that may hold a damaged battery?" },
+        { time: "15-20 min", text: "Fire is under control. Verify the battery is isolated by hazmat, set a rekindle watch, complete occupant accountability by unit, hand displaced residents off, and complete injury and exposure reports." }
+      ],
+      questions: [
+        { group: "Firefighters", items: ["What changes in a high-rise search when the hallway is the only way out for occupants and crews?", "What are your first three actions on finding a damaged or off-gassing battery during overhaul?"] },
+        { group: "Officers", items: ["How do you keep search, attack, and EMS transport from competing for the same stairwell and elevator?", "When does the battery make this a combined fire and hazmat problem, and who is notified?"] }
+      ],
+      teachingPoints: ["The stairwell is a shared lifeline: protect it and assign its control early.", "A battery found at a fire is a hazmat input, not a cause determination: isolate it and expect rekindle risk.", "Critical removals need a transport log from the first removal.", "A death after removal starts notification, documentation, and scene preservation while operations continue."]
+    }
+  },
   {
     updatedThrough: "October 27, 2026",
     dateSort: "2026-10-27",
@@ -1138,63 +1187,56 @@ const DRILL_LIBRARY = [
 
 /* DAILY-DATA-START — Replace this one object during the morning artifact update. */
 const DASHBOARD_DATA = {
-  updatedThrough: "October 27, 2026",
+  updatedThrough: "October 28, 2026",
   drill: {
     duration: "20-45 minutes",
-    title: "Low Air, Call It Early: SCBA Air Management, the 3 Ws Mayday, and Window-to-Ladder Self-Rescue",
-    intro: "Crews manage SCBA air during a simulated second-floor search in a Florida garden apartment, call a mayday using the 3 Ws (Who you are, What happened / what you need, Where you are) at the low-air warning, and self-rescue through a window onto a ground ladder while the rapid intervention crew responds. Tied to Brockton, Massachusetts, October 26, 2026, where a firefighter searching the second floor for a reported trapped child ran low on air, called a mayday, broke a window, and escaped down a ground ladder.",
+    title: "Stop, Look, Live: Intersection Discipline and Rollover Prevention on an Emergency Response",
+    intro: "Drivers and officers practice full-stop or controlled intersection approaches with verbal cross-traffic callouts on a closed course, and review the roadway-departure recovery that prevents a rollover. Tied to Wichita, Kansas, October 27, 2026, and Madison County, Ohio, October 26, 2026.",
     steps: [
-      "Officer gives a size-up and a search assignment by room. Each firefighter states a starting air pressure and an exit pressure out loud, and the officer records both on the accountability board before entry.",
-      "Search crew advances on a wall with a TIC, calls each room status by radio, and checks air at every room change. The officer calls a PAR and an air check at the halfway point of the evolution.",
-      "On the low-air warning (instructor-triggered if needed), the affected firefighter stops, activates PASS control as trained, and transmits the mayday using the 3 Ws: who they are, what happened (low air during search), and where they are (floor, room, window side).",
-      "Command acknowledges the mayday, clears the channel, deploys the rapid intervention crew to the ladder side, and keeps suppression and search assignments separate from the rescue assignment.",
-      "The firefighter moves to the window, signals the ladder crew, exits onto the ground ladder, and descends with a spotter below. The rapid intervention crew meets the firefighter at the base, confirms air status and injuries, and reports the mayday cleared with a PAR.",
-      "Crews swap roles and repeat with the reported trapped occupant found during the search, so the crew must pass the occupant information to command without delaying the low-air mayday or the self-rescue."
+      "Officer briefs the route, drill speed, seatbelt check, and the stop rule for real traffic.",
+      "Driver approaches with lights on, officer calls cross traffic left and right, driver makes a complete stop, and proceeds only on the officer clear call.",
+      "Repeat with simulated blind-side cross traffic: driver stops and waits for the spotter all-clear. Any roll-through repeats from the start.",
+      "Rollover-prevention walk-around segment: state the correct roadway-departure recovery out loud: ease off the throttle, hold the wheel steady, slow gradually, steer back only when speed is controlled. No live departure driving.",
+      "Apparatus inspection together: tires, load security, loose cab equipment, and seatbelt function.",
+      "Swap driver and officer roles and repeat."
     ],
-    nfpa: "NFPA 1001 · NFPA 1500 · NFPA 1407",
-    relatedSops: ["SOP 359 — Personal Protective Equipment", "SOP 365 — Incident Safety Officer", "SOP 351 — General Department Safety"]
+    nfpa: "NFPA 1451 · NFPA 1500",
+    relatedSops: ["SOP 355 — Apparatus Safety", "SOP 350 — Accident- Injury Investigation", "SOP 692 — Traffic Preemption"]
   },
   daily: [
     {
       tag: "RESCUE",
-      department: "Brockton Fire Department (MA)",
-      date: "October 26, 2026",
-      outcome: "Firefighters rescued 5 people by ground ladders from the second floor of a five-alarm multifamily home fire at 303 Spring Street at about 8:21 AM; 11 people in total were taken to hospitals, including 4 firefighters, and the chief said none of the injuries were serious; 2 other occupants jumped from windows before crews arrived.",
-      url: "https://www.enterprisenews.com/story/news/fire/2026/10/26/brockton-fire-spring-street-house-rescue/92442175007/",
+      department: "Miami Fire Rescue (FL)",
+      date: "October 27, 2026",
+      outcome: "Crews responded at about 2:30 AM to a fourth-floor apartment fire at Blue Lakes Apartments in the Flagami neighborhood, and more than 100 firefighters responded. Firefighters helped 2 elderly residents from the fire apartment and assisted residents who use wheelchairs or could not move without help. The 2 elderly residents were hospitalized with minor smoke inhalation. All 52 units were evacuated and at least 15 residents were displaced.",
+      url: "https://focalnews.org/miami-fl/local/fire-at-flagamis-blue-lakes-apartments-sends-two-to-hospital-displaces-at-least-15",
       sops: ["SOP 697 — Thermal Imaging Cameras (Tic)", "SOP 359 — Personal Protective Equipment"]
-    },
-    {
-      tag: "MAYDAY",
-      department: "Brockton Fire Department (MA)",
-      date: "October 26, 2026",
-      outcome: "A firefighter searching the smoke-filled second floor for a reported trapped child ran low on air, called a mayday, broke a window, and escaped down a ground ladder; a rapid intervention team was sent in.",
-      url: "https://www.enterprisenews.com/story/news/fire/2026/10/26/brockton-fire-spring-street-house-rescue/92442175007/",
-      sops: ["SOP 365 — Incident Safety Officer", "SOP 359 — Personal Protective Equipment"]
     },
     {
       tag: "RESCUE",
-      department: "Rockford Fire Department (IL)",
-      date: "October 26, 2026",
-      outcome: "During a search of a house fire in the 700 block of Blenheim Drive at about 1:30 AM, crews found a resident in the basement and took the resident outside; the resident was transported to a hospital; 4 engines and 26 firefighters responded and damage was estimated at $10,000.",
-      url: "https://www.rockfordnewsfirst.com/2026/10/26/1-hospitalized-after-overnight-house-fire-rockford/",
-      sops: ["SOP 697 — Thermal Imaging Cameras (Tic)", "SOP 359 — Personal Protective Equipment"]
+      department: "FDNY (NY)",
+      date: "October 28, 2026",
+      outcome: "First responders rescued 5 people, 2 adults and 3 children, from an 11th-floor apartment fire at 320 Morris Avenue, Patterson Houses, in the Bronx, dispatched just after 12:50 AM. About 130 fire and EMS personnel responded. One child died at the hospital and the other 4 rescued were critical. Hazmat resources were deployed for a lithium-ion battery found at the scene, with the cause not established. The fire was under control by 2:05 AM.",
+      url: "https://nypost.com/2026/10/28/us-news/boy-dies-4-family-members-critical-after-fire-rips-through-bronx-apartment-report/",
+      sops: ["SOP 372 — Lithium-Ion Battery - Mobility Device Fires", "SOP 697 — Thermal Imaging Cameras (Tic)"]
     },
     {
       tag: "CRASH",
-      severity: "minor",
-      department: "Litchfield Fire Department (CT)",
-      date: "October 25, 2026",
-      outcome: "A fire truck and another vehicle collided on Route 202 (Torrington Road) at about 2:33 PM on Sunday; state police said the crash resulted in non-life-threatening injuries and released no other information.",
-      url: "https://www.fireapparatusmagazine.com/fire-apparatus/fire-truck-collides-with-vehicle-on-ct-route-202/",
+      severity: "fatal",
+      department: "Wichita Fire Department (KS)",
+      date: "October 27, 2026",
+      outcome: "Engine 20, responding northbound on Greenwich Road with lights and siren to a difficulty-breathing call at about 8:49 AM, collided with a civilian vehicle at Lincoln Street. The collision also involved a third vehicle. The civilian driver was transported and died. Fault has not been established.",
+      sourceNote: "KWCH, October 27, 2026",
       sops: ["SOP 355 — Apparatus Safety", "SOP 350 — Accident- Injury Investigation"]
     },
     {
-      tag: "CLOSE CALL",
-      department: "Springfield Fire Department (IL)",
-      date: "October 25, 2026",
-      outcome: "A detached garage was fully involved on arrival at about 9:10 PM in the 2100 block of South 12th Street; an explosion shortly after arrival injured 1 firefighter, 2 police officers, and 1 civilian, all non-life-threatening, and damaged several nearby structures; a man was arrested on arson charges and the address had repeated illegal-burning responses over the prior six months.",
-      url: "https://www.nprillinois.org/springfield-il/2026-10-26/spring-fire-that-led-to-an-explosion-results-in-aggravated-arson-arrest",
-      sops: ["SOP 365 — Incident Safety Officer", "SOP 351 — General Department Safety"]
+      tag: "CRASH",
+      severity: "serious",
+      department: "Central Townships Joint Fire District (OH)",
+      date: "October 26, 2026",
+      outcome: "Grass Fighter 293 was traveling southbound on State Route 56 near Moorman Road at about 55 mph at about 8:50 AM when the front right tire left the roadway. The driver tried to steer back, lost control, and the truck rolled multiple times, coming to rest on its roof. The driver, wearing a seat belt, was taken to a Columbus hospital; the extent of injuries was not released.",
+      url: "https://www.firefighterclosecalls.com/firefighter-injured-in-brush-truck-rollover-ohio/",
+      sops: ["SOP 355 — Apparatus Safety", "SOP 350 — Accident- Injury Investigation"]
     }
   ]
 };
@@ -3983,8 +4025,8 @@ incidents.forEach(incident=>{incident.sops=Array.isArray(incident.sops)&&inciden
 
 const YTD_TOTALS = {
   lodd: { total:73, sub:"31 INCIDENT-RELATED · 34 MEDICAL · 8 CAUSE PENDING · 6 FLORIDA · 67 NATIONAL" },
-  crash: { total:35, sub:"8 FATAL · 14 SERIOUS · 13 MINOR" },
-  rescue: { total:35, sub:"7 FLORIDA · 28 NATIONAL" },
+  crash: { total:37, sub:"9 FATAL · 15 SERIOUS · 13 MINOR" },
+  rescue: { total:37, sub:"8 FLORIDA · 29 NATIONAL" },
   mayday: { total:81, sub:"75 VERIFIED · 6 UNVERIFIED" },
   closecall: { total:17, sub:"6 FLORIDA · 11 NATIONAL" }
 };
