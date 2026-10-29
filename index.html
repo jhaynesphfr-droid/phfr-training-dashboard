@@ -187,55 +187,104 @@
     </div>
   </section>
 
-  <section class="section method" aria-labelledby="method-title"><h2 id="method-title">Scope and method</h2><p>This is a curated operational review for <span id="scopePeriod"></span>, built from the linked reports. Dashboard rescues are structure-fire incidents only; drowning responses are excluded. Close calls are notable near-misses reported by FirefighterCloseCalls.com, not a complete national census. Florida incidents are prioritized. Mayday scanner items are explicitly marked unverified; USFA statuses remain provisional where applicable.</p></section>
+  <section class="section method" aria-labelledby="method-title"><h2 id="method-title">Scope and method</h2><p>This is a curated operational review for <span id="scopePeriod"></span>, built from the linked reports. Dashboard rescues are structure-fire incidents only; drowning responses are excluded. Close calls are notable near-misses reported by FirefighterCloseCalls.com, not a complete national census. Florida incidents are prioritized. Mayday scanner items are explicitly marked unverified; USFA statuses remain provisional where applicable. LODD count check: USFA lists 72 for 2026 while this dashboard counts 74 because it includes three department-recognized LODDs not yet USFA-listed (Baltimore Oct 21, St. Lucie County Oct 24, Kansas City Oct 26), offset by one earlier USFA listing not on this dashboard; backfill audit still open.</p></section>
   <footer><span>Prepared for company training and after-action discussion.</span><span>Verify local SOGs and current NFPA editions before drilling.</span></footer>
 </main>
 
 <script>
 /* DAILY-DRILLS-START — Replace only this object during the morning drill update. */
 const DAILY_DRILLS = {
-  updatedThrough: "October 28, 2026",
+  updatedThrough: "October 29, 2026",
   practical: {
-    duration: "20\u201345 minutes",
-    title: "Stop, Look, Live: Intersection Discipline and Rollover Prevention on an Emergency Response",
-    objective: "Drivers and officers practice full-stop or controlled intersection approaches with verbal cross-traffic callouts on a closed course, and review the roadway-departure recovery that prevents a rollover. Tied to Wichita, Kansas, October 27, 2026, and Madison County, Ohio, October 26, 2026.",
+    duration: "20–45 minutes",
+    title: "Fit to Drive, Fit to Work: Pre-Shift Wellness Check and Apparatus Defect Hunt",
+    objective: "Crews run the start-of-shift routine that catches a member who is not fit to drive and an apparatus defect that should take the rig out of service: a plain-language wellness check, a seeded-defect apparatus inspection, and the driver-swap and out-of-service notification sequence. Tied to Watertown, New York, October 27, 2026, where a pumper driver suffered a sudden medical emergency, lost consciousness, and struck two utility poles; both firefighters were seat-belted.",
     nfpa: "NFPA 1451 · NFPA 1500",
-    equipment: ["Engine or brush truck", "Cones marking a simulated intersection course on a closed lot", "Radios", "Seatbelts for every rider", "Spotter at each simulated intersection"],
+    equipment: ["First-due engine", "Apparatus inspection checklist", "Seeded defect cards or tags (low tire, unsecured equipment, inoperative seatbelt, low fluid, burned-out light)", "Radios", "Out-of-service tag"],
     steps: [
-      "Officer briefs the route, drill speed, seatbelt check, and the stop rule for real traffic.",
-      "Driver approaches with lights on, officer calls cross traffic left and right, driver makes a complete stop, and proceeds only on the officer clear call.",
-      "Repeat with simulated blind-side cross traffic: driver stops and waits for the spotter all-clear. Any roll-through repeats from the start.",
-      "Rollover-prevention walk-around segment: state the correct roadway-departure recovery out loud: ease off the throttle, hold the wheel steady, slow gradually, steer back only when speed is controlled. No live departure driving.",
-      "Apparatus inspection together: tires, load security, loose cab equipment, and seatbelt function.",
-      "Swap driver and officer roles and repeat."
+      "Officer briefs the rule that any member who feels ill or unwell says so before the wheels roll, and the crew states the Watertown sequence out loud.",
+      "Wellness check round: each member states fitness for duty in plain language, including sleep, illness, and medication effects; the officer assigns the driver from the check, not habit.",
+      "Driver-swap evolution: on a simulated driver-down report, the crew secures the apparatus, notifies dispatch by radio with location and member condition, and requests a replacement driver and coverage.",
+      "Seeded-defect hunt: the crew inspects against the checklist and classifies each defect as out-of-service or document-and-monitor, and why.",
+      "Seatbelt and cab check: every seating position checked, loose cab equipment secured, every rider states the belt rule for any apparatus movement.",
+      "Close-out: officer files the inspection as if real, tags out-of-service defects, crew repeats the fit-to-drive rule: check yourself, check your partner, check the rig."
     ],
-    safety: "Closed course only, drill speed only, spotters at every simulated intersection, seatbelts for every movement, no live traffic, no abrupt steering at any speed, and stop for any real emergency.",
-    benchmark: "Every crew completes two approaches with a full stop, a verbal left-right-left callout, and an officer clear call before proceeding, with zero roll-throughs, and every member states the recovery sequence correctly.",
-    relatedSops: ["SOP 355 — Apparatus Safety", "SOP 350 — Accident- Injury Investigation", "SOP 692 — Traffic Preemption"]
+    safety: "Parked in quarters or on the apparatus floor, no driving evolutions; any real symptom ends that member's participation and is handled as a real medical matter; stop for any real emergency.",
+    benchmark: "Every crew finds all seeded defects, classifies each correctly, completes the driver-swap radio notification without prompting, and every member states the fit-to-drive and seatbelt rules correctly.",
+    relatedSops: ["SOP 351 — General Department Safety", "SOP 355 — Apparatus Safety", "SOP 905 — Vehicle And Equipment Inspection"]
   },
   tabletop: {
-    duration: "15\u201320 minutes",
-    title: "11th Floor, Battery in the Room: High-Rise Apartment Fire with a Lithium-Ion Battery Present",
-    scenario: "About 00:50, an 11th-floor apartment fire in a Florida mid/high-rise: working fire in one unit, multiple occupants reported inside, a lithium-ion e-bike battery in the fire unit, hazmat requested, and five occupants removed in critical condition. Tied to Bronx, New York, October 28, 2026.",
-    nfpa: "NFPA 1561 · NFPA 1500",
+    duration: "15–20 minutes",
+    title: "The Exposure You Cannot See: Occupational Cancer, Decon, and the Exposure Record",
+    scenario: "A division chief in a neighboring department has just died of occupational cancer, recognized as a line-of-duty death, after more than two decades of service. Your crew worked a working house fire last shift with heavy smoke, a long overhaul, and gear that went back on the rig dirty. The question is what your company actually does, today, to keep that story from being yours. Tied to Kansas City, Missouri, October 26, 2026.",
+    nfpa: "NFPA 1500 · NFPA 1582 · NFPA 1584",
     injects: [
-      { time: "0-5 min", text: "First engine reports an 11th-floor fire. Standpipe and elevator versus stairs decisions: first assignments for attack, search, and lobby control, and who confirms standpipe pressure." },
-      { time: "5-10 min", text: "Search crews remove multiple critical occupants including children while a battery is reported in the fire unit. Who handles the battery, what do you keep people away from, and how do you keep the stairwell clear for removal and EMS?" },
-      { time: "10-15 min", text: "One removed child has died at the hospital and the others are critical. What notifications, documentation, and scene preservation start now, and what are the overhaul limits in a unit that may hold a damaged battery?" },
-      { time: "15-20 min", text: "Fire is under control. Verify the battery is isolated by hazmat, set a rekindle watch, complete occupant accountability by unit, hand displaced residents off, and complete injury and exposure reports." }
+      { time: "0-5 min", text: "Reconstruct last shift's fire: who did gross decon, who skipped it, whose gear rode in the cab, who showered within the hour; name gaps by practice, not by person." },
+      { time: "5-10 min", text: "If a member is diagnosed in fifteen years, what documentation ties their exposures to their service, who writes the exposure entry, when, and where does it live?" },
+      { time: "10-15 min", text: "A senior member says decon and screening are personal choices; the officer must hold the standard without a fight. What is non-negotiable versus personal?" },
+      { time: "15-20 min", text: "Screening and follow-through: what screening does each member qualify for, who tracks it, and what the company does this week (gear cleaning requests, cab decon, shower-within-the-hour rule)." }
     ],
     questions: [
-      { group: "Firefighters", items: ["What changes in a high-rise search when the hallway is the only way out for occupants and crews?", "What are your first three actions on finding a damaged or off-gassing battery during overhaul?"] },
-      { group: "Officers", items: ["How do you keep search, attack, and EMS transport from competing for the same stairwell and elevator?", "When does the battery make this a combined fire and hazmat problem, and who is notified?"] }
+      { group: "Firefighters", items: ["What is the fastest gross decon you will actually do every time?", "What rides in your cab that should never ride there after a fire?"] },
+      { group: "Officers", items: ["How do you build the exposure record into the incident report workflow so it happens on a busy night?", "When a member resists screening or decon, what is your first conversation, and when does it become a fitness-for-duty matter?"] }
     ],
-    teachingPoints: ["The stairwell is a shared lifeline: protect it and assign its control early.", "A battery found at a fire is a hazmat input, not a cause determination: isolate it and expect rekindle risk.", "Critical removals need a transport log from the first removal.", "A death after removal starts notification, documentation, and scene preservation while operations continue."],
-    relatedSops: ["SOP 372 — Lithium-Ion Battery - Mobility Device Fires", "SOP 365 — Incident Safety Officer", "SOP 359 — Personal Protective Equipment"]
+    teachingPoints: ["Occupational cancer deaths are line-of-duty deaths; the controls are gross decon on scene, clean gear out of the cab, shower within the hour, and a written exposure record for every working fire.", "The exposure record written today is the document a family and a department will need decades from now.", "Officers set the culture: the crew does what the officer does.", "Screening only helps if members actually go, so tracking and follow-through are company officer work."],
+    relatedSops: ["SOP 369 — Post Fire Hygine And Cancer Prevention", "SOP 351 — General Department Safety", "SOP 223 — Ff Lodd"]
   }
 };
 /* DAILY-DRILLS-END */
 
 /* DRILL-LIBRARY-START — Prepend each morning's two drills to this array, newest first. */
 const DRILL_LIBRARY = [
+  {
+    updatedThrough: "October 29, 2026",
+    dateSort: "2026-10-29",
+    date: "October 29, 2026",
+    type: "Practical",
+    title: "Fit to Drive, Fit to Work: Pre-Shift Wellness Check and Apparatus Defect Hunt",
+    topic: "Pre-shift wellness check and apparatus inspection",
+    summary: "Crews run the start-of-shift routine that catches a member who is not fit to drive and an apparatus defect that should take the rig out of service: a plain-language wellness check, a seeded-defect apparatus inspection, and the driver-swap and out-of-service notification sequence. Tied to Watertown, New York, October 27, 2026, where a pumper driver suffered a sudden medical emergency, lost consciousness, and struck two utility poles; both firefighters were seat-belted.",
+    nfpa: ["NFPA 1451", "NFPA 1500"],
+    relatedSops: ["SOP 351 — General Department Safety", "SOP 355 — Apparatus Safety", "SOP 905 — Vehicle And Equipment Inspection"],
+    details: {
+      equipment: ["First-due engine", "Apparatus inspection checklist", "Seeded defect cards or tags (low tire, unsecured equipment, inoperative seatbelt, low fluid, burned-out light)", "Radios", "Out-of-service tag"],
+      evolutions: [
+        "Officer briefs the rule that any member who feels ill or unwell says so before the wheels roll, and the crew states the Watertown sequence out loud.",
+        "Wellness check round: each member states fitness for duty in plain language, including sleep, illness, and medication effects; the officer assigns the driver from the check, not habit.",
+        "Driver-swap evolution: on a simulated driver-down report, the crew secures the apparatus, notifies dispatch by radio with location and member condition, and requests a replacement driver and coverage.",
+        "Seeded-defect hunt: the crew inspects against the checklist and classifies each defect as out-of-service or document-and-monitor, and why.",
+        "Seatbelt and cab check: every seating position checked, loose cab equipment secured, every rider states the belt rule for any apparatus movement.",
+        "Close-out: officer files the inspection as if real, tags out-of-service defects, crew repeats the fit-to-drive rule: check yourself, check your partner, check the rig."
+      ],
+      safety: "Parked in quarters or on the apparatus floor, no driving evolutions; any real symptom ends that member's participation and is handled as a real medical matter; stop for any real emergency.",
+      benchmark: "Every crew finds all seeded defects, classifies each correctly, completes the driver-swap radio notification without prompting, and every member states the fit-to-drive and seatbelt rules correctly."
+    }
+  },
+  {
+    updatedThrough: "October 29, 2026",
+    dateSort: "2026-10-29",
+    date: "October 29, 2026",
+    type: "Tabletop",
+    title: "The Exposure You Cannot See: Occupational Cancer, Decon, and the Exposure Record",
+    topic: "Occupational cancer, decon, and exposure records",
+    summary: "A division chief in a neighboring department has just died of occupational cancer, recognized as a line-of-duty death, after more than two decades of service. Your crew worked a working house fire last shift with heavy smoke, a long overhaul, and gear that went back on the rig dirty. The question is what your company actually does, today, to keep that story from being yours. Tied to Kansas City, Missouri, October 26, 2026.",
+    nfpa: ["NFPA 1500", "NFPA 1582", "NFPA 1584"],
+    relatedSops: ["SOP 369 — Post Fire Hygine And Cancer Prevention", "SOP 351 — General Department Safety", "SOP 223 — Ff Lodd"],
+    details: {
+      scenario: "A division chief in a neighboring department has just died of occupational cancer, recognized as a line-of-duty death, after more than two decades of service. Your crew worked a working house fire last shift with heavy smoke, a long overhaul, and gear that went back on the rig dirty. The question is what your company actually does, today, to keep that story from being yours. Tied to Kansas City, Missouri, October 26, 2026.",
+      injects: [
+        { time: "0-5 min", text: "Reconstruct last shift's fire: who did gross decon, who skipped it, whose gear rode in the cab, who showered within the hour; name gaps by practice, not by person." },
+        { time: "5-10 min", text: "If a member is diagnosed in fifteen years, what documentation ties their exposures to their service, who writes the exposure entry, when, and where does it live?" },
+        { time: "10-15 min", text: "A senior member says decon and screening are personal choices; the officer must hold the standard without a fight. What is non-negotiable versus personal?" },
+        { time: "15-20 min", text: "Screening and follow-through: what screening does each member qualify for, who tracks it, and what the company does this week (gear cleaning requests, cab decon, shower-within-the-hour rule)." }
+      ],
+      questions: [
+        { group: "Firefighters", items: ["What is the fastest gross decon you will actually do every time?", "What rides in your cab that should never ride there after a fire?"] },
+        { group: "Officers", items: ["How do you build the exposure record into the incident report workflow so it happens on a busy night?", "When a member resists screening or decon, what is your first conversation, and when does it become a fitness-for-duty matter?"] }
+      ],
+      teachingPoints: ["Occupational cancer deaths are line-of-duty deaths; the controls are gross decon on scene, clean gear out of the cab, shower within the hour, and a written exposure record for every working fire.", "The exposure record written today is the document a family and a department will need decades from now.", "Officers set the culture: the crew does what the officer does.", "Screening only helps if members actually go, so tracking and follow-through are company officer work."]
+    }
+  },
   {
     updatedThrough: "October 28, 2026",
     dateSort: "2026-10-28",
@@ -1187,55 +1236,46 @@ const DRILL_LIBRARY = [
 
 /* DAILY-DATA-START — Replace this one object during the morning artifact update. */
 const DASHBOARD_DATA = {
-  updatedThrough: "October 28, 2026",
+  updatedThrough: "October 29, 2026",
   drill: {
     duration: "20-45 minutes",
-    title: "Stop, Look, Live: Intersection Discipline and Rollover Prevention on an Emergency Response",
-    intro: "Drivers and officers practice full-stop or controlled intersection approaches with verbal cross-traffic callouts on a closed course, and review the roadway-departure recovery that prevents a rollover. Tied to Wichita, Kansas, October 27, 2026, and Madison County, Ohio, October 26, 2026.",
+    title: "Fit to Drive, Fit to Work: Pre-Shift Wellness Check and Apparatus Defect Hunt",
+    intro: "Crews run the start-of-shift routine that catches a member who is not fit to drive and an apparatus defect that should take the rig out of service: a plain-language wellness check, a seeded-defect apparatus inspection, and the driver-swap and out-of-service notification sequence. Tied to Watertown, New York, October 27, 2026, where a pumper driver suffered a sudden medical emergency, lost consciousness, and struck two utility poles; both firefighters were seat-belted.",
     steps: [
-      "Officer briefs the route, drill speed, seatbelt check, and the stop rule for real traffic.",
-      "Driver approaches with lights on, officer calls cross traffic left and right, driver makes a complete stop, and proceeds only on the officer clear call.",
-      "Repeat with simulated blind-side cross traffic: driver stops and waits for the spotter all-clear. Any roll-through repeats from the start.",
-      "Rollover-prevention walk-around segment: state the correct roadway-departure recovery out loud: ease off the throttle, hold the wheel steady, slow gradually, steer back only when speed is controlled. No live departure driving.",
-      "Apparatus inspection together: tires, load security, loose cab equipment, and seatbelt function.",
-      "Swap driver and officer roles and repeat."
+      "Officer briefs the rule that any member who feels ill or unwell says so before the wheels roll, and the crew states the Watertown sequence out loud.",
+      "Wellness check round: each member states fitness for duty in plain language, including sleep, illness, and medication effects; the officer assigns the driver from the check, not habit.",
+      "Driver-swap evolution: on a simulated driver-down report, the crew secures the apparatus, notifies dispatch by radio with location and member condition, and requests a replacement driver and coverage.",
+      "Seeded-defect hunt: the crew inspects against the checklist and classifies each defect as out-of-service or document-and-monitor, and why.",
+      "Seatbelt and cab check: every seating position checked, loose cab equipment secured, every rider states the belt rule for any apparatus movement.",
+      "Close-out: officer files the inspection as if real, tags out-of-service defects, crew repeats the fit-to-drive rule: check yourself, check your partner, check the rig."
     ],
     nfpa: "NFPA 1451 · NFPA 1500",
-    relatedSops: ["SOP 355 — Apparatus Safety", "SOP 350 — Accident- Injury Investigation", "SOP 692 — Traffic Preemption"]
+    relatedSops: ["SOP 351 — General Department Safety", "SOP 355 — Apparatus Safety", "SOP 905 — Vehicle And Equipment Inspection"]
   },
   daily: [
     {
+      tag: "LODD",
+      department: "Kansas City Fire Department (MO)",
+      date: "October 26, 2026",
+      outcome: "A division chief died Monday night of occupational cancer, and the fire department recognized the death as a line-of-duty death; services were being planned for the following week. Not yet USFA-listed.",
+      url: "https://www.firefighternation.com/health-wellness/physical-health/kansas-city-mo-division-chief-dies-after-cancer-battle/",
+      sops: ["SOP 223 — Ff Lodd"]
+    },
+    {
       tag: "RESCUE",
-      department: "Miami Fire Rescue (FL)",
+      department: "Aberdeen Fire Department (MD)",
       date: "October 27, 2026",
-      outcome: "Crews responded at about 2:30 AM to a fourth-floor apartment fire at Blue Lakes Apartments in the Flagami neighborhood, and more than 100 firefighters responded. Firefighters helped 2 elderly residents from the fire apartment and assisted residents who use wheelchairs or could not move without help. The 2 elderly residents were hospitalized with minor smoke inhalation. All 52 units were evacuated and at least 15 residents were displaced.",
-      url: "https://focalnews.org/miami-fl/local/fire-at-flagamis-blue-lakes-apartments-sends-two-to-hospital-displaces-at-least-15",
+      outcome: "Crews arriving at an apartment fire in the unit block of East Bel Air Avenue found flames shooting from a first-floor window and pulled 2 residents who had been trapped upstairs from a second-floor balcony; no one was injured, 28 residents were displaced, and damage was estimated at $500,000.",
+      url: "https://dailydispatch.com/fire-news/maryland/firefighters-rescue-2-trapped-residents-from-aberdeen-apartment-fire-leaving-28-people-displaced/",
       sops: ["SOP 697 — Thermal Imaging Cameras (Tic)", "SOP 359 — Personal Protective Equipment"]
-    },
-    {
-      tag: "RESCUE",
-      department: "FDNY (NY)",
-      date: "October 28, 2026",
-      outcome: "First responders rescued 5 people, 2 adults and 3 children, from an 11th-floor apartment fire at 320 Morris Avenue, Patterson Houses, in the Bronx, dispatched just after 12:50 AM. About 130 fire and EMS personnel responded. One child died at the hospital and the other 4 rescued were critical. Hazmat resources were deployed for a lithium-ion battery found at the scene, with the cause not established. The fire was under control by 2:05 AM.",
-      url: "https://nypost.com/2026/10/28/us-news/boy-dies-4-family-members-critical-after-fire-rips-through-bronx-apartment-report/",
-      sops: ["SOP 372 — Lithium-Ion Battery - Mobility Device Fires", "SOP 697 — Thermal Imaging Cameras (Tic)"]
-    },
-    {
-      tag: "CRASH",
-      severity: "fatal",
-      department: "Wichita Fire Department (KS)",
-      date: "October 27, 2026",
-      outcome: "Engine 20, responding northbound on Greenwich Road with lights and siren to a difficulty-breathing call at about 8:49 AM, collided with a civilian vehicle at Lincoln Street. The collision also involved a third vehicle. The civilian driver was transported and died. Fault has not been established.",
-      sourceNote: "KWCH, October 27, 2026",
-      sops: ["SOP 355 — Apparatus Safety", "SOP 350 — Accident- Injury Investigation"]
     },
     {
       tag: "CRASH",
       severity: "serious",
-      department: "Central Townships Joint Fire District (OH)",
-      date: "October 26, 2026",
-      outcome: "Grass Fighter 293 was traveling southbound on State Route 56 near Moorman Road at about 55 mph at about 8:50 AM when the front right tire left the roadway. The driver tried to steer back, lost control, and the truck rolled multiple times, coming to rest on its roof. The driver, wearing a seat belt, was taken to a Columbus hospital; the extent of injuries was not released.",
-      url: "https://www.firefighterclosecalls.com/firefighter-injured-in-brush-truck-rollover-ohio/",
+      department: "Town of Watertown Fire Department (NY)",
+      date: "October 27, 2026",
+      outcome: "At about 9:30 AM, while returning to quarters from an alarm activation, the pumper driver suffered a sudden medical emergency and lost consciousness, and the apparatus struck two utility poles on Washington Street; both firefighters were seat-belted, the driver was still being evaluated in the emergency department that afternoon, and the second firefighter was evaluated at the scene and released.",
+      url: "https://www.firehouse.com:443/safety-health/news/55414894/driver-suffers-medical-emergency-crashes-watertown-ny-pumper",
       sops: ["SOP 355 — Apparatus Safety", "SOP 350 — Accident- Injury Investigation"]
     }
   ]
@@ -4024,9 +4064,9 @@ function incidentSopBackfill(incident){
 incidents.forEach(incident=>{incident.sops=Array.isArray(incident.sops)&&incident.sops.length?incident.sops:incidentSopBackfill(incident)});
 
 const YTD_TOTALS = {
-  lodd: { total:73, sub:"31 INCIDENT-RELATED · 34 MEDICAL · 8 CAUSE PENDING · 6 FLORIDA · 67 NATIONAL" },
-  crash: { total:37, sub:"9 FATAL · 15 SERIOUS · 13 MINOR" },
-  rescue: { total:37, sub:"8 FLORIDA · 29 NATIONAL" },
+  lodd: { total:74, sub:"31 INCIDENT-RELATED · 35 MEDICAL · 8 CAUSE PENDING · 6 FLORIDA · 68 NATIONAL" },
+  crash: { total:38, sub:"9 FATAL · 16 SERIOUS · 13 MINOR" },
+  rescue: { total:38, sub:"8 FLORIDA · 30 NATIONAL" },
   mayday: { total:81, sub:"75 VERIFIED · 6 UNVERIFIED" },
   closecall: { total:17, sub:"6 FLORIDA · 11 NATIONAL" }
 };
