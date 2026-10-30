@@ -135,7 +135,7 @@
       <div><div class="eyebrow">Site-published annual fatality totals</div><div class="annual-totals"><div class="annual-total"><strong>67</strong><span>2026</span></div><div class="annual-total"><strong>84</strong><span>2025</span></div><div class="annual-total"><strong>63</strong><span>2024</span></div><div class="annual-total"><strong>85</strong><span>2023</span></div><div class="annual-total"><strong>101</strong><span>2022</span></div><div class="annual-total"><strong>139</strong><span>2021</span></div></div></div>
     </aside>
     <aside class="closecall-overview suicide-overview" id="suicideOverview" hidden>
-      <div><div class="eyebrow">Behavioral health</div><h3>Firefighter Behavioral Health Alliance</h3><p id="fbhaTallyText">FBHA validated tally (ffbha.org, checked October 29, 2026): 2,392 validated suicide deaths tracked since 2010. Current counts: FF 57, EMS 11, DISP 8.</p><p class="suicide-note">Entries in this category describe people by role only.</p></div>
+      <div><div class="eyebrow">Behavioral health</div><h3>Firefighter Behavioral Health Alliance</h3><p id="fbhaTallyText">FBHA validated tally (ffbha.org, checked October 30, 2026): 2,392 validated suicide deaths tracked since 2010. Current counts: FF 57, EMS 11, DISP 8.</p><p class="suicide-note">Entries in this category describe people by role only.</p></div>
       <div><div class="eyebrow">How entries are flagged</div><div class="suicide-status-defs"><div class="suicide-status-def"><span class="badge status-confirmed">Confirmed</span><p>An official department or family statement, a news report, or FBHA validation confirms suicide.</p></div><div class="suicide-status-def"><span class="badge status-reported">Reported</span><p>The only sources are social media or advocacy posts.</p></div></div></div>
     </aside>
     <p class="cause-summary" id="causeSummary" aria-live="polite"></p>
@@ -200,48 +200,97 @@
 <script>
 /* DAILY-DRILLS-START — Replace only this object during the morning drill update. */
 const DAILY_DRILLS = {
-  updatedThrough: "October 29, 2026",
+  updatedThrough: "October 30, 2026",
   practical: {
     duration: "20–45 minutes",
-    title: "Fit to Drive, Fit to Work: Pre-Shift Wellness Check and Apparatus Defect Hunt",
-    objective: "Crews run the start-of-shift routine that catches a member who is not fit to drive and an apparatus defect that should take the rig out of service: a plain-language wellness check, a seeded-defect apparatus inspection, and the driver-swap and out-of-service notification sequence. Tied to Watertown, New York, October 27, 2026, where a pumper driver suffered a sudden medical emergency, lost consciousness, and struck two utility poles; both firefighters were seat-belted.",
+    title: "Block to Protect, Brace to Survive: Blocking Position, Advance Warning, and Struck-By Readiness",
+    objective: "Crews practice setting a blocking position that protects the work area, placing advance warning upstream, keeping members out of the exposed lane, and bracing when a vehicle does not slow. Tied to Brookfield, Vermont, October 27, 2026, where Tanker 1 was parked with emergency lights activated closing the right lane of northbound Interstate 89 while crews worked an earlier crash, when a sedan struck the rear of the tanker at a high rate of speed, rupturing the water tank and lodging under the rear; both vehicles were destroyed, the sedan driver was extricated with serious injuries, and the tanker driver, who saw the car in a mirror and braced, was not injured; both drivers were seat-belted.",
     nfpa: "NFPA 1451 · NFPA 1500",
-    equipment: ["First-due engine", "Apparatus inspection checklist", "Seeded defect cards or tags (low tire, unsecured equipment, inoperative seatbelt, low fluid, burned-out light)", "Radios", "Out-of-service tag"],
+    equipment: ["First-due engine or tanker", "Traffic cones and advance warning sign or flares", "Traffic safety vests for every member", "Radios", "Spotter position with a clear view upstream"],
     steps: [
-      "Officer briefs the rule that any member who feels ill or unwell says so before the wheels roll, and the crew states the Watertown sequence out loud.",
-      "Wellness check round: each member states fitness for duty in plain language, including sleep, illness, and medication effects; the officer assigns the driver from the check, not habit.",
-      "Driver-swap evolution: on a simulated driver-down report, the crew secures the apparatus, notifies dispatch by radio with location and member condition, and requests a replacement driver and coverage.",
-      "Seeded-defect hunt: the crew inspects against the checklist and classifies each defect as out-of-service or document-and-monitor, and why.",
-      "Seatbelt and cab check: every seating position checked, loose cab equipment secured, every rider states the belt rule for any apparatus movement.",
-      "Close-out: officer files the inspection as if real, tags out-of-service defects, crew repeats the fit-to-drive rule: check yourself, check your partner, check the rig."
+      "Officer briefs the Brookfield sequence out loud: blocking rig in place with lights on, work area behind it, a high-speed sedan that did not slow, and a driver who survived by seeing it in the mirror and bracing.",
+      "Blocking position evolution: position the apparatus at an angle to close the lane, wheels turned away from the work area, emergency lights activated, and state why the angle and wheel direction protect the crew if the rig is struck.",
+      "Advance warning evolution: place cones and advance warning upstream at a distance matched to speed, tapering traffic away from the closed lane before it reaches the work area.",
+      "Protected work area evolution: all members exit on the side away from traffic, don traffic safety vests before entering the roadway, work only in the shadow of the blocking rig, and keep every member out of the exposed lane.",
+      "Brace-to-survive evolution: the driver stays seat-belted in the cab, scans mirrors for approaching traffic, and on a simulated non-slowing vehicle calls a radio warning to the crew, braces, and holds position; crew members move deeper into the protected area on the warning, never toward traffic.",
+      "Close-out: officer walks the scene from upstream to downstream, crew corrects any gap in warning distance, cone taper, vest use, or lane discipline, and every member states the rule: block to protect, warn early, stay out of the exposed lane, and brace when a vehicle does not slow."
     ],
-    safety: "Parked in quarters or on the apparatus floor, no driving evolutions; any real symptom ends that member's participation and is handled as a real medical matter; stop for any real emergency.",
-    benchmark: "Every crew finds all seeded defects, classifies each correctly, completes the driver-swap radio notification without prompting, and every member states the fit-to-drive and seatbelt rules correctly.",
-    relatedSops: ["SOP 351 — General Department Safety", "SOP 355 — Apparatus Safety", "SOP 905 — Vehicle And Equipment Inspection"]
+    safety: "Closed lot or controlled training area only, no live traffic in an open lane; spotters at the upstream end for any roadway-adjacent setup, vests for every member outside the cab, seatbelts for any apparatus movement, and stop for any real emergency.",
+    benchmark: "Every crew sets an angled blocking position with wheels turned away, places advance warning and a cone taper at speed-appropriate distance, keeps all members vested and out of the exposed lane for the full evolution, and completes the mirror-scan, radio warning, and brace sequence without prompting.",
+    relatedSops: ["SOP 355 — Apparatus Safety", "SOP 362 — Traffic Safety Vests"]
   },
   tabletop: {
     duration: "15–20 minutes",
-    title: "The Exposure You Cannot See: Occupational Cancer, Decon, and the Exposure Record",
-    scenario: "A division chief in a neighboring department has just died of occupational cancer, recognized as a line-of-duty death, after more than two decades of service. Your crew worked a working house fire last shift with heavy smoke, a long overhaul, and gear that went back on the rig dirty. The question is what your company actually does, today, to keep that story from being yours. Tied to Kansas City, Missouri, October 26, 2026.",
-    nfpa: "NFPA 1500 · NFPA 1582 · NFPA 1584",
+    title: "Two Critical, Fire Spreading Next Door: Rescue, Exposure Protection, and Transport Priority",
+    scenario: "A fully involved townhouse fire at night: firefighters have removed two occupants, both in critical condition, and fire is spreading to the attached residence next door. Command must split effort between continued search and rescue, exposure protection for the attached home, and transport priority for the two critical patients without losing accountability. Tied to Newark, New Jersey, October 28, 2026, where firefighters rescued 2 women from a burning home, both remained in critical condition, and the fire spread to adjacent residences.",
+    nfpa: "NFPA 1561 · NFPA 1500",
     injects: [
-      { time: "0-5 min", text: "Reconstruct last shift's fire: who did gross decon, who skipped it, whose gear rode in the cab, who showered within the hour; name gaps by practice, not by person." },
-      { time: "5-10 min", text: "If a member is diagnosed in fifteen years, what documentation ties their exposures to their service, who writes the exposure entry, when, and where does it live?" },
-      { time: "10-15 min", text: "A senior member says decon and screening are personal choices; the officer must hold the standard without a fight. What is non-negotiable versus personal?" },
-      { time: "15-20 min", text: "Screening and follow-through: what screening does each member qualify for, who tracks it, and what the company does this week (gear cleaning requests, cab decon, shower-within-the-hour rule)." }
+      { time: "0-5 min", text: "Arrival and rescue: heavy fire in the townhouse, two occupants reported inside. Who searches with a thermal imaging camera, who protects the search with a line, and what does command announce as the first priority?" },
+      { time: "5-10 min", text: "Both occupants are removed in critical condition at the same time and only one transport unit is on scene. Who decides transport priority and order, who continues patient care, and what is requested next?" },
+      { time: "10-15 min", text: "Fire is now showing in the attached residence next door. Does command pull crews from the primary search to protect the exposure, assign a new company, or go defensive, and how is the change announced and accounted for?" },
+      { time: "15-20 min", text: "A safety officer reports worsening conditions in the fire unit while a crew is still inside. What triggers withdrawal, how is accountability confirmed, and what is the plan for the exposure and the remaining search?" }
     ],
     questions: [
-      { group: "Firefighters", items: ["What is the fastest gross decon you will actually do every time?", "What rides in your cab that should never ride there after a fire?"] },
-      { group: "Officers", items: ["How do you build the exposure record into the incident report workflow so it happens on a busy night?", "When a member resists screening or decon, what is your first conversation, and when does it become a fitness-for-duty matter?"] }
+      { group: "Firefighters", items: ["How do you use the thermal imaging camera to speed the search without skipping areas, and what do you do if the camera fails in heat?", "When you bring a critical occupant out, what information does the transport crew need from you in the first thirty seconds?"] },
+      { group: "Officers", items: ["How do you divide companies between rescue, exposure protection, and fire attack when all three are urgent at once?", "What is your transport priority decision when two critical patients come out together and transport is limited, and who owns patient care until they leave?"] }
     ],
-    teachingPoints: ["Occupational cancer deaths are line-of-duty deaths; the controls are gross decon on scene, clean gear out of the cab, shower within the hour, and a written exposure record for every working fire.", "The exposure record written today is the document a family and a department will need decades from now.", "Officers set the culture: the crew does what the officer does.", "Screening only helps if members actually go, so tracking and follow-through are company officer work."],
-    relatedSops: ["SOP 369 — Post Fire Hygine And Cancer Prevention", "SOP 351 — General Department Safety", "SOP 223 — Ff Lodd"]
+    teachingPoints: ["Life safety stays first: a staffed search with thermal imaging and line protection, and a clear plan to continue the search after the first removals.", "Exposure protection is part of the rescue problem: fire spreading to an attached residence creates new occupants at risk, so command assigns it early instead of reacting late.", "Transport priority is a command decision made out loud: most critical first, continuous care until handoff, and additional transport requested before it is needed.", "The incident safety officer watches conditions in both the fire unit and the exposure, and withdrawal and accountability are announced, confirmed, and documented."],
+    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 697 — Thermal Imaging Cameras (Tic)"]
   }
 };
 /* DAILY-DRILLS-END */
 
 /* DRILL-LIBRARY-START — Prepend each morning's two drills to this array, newest first. */
 const DRILL_LIBRARY = [
+  {
+    updatedThrough: "October 30, 2026",
+    dateSort: "2026-10-30",
+    date: "October 30, 2026",
+    type: "Practical",
+    title: "Block to Protect, Brace to Survive: Blocking Position, Advance Warning, and Struck-By Readiness",
+    topic: "Blocking position, advance warning, and struck-by readiness",
+    summary: "Crews practice setting a blocking position that protects the work area, placing advance warning upstream, keeping members out of the exposed lane, and bracing when a vehicle does not slow. Tied to Brookfield, Vermont, October 27, 2026, where Tanker 1 was parked with emergency lights activated closing the right lane of northbound Interstate 89 while crews worked an earlier crash, when a sedan struck the rear of the tanker at a high rate of speed, rupturing the water tank and lodging under the rear; both vehicles were destroyed, the sedan driver was extricated with serious injuries, and the tanker driver, who saw the car in a mirror and braced, was not injured; both drivers were seat-belted.",
+    nfpa: ["NFPA 1451", "NFPA 1500"],
+    relatedSops: ["SOP 355 — Apparatus Safety", "SOP 362 — Traffic Safety Vests"],
+    details: {
+      equipment: ["First-due engine or tanker", "Traffic cones and advance warning sign or flares", "Traffic safety vests for every member", "Radios", "Spotter position with a clear view upstream"],
+      evolutions: [
+        "Officer briefs the Brookfield sequence out loud: blocking rig in place with lights on, work area behind it, a high-speed sedan that did not slow, and a driver who survived by seeing it in the mirror and bracing.",
+        "Blocking position evolution: position the apparatus at an angle to close the lane, wheels turned away from the work area, emergency lights activated, and state why the angle and wheel direction protect the crew if the rig is struck.",
+        "Advance warning evolution: place cones and advance warning upstream at a distance matched to speed, tapering traffic away from the closed lane before it reaches the work area.",
+        "Protected work area evolution: all members exit on the side away from traffic, don traffic safety vests before entering the roadway, work only in the shadow of the blocking rig, and keep every member out of the exposed lane.",
+        "Brace-to-survive evolution: the driver stays seat-belted in the cab, scans mirrors for approaching traffic, and on a simulated non-slowing vehicle calls a radio warning to the crew, braces, and holds position; crew members move deeper into the protected area on the warning, never toward traffic.",
+        "Close-out: officer walks the scene from upstream to downstream, crew corrects any gap in warning distance, cone taper, vest use, or lane discipline, and every member states the rule: block to protect, warn early, stay out of the exposed lane, and brace when a vehicle does not slow."
+      ],
+      safety: "Closed lot or controlled training area only, no live traffic in an open lane; spotters at the upstream end for any roadway-adjacent setup, vests for every member outside the cab, seatbelts for any apparatus movement, and stop for any real emergency.",
+      benchmark: "Every crew sets an angled blocking position with wheels turned away, places advance warning and a cone taper at speed-appropriate distance, keeps all members vested and out of the exposed lane for the full evolution, and completes the mirror-scan, radio warning, and brace sequence without prompting."
+    }
+  },
+  {
+    updatedThrough: "October 30, 2026",
+    dateSort: "2026-10-30",
+    date: "October 30, 2026",
+    type: "Tabletop",
+    title: "Two Critical, Fire Spreading Next Door: Rescue, Exposure Protection, and Transport Priority",
+    topic: "Rescue, exposure protection, and transport priority",
+    summary: "A fully involved townhouse fire at night: firefighters have removed two occupants, both in critical condition, and fire is spreading to the attached residence next door. Command must split effort between continued search and rescue, exposure protection for the attached home, and transport priority for the two critical patients without losing accountability. Tied to Newark, New Jersey, October 28, 2026, where firefighters rescued 2 women from a burning home, both remained in critical condition, and the fire spread to adjacent residences.",
+    nfpa: ["NFPA 1561", "NFPA 1500"],
+    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 697 — Thermal Imaging Cameras (Tic)"],
+    details: {
+      scenario: "A fully involved townhouse fire at night: firefighters have removed two occupants, both in critical condition, and fire is spreading to the attached residence next door. Command must split effort between continued search and rescue, exposure protection for the attached home, and transport priority for the two critical patients without losing accountability. Tied to Newark, New Jersey, October 28, 2026, where firefighters rescued 2 women from a burning home, both remained in critical condition, and the fire spread to adjacent residences.",
+      injects: [
+        { time: "0-5 min", text: "Arrival and rescue: heavy fire in the townhouse, two occupants reported inside. Who searches with a thermal imaging camera, who protects the search with a line, and what does command announce as the first priority?" },
+        { time: "5-10 min", text: "Both occupants are removed in critical condition at the same time and only one transport unit is on scene. Who decides transport priority and order, who continues patient care, and what is requested next?" },
+        { time: "10-15 min", text: "Fire is now showing in the attached residence next door. Does command pull crews from the primary search to protect the exposure, assign a new company, or go defensive, and how is the change announced and accounted for?" },
+        { time: "15-20 min", text: "A safety officer reports worsening conditions in the fire unit while a crew is still inside. What triggers withdrawal, how is accountability confirmed, and what is the plan for the exposure and the remaining search?" }
+      ],
+      questions: [
+        { group: "Firefighters", items: ["How do you use the thermal imaging camera to speed the search without skipping areas, and what do you do if the camera fails in heat?", "When you bring a critical occupant out, what information does the transport crew need from you in the first thirty seconds?"] },
+        { group: "Officers", items: ["How do you divide companies between rescue, exposure protection, and fire attack when all three are urgent at once?", "What is your transport priority decision when two critical patients come out together and transport is limited, and who owns patient care until they leave?"] }
+      ],
+      teachingPoints: ["Life safety stays first: a staffed search with thermal imaging and line protection, and a clear plan to continue the search after the first removals.", "Exposure protection is part of the rescue problem: fire spreading to an attached residence creates new occupants at risk, so command assigns it early instead of reacting late.", "Transport priority is a command decision made out loud: most critical first, continuous care until handoff, and additional transport requested before it is needed.", "The incident safety officer watches conditions in both the fire unit and the exposure, and withdrawal and accountability are announced, confirmed, and documented."]
+    }
+  },
   {
     updatedThrough: "October 29, 2026",
     dateSort: "2026-10-29",
@@ -1242,47 +1291,39 @@ const DRILL_LIBRARY = [
 
 /* DAILY-DATA-START — Replace this one object during the morning artifact update. */
 const DASHBOARD_DATA = {
-  updatedThrough: "October 29, 2026",
+  updatedThrough: "October 30, 2026",
   drill: {
     duration: "20-45 minutes",
-    title: "Fit to Drive, Fit to Work: Pre-Shift Wellness Check and Apparatus Defect Hunt",
-    intro: "Crews run the start-of-shift routine that catches a member who is not fit to drive and an apparatus defect that should take the rig out of service: a plain-language wellness check, a seeded-defect apparatus inspection, and the driver-swap and out-of-service notification sequence. Tied to Watertown, New York, October 27, 2026, where a pumper driver suffered a sudden medical emergency, lost consciousness, and struck two utility poles; both firefighters were seat-belted.",
+    title: "Block to Protect, Brace to Survive: Blocking Position, Advance Warning, and Struck-By Readiness",
+    intro: "Crews practice setting a blocking position that protects the work area, placing advance warning upstream, keeping members out of the exposed lane, and bracing when a vehicle does not slow. Tied to Brookfield, Vermont, October 27, 2026, where Tanker 1 was parked with emergency lights activated closing the right lane of northbound Interstate 89 while crews worked an earlier crash, when a sedan struck the rear of the tanker at a high rate of speed, rupturing the water tank and lodging under the rear; both vehicles were destroyed, the sedan driver was extricated with serious injuries, and the tanker driver, who saw the car in a mirror and braced, was not injured; both drivers were seat-belted.",
     steps: [
-      "Officer briefs the rule that any member who feels ill or unwell says so before the wheels roll, and the crew states the Watertown sequence out loud.",
-      "Wellness check round: each member states fitness for duty in plain language, including sleep, illness, and medication effects; the officer assigns the driver from the check, not habit.",
-      "Driver-swap evolution: on a simulated driver-down report, the crew secures the apparatus, notifies dispatch by radio with location and member condition, and requests a replacement driver and coverage.",
-      "Seeded-defect hunt: the crew inspects against the checklist and classifies each defect as out-of-service or document-and-monitor, and why.",
-      "Seatbelt and cab check: every seating position checked, loose cab equipment secured, every rider states the belt rule for any apparatus movement.",
-      "Close-out: officer files the inspection as if real, tags out-of-service defects, crew repeats the fit-to-drive rule: check yourself, check your partner, check the rig."
+      "Officer briefs the Brookfield sequence out loud: blocking rig in place with lights on, work area behind it, a high-speed sedan that did not slow, and a driver who survived by seeing it in the mirror and bracing.",
+      "Blocking position evolution: position the apparatus at an angle to close the lane, wheels turned away from the work area, emergency lights activated, and state why the angle and wheel direction protect the crew if the rig is struck.",
+      "Advance warning evolution: place cones and advance warning upstream at a distance matched to speed, tapering traffic away from the closed lane before it reaches the work area.",
+      "Protected work area evolution: all members exit on the side away from traffic, don traffic safety vests before entering the roadway, work only in the shadow of the blocking rig, and keep every member out of the exposed lane.",
+      "Brace-to-survive evolution: the driver stays seat-belted in the cab, scans mirrors for approaching traffic, and on a simulated non-slowing vehicle calls a radio warning to the crew, braces, and holds position; crew members move deeper into the protected area on the warning, never toward traffic.",
+      "Close-out: officer walks the scene from upstream to downstream, crew corrects any gap in warning distance, cone taper, vest use, or lane discipline, and every member states the rule: block to protect, warn early, stay out of the exposed lane, and brace when a vehicle does not slow."
     ],
     nfpa: "NFPA 1451 · NFPA 1500",
-    relatedSops: ["SOP 351 — General Department Safety", "SOP 355 — Apparatus Safety", "SOP 905 — Vehicle And Equipment Inspection"]
+    relatedSops: ["SOP 355 — Apparatus Safety", "SOP 362 — Traffic Safety Vests"]
   },
   daily: [
     {
-      tag: "LODD",
-      department: "Kansas City Fire Department (MO)",
-      date: "October 26, 2026",
-      outcome: "A division chief died Monday night of occupational cancer, and the fire department recognized the death as a line-of-duty death; services were being planned for the following week. Not yet USFA-listed.",
-      url: "https://www.firefighternation.com/health-wellness/physical-health/kansas-city-mo-division-chief-dies-after-cancer-battle/",
-      sops: ["SOP 223 — Ff Lodd"]
+      tag: "CRASH",
+      severity: "serious",
+      department: "Brookfield Fire Department (VT)",
+      date: "October 27, 2026",
+      outcome: "Tanker 1 parked with emergency lights activated closing the right lane of northbound Interstate 89 while crews worked an earlier passenger car and box truck crash, when a sedan struck the rear of the tanker at a high rate of speed, rupturing the water tank and lodging under the rear; both vehicles were destroyed, the sedan driver was extricated and taken to a hospital with serious injuries, and the tanker driver, who saw the car in a mirror and braced, was not injured; both drivers were seat-belted.",
+      url: "https://www.firehouse.com/apparatus/type/tanker-tender/video/55415223/brookfield-vt-rig-totaled-after-being-hit-on-interstate",
+      sops: ["SOP 355 — Apparatus Safety", "SOP 362 — Traffic Safety Vests"]
     },
     {
       tag: "RESCUE",
-      department: "Aberdeen Fire Department (MD)",
-      date: "October 27, 2026",
-      outcome: "Crews arriving at an apartment fire in the unit block of East Bel Air Avenue found flames shooting from a first-floor window and pulled 2 residents who had been trapped upstairs from a second-floor balcony; no one was injured, 28 residents were displaced, and damage was estimated at $500,000.",
-      url: "https://dailydispatch.com/fire-news/maryland/firefighters-rescue-2-trapped-residents-from-aberdeen-apartment-fire-leaving-28-people-displaced/",
+      department: "Newark Fire Department (NJ)",
+      date: "October 28, 2026",
+      outcome: "Firefighters rescued 2 women from a burning home on Wednesday night; both remained in critical condition, and the fire spread to adjacent residences.",
+      url: "https://www.youtube.com/watch?v=NhYDaydL_6U",
       sops: ["SOP 697 — Thermal Imaging Cameras (Tic)", "SOP 359 — Personal Protective Equipment"]
-    },
-    {
-      tag: "CRASH",
-      severity: "serious",
-      department: "Town of Watertown Fire Department (NY)",
-      date: "October 27, 2026",
-      outcome: "At about 9:30 AM, while returning to quarters from an alarm activation, the pumper driver suffered a sudden medical emergency and lost consciousness, and the apparatus struck two utility poles on Washington Street; both firefighters were seat-belted, the driver was still being evaluated in the emergency department that afternoon, and the second firefighter was evaluated at the scene and released.",
-      url: "https://www.firehouse.com:443/safety-health/news/55414894/driver-suffers-medical-emergency-crashes-watertown-ny-pumper",
-      sops: ["SOP 355 — Apparatus Safety", "SOP 350 — Accident- Injury Investigation"]
     }
   ]
 };
@@ -1294,7 +1335,7 @@ const SUICIDE_DATA = {
   ffbhaFF: 57,
   ffbhaEMS: 11,
   ffbhaDISP: 8,
-  ffbhaChecked: "October 29, 2026"
+  ffbhaChecked: "October 30, 2026"
 };
 /* SUICIDE-DATA-END */
 
@@ -4092,8 +4133,8 @@ incidents.forEach(incident=>{incident.sops=Array.isArray(incident.sops)&&inciden
 
 const YTD_TOTALS = {
   lodd: { total:74, sub:"31 INCIDENT-RELATED · 35 MEDICAL · 8 CAUSE PENDING · 6 FLORIDA · 68 NATIONAL" },
-  crash: { total:38, sub:"9 FATAL · 16 SERIOUS · 13 MINOR" },
-  rescue: { total:38, sub:"8 FLORIDA · 30 NATIONAL" },
+  crash: { total:39, sub:"9 FATAL · 17 SERIOUS · 13 MINOR" },
+  rescue: { total:39, sub:"8 FLORIDA · 31 NATIONAL" },
   mayday: { total:81, sub:"75 VERIFIED · 6 UNVERIFIED" },
   closecall: { total:17, sub:"6 FLORIDA · 11 NATIONAL" },
   suicide: { total:1, sub:"1 FLORIDA · 0 NATIONAL" }
