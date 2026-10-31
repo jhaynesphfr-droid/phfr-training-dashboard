@@ -194,48 +194,97 @@
 <script>
 /* DAILY-DRILLS-START — Replace only this object during the morning drill update. */
 const DAILY_DRILLS = {
-  updatedThrough: "October 30, 2026",
+  updatedThrough: "October 31, 2026",
   practical: {
     duration: "20–45 minutes",
-    title: "Block to Protect, Brace to Survive: Blocking Position, Advance Warning, and Struck-By Readiness",
-    objective: "Crews practice setting a blocking position that protects the work area, placing advance warning upstream, keeping members out of the exposed lane, and bracing when a vehicle does not slow. Tied to Brookfield, Vermont, October 27, 2026, where Tanker 1 was parked with emergency lights activated closing the right lane of northbound Interstate 89 while crews worked an earlier crash, when a sedan struck the rear of the tanker at a high rate of speed, rupturing the water tank and lodging under the rear; both vehicles were destroyed, the sedan driver was extricated with serious injuries, and the tanker driver, who saw the car in a mirror and braced, was not injured; both drivers were seat-belted.",
-    nfpa: "NFPA 1451 · NFPA 1500",
-    equipment: ["First-due engine or tanker", "Traffic cones and advance warning sign or flares", "Traffic safety vests for every member", "Radios", "Spotter position with a clear view upstream"],
+    title: "Force the Blocked Door: Conventional Forcible Entry When the Fire Is at the Entrance",
+    objective: "Crews force a residential door that cannot be opened normally because fire and debris are at the entrance, control the door while entry is made, and move straight into a primary search of a single-story slab-on-grade Florida home; tied to the Bronx Patterson Houses fire of October 28, 2026 (burning e-bike blocked the only exit, crews forced the door) and Syracuse October 29, 2026.",
+    nfpa: "NFPA 1001 · NFPA 1500",
+    equipment: ["Irons (flat-head axe and Halligan)", "Wedge", "Forcible entry prop", "TIC", "Handline or water can", "Full PPE and SCBA", "Radios"],
     steps: [
-      "Officer briefs the Brookfield sequence out loud: blocking rig in place with lights on, work area behind it, a high-speed sedan that did not slow, and a driver who survived by seeing it in the mirror and bracing.",
-      "Blocking position evolution: position the apparatus at an angle to close the lane, wheels turned away from the work area, emergency lights activated, and state why the angle and wheel direction protect the crew if the rig is struck.",
-      "Advance warning evolution: place cones and advance warning upstream at a distance matched to speed, tapering traffic away from the closed lane before it reaches the work area.",
-      "Protected work area evolution: all members exit on the side away from traffic, don traffic safety vests before entering the roadway, work only in the shadow of the blocking rig, and keep every member out of the exposed lane.",
-      "Brace-to-survive evolution: the driver stays seat-belted in the cab, scans mirrors for approaching traffic, and on a simulated non-slowing vehicle calls a radio warning to the crew, braces, and holds position; crew members move deeper into the protected area on the warning, never toward traffic.",
-      "Close-out: officer walks the scene from upstream to downstream, crew corrects any gap in warning distance, cone taper, vest use, or lane discipline, and every member states the rule: block to protect, warn early, stay out of the exposed lane, and brace when a vehicle does not slow."
+      "Officer briefs both tie-in fires: the Bronx Patterson Houses fire of October 28, 2026, where a burning e-bike blocked the only exit and crews forced the door, and Syracuse, October 29, 2026.",
+      "Size-up and tool call with charged line or water can at the door before the first strike.",
+      "Outward-swinging door force with door control.",
+      "Inward-swinging door force against resistance with threshold debris check.",
+      "Entry and TIC-guided first-room search with plain-language report.",
+      "Reset, rotate all positions, restate the three rules."
     ],
-    safety: "Closed lot or controlled training area only, no live traffic in an open lane; spotters at the upstream end for any roadway-adjacent setup, vests for every member outside the cab, seatbelts for any apparatus movement, and stop for any real emergency.",
-    benchmark: "Every crew sets an angled blocking position with wheels turned away, places advance warning and a cone taper at speed-appropriate distance, keeps all members vested and out of the exposed lane for the full evolution, and completes the mirror-scan, radio warning, and brace sequence without prompting.",
-    relatedSops: ["SOP 355 — Apparatus Safety", "SOP 362 — Traffic Safety Vests"]
+    safety: "Full PPE and eye protection, one striker at a time on command, stop for any tool slip or member in the swing path, training prop only, no live fire.",
+    benchmark: "Door forced under control in 90 seconds or less, door controlled throughout, line or water can in place before forcing, clean transition to first-room search, every member rotates through all three positions.",
+    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 359 — Personal Protective Equipment"]
   },
   tabletop: {
     duration: "15–20 minutes",
-    title: "Two Critical, Fire Spreading Next Door: Rescue, Exposure Protection, and Transport Priority",
-    scenario: "A fully involved townhouse fire at night: firefighters have removed two occupants, both in critical condition, and fire is spreading to the attached residence next door. Command must split effort between continued search and rescue, exposure protection for the attached home, and transport priority for the two critical patients without losing accountability. Tied to Newark, New Jersey, October 28, 2026, where firefighters rescued 2 women from a burning home, both remained in critical condition, and the fire spread to adjacent residences.",
-    nfpa: "NFPA 1561 · NFPA 1500",
+    title: "Three Vehicles, Four on Board: The First 10 Minutes After Your Engine Is Hit",
+    scenario: "Your engine responding to an emergency call is in a three-vehicle intersection collision; four members on board, three hurt and transported stable, a civilian driver refuses treatment, police investigating, tied to Memphis and Cincinnati, October 30, 2026.",
+    nfpa: "NFPA 1500",
     injects: [
-      { time: "0-5 min", text: "Arrival and rescue: heavy fire in the townhouse, two occupants reported inside. Who searches with a thermal imaging camera, who protects the search with a line, and what does command announce as the first priority?" },
-      { time: "5-10 min", text: "Both occupants are removed in critical condition at the same time and only one transport unit is on scene. Who decides transport priority and order, who continues patient care, and what is requested next?" },
-      { time: "10-15 min", text: "Fire is now showing in the attached residence next door. Does command pull crews from the primary search to protect the exposure, assign a new company, or go defensive, and how is the change announced and accounted for?" },
-      { time: "15-20 min", text: "A safety officer reports worsening conditions in the fire unit while a crew is still inside. What triggers withdrawal, how is accountability confirmed, and what is the plan for the exposure and the remaining search?" }
+      { time: "0-5 min", text: "First report content and splitting command between the crash and the original call: what is transmitted first, who takes the crash scene, and who owns the original call?" },
+      { time: "5-10 min", text: "Transport, hospital and department notifications, accountability for the fourth member, apparatus and gear: who is notified, in what order, and how is the fourth member accounted for?" },
+      { time: "10-15 min", text: "Police requests for driver and apparatus data, news crew arrival, family member call, what is preserved for the investigation: what is shared, what is held, and what is preserved first?" },
+      { time: "15-20 min", text: "Coverage and mutual aid decisions, documentation before end of shift, what the department owes injured members in the first 24 hours: what coverage is requested, what is documented now, and what support starts today?" }
     ],
     questions: [
-      { group: "Firefighters", items: ["How do you use the thermal imaging camera to speed the search without skipping areas, and what do you do if the camera fails in heat?", "When you bring a critical occupant out, what information does the transport crew need from you in the first thirty seconds?"] },
-      { group: "Officers", items: ["How do you divide companies between rescue, exposure protection, and fire attack when all three are urgent at once?", "What is your transport priority decision when two critical patients come out together and transport is limited, and who owns patient care until they leave?"] }
+      { group: "Firefighters", items: ["What do you check on yourself and your crew before the radio?", "What belongs in the first report and what does not?"] },
+      { group: "Officers", items: ["How do you split command between the crash scene and the original call?", "Which notifications are yours in the first 10 minutes and what documentation starts now?"] }
     ],
-    teachingPoints: ["Life safety stays first: a staffed search with thermal imaging and line protection, and a clear plan to continue the search after the first removals.", "Exposure protection is part of the rescue problem: fire spreading to an attached residence creates new occupants at risk, so command assigns it early instead of reacting late.", "Transport priority is a command decision made out loud: most critical first, continuous care until handoff, and additional transport requested before it is needed.", "The incident safety officer watches conditions in both the fire unit and the exposure, and withdrawal and accountability are announced, confirmed, and documented."],
-    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 697 — Thermal Imaging Cameras (Tic)"]
+    teachingPoints: ["The first post-crash report is a mayday-grade transmission (location, crew count, injuries, hazards, resources).", "The original call still needs an assigned response.", "Injured members, apparatus and data are one investigation, preserve first and comment later.", "Family notification runs through the department only."],
+    relatedSops: ["SOP 355 — Apparatus Safety", "SOP 350 — Accident- Injury Investigation", "SOP 223 — Ff Serious Injury"]
   }
 };
 /* DAILY-DRILLS-END */
 
 /* DRILL-LIBRARY-START — Prepend each morning's two drills to this array, newest first. */
 const DRILL_LIBRARY = [
+  {
+    updatedThrough: "October 31, 2026",
+    dateSort: "2026-10-31",
+    date: "October 31, 2026",
+    type: "Practical",
+    title: "Force the Blocked Door: Conventional Forcible Entry When the Fire Is at the Entrance",
+    topic: "Conventional forcible entry when fire is at the entrance",
+    summary: "Crews force a residential door that cannot be opened normally because fire and debris are at the entrance, control the door while entry is made, and move straight into a primary search of a single-story slab-on-grade Florida home; tied to the Bronx Patterson Houses fire of October 28, 2026 (burning e-bike blocked the only exit, crews forced the door) and Syracuse October 29, 2026.",
+    nfpa: ["NFPA 1001", "NFPA 1500"],
+    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 359 — Personal Protective Equipment"],
+    details: {
+      equipment: ["Irons (flat-head axe and Halligan)", "Wedge", "Forcible entry prop", "TIC", "Handline or water can", "Full PPE and SCBA", "Radios"],
+      evolutions: [
+        "Officer briefs both tie-in fires: the Bronx Patterson Houses fire of October 28, 2026, where a burning e-bike blocked the only exit and crews forced the door, and Syracuse, October 29, 2026.",
+        "Size-up and tool call with charged line or water can at the door before the first strike.",
+        "Outward-swinging door force with door control.",
+        "Inward-swinging door force against resistance with threshold debris check.",
+        "Entry and TIC-guided first-room search with plain-language report.",
+        "Reset, rotate all positions, restate the three rules."
+      ],
+      safety: "Full PPE and eye protection, one striker at a time on command, stop for any tool slip or member in the swing path, training prop only, no live fire.",
+      benchmark: "Door forced under control in 90 seconds or less, door controlled throughout, line or water can in place before forcing, clean transition to first-room search, every member rotates through all three positions."
+    }
+  },
+  {
+    updatedThrough: "October 31, 2026",
+    dateSort: "2026-10-31",
+    date: "October 31, 2026",
+    type: "Tabletop",
+    title: "Three Vehicles, Four on Board: The First 10 Minutes After Your Engine Is Hit",
+    topic: "First 10 minutes after an apparatus crash",
+    summary: "Your engine responding to an emergency call is in a three-vehicle intersection collision; four members on board, three hurt and transported stable, a civilian driver refuses treatment, police investigating, tied to Memphis and Cincinnati, October 30, 2026.",
+    nfpa: ["NFPA 1500"],
+    relatedSops: ["SOP 355 — Apparatus Safety", "SOP 350 — Accident- Injury Investigation", "SOP 223 — Ff Serious Injury"],
+    details: {
+      scenario: "Your engine responding to an emergency call is in a three-vehicle intersection collision; four members on board, three hurt and transported stable, a civilian driver refuses treatment, police investigating, tied to Memphis and Cincinnati, October 30, 2026.",
+      injects: [
+        { time: "0-5 min", text: "First report content and splitting command between the crash and the original call: what is transmitted first, who takes the crash scene, and who owns the original call?" },
+        { time: "5-10 min", text: "Transport, hospital and department notifications, accountability for the fourth member, apparatus and gear: who is notified, in what order, and how is the fourth member accounted for?" },
+        { time: "10-15 min", text: "Police requests for driver and apparatus data, news crew arrival, family member call, what is preserved for the investigation: what is shared, what is held, and what is preserved first?" },
+        { time: "15-20 min", text: "Coverage and mutual aid decisions, documentation before end of shift, what the department owes injured members in the first 24 hours: what coverage is requested, what is documented now, and what support starts today?" }
+      ],
+      questions: [
+        { group: "Firefighters", items: ["What do you check on yourself and your crew before the radio?", "What belongs in the first report and what does not?"] },
+        { group: "Officers", items: ["How do you split command between the crash scene and the original call?", "Which notifications are yours in the first 10 minutes and what documentation starts now?"] }
+      ],
+      teachingPoints: ["The first post-crash report is a mayday-grade transmission (location, crew count, injuries, hazards, resources).", "The original call still needs an assigned response.", "Injured members, apparatus and data are one investigation, preserve first and comment later.", "Family notification runs through the department only."]
+    }
+  },
   {
     updatedThrough: "October 30, 2026",
     dateSort: "2026-10-30",
@@ -1285,39 +1334,48 @@ const DRILL_LIBRARY = [
 
 /* DAILY-DATA-START — Replace this one object during the morning artifact update. */
 const DASHBOARD_DATA = {
-  updatedThrough: "October 30, 2026",
+  updatedThrough: "October 31, 2026",
   drill: {
     duration: "20-45 minutes",
-    title: "Block to Protect, Brace to Survive: Blocking Position, Advance Warning, and Struck-By Readiness",
-    intro: "Crews practice setting a blocking position that protects the work area, placing advance warning upstream, keeping members out of the exposed lane, and bracing when a vehicle does not slow. Tied to Brookfield, Vermont, October 27, 2026, where Tanker 1 was parked with emergency lights activated closing the right lane of northbound Interstate 89 while crews worked an earlier crash, when a sedan struck the rear of the tanker at a high rate of speed, rupturing the water tank and lodging under the rear; both vehicles were destroyed, the sedan driver was extricated with serious injuries, and the tanker driver, who saw the car in a mirror and braced, was not injured; both drivers were seat-belted.",
+    title: "Force the Blocked Door: Conventional Forcible Entry When the Fire Is at the Entrance",
+    intro: "Crews force a residential door that cannot be opened normally because fire and debris are at the entrance, control the door while entry is made, and move straight into a primary search of a single-story slab-on-grade Florida home; tied to the Bronx Patterson Houses fire of October 28, 2026 (burning e-bike blocked the only exit, crews forced the door) and Syracuse October 29, 2026.",
     steps: [
-      "Officer briefs the Brookfield sequence out loud: blocking rig in place with lights on, work area behind it, a high-speed sedan that did not slow, and a driver who survived by seeing it in the mirror and bracing.",
-      "Blocking position evolution: position the apparatus at an angle to close the lane, wheels turned away from the work area, emergency lights activated, and state why the angle and wheel direction protect the crew if the rig is struck.",
-      "Advance warning evolution: place cones and advance warning upstream at a distance matched to speed, tapering traffic away from the closed lane before it reaches the work area.",
-      "Protected work area evolution: all members exit on the side away from traffic, don traffic safety vests before entering the roadway, work only in the shadow of the blocking rig, and keep every member out of the exposed lane.",
-      "Brace-to-survive evolution: the driver stays seat-belted in the cab, scans mirrors for approaching traffic, and on a simulated non-slowing vehicle calls a radio warning to the crew, braces, and holds position; crew members move deeper into the protected area on the warning, never toward traffic.",
-      "Close-out: officer walks the scene from upstream to downstream, crew corrects any gap in warning distance, cone taper, vest use, or lane discipline, and every member states the rule: block to protect, warn early, stay out of the exposed lane, and brace when a vehicle does not slow."
+      "Officer briefs both tie-in fires: the Bronx Patterson Houses fire of October 28, 2026, where a burning e-bike blocked the only exit and crews forced the door, and Syracuse, October 29, 2026.",
+      "Size-up and tool call with charged line or water can at the door before the first strike.",
+      "Outward-swinging door force with door control.",
+      "Inward-swinging door force against resistance with threshold debris check.",
+      "Entry and TIC-guided first-room search with plain-language report.",
+      "Reset, rotate all positions, restate the three rules."
     ],
-    nfpa: "NFPA 1451 · NFPA 1500",
-    relatedSops: ["SOP 355 — Apparatus Safety", "SOP 362 — Traffic Safety Vests"]
+    nfpa: "NFPA 1001 · NFPA 1500",
+    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 359 — Personal Protective Equipment"]
   },
   daily: [
     {
-      tag: "CRASH",
-      severity: "serious",
-      department: "Brookfield Fire Department (VT)",
-      date: "October 27, 2026",
-      outcome: "Tanker 1 parked with emergency lights activated closing the right lane of northbound Interstate 89 while crews worked an earlier passenger car and box truck crash, when a sedan struck the rear of the tanker at a high rate of speed, rupturing the water tank and lodging under the rear; both vehicles were destroyed, the sedan driver was extricated and taken to a hospital with serious injuries, and the tanker driver, who saw the car in a mirror and braced, was not injured; both drivers were seat-belted.",
-      url: "https://www.firehouse.com/apparatus/type/tanker-tender/video/55415223/brookfield-vt-rig-totaled-after-being-hit-on-interstate",
-      sops: ["SOP 355 — Apparatus Safety", "SOP 362 — Traffic Safety Vests"]
+      tag: "RESCUE",
+      department: "Syracuse Fire Department (NY)",
+      date: "October 29, 2026",
+      outcome: "Firefighters and police removed 2 occupants from a fully engulfed two-family house fire on Jamesville Avenue; a child removed with no pulse regained a pulse at the hospital and a woman was transported in critical condition; a second child was found deceased during the search; 3 police officers and 2 firefighters were injured.",
+      url: "https://www.firehouse.com/community-risk/investigation-equipment/video/55415605/mayday-mayday-send-everyone-trapped-syracuse-ny-firefighter-calls",
+      sops: ["SOP 697 — Thermal Imaging Cameras (Tic)", "SOP 359 — Personal Protective Equipment"]
     },
     {
-      tag: "RESCUE",
-      department: "Newark Fire Department (NJ)",
-      date: "October 28, 2026",
-      outcome: "Firefighters rescued 2 women from a burning home on Wednesday night; both remained in critical condition, and the fire spread to adjacent residences.",
-      url: "https://www.youtube.com/watch?v=NhYDaydL_6U",
-      sops: ["SOP 697 — Thermal Imaging Cameras (Tic)", "SOP 359 — Personal Protective Equipment"]
+      tag: "CRASH",
+      severity: "serious",
+      department: "Memphis Fire Department (TN)",
+      date: "October 30, 2026",
+      outcome: "A fire truck responding to an emergency call was involved in a three-vehicle collision at South Highland Street and Southern Avenue; 4 firefighters on board, 3 transported to an area hospital in stable condition; a driver in another vehicle refused treatment; police investigating.",
+      url: "https://www.firefighterclosecalls.com/three-memphis-firefighters-injured-in-apparatus-crash-tennessee/",
+      sops: ["SOP 355 — Apparatus Safety", "SOP 350 — Accident- Injury Investigation"]
+    },
+    {
+      tag: "CRASH",
+      severity: "minor",
+      department: "Cincinnati Fire Department (OH)",
+      date: "October 30, 2026",
+      outcome: "Engine 51 ran into a building in College Hill while responding to a reported explosion; no injuries reported; crash under investigation.",
+      url: "https://www.firefighterclosecalls.com/2026/10/30/",
+      sops: ["SOP 355 — Apparatus Safety"]
     }
   ]
 };
@@ -4107,8 +4165,8 @@ incidents.forEach(incident=>{incident.sops=Array.isArray(incident.sops)&&inciden
 
 const YTD_TOTALS = {
   lodd: { total:74, sub:"31 INCIDENT-RELATED · 35 MEDICAL · 8 CAUSE PENDING · 6 FLORIDA · 68 NATIONAL" },
-  crash: { total:39, sub:"9 FATAL · 17 SERIOUS · 13 MINOR" },
-  rescue: { total:39, sub:"8 FLORIDA · 31 NATIONAL" },
+  crash: { total:41, sub:"9 FATAL · 18 SERIOUS · 14 MINOR" },
+  rescue: { total:40, sub:"8 FLORIDA · 32 NATIONAL" },
   mayday: { total:81, sub:"75 VERIFIED · 6 UNVERIFIED" },
   closecall: { total:17, sub:"6 FLORIDA · 11 NATIONAL" }
 };
