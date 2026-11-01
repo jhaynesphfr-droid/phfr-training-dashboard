@@ -194,48 +194,97 @@
 <script>
 /* DAILY-DRILLS-START — Replace only this object during the morning drill update. */
 const DAILY_DRILLS = {
-  updatedThrough: "October 31, 2026",
+  updatedThrough: "November 1, 2026",
   practical: {
     duration: "20–45 minutes",
-    title: "Force the Blocked Door: Conventional Forcible Entry When the Fire Is at the Entrance",
-    objective: "Crews force a residential door that cannot be opened normally because fire and debris are at the entrance, control the door while entry is made, and move straight into a primary search of a single-story slab-on-grade Florida home; tied to the Bronx Patterson Houses fire of October 28, 2026 (burning e-bike blocked the only exit, crews forced the door) and Syracuse October 29, 2026.",
+    title: "Ladders Up, People Down: Ground Ladder Rescue of Multiple Occupants at a Multi-Family Fire",
+    objective: "Crews raise ground ladders to a rear porch and upper-floor windows of a three-story wood-frame multi-family building, remove multiple occupants down the ladders in a steady flow, and keep an exact occupant count from first ladder up to final PAR; tied to Boston, Massachusetts, October 31, 2026, where firefighters rescued 8 people with ground ladders at the rear of a two-alarm fire on Kerwin Street in Dorchester.",
     nfpa: "NFPA 1001 · NFPA 1500",
-    equipment: ["Irons (flat-head axe and Halligan)", "Wedge", "Forcible entry prop", "TIC", "Handline or water can", "Full PPE and SCBA", "Radios"],
+    equipment: ["Ground ladders", "Full PPE", "Rescue mannequins", "TIC", "Radios"],
     steps: [
-      "Officer briefs both tie-in fires: the Bronx Patterson Houses fire of October 28, 2026, where a burning e-bike blocked the only exit and crews forced the door, and Syracuse, October 29, 2026.",
-      "Size-up and tool call with charged line or water can at the door before the first strike.",
-      "Outward-swinging door force with door control.",
-      "Inward-swinging door force against resistance with threshold debris check.",
-      "Entry and TIC-guided first-room search with plain-language report.",
-      "Reset, rotate all positions, restate the three rules."
+      "Officer briefs the Boston fire: two alarms, three-story wood frame, occupants at the rear, rescue made with ground ladders off the back porch; the first size-up walks all four sides when staffing allows.",
+      "Two crews raise ladders to the rear porch roof and a third-floor window, heel and tie off, and call out placement, angle, and climbing clearance before anyone climbs.",
+      "Victim flow 1: a firefighter at the window hands a conscious mannequin victim to the ladder firefighter, who brings the victim down while a firefighter below controls the pace; the removal is counted out loud.",
+      "Victim flow 2: two ladders work at once, one for victims and one kept clear for firefighter egress, with the officer calling each removal by location.",
+      "The officer reconciles the rescued count against the reported occupant count, states who is still unaccounted for, and orders the next action based on the count.",
+      "Reset, rotate every member through climbing, window, and ground positions, and restate the three rules: ladders to where the people are, one ladder stays clear for egress, and every removal gets counted out loud."
     ],
-    safety: "Full PPE and eye protection, one striker at a time on command, stop for any tool slip or member in the swing path, training prop only, no live fire.",
-    benchmark: "Door forced under control in 90 seconds or less, door controlled throughout, line or water can in place before forcing, clean transition to first-room search, every member rotates through all three positions.",
-    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 359 — Personal Protective Equipment"]
+    safety: "Full PPE for all ladder work, ladders heeled at all times while climbed, one climber per fly section, stop for any ladder slip or unsecured heel, no live fire and mannequins only.",
+    benchmark: "First ladder raised, heeled, and ready to climb within 3 minutes, 4 counted victim removals in 12 minutes or less with no uncounted removal, and an accurate occupant count and PAR on the first call.",
+    relatedSops: ["SOP 354 — Ladder- Safety Belts", "SOP 359 — Personal Protective Equipment"]
   },
   tabletop: {
     duration: "15–20 minutes",
-    title: "Three Vehicles, Four on Board: The First 10 Minutes After Your Engine Is Hit",
-    scenario: "Your engine responding to an emergency call is in a three-vehicle intersection collision; four members on board, three hurt and transported stable, a civilian driver refuses treatment, police investigating, tied to Memphis and Cincinnati, October 30, 2026.",
-    nfpa: "NFPA 1500",
+    title: "Patient on Board When It Happens: The Transport Crash and Continuity of Care",
+    scenario: "Your rescue is transporting a patient to the hospital when it is struck by another vehicle at an intersection. The crash is minor and no one reports an injury, but the patient still needs to get to the hospital, the rig cannot continue, and a second unit has to take over care without a gap; tied to Attleboro, Massachusetts, October 31, 2026, where a Foxborough ambulance transporting a patient was involved in a minor crash and the crew kept providing care until Attleboro paramedics completed the transport.",
+    nfpa: "NFPA 1451 · NFPA 1500",
     injects: [
-      { time: "0-5 min", text: "First report content and splitting command between the crash and the original call: what is transmitted first, who takes the crash scene, and who owns the original call?" },
-      { time: "5-10 min", text: "Transport, hospital and department notifications, accountability for the fourth member, apparatus and gear: who is notified, in what order, and how is the fourth member accounted for?" },
-      { time: "10-15 min", text: "Police requests for driver and apparatus data, news crew arrival, family member call, what is preserved for the investigation: what is shared, what is held, and what is preserved first?" },
-      { time: "15-20 min", text: "Coverage and mutual aid decisions, documentation before end of shift, what the department owes injured members in the first 24 hours: what coverage is requested, what is documented now, and what support starts today?" }
+      { time: "0-5 min", text: "The crash. Who checks the crew and the patient first, what goes out on the radio in the first transmission, and who takes command of the crash scene?" },
+      { time: "5-10 min", text: "The second ambulance is 6 minutes out. How is care documented and handed over, who rides with the patient, and who stays with the damaged rig, its equipment, and its records?" },
+      { time: "10-15 min", text: "The other driver wants to leave, police are asking for statements, and the patient's family is calling the station. What is said, by whom, and what is preserved for the investigation?" },
+      { time: "15-20 min", text: "The rig is out of service and the crew may be shaken with no reported injury. Who decides whether the crew stays on shift, what is documented before end of shift, and what does the department owe the patient and the crew in the first 24 hours?" }
     ],
     questions: [
-      { group: "Firefighters", items: ["What do you check on yourself and your crew before the radio?", "What belongs in the first report and what does not?"] },
-      { group: "Officers", items: ["How do you split command between the crash scene and the original call?", "Which notifications are yours in the first 10 minutes and what documentation starts now?"] }
+      { group: "Firefighters", items: ["What do you check on the patient first after the crash, and how do you keep care continuous until the second unit takes over?", "What belongs in the first radio report after a transport crash?"] },
+      { group: "Officers", items: ["How do you split attention between the crash scene, the transport, and the rig and crew?", "What notifications are made in the first 10 minutes, and how do you document so the patient care report and the crash report match?"] }
     ],
-    teachingPoints: ["The first post-crash report is a mayday-grade transmission (location, crew count, injuries, hazards, resources).", "The original call still needs an assigned response.", "Injured members, apparatus and data are one investigation, preserve first and comment later.", "Family notification runs through the department only."],
-    relatedSops: ["SOP 355 — Apparatus Safety", "SOP 350 — Accident- Injury Investigation", "SOP 223 — Ff Serious Injury"]
+    teachingPoints: ["The patient does not stop being the patient because the rig crashed, care continues until a staffed unit takes over.", "The first report is location, crew and patient status, hazards, and resources.", "A crash with a patient on board is both a patient care event and an accident investigation, document and preserve both.", "No reported injury at the scene is not the end of it, crew fitness after a crash is an officer decision."],
+    relatedSops: ["SOP 355 — Apparatus Safety", "SOP 350 — Accident- Injury Investigation"]
   }
 };
 /* DAILY-DRILLS-END */
 
 /* DRILL-LIBRARY-START — Prepend each morning's two drills to this array, newest first. */
 const DRILL_LIBRARY = [
+  {
+    updatedThrough: "November 1, 2026",
+    dateSort: "2026-11-01",
+    date: "November 1, 2026",
+    type: "Practical",
+    title: "Ladders Up, People Down: Ground Ladder Rescue of Multiple Occupants at a Multi-Family Fire",
+    topic: "Ground ladder rescue of multiple occupants at a multi-family fire",
+    summary: "Crews raise ground ladders to a rear porch and upper-floor windows of a three-story wood-frame multi-family building, remove multiple occupants down the ladders in a steady flow, and keep an exact occupant count from first ladder up to final PAR; tied to Boston, Massachusetts, October 31, 2026, where firefighters rescued 8 people with ground ladders at the rear of a two-alarm fire on Kerwin Street in Dorchester.",
+    nfpa: ["NFPA 1001", "NFPA 1500"],
+    relatedSops: ["SOP 354 — Ladder- Safety Belts", "SOP 359 — Personal Protective Equipment"],
+    details: {
+      equipment: ["Ground ladders", "Full PPE", "Rescue mannequins", "TIC", "Radios"],
+      evolutions: [
+        "Officer briefs the Boston fire: two alarms, three-story wood frame, occupants at the rear, rescue made with ground ladders off the back porch; the first size-up walks all four sides when staffing allows.",
+        "Two crews raise ladders to the rear porch roof and a third-floor window, heel and tie off, and call out placement, angle, and climbing clearance before anyone climbs.",
+        "Victim flow 1: a firefighter at the window hands a conscious mannequin victim to the ladder firefighter, who brings the victim down while a firefighter below controls the pace; the removal is counted out loud.",
+        "Victim flow 2: two ladders work at once, one for victims and one kept clear for firefighter egress, with the officer calling each removal by location.",
+        "The officer reconciles the rescued count against the reported occupant count, states who is still unaccounted for, and orders the next action based on the count.",
+        "Reset, rotate every member through climbing, window, and ground positions, and restate the three rules: ladders to where the people are, one ladder stays clear for egress, and every removal gets counted out loud."
+      ],
+      safety: "Full PPE for all ladder work, ladders heeled at all times while climbed, one climber per fly section, stop for any ladder slip or unsecured heel, no live fire and mannequins only.",
+      benchmark: "First ladder raised, heeled, and ready to climb within 3 minutes, 4 counted victim removals in 12 minutes or less with no uncounted removal, and an accurate occupant count and PAR on the first call."
+    }
+  },
+  {
+    updatedThrough: "November 1, 2026",
+    dateSort: "2026-11-01",
+    date: "November 1, 2026",
+    type: "Tabletop",
+    title: "Patient on Board When It Happens: The Transport Crash and Continuity of Care",
+    topic: "Transport crash and continuity of care",
+    summary: "Your rescue is transporting a patient to the hospital when it is struck by another vehicle at an intersection. The crash is minor and no one reports an injury, but the patient still needs to get to the hospital, the rig cannot continue, and a second unit has to take over care without a gap; tied to Attleboro, Massachusetts, October 31, 2026, where a Foxborough ambulance transporting a patient was involved in a minor crash and the crew kept providing care until Attleboro paramedics completed the transport.",
+    nfpa: ["NFPA 1451", "NFPA 1500"],
+    relatedSops: ["SOP 355 — Apparatus Safety", "SOP 350 — Accident- Injury Investigation"],
+    details: {
+      scenario: "Your rescue is transporting a patient to the hospital when it is struck by another vehicle at an intersection. The crash is minor and no one reports an injury, but the patient still needs to get to the hospital, the rig cannot continue, and a second unit has to take over care without a gap; tied to Attleboro, Massachusetts, October 31, 2026, where a Foxborough ambulance transporting a patient was involved in a minor crash and the crew kept providing care until Attleboro paramedics completed the transport.",
+      injects: [
+        { time: "0-5 min", text: "The crash. Who checks the crew and the patient first, what goes out on the radio in the first transmission, and who takes command of the crash scene?" },
+        { time: "5-10 min", text: "The second ambulance is 6 minutes out. How is care documented and handed over, who rides with the patient, and who stays with the damaged rig, its equipment, and its records?" },
+        { time: "10-15 min", text: "The other driver wants to leave, police are asking for statements, and the patient's family is calling the station. What is said, by whom, and what is preserved for the investigation?" },
+        { time: "15-20 min", text: "The rig is out of service and the crew may be shaken with no reported injury. Who decides whether the crew stays on shift, what is documented before end of shift, and what does the department owe the patient and the crew in the first 24 hours?" }
+      ],
+      questions: [
+        { group: "Firefighters", items: ["What do you check on the patient first after the crash, and how do you keep care continuous until the second unit takes over?", "What belongs in the first radio report after a transport crash?"] },
+        { group: "Officers", items: ["How do you split attention between the crash scene, the transport, and the rig and crew?", "What notifications are made in the first 10 minutes, and how do you document so the patient care report and the crash report match?"] }
+      ],
+      teachingPoints: ["The patient does not stop being the patient because the rig crashed, care continues until a staffed unit takes over.", "The first report is location, crew and patient status, hazards, and resources.", "A crash with a patient on board is both a patient care event and an accident investigation, document and preserve both.", "No reported injury at the scene is not the end of it, crew fitness after a crash is an officer decision."]
+    }
+  },
   {
     updatedThrough: "October 31, 2026",
     dateSort: "2026-10-31",
@@ -1334,47 +1383,46 @@ const DRILL_LIBRARY = [
 
 /* DAILY-DATA-START — Replace this one object during the morning artifact update. */
 const DASHBOARD_DATA = {
-  updatedThrough: "October 31, 2026",
+  updatedThrough: "November 1, 2026",
   drill: {
     duration: "20-45 minutes",
-    title: "Force the Blocked Door: Conventional Forcible Entry When the Fire Is at the Entrance",
-    intro: "Crews force a residential door that cannot be opened normally because fire and debris are at the entrance, control the door while entry is made, and move straight into a primary search of a single-story slab-on-grade Florida home; tied to the Bronx Patterson Houses fire of October 28, 2026 (burning e-bike blocked the only exit, crews forced the door) and Syracuse October 29, 2026.",
+    title: "Ladders Up, People Down: Ground Ladder Rescue of Multiple Occupants at a Multi-Family Fire",
+    intro: "Crews raise ground ladders to a rear porch and upper-floor windows of a three-story wood-frame multi-family building, remove multiple occupants down the ladders in a steady flow, and keep an exact occupant count from first ladder up to final PAR; tied to Boston, Massachusetts, October 31, 2026, where firefighters rescued 8 people with ground ladders at the rear of a two-alarm fire on Kerwin Street in Dorchester.",
     steps: [
-      "Officer briefs both tie-in fires: the Bronx Patterson Houses fire of October 28, 2026, where a burning e-bike blocked the only exit and crews forced the door, and Syracuse, October 29, 2026.",
-      "Size-up and tool call with charged line or water can at the door before the first strike.",
-      "Outward-swinging door force with door control.",
-      "Inward-swinging door force against resistance with threshold debris check.",
-      "Entry and TIC-guided first-room search with plain-language report.",
-      "Reset, rotate all positions, restate the three rules."
+      "Officer briefs the Boston fire: two alarms, three-story wood frame, occupants at the rear, rescue made with ground ladders off the back porch; the first size-up walks all four sides when staffing allows.",
+      "Two crews raise ladders to the rear porch roof and a third-floor window, heel and tie off, and call out placement, angle, and climbing clearance before anyone climbs.",
+      "Victim flow 1: a firefighter at the window hands a conscious mannequin victim to the ladder firefighter, who brings the victim down while a firefighter below controls the pace; the removal is counted out loud.",
+      "Victim flow 2: two ladders work at once, one for victims and one kept clear for firefighter egress, with the officer calling each removal by location.",
+      "The officer reconciles the rescued count against the reported occupant count, states who is still unaccounted for, and orders the next action based on the count.",
+      "Reset, rotate every member through climbing, window, and ground positions, and restate the three rules: ladders to where the people are, one ladder stays clear for egress, and every removal gets counted out loud."
     ],
     nfpa: "NFPA 1001 · NFPA 1500",
-    relatedSops: ["SOP 365 — Incident Safety Officer", "SOP 359 — Personal Protective Equipment"]
+    relatedSops: ["SOP 354 — Ladder- Safety Belts", "SOP 359 — Personal Protective Equipment"]
   },
   daily: [
     {
       tag: "RESCUE",
-      department: "Syracuse Fire Department (NY)",
+      department: "Boston Fire Department (MA)",
+      date: "October 31, 2026",
+      outcome: "Firefighters rescued 8 people with ground ladders at the rear of a two-alarm multi-family house fire on Kerwin Street in Dorchester; the call came in at shift change, which doubled the response; 3 occupants were transported to hospitals and expected to make a full recovery; 11 occupants were displaced.",
+      url: "https://newspub.live/northeast/boston-ma/3-taken-to-hospital-after-fire-blazes-through-home-in-boston-displaces-11/",
+      sops: ["SOP 354 — Ladder- Safety Belts", "SOP 697 — Thermal Imaging Cameras (Tic)"]
+    },
+    {
+      tag: "RESCUE",
+      department: "Honolulu Fire Department (HI)",
       date: "October 29, 2026",
-      outcome: "Firefighters and police removed 2 occupants from a fully engulfed two-family house fire on Jamesville Avenue; a child removed with no pulse regained a pulse at the hospital and a woman was transported in critical condition; a second child was found deceased during the search; 3 police officers and 2 firefighters were injured.",
-      url: "https://www.firehouse.com/community-risk/investigation-equipment/video/55415605/mayday-mayday-send-everyone-trapped-syracuse-ny-firefighter-calls",
+      outcome: "Firefighters rescued 3 occupants from a first-floor apartment in a three-story Punchbowl building after a moped and other belongings burning near the front door blocked the unit's exit; the fire was under control at 10:27 PM and extinguished at 10:36 PM; no firefighter injuries were reported.",
+      url: "https://www.fireengineering.com/firefighting/three-people-rescued-from-hi-apartment-fire/",
       sops: ["SOP 697 — Thermal Imaging Cameras (Tic)", "SOP 359 — Personal Protective Equipment"]
     },
     {
       tag: "CRASH",
-      severity: "serious",
-      department: "Memphis Fire Department (TN)",
-      date: "October 30, 2026",
-      outcome: "A fire truck responding to an emergency call was involved in a three-vehicle collision at South Highland Street and Southern Avenue; 4 firefighters on board, 3 transported to an area hospital in stable condition; a driver in another vehicle refused treatment; police investigating.",
-      url: "https://www.firefighterclosecalls.com/three-memphis-firefighters-injured-in-apparatus-crash-tennessee/",
-      sops: ["SOP 355 — Apparatus Safety", "SOP 350 — Accident- Injury Investigation"]
-    },
-    {
-      tag: "CRASH",
       severity: "minor",
-      department: "Cincinnati Fire Department (OH)",
-      date: "October 30, 2026",
-      outcome: "Engine 51 ran into a building in College Hill while responding to a reported explosion; no injuries reported; crash under investigation.",
-      url: "https://www.firefighterclosecalls.com/2026/10/30/",
+      department: "Foxborough Fire Department (MA)",
+      date: "October 31, 2026",
+      outcome: "A Foxborough ambulance transporting a patient collided with another vehicle on North Main Street in Attleboro at about 9:29 AM; the crash was minor and no injuries were reported; the crew continued patient care until Attleboro paramedics arrived and completed the transport, with a Foxborough paramedic riding along; police are investigating.",
+      url: "https://attleborofire.com/2026/10/31/attleboro-fire-department-responds-to-motor-vehicle-crash-involving-foxborough-fire-department-ambulance/",
       sops: ["SOP 355 — Apparatus Safety"]
     }
   ]
@@ -1387,6 +1435,48 @@ const SOP_LIBRARY = [{"sop":"223","title":"Ff Serious Injury","label":"SOP 223 �
 /* SOP-LIBRARY-END */
 
 const incidents = [
+  {
+    "category": "rescue",
+    "state": "MA",
+    "sort": "2026-10-31",
+    "month": 10,
+    "department": "Boston Fire Department (MA)",
+    "date": "October 31, 2026",
+    "outcome": "Firefighters rescued 8 people with ground ladders at the rear of a two-alarm multi-family house fire on Kerwin Street in Dorchester; the call came in at shift change, which doubled the response; 3 occupants were transported to hospitals and expected to make a full recovery; 11 occupants were displaced.",
+    "url": "https://newspub.live/northeast/boston-ma/3-taken-to-hospital-after-fire-blazes-through-home-in-boston-displaces-11/",
+    "sops": [
+      "SOP 354 — Ladder- Safety Belts",
+      "SOP 697 — Thermal Imaging Cameras (Tic)"
+    ]
+  },
+  {
+    "category": "rescue",
+    "state": "HI",
+    "sort": "2026-10-29",
+    "month": 10,
+    "department": "Honolulu Fire Department (HI)",
+    "date": "October 29, 2026",
+    "outcome": "Firefighters rescued 3 occupants from a first-floor apartment in a three-story Punchbowl building after a moped and other belongings burning near the front door blocked the unit's exit; the fire was under control at 10:27 PM and extinguished at 10:36 PM; no firefighter injuries were reported.",
+    "url": "https://www.fireengineering.com/firefighting/three-people-rescued-from-hi-apartment-fire/",
+    "sops": [
+      "SOP 697 — Thermal Imaging Cameras (Tic)",
+      "SOP 359 — Personal Protective Equipment"
+    ]
+  },
+  {
+    "category": "crash",
+    "severity": "minor",
+    "state": "MA",
+    "sort": "2026-10-31",
+    "month": 10,
+    "department": "Foxborough Fire Department (MA)",
+    "date": "October 31, 2026",
+    "outcome": "A Foxborough ambulance transporting a patient collided with another vehicle on North Main Street in Attleboro at about 9:29 AM; the crash was minor and no injuries were reported; the crew continued patient care until Attleboro paramedics arrived and completed the transport, with a Foxborough paramedic riding along; police are investigating.",
+    "url": "https://attleborofire.com/2026/10/31/attleboro-fire-department-responds-to-motor-vehicle-crash-involving-foxborough-fire-department-ambulance/",
+    "sops": [
+      "SOP 355 — Apparatus Safety"
+    ]
+  },
   {
     "category": "rescue",
     "state": "MA",
@@ -4165,8 +4255,8 @@ incidents.forEach(incident=>{incident.sops=Array.isArray(incident.sops)&&inciden
 
 const YTD_TOTALS = {
   lodd: { total:74, sub:"31 INCIDENT-RELATED · 35 MEDICAL · 8 CAUSE PENDING · 6 FLORIDA · 68 NATIONAL" },
-  crash: { total:41, sub:"9 FATAL · 18 SERIOUS · 14 MINOR" },
-  rescue: { total:40, sub:"8 FLORIDA · 32 NATIONAL" },
+  crash: { total:42, sub:"9 FATAL · 18 SERIOUS · 15 MINOR" },
+  rescue: { total:42, sub:"8 FLORIDA · 34 NATIONAL" },
   mayday: { total:81, sub:"75 VERIFIED · 6 UNVERIFIED" },
   closecall: { total:17, sub:"6 FLORIDA · 11 NATIONAL" }
 };
