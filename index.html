@@ -194,48 +194,153 @@
 <script>
 /* DAILY-DRILLS-START — Replace only this object during the morning drill update. */
 const DAILY_DRILLS = {
-  updatedThrough: "November 1, 2026",
+  updatedThrough: "November 2, 2026",
   practical: {
     duration: "20–45 minutes",
-    title: "Ladders Up, People Down: Ground Ladder Rescue of Multiple Occupants at a Multi-Family Fire",
-    objective: "Crews raise ground ladders to a rear porch and upper-floor windows of a three-story wood-frame multi-family building, remove multiple occupants down the ladders in a steady flow, and keep an exact occupant count from first ladder up to final PAR; tied to Boston, Massachusetts, October 31, 2026, where firefighters rescued 8 people with ground ladders at the rear of a two-alarm fire on Kerwin Street in Dorchester.",
-    nfpa: "NFPA 1001 · NFPA 1500",
-    equipment: ["Ground ladders", "Full PPE", "Rescue mannequins", "TIC", "Radios"],
-    steps: [
-      "Officer briefs the Boston fire: two alarms, three-story wood frame, occupants at the rear, rescue made with ground ladders off the back porch; the first size-up walks all four sides when staffing allows.",
-      "Two crews raise ladders to the rear porch roof and a third-floor window, heel and tie off, and call out placement, angle, and climbing clearance before anyone climbs.",
-      "Victim flow 1: a firefighter at the window hands a conscious mannequin victim to the ladder firefighter, who brings the victim down while a firefighter below controls the pace; the removal is counted out loud.",
-      "Victim flow 2: two ladders work at once, one for victims and one kept clear for firefighter egress, with the officer calling each removal by location.",
-      "The officer reconciles the rescued count against the reported occupant count, states who is still unaccounted for, and orders the next action based on the count.",
-      "Reset, rotate every member through climbing, window, and ground positions, and restate the three rules: ladders to where the people are, one ladder stays clear for egress, and every removal gets counted out loud."
+    title: "Aircraft Down in the Neighborhood: First-Arriving Company Actions at an Off-Airport Crash",
+    objective: "The first-arriving company sizes up a small aircraft crash in a residential area, controls fire and fuel hazards, sets up a casualty collection and triage point, and searches the debris field in an organized grid without becoming a casualty; tied to Palm Beach County, Florida, November 1, 2026, where a Learjet 60 crashed into a Greenacres mobile home park, killing all 9 people on board, and Palm Beach County Fire Rescue declared a mass casualty incident with about 600 residents evacuated.",
+    nfpa: "NFPA 1500 · NFPA 1561",
+    equipment: [
+      "Engine with foam capability if available",
+      "Handlines",
+      "Full PPE and SCBA",
+      "Triage tags or tape",
+      "Mannequins",
+      "Cones",
+      "Radios",
+      "Accountability board"
     ],
-    safety: "Full PPE for all ladder work, ladders heeled at all times while climbed, one climber per fly section, stop for any ladder slip or unsecured heel, no live fire and mannequins only.",
-    benchmark: "First ladder raised, heeled, and ready to climb within 3 minutes, 4 counted victim removals in 12 minutes or less with no uncounted removal, and an accurate occupant count and PAR on the first call.",
-    relatedSops: ["SOP 354 — Ladder- Safety Belts", "SOP 359 — Personal Protective Equipment"]
+    steps: [
+      "Officer briefs the Greenacres crash: first company sets the incident up, it does not try to finish it.",
+      "Arrival and hot zone: approach upwind and uphill, stop short of debris, mark hot zone, first report covers aircraft, fire, fuel, casualties, resources.",
+      "Fire and fuel: foam-capable handline knocks down a simulated fuel fire from outside the debris scatter; no one enters pooled fuel or touches leaking wreckage.",
+      "Triage: casualty collection point upwind, tag and move 4 mannequin patients by priority, start a transport log with counts called to command.",
+      "Debris field search: pairs search a coned grid, mark searched sections, report finds by location only, back out on instructor-called hazards.",
+      "Evacuation and handoff: evacuate two nearest homes and hand command hot zone, fire status, patient count by priority, searched and unsearched areas, and needs."
+    ],
+    safety: "Full PPE and SCBA in the hot zone; no live fuel or fire; no climbing on wreckage props; stop for any member entering the hot zone without SCBA or crossing the debris field alone; rotate crews and start rehab early.",
+    benchmark: "First report within 2 minutes, hot zone and casualty collection point set within 6 minutes, all 4 patients tagged and counted within 15 minutes, handoff count matches the transport log on the first call.",
+    relatedSops: [
+      "SOP 693 — Foam Operations",
+      "SOP 365 — Incident Safety Officer",
+      "SOP 351 — General Department Safety"
+    ]
   },
   tabletop: {
     duration: "15–20 minutes",
-    title: "Patient on Board When It Happens: The Transport Crash and Continuity of Care",
-    scenario: "Your rescue is transporting a patient to the hospital when it is struck by another vehicle at an intersection. The crash is minor and no one reports an injury, but the patient still needs to get to the hospital, the rig cannot continue, and a second unit has to take over care without a gap; tied to Attleboro, Massachusetts, October 31, 2026, where a Foxborough ambulance transporting a patient was involved in a minor crash and the crew kept providing care until Attleboro paramedics completed the transport.",
-    nfpa: "NFPA 1451 · NFPA 1500",
+    title: "Reports of Two Trapped: Command Decisions at a Second-Floor Apartment Fire",
+    scenario: "First engine at a garden apartment fire on a Sunday afternoon; dispatch relayed two people trapped on the second floor, a resident outside says someone is still inside, heavy smoke pushes from a second-floor window, and the first crew enters through that window because the stairwell is charged with smoke; tied to Danbury, Connecticut, November 1, 2026, where crews were told two people were trapped on the second floor of a Kohanza Street apartment, entered through a second-floor window, and one resident died; 3 firefighters suffered minor burns.",
+    nfpa: "NFPA 1561 · NFPA 1500",
     injects: [
-      { time: "0-5 min", text: "The crash. Who checks the crew and the patient first, what goes out on the radio in the first transmission, and who takes command of the crash scene?" },
-      { time: "5-10 min", text: "The second ambulance is 6 minutes out. How is care documented and handed over, who rides with the patient, and who stays with the damaged rig, its equipment, and its records?" },
-      { time: "10-15 min", text: "The other driver wants to leave, police are asking for statements, and the patient's family is calling the station. What is said, by whom, and what is preserved for the investigation?" },
-      { time: "15-20 min", text: "The rig is out of service and the crew may be shaken with no reported injury. Who decides whether the crew stays on shift, what is documented before end of shift, and what does the department owe the patient and the crew in the first 24 hours?" }
+      { time: "0-5 min", text: "Window crew reports zero visibility and heat, resident now says only one person lived in the unit, which report drives the search and who confirms the count?" },
+      { time: "5-10 min", text: "A firefighter exits with minor burns and a second has heat-damaged gloves, who evaluates and replaces the crew and does the search continue, change entry, or stop?" },
+      { time: "10-15 min", text: "Primary search finds one occupant deceased, who protects the scene, what is said outside and on the radio, and what notifications start?" },
+      { time: "15-20 min", text: "Secondary search negative and the count still does not match the first dispatch report, how command closes the count, what goes into the post incident analysis, and what the department owes the burned firefighters in the first 24 hours?" }
     ],
     questions: [
-      { group: "Firefighters", items: ["What do you check on the patient first after the crash, and how do you keep care continuous until the second unit takes over?", "What belongs in the first radio report after a transport crash?"] },
-      { group: "Officers", items: ["How do you split attention between the crash scene, the transport, and the rig and crew?", "What notifications are made in the first 10 minutes, and how do you document so the patient care report and the crash report match?"] }
+      { group: "Firefighters", items: [
+        "What do you report in the first 30 seconds inside a window entry, and what heat signs mean back out?",
+        "What do you do on finding a deceased occupant so search and scene stay intact?"
+      ] },
+      { group: "Officers", items: [
+        "How do you run a search on two conflicting occupant reports without overcommitting or stopping early?",
+        "What notifications, injury documentation, and scene preservation are needed in the first 10 minutes after a fatality is found?"
+      ] }
     ],
-    teachingPoints: ["The patient does not stop being the patient because the rig crashed, care continues until a staffed unit takes over.", "The first report is location, crew and patient status, hazards, and resources.", "A crash with a patient on board is both a patient care event and an accident investigation, document and preserve both.", "No reported injury at the scene is not the end of it, crew fitness after a crash is an officer decision."],
-    relatedSops: ["SOP 355 — Apparatus Safety", "SOP 350 — Accident- Injury Investigation"]
+    teachingPoints: [
+      "Trapped reports are a starting point not a count.",
+      "Window entry changes egress and air clock and the outside officer owns both.",
+      "Minor burns are still injuries, evaluate, document, and replace the crew.",
+      "A fatality find turns the unit into a scene, protect it and start marshal, police, and leadership notifications early."
+    ],
+    relatedSops: [
+      "SOP 365 — Incident Safety Officer",
+      "SOP 402 — Pre-Incident Planning",
+      "SOP 223 — Ff Serious Injury"
+    ]
   }
 };
 /* DAILY-DRILLS-END */
 
 /* DRILL-LIBRARY-START — Prepend each morning's two drills to this array, newest first. */
 const DRILL_LIBRARY = [
+  {
+    updatedThrough: "November 2, 2026",
+    dateSort: "2026-11-02",
+    date: "November 2, 2026",
+    type: "Practical",
+    title: "Aircraft Down in the Neighborhood: First-Arriving Company Actions at an Off-Airport Crash",
+    topic: "First-arriving company actions at an off-airport aircraft crash",
+    summary: "The first-arriving company sizes up a small aircraft crash in a residential area, controls fire and fuel hazards, sets up a casualty collection and triage point, and searches the debris field in an organized grid without becoming a casualty; tied to Palm Beach County, Florida, November 1, 2026, where a Learjet 60 crashed into a Greenacres mobile home park, killing all 9 people on board, and Palm Beach County Fire Rescue declared a mass casualty incident with about 600 residents evacuated.",
+    nfpa: ["NFPA 1500", "NFPA 1561"],
+    relatedSops: [
+      "SOP 693 — Foam Operations",
+      "SOP 365 — Incident Safety Officer",
+      "SOP 351 — General Department Safety"
+    ],
+    details: {
+      equipment: [
+        "Engine with foam capability if available",
+        "Handlines",
+        "Full PPE and SCBA",
+        "Triage tags or tape",
+        "Mannequins",
+        "Cones",
+        "Radios",
+        "Accountability board"
+      ],
+      evolutions: [
+        "Officer briefs the Greenacres crash: first company sets the incident up, it does not try to finish it.",
+        "Arrival and hot zone: approach upwind and uphill, stop short of debris, mark hot zone, first report covers aircraft, fire, fuel, casualties, resources.",
+        "Fire and fuel: foam-capable handline knocks down a simulated fuel fire from outside the debris scatter; no one enters pooled fuel or touches leaking wreckage.",
+        "Triage: casualty collection point upwind, tag and move 4 mannequin patients by priority, start a transport log with counts called to command.",
+        "Debris field search: pairs search a coned grid, mark searched sections, report finds by location only, back out on instructor-called hazards.",
+        "Evacuation and handoff: evacuate two nearest homes and hand command hot zone, fire status, patient count by priority, searched and unsearched areas, and needs."
+      ],
+      safety: "Full PPE and SCBA in the hot zone; no live fuel or fire; no climbing on wreckage props; stop for any member entering the hot zone without SCBA or crossing the debris field alone; rotate crews and start rehab early.",
+      benchmark: "First report within 2 minutes, hot zone and casualty collection point set within 6 minutes, all 4 patients tagged and counted within 15 minutes, handoff count matches the transport log on the first call."
+    }
+  },
+  {
+    updatedThrough: "November 2, 2026",
+    dateSort: "2026-11-02",
+    date: "November 2, 2026",
+    type: "Tabletop",
+    title: "Reports of Two Trapped: Command Decisions at a Second-Floor Apartment Fire",
+    topic: "Conflicting trapped reports at a second-floor apartment fire",
+    summary: "First engine at a garden apartment fire on a Sunday afternoon; dispatch relayed two people trapped on the second floor, a resident outside says someone is still inside, heavy smoke pushes from a second-floor window, and the first crew enters through that window because the stairwell is charged with smoke; tied to Danbury, Connecticut, November 1, 2026, where crews were told two people were trapped on the second floor of a Kohanza Street apartment, entered through a second-floor window, and one resident died; 3 firefighters suffered minor burns.",
+    nfpa: ["NFPA 1561", "NFPA 1500"],
+    relatedSops: [
+      "SOP 365 — Incident Safety Officer",
+      "SOP 402 — Pre-Incident Planning",
+      "SOP 223 — Ff Serious Injury"
+    ],
+    details: {
+      scenario: "First engine at a garden apartment fire on a Sunday afternoon; dispatch relayed two people trapped on the second floor, a resident outside says someone is still inside, heavy smoke pushes from a second-floor window, and the first crew enters through that window because the stairwell is charged with smoke; tied to Danbury, Connecticut, November 1, 2026, where crews were told two people were trapped on the second floor of a Kohanza Street apartment, entered through a second-floor window, and one resident died; 3 firefighters suffered minor burns.",
+      injects: [
+        { time: "0-5 min", text: "Window crew reports zero visibility and heat, resident now says only one person lived in the unit, which report drives the search and who confirms the count?" },
+        { time: "5-10 min", text: "A firefighter exits with minor burns and a second has heat-damaged gloves, who evaluates and replaces the crew and does the search continue, change entry, or stop?" },
+        { time: "10-15 min", text: "Primary search finds one occupant deceased, who protects the scene, what is said outside and on the radio, and what notifications start?" },
+        { time: "15-20 min", text: "Secondary search negative and the count still does not match the first dispatch report, how command closes the count, what goes into the post incident analysis, and what the department owes the burned firefighters in the first 24 hours?" }
+      ],
+      questions: [
+        { group: "Firefighters", items: [
+          "What do you report in the first 30 seconds inside a window entry, and what heat signs mean back out?",
+          "What do you do on finding a deceased occupant so search and scene stay intact?"
+        ] },
+        { group: "Officers", items: [
+          "How do you run a search on two conflicting occupant reports without overcommitting or stopping early?",
+          "What notifications, injury documentation, and scene preservation are needed in the first 10 minutes after a fatality is found?"
+        ] }
+      ],
+      teachingPoints: [
+        "Trapped reports are a starting point not a count.",
+        "Window entry changes egress and air clock and the outside officer owns both.",
+        "Minor burns are still injuries, evaluate, document, and replace the crew.",
+        "A fatality find turns the unit into a scene, protect it and start marshal, police, and leadership notifications early."
+      ]
+    }
+  },
   {
     updatedThrough: "November 1, 2026",
     dateSort: "2026-11-01",
@@ -1383,47 +1488,37 @@ const DRILL_LIBRARY = [
 
 /* DAILY-DATA-START — Replace this one object during the morning artifact update. */
 const DASHBOARD_DATA = {
-  updatedThrough: "November 1, 2026",
+  updatedThrough: "November 2, 2026",
   drill: {
     duration: "20-45 minutes",
-    title: "Ladders Up, People Down: Ground Ladder Rescue of Multiple Occupants at a Multi-Family Fire",
-    intro: "Crews raise ground ladders to a rear porch and upper-floor windows of a three-story wood-frame multi-family building, remove multiple occupants down the ladders in a steady flow, and keep an exact occupant count from first ladder up to final PAR; tied to Boston, Massachusetts, October 31, 2026, where firefighters rescued 8 people with ground ladders at the rear of a two-alarm fire on Kerwin Street in Dorchester.",
+    title: "Aircraft Down in the Neighborhood: First-Arriving Company Actions at an Off-Airport Crash",
+    intro: "The first-arriving company sizes up a small aircraft crash in a residential area, controls fire and fuel hazards, sets up a casualty collection and triage point, and searches the debris field in an organized grid without becoming a casualty; tied to Palm Beach County, Florida, November 1, 2026, where a Learjet 60 crashed into a Greenacres mobile home park, killing all 9 people on board, and Palm Beach County Fire Rescue declared a mass casualty incident with about 600 residents evacuated.",
     steps: [
-      "Officer briefs the Boston fire: two alarms, three-story wood frame, occupants at the rear, rescue made with ground ladders off the back porch; the first size-up walks all four sides when staffing allows.",
-      "Two crews raise ladders to the rear porch roof and a third-floor window, heel and tie off, and call out placement, angle, and climbing clearance before anyone climbs.",
-      "Victim flow 1: a firefighter at the window hands a conscious mannequin victim to the ladder firefighter, who brings the victim down while a firefighter below controls the pace; the removal is counted out loud.",
-      "Victim flow 2: two ladders work at once, one for victims and one kept clear for firefighter egress, with the officer calling each removal by location.",
-      "The officer reconciles the rescued count against the reported occupant count, states who is still unaccounted for, and orders the next action based on the count.",
-      "Reset, rotate every member through climbing, window, and ground positions, and restate the three rules: ladders to where the people are, one ladder stays clear for egress, and every removal gets counted out loud."
+      "Officer briefs the Greenacres crash: first company sets the incident up, it does not try to finish it.",
+      "Arrival and hot zone: approach upwind and uphill, stop short of debris, mark hot zone, first report covers aircraft, fire, fuel, casualties, resources.",
+      "Fire and fuel: foam-capable handline knocks down a simulated fuel fire from outside the debris scatter; no one enters pooled fuel or touches leaking wreckage.",
+      "Triage: casualty collection point upwind, tag and move 4 mannequin patients by priority, start a transport log with counts called to command.",
+      "Debris field search: pairs search a coned grid, mark searched sections, report finds by location only, back out on instructor-called hazards.",
+      "Evacuation and handoff: evacuate two nearest homes and hand command hot zone, fire status, patient count by priority, searched and unsearched areas, and needs."
     ],
-    nfpa: "NFPA 1001 · NFPA 1500",
-    relatedSops: ["SOP 354 — Ladder- Safety Belts", "SOP 359 — Personal Protective Equipment"]
+    nfpa: "NFPA 1500 · NFPA 1561",
+    relatedSops: [
+      "SOP 693 — Foam Operations",
+      "SOP 365 — Incident Safety Officer",
+      "SOP 351 — General Department Safety"
+    ]
   },
   daily: [
     {
       tag: "RESCUE",
-      department: "Boston Fire Department (MA)",
-      date: "October 31, 2026",
-      outcome: "Firefighters rescued 8 people with ground ladders at the rear of a two-alarm multi-family house fire on Kerwin Street in Dorchester; the call came in at shift change, which doubled the response; 3 occupants were transported to hospitals and expected to make a full recovery; 11 occupants were displaced.",
-      url: "https://newspub.live/northeast/boston-ma/3-taken-to-hospital-after-fire-blazes-through-home-in-boston-displaces-11/",
-      sops: ["SOP 354 — Ladder- Safety Belts", "SOP 697 — Thermal Imaging Cameras (Tic)"]
-    },
-    {
-      tag: "RESCUE",
-      department: "Honolulu Fire Department (HI)",
-      date: "October 29, 2026",
-      outcome: "Firefighters rescued 3 occupants from a first-floor apartment in a three-story Punchbowl building after a moped and other belongings burning near the front door blocked the unit's exit; the fire was under control at 10:27 PM and extinguished at 10:36 PM; no firefighter injuries were reported.",
-      url: "https://www.fireengineering.com/firefighting/three-people-rescued-from-hi-apartment-fire/",
-      sops: ["SOP 697 — Thermal Imaging Cameras (Tic)", "SOP 359 — Personal Protective Equipment"]
-    },
-    {
-      tag: "CRASH",
-      severity: "minor",
-      department: "Foxborough Fire Department (MA)",
-      date: "October 31, 2026",
-      outcome: "A Foxborough ambulance transporting a patient collided with another vehicle on North Main Street in Attleboro at about 9:29 AM; the crash was minor and no injuries were reported; the crew continued patient care until Attleboro paramedics arrived and completed the transport, with a Foxborough paramedic riding along; police are investigating.",
-      url: "https://attleborofire.com/2026/10/31/attleboro-fire-department-responds-to-motor-vehicle-crash-involving-foxborough-fire-department-ambulance/",
-      sops: ["SOP 355 — Apparatus Safety"]
+      department: "South County Fire (WA)",
+      date: "November 1, 2026",
+      outcome: "Firefighters rescued a mother and a child from a balcony at an apartment fire near Everett; 15 residents were displaced; no injuries were reported.",
+      url: "https://seattlecourant.com/stories/2026-11-02-fire-displaces-15-residents-near-everett-mother-child-rescued-f60580.html",
+      sops: [
+        "SOP 354 — Ladder- Safety Belts",
+        "SOP 697 — Thermal Imaging Cameras (Tic)"
+      ]
     }
   ]
 };
@@ -1435,6 +1530,20 @@ const SOP_LIBRARY = [{"sop":"223","title":"Ff Serious Injury","label":"SOP 223 �
 /* SOP-LIBRARY-END */
 
 const incidents = [
+  {
+    "category": "rescue",
+    "state": "WA",
+    "sort": "2026-11-01",
+    "month": 11,
+    "department": "South County Fire (WA)",
+    "date": "November 1, 2026",
+    "outcome": "Firefighters rescued a mother and a child from a balcony at an apartment fire near Everett; 15 residents were displaced; no injuries were reported.",
+    "url": "https://seattlecourant.com/stories/2026-11-02-fire-displaces-15-residents-near-everett-mother-child-rescued-f60580.html",
+    "sops": [
+      "SOP 354 — Ladder- Safety Belts",
+      "SOP 697 — Thermal Imaging Cameras (Tic)"
+    ]
+  },
   {
     "category": "rescue",
     "state": "MA",
@@ -4256,7 +4365,7 @@ incidents.forEach(incident=>{incident.sops=Array.isArray(incident.sops)&&inciden
 const YTD_TOTALS = {
   lodd: { total:74, sub:"31 INCIDENT-RELATED · 35 MEDICAL · 8 CAUSE PENDING · 6 FLORIDA · 68 NATIONAL" },
   crash: { total:42, sub:"9 FATAL · 18 SERIOUS · 15 MINOR" },
-  rescue: { total:42, sub:"8 FLORIDA · 34 NATIONAL" },
+  rescue: { total:43, sub:"8 FLORIDA · 35 NATIONAL" },
   mayday: { total:81, sub:"75 VERIFIED · 6 UNVERIFIED" },
   closecall: { total:17, sub:"6 FLORIDA · 11 NATIONAL" }
 };
