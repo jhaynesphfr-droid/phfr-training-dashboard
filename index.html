@@ -194,69 +194,67 @@
 <script>
 /* DAILY-DRILLS-START — Replace only this object during the morning drill update. */
 const DAILY_DRILLS = {
-  updatedThrough: "November 2, 2026",
+  updatedThrough: "November 3, 2026",
   practical: {
     duration: "20–45 minutes",
-    title: "Aircraft Down in the Neighborhood: First-Arriving Company Actions at an Off-Airport Crash",
-    objective: "The first-arriving company sizes up a small aircraft crash in a residential area, controls fire and fuel hazards, sets up a casualty collection and triage point, and searches the debris field in an organized grid without becoming a casualty; tied to Palm Beach County, Florida, November 1, 2026, where a Learjet 60 crashed into a Greenacres mobile home park, killing all 9 people on board, and Palm Beach County Fire Rescue declared a mass casualty incident with about 600 residents evacuated.",
-    nfpa: "NFPA 1500 · NFPA 1561",
+    title: "Search With a Clock Running: Primary Search, TIC Sweep, and Victim Handoff in a Single-Story Florida Home",
+    objective: "Run a primary search of a single-story slab-on-grade Florida home using a TIC sweep and oriented search, remove a victim to the door, and complete a clean EMS handoff against the clock; tied to Everett, Washington, November 2, 2026, where the first engine arrived 2.5 minutes after dispatch, one occupant was found deceased, and a second occupant was transported with minor burns and smoke inhalation.",
+    nfpa: "NFPA 1001 · NFPA 1500",
     equipment: [
-      "Engine with foam capability if available",
-      "Handlines",
+      "Engine with charged handline",
+      "Thermal imaging camera",
       "Full PPE and SCBA",
-      "Triage tags or tape",
-      "Mannequins",
-      "Cones",
+      "Rescue mannequin",
       "Radios",
       "Accountability board"
     ],
     steps: [
-      "Officer briefs the Greenacres crash: first company sets the incident up, it does not try to finish it.",
-      "Arrival and hot zone: approach upwind and uphill, stop short of debris, mark hot zone, first report covers aircraft, fire, fuel, casualties, resources.",
-      "Fire and fuel: foam-capable handline knocks down a simulated fuel fire from outside the debris scatter; no one enters pooled fuel or touches leaking wreckage.",
-      "Triage: casualty collection point upwind, tag and move 4 mannequin patients by priority, start a transport log with counts called to command.",
-      "Debris field search: pairs search a coned grid, mark searched sections, report finds by location only, back out on instructor-called hazards.",
-      "Evacuation and handoff: evacuate two nearest homes and hand command hot zone, fire status, patient count by priority, searched and unsearched areas, and needs."
+      "Officer briefs the Everett fire: first engine arrived 2.5 minutes after dispatch on November 2, 2026, one occupant was found deceased and a second occupant was transported with minor burns and smoke inhalation; in this drill the clock starts at entry and the search has to stay oriented in a single-story slab-on-grade Florida home.",
+      "Entry and orientation: crew enters in full PPE and SCBA behind a charged handline, and the officer gives an entry report within 1 minute covering entry point, direction of search, and who is searching which side.",
+      "TIC sweep: the TIC operator sweeps each room on entry and again before moving on, calls out furniture, doors, and heat signatures, and the crew stays oriented to a wall or the hoseline while searching bedrooms, closets, and bathrooms.",
+      "Victim removal: on finding the mannequin victim, the crew calls the location and the removal route, moves the victim to the entry door, and hands off to EMS with location found, time found, and condition.",
+      "Search status by room: the officer reports primary search status room by room, negative or victim removed, and states what remains for the secondary search before the crew exits.",
+      "Reset and rotate: reset the victim in a new room, rotate every member through TIC, search, and officer positions, and run the evolution again against the same clock."
     ],
-    safety: "Full PPE and SCBA in the hot zone; no live fuel or fire; no climbing on wreckage props; stop for any member entering the hot zone without SCBA or crossing the debris field alone; rotate crews and start rehab early.",
-    benchmark: "First report within 2 minutes, hot zone and casualty collection point set within 6 minutes, all 4 patients tagged and counted within 15 minutes, handoff count matches the transport log on the first call.",
+    safety: "Full PPE and SCBA for all interior work; no live fire; charged line protection in place before entry; stop the evolution for lost orientation or low air and reset; rehab on exit before the next rotation.",
+    benchmark: "Entry report within 1 minute, victim located and removal called within 8 minutes, victim at the door and handed off to EMS within 12 minutes, and an accurate primary search status by room on the first call.",
     relatedSops: [
-      "SOP 693 — Foam Operations",
-      "SOP 365 — Incident Safety Officer",
-      "SOP 351 — General Department Safety"
+      "SOP 697 — Thermal Imaging Cameras (Tic)",
+      "SOP 359 — Personal Protective Equipment",
+      "SOP 365 — Incident Safety Officer"
     ]
   },
   tabletop: {
     duration: "15–20 minutes",
-    title: "Reports of Two Trapped: Command Decisions at a Second-Floor Apartment Fire",
-    scenario: "First engine at a garden apartment fire on a Sunday afternoon; dispatch relayed two people trapped on the second floor, a resident outside says someone is still inside, heavy smoke pushes from a second-floor window, and the first crew enters through that window because the stairwell is charged with smoke; tied to Danbury, Connecticut, November 1, 2026, where crews were told two people were trapped on the second floor of a Kohanza Street apartment, entered through a second-floor window, and one resident died; 3 firefighters suffered minor burns.",
+    title: "Fully Engulfed on Arrival: Defensive Decisions, Occupant Accounting, and Water Supply at a Mobile Home Fire",
+    scenario: "First engine arrives at a double-wide mobile home in Florida that is fully engulfed on arrival; one occupant is outside and is treated and transported, neighbors are unsure if anyone else was home, and the hydrant lay is long; tied to Crystal River, Florida, November 1, 2026, where Citrus County Fire Rescue arrived at 6:43 AM, made an exterior attack, established a continuous water supply, treated and transported one occupant, confirmed through searches that no one else was inside, brought the fire under control at 7:17 AM, and the home was a total loss with an accidental cause.",
     nfpa: "NFPA 1561 · NFPA 1500",
     injects: [
-      { time: "0-5 min", text: "Window crew reports zero visibility and heat, resident now says only one person lived in the unit, which report drives the search and who confirms the count?" },
-      { time: "5-10 min", text: "A firefighter exits with minor burns and a second has heat-damaged gloves, who evaluates and replaces the crew and does the search continue, change entry, or stop?" },
-      { time: "10-15 min", text: "Primary search finds one occupant deceased, who protects the scene, what is said outside and on the radio, and what notifications start?" },
-      { time: "15-20 min", text: "Secondary search negative and the count still does not match the first dispatch report, how command closes the count, what goes into the post incident analysis, and what the department owes the burned firefighters in the first 24 hours?" }
+      { time: "0-5 min", text: "First report and occupant accounting: the home is fully engulfed and one occupant is outside being treated. What goes in the first report to state the defensive decision plainly, who starts occupant accounting, and what assignments go out in the first minute?" },
+      { time: "5-10 min", text: "Water supply vs exposure protection: the hydrant lay is long and the nearest exposure is threatened. Which comes first, supply or exposure protection, who owns each job, and what is the backup plan if the lay fails?" },
+      { time: "10-15 min", text: "Post-knockdown search and conflicting count: the fire is knocked down enough for a search, one neighbor now says a second person may have been home and another says no. Who searches, how is the search reported room by room, and how does command keep the count open until every track agrees?" },
+      { time: "15-20 min", text: "Scene protection for the State Fire Marshal and post incident analysis: the home is a total loss and the cause is under review. Who protects the scene, what is preserved, what notifications are made, and what goes into the post incident analysis?" }
     ],
     questions: [
       { group: "Firefighters", items: [
-        "What do you report in the first 30 seconds inside a window entry, and what heat signs mean back out?",
-        "What do you do on finding a deceased occupant so search and scene stay intact?"
+        "What do you look for and report on a fully engulfed mobile home that helps command account for occupants without going interior?",
+        "On the post-knockdown search, how do you report a room-by-room negative so command can close the count with confidence?"
       ] },
       { group: "Officers", items: [
-        "How do you run a search on two conflicting occupant reports without overcommitting or stopping early?",
-        "What notifications, injury documentation, and scene preservation are needed in the first 10 minutes after a fatality is found?"
+        "How do you state a defensive decision in the first report so every company works the same fight: exterior attack, exposures, and supply?",
+        "How do you run occupant accounting on parallel tracks, occupant, neighbors, and search, and who has the authority to close the count?"
       ] }
     ],
     teachingPoints: [
-      "Trapped reports are a starting point not a count.",
-      "Window entry changes egress and air clock and the outside officer owns both.",
-      "Minor burns are still injuries, evaluate, document, and replace the crew.",
-      "A fatality find turns the unit into a scene, protect it and start marshal, police, and leadership notifications early."
+      "State the defensive decision in the first report so no company freelances an interior push on a fully involved mobile home.",
+      "Run occupant accounting on parallel tracks, occupant, neighbors, and search, until all three agree.",
+      "Mobile homes fail fast, so exterior attack, exposure protection, and a continuous water supply are the fight.",
+      "A total-loss fire is still a scene: protect it for the State Fire Marshal and capture the post incident analysis while the facts are fresh."
     ],
     relatedSops: [
       "SOP 365 — Incident Safety Officer",
-      "SOP 402 — Pre-Incident Planning",
-      "SOP 223 — Ff Serious Injury"
+      "SOP 689 — Water Supply",
+      "SOP 351 — General Department Safety"
     ]
   }
 };
@@ -264,6 +262,81 @@ const DAILY_DRILLS = {
 
 /* DRILL-LIBRARY-START — Prepend each morning's two drills to this array, newest first. */
 const DRILL_LIBRARY = [
+  {
+    updatedThrough: "November 3, 2026",
+    dateSort: "2026-11-03",
+    date: "November 3, 2026",
+    type: "Practical",
+    title: "Search With a Clock Running: Primary Search, TIC Sweep, and Victim Handoff in a Single-Story Florida Home",
+    topic: "Primary search, TIC sweep, and victim handoff in a single-story home",
+    summary: "Run a primary search of a single-story slab-on-grade Florida home using a TIC sweep and oriented search, remove a victim to the door, and complete a clean EMS handoff against the clock; tied to Everett, Washington, November 2, 2026, where the first engine arrived 2.5 minutes after dispatch, one occupant was found deceased, and a second occupant was transported with minor burns and smoke inhalation.",
+    nfpa: ["NFPA 1001", "NFPA 1500"],
+    relatedSops: [
+      "SOP 697 — Thermal Imaging Cameras (Tic)",
+      "SOP 359 — Personal Protective Equipment",
+      "SOP 365 — Incident Safety Officer"
+    ],
+    details: {
+      equipment: [
+        "Engine with charged handline",
+        "Thermal imaging camera",
+        "Full PPE and SCBA",
+        "Rescue mannequin",
+        "Radios",
+        "Accountability board"
+      ],
+      evolutions: [
+        "Officer briefs the Everett fire: first engine arrived 2.5 minutes after dispatch on November 2, 2026, one occupant was found deceased and a second occupant was transported with minor burns and smoke inhalation; in this drill the clock starts at entry and the search has to stay oriented in a single-story slab-on-grade Florida home.",
+        "Entry and orientation: crew enters in full PPE and SCBA behind a charged handline, and the officer gives an entry report within 1 minute covering entry point, direction of search, and who is searching which side.",
+        "TIC sweep: the TIC operator sweeps each room on entry and again before moving on, calls out furniture, doors, and heat signatures, and the crew stays oriented to a wall or the hoseline while searching bedrooms, closets, and bathrooms.",
+        "Victim removal: on finding the mannequin victim, the crew calls the location and the removal route, moves the victim to the entry door, and hands off to EMS with location found, time found, and condition.",
+        "Search status by room: the officer reports primary search status room by room, negative or victim removed, and states what remains for the secondary search before the crew exits.",
+        "Reset and rotate: reset the victim in a new room, rotate every member through TIC, search, and officer positions, and run the evolution again against the same clock."
+      ],
+      safety: "Full PPE and SCBA for all interior work; no live fire; charged line protection in place before entry; stop the evolution for lost orientation or low air and reset; rehab on exit before the next rotation.",
+      benchmark: "Entry report within 1 minute, victim located and removal called within 8 minutes, victim at the door and handed off to EMS within 12 minutes, and an accurate primary search status by room on the first call."
+    }
+  },
+  {
+    updatedThrough: "November 3, 2026",
+    dateSort: "2026-11-03",
+    date: "November 3, 2026",
+    type: "Tabletop",
+    title: "Fully Engulfed on Arrival: Defensive Decisions, Occupant Accounting, and Water Supply at a Mobile Home Fire",
+    topic: "Defensive decisions and occupant accounting at a mobile home fire",
+    summary: "First engine arrives at a double-wide mobile home in Florida that is fully engulfed on arrival; one occupant is outside and is treated and transported, neighbors are unsure if anyone else was home, and the hydrant lay is long; tied to Crystal River, Florida, November 1, 2026, where Citrus County Fire Rescue arrived at 6:43 AM, made an exterior attack, established a continuous water supply, treated and transported one occupant, confirmed through searches that no one else was inside, brought the fire under control at 7:17 AM, and the home was a total loss with an accidental cause.",
+    nfpa: ["NFPA 1561", "NFPA 1500"],
+    relatedSops: [
+      "SOP 365 — Incident Safety Officer",
+      "SOP 689 — Water Supply",
+      "SOP 351 — General Department Safety"
+    ],
+    details: {
+      scenario: "First engine arrives at a double-wide mobile home in Florida that is fully engulfed on arrival; one occupant is outside and is treated and transported, neighbors are unsure if anyone else was home, and the hydrant lay is long; tied to Crystal River, Florida, November 1, 2026, where Citrus County Fire Rescue arrived at 6:43 AM, made an exterior attack, established a continuous water supply, treated and transported one occupant, confirmed through searches that no one else was inside, brought the fire under control at 7:17 AM, and the home was a total loss with an accidental cause.",
+      injects: [
+        { time: "0-5 min", text: "First report and occupant accounting: the home is fully engulfed and one occupant is outside being treated. What goes in the first report to state the defensive decision plainly, who starts occupant accounting, and what assignments go out in the first minute?" },
+        { time: "5-10 min", text: "Water supply vs exposure protection: the hydrant lay is long and the nearest exposure is threatened. Which comes first, supply or exposure protection, who owns each job, and what is the backup plan if the lay fails?" },
+        { time: "10-15 min", text: "Post-knockdown search and conflicting count: the fire is knocked down enough for a search, one neighbor now says a second person may have been home and another says no. Who searches, how is the search reported room by room, and how does command keep the count open until every track agrees?" },
+        { time: "15-20 min", text: "Scene protection for the State Fire Marshal and post incident analysis: the home is a total loss and the cause is under review. Who protects the scene, what is preserved, what notifications are made, and what goes into the post incident analysis?" }
+      ],
+      questions: [
+        { group: "Firefighters", items: [
+          "What do you look for and report on a fully engulfed mobile home that helps command account for occupants without going interior?",
+          "On the post-knockdown search, how do you report a room-by-room negative so command can close the count with confidence?"
+        ] },
+        { group: "Officers", items: [
+          "How do you state a defensive decision in the first report so every company works the same fight: exterior attack, exposures, and supply?",
+          "How do you run occupant accounting on parallel tracks, occupant, neighbors, and search, and who has the authority to close the count?"
+        ] }
+      ],
+      teachingPoints: [
+        "State the defensive decision in the first report so no company freelances an interior push on a fully involved mobile home.",
+        "Run occupant accounting on parallel tracks, occupant, neighbors, and search, until all three agree.",
+        "Mobile homes fail fast, so exterior attack, exposure protection, and a continuous water supply are the fight.",
+        "A total-loss fire is still a scene: protect it for the State Fire Marshal and capture the post incident analysis while the facts are fresh."
+      ]
+    }
+  },
   {
     updatedThrough: "November 2, 2026",
     dateSort: "2026-11-02",
@@ -1488,36 +1561,36 @@ const DRILL_LIBRARY = [
 
 /* DAILY-DATA-START — Replace this one object during the morning artifact update. */
 const DASHBOARD_DATA = {
-  updatedThrough: "November 2, 2026",
+  updatedThrough: "November 3, 2026",
   drill: {
     duration: "20-45 minutes",
-    title: "Aircraft Down in the Neighborhood: First-Arriving Company Actions at an Off-Airport Crash",
-    intro: "The first-arriving company sizes up a small aircraft crash in a residential area, controls fire and fuel hazards, sets up a casualty collection and triage point, and searches the debris field in an organized grid without becoming a casualty; tied to Palm Beach County, Florida, November 1, 2026, where a Learjet 60 crashed into a Greenacres mobile home park, killing all 9 people on board, and Palm Beach County Fire Rescue declared a mass casualty incident with about 600 residents evacuated.",
+    title: "Search With a Clock Running: Primary Search, TIC Sweep, and Victim Handoff in a Single-Story Florida Home",
+    intro: "Run a primary search of a single-story slab-on-grade Florida home using a TIC sweep and oriented search, remove a victim to the door, and complete a clean EMS handoff against the clock; tied to Everett, Washington, November 2, 2026, where the first engine arrived 2.5 minutes after dispatch, one occupant was found deceased, and a second occupant was transported with minor burns and smoke inhalation.",
     steps: [
-      "Officer briefs the Greenacres crash: first company sets the incident up, it does not try to finish it.",
-      "Arrival and hot zone: approach upwind and uphill, stop short of debris, mark hot zone, first report covers aircraft, fire, fuel, casualties, resources.",
-      "Fire and fuel: foam-capable handline knocks down a simulated fuel fire from outside the debris scatter; no one enters pooled fuel or touches leaking wreckage.",
-      "Triage: casualty collection point upwind, tag and move 4 mannequin patients by priority, start a transport log with counts called to command.",
-      "Debris field search: pairs search a coned grid, mark searched sections, report finds by location only, back out on instructor-called hazards.",
-      "Evacuation and handoff: evacuate two nearest homes and hand command hot zone, fire status, patient count by priority, searched and unsearched areas, and needs."
+      "Officer briefs the Everett fire: first engine arrived 2.5 minutes after dispatch on November 2, 2026, one occupant was found deceased and a second occupant was transported with minor burns and smoke inhalation; in this drill the clock starts at entry and the search has to stay oriented in a single-story slab-on-grade Florida home.",
+      "Entry and orientation: crew enters in full PPE and SCBA behind a charged handline, and the officer gives an entry report within 1 minute covering entry point, direction of search, and who is searching which side.",
+      "TIC sweep: the TIC operator sweeps each room on entry and again before moving on, calls out furniture, doors, and heat signatures, and the crew stays oriented to a wall or the hoseline while searching bedrooms, closets, and bathrooms.",
+      "Victim removal: on finding the mannequin victim, the crew calls the location and the removal route, moves the victim to the entry door, and hands off to EMS with location found, time found, and condition.",
+      "Search status by room: the officer reports primary search status room by room, negative or victim removed, and states what remains for the secondary search before the crew exits.",
+      "Reset and rotate: reset the victim in a new room, rotate every member through TIC, search, and officer positions, and run the evolution again against the same clock."
     ],
-    nfpa: "NFPA 1500 · NFPA 1561",
+    nfpa: "NFPA 1001 · NFPA 1500",
     relatedSops: [
-      "SOP 693 — Foam Operations",
-      "SOP 365 — Incident Safety Officer",
-      "SOP 351 — General Department Safety"
+      "SOP 697 — Thermal Imaging Cameras (Tic)",
+      "SOP 359 — Personal Protective Equipment",
+      "SOP 365 — Incident Safety Officer"
     ]
   },
   daily: [
     {
-      tag: "RESCUE",
-      department: "South County Fire (WA)",
-      date: "November 1, 2026",
-      outcome: "Firefighters rescued a mother and a child from a balcony at an apartment fire near Everett; 15 residents were displaced; no injuries were reported.",
-      url: "https://seattlecourant.com/stories/2026-11-02-fire-displaces-15-residents-near-everett-mother-child-rescued-f60580.html",
+      tag: "CRASH",
+      department: "Sandy Ridge Fire Department (VA)",
+      date: "October 31, 2026",
+      outcome: "A fire department truck went off Ralph Stanley Highway in Dickenson County and overturned on Saturday afternoon; the truck was not responding to an emergency call; 4 people were taken to a hospital with non-life-threatening injuries; Virginia State Police are investigating.",
+      url: "https://www.firefighterclosecalls.com/fire-apparatus-involved-in-single-vehicle-crash-four-injured-virginia/",
       sops: [
-        "SOP 354 — Ladder- Safety Belts",
-        "SOP 697 — Thermal Imaging Cameras (Tic)"
+        "SOP 355 — Apparatus Safety",
+        "SOP 350 — Accident- Injury Investigation"
       ]
     }
   ]
@@ -1530,6 +1603,21 @@ const SOP_LIBRARY = [{"sop":"223","title":"Ff Serious Injury","label":"SOP 223 �
 /* SOP-LIBRARY-END */
 
 const incidents = [
+  {
+    "category": "crash",
+    "severity": "minor",
+    "state": "VA",
+    "sort": "2026-10-31",
+    "month": 10,
+    "department": "Sandy Ridge Fire Department (VA)",
+    "date": "October 31, 2026",
+    "outcome": "A fire department truck went off Ralph Stanley Highway in Dickenson County and overturned on Saturday afternoon; the truck was not responding to an emergency call; 4 people were taken to a hospital with non-life-threatening injuries; Virginia State Police are investigating.",
+    "url": "https://www.firefighterclosecalls.com/fire-apparatus-involved-in-single-vehicle-crash-four-injured-virginia/",
+    "sops": [
+      "SOP 355 — Apparatus Safety",
+      "SOP 350 — Accident- Injury Investigation"
+    ]
+  },
   {
     "category": "rescue",
     "state": "WA",
@@ -4364,7 +4452,7 @@ incidents.forEach(incident=>{incident.sops=Array.isArray(incident.sops)&&inciden
 
 const YTD_TOTALS = {
   lodd: { total:74, sub:"31 INCIDENT-RELATED · 35 MEDICAL · 8 CAUSE PENDING · 6 FLORIDA · 68 NATIONAL" },
-  crash: { total:42, sub:"9 FATAL · 18 SERIOUS · 15 MINOR" },
+  crash: { total:43, sub:"9 FATAL · 19 SERIOUS · 15 MINOR" },
   rescue: { total:43, sub:"8 FLORIDA · 35 NATIONAL" },
   mayday: { total:81, sub:"75 VERIFIED · 6 UNVERIFIED" },
   closecall: { total:17, sub:"6 FLORIDA · 11 NATIONAL" }
