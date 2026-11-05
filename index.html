@@ -194,70 +194,69 @@
 <script>
 /* DAILY-DRILLS-START — Replace only this object during the morning drill update. */
 const DAILY_DRILLS = {
-  updatedThrough: "November 4, 2026",
+  updatedThrough: "November 5, 2026",
   practical: {
     duration: "20–45 minutes",
-    title: "Down Below Grade: Mayday Call, RIT Entry, and Firefighter Removal Up the Stairs",
-    objective: "Crews practice a complete mayday using the 3 Ws (Who you are, What happened / what you need, Where you are), a RIT entry into a below-grade or split-level training area, locating a downed firefighter by PASS and voice, packaging, and removal up the stairs; tied to North Royalton, Ohio, November 2, 2026, where a mayday for a firefighter down in a basement at a Broadview Heights house fire left one firefighter dead and a second seriously injured; Florida framing uses a stairwell, split-level, or sunken-area prop because most Florida homes have no basements.",
-    nfpa: "NFPA 1407 · NFPA 1500 · NFPA 1561",
+    title: "Stop It at the Exposure: Exposure Protection and Line Placement When Fire Spreads House to House",
+    objective: "Crews protect the threatened exposure first, place lines between the fire building and the exposure, and hold the fire to the building of origin in a Florida single-story slab-on-grade neighborhood simulation. Tied to Rochester, NY, November 4, 2026 (fire extended to three houses, two firefighters hurt) and the FDNY Sunset Park fire on November 5, 2026.",
+    nfpa: "NFPA 1001 · NFPA 1500",
     equipment: [
-      "Full PPE and SCBA",
-      "PASS devices",
-      "RIT pack with spare air",
+      "Engine with full hose complement",
+      "Two handlines (attack and exposure)",
+      "Ground ladders",
+      "TIC",
       "Radios",
-      "Handline for RIT protection",
-      "Thermal imaging camera",
-      "Accountability board",
-      "Downed firefighter mannequin"
+      "Cones or markers for the fire building and two exposures",
+      "Accountability board"
     ],
     steps: [
-      "Officer briefs the North Royalton fire: mutual aid house fire, heavy fire beneath interior crews, mayday below grade, second firefighter also injured, second squad requested; the mayday, RIT entry, and removal are one continuous job and command starts the second squad and accountability check at the mayday.",
-      "Mayday evolution: the downed firefighter transmits the mayday three times using the 3 Ws, activates PASS, and reports air status; command repeats the mayday back word for word and starts a PAR.",
-      "RIT entry evolution: RIT enters behind a charged line, the officer reports entry point, direction, and search plan, and the team follows PASS sound and voice contact without passing fire.",
-      "Locate and package: on contact the RIT notes the location, checks air, connects the RIT pack if needed, and packages the firefighter for a stair removal.",
-      "Removal: the team removes the firefighter up the stairs to the safe area, calls progress at the stairs and at the top, and hands off to EMS with location found, air status, and time from mayday to removal.",
-      "Reset and rotate every member through mayday, RIT, and command positions, closing by restating the mayday, entry report, and removal call word for word."
+      "Officer briefs the Rochester fire out loud: a car fire extended into a house, then into a second and a third house, with a third alarm struck and two firefighters hurt; the exposure line and the exposure report come early.",
+      "Size-up and first report: name the fire building, the most threatened exposure by side, the exposure line assignment, and the water supply plan, in that order.",
+      "Exposure line: stretch between the buildings, wet down the exposure wall and roof edge, report when the exposure is protected and holding.",
+      "Attack line: advance on the fire building without pulling the exposure crew off its assignment; both officers report line positions before any interior commitment.",
+      "Extension check: TIC check of the exposure attic and shared wall line, report extension found or no extension by location, command decides out loud whether the second exposure needs its own line.",
+      "Reset and rotate with the wind and threatened side changed; close by restating the first report and the exposure report word for word."
     ],
-    safety: "Full PPE and SCBA for all interior work, no live fire, simulated low visibility only, a charged line protects the RIT where the prop allows, stop for any real low air, lost orientation, or separation, watch heat stress and start rehab on exit.",
-    benchmark: "Mayday complete with all 3 Ws on the first transmission, command repeats it back and starts a PAR within 1 minute, RIT entry report within 2 minutes, downed firefighter located within 6 minutes, removal to the safe area complete within 12 minutes of the mayday.",
+    safety: "Full PPE and SCBA in the simulated hazard area. No live fire; markers and verbal conditions only. Keep crews out of the collapse zone. Watch heat stress, rehab on exit. The exposure crew does not abandon the exposure without a direct command order.",
+    benchmark: "First report names the threatened exposure and assignment within 2 minutes, exposure line flowing on the exposure within 5 minutes, attack line in position without stripping the exposure crew, TIC extension check reported by location within 10 minutes.",
     relatedSops: [
       "SOP 365 — Incident Safety Officer",
-      "SOP 351 — General Department Safety",
-      "SOP 359 — Personal Protective Equipment"
+      "SOP 689 — Water Supply",
+      "SOP 351 — General Department Safety"
     ]
   },
   tabletop: {
     duration: "15–20 minutes",
-    title: "Two of Ours Down: Command, Accountability, and Notifications After a Fatal Mayday",
-    scenario: "Crews at a mutual aid single-story house fire at night report heavy fire beneath them; a mayday follows for a firefighter down in a below-grade area, then a second firefighter is reported down, CPR is reported, and a second squad is requested; one firefighter later dies and a second is in serious but stable condition; tied to North Royalton, Ohio, November 2, 2026.",
+    title: "Reported Empty, People Inside: Changing the Plan When the First Report Is Wrong",
+    scenario: "First engine arrives at a single-story Florida home with a porch fire extending into the house. Dispatch and a neighbor say the house is empty. As the first line is stretched, a crew member hears banging and calls for help from inside. Tied to Torrington, CT, November 4, 2026, where a home first reported empty held four occupants, all rescued (two through a window) and taken to a hospital.",
     nfpa: "NFPA 1561 · NFPA 1500",
     injects: [
-      { time: "0-5 min", text: "Mayday transmitted, firefighter down below grade, heavy fire beneath crews; what is ordered in the first minute, who owns the PAR, and when is the second squad and added RIT requested?" },
-      { time: "5-10 min", text: "A second firefighter is down and CPR is reported; how are fire attack, RIT, and medical care split without losing accountability, and what goes on the radio versus what stays off it?" },
-      { time: "10-15 min", text: "Both firefighters are out and transported, one critical; who makes hospital and family notifications, who secures gear and the scene, and what is said publicly before any name is released?" },
-      { time: "15-20 min", text: "Word arrives one firefighter has died; walk the LODD notification sequence, peer support activation, station coverage, and the first post incident analysis steps." }
+      { time: "0-5 min", text: "Two sources say empty, porch fire extending; where does the first line go, who starts a primary search anyway, what is said on the radio about the occupancy report and its source?" },
+      { time: "5-10 min", text: "Banging and calls for help heard from the first floor; how does the plan change in 60 seconds, who owns the rescue, who keeps water on the fire, when are the next alarm and an ambulance to the front called?" },
+      { time: "10-15 min", text: "Two occupants out through a window, two more reported inside, heavy smoke banking down; second crew inside, window removal, or both, and how is the occupant count kept straight as patients leave by different exits?" },
+      { time: "15-20 min", text: "All four out and transported, a caller reports cats still inside; what is the risk call on going back in for animals, who makes it, and what goes into the report about the original empty report?" }
     ],
     questions: [
       { group: "Firefighters", items: [
-        "What belongs in the mayday transmission, and what does the outside crew do in the first 60 seconds after a mayday that helps the RIT instead of crowding the entry point?",
-        "After a removal, what do you check on your partner and yourself before taking another assignment?"
+        "What sounds and signs should override an empty report, and how do you announce them so command hears them the first time?",
+        "When you remove a patient through a window, what do you call out so the count stays right?"
       ] },
       { group: "Officers", items: [
-        "How is the PAR kept accurate when crews split between attack, RIT, and medical care?",
-        "Who owns the family notification, and what must never be released or posted before that notification is complete?"
+        "How do you record an occupancy report so its source and uncertainty travel with it instead of hardening into a fact?",
+        "How do you split attack, search, and rescue in the first minute after the plan changes without losing accountability?"
       ] }
     ],
     teachingPoints: [
-      "A mayday starts three jobs at once (RIT, accountability, resources).",
-      "Radio carries operations while notifications and names stay off the radio and off social media until family notification is complete.",
-      "A second injured firefighter is a second patient, family, and notification track.",
-      "Gear, SCBA, and the scene are evidence after a fatal mayday, secure them early.",
-      "Peer support and coverage are same-night command decisions."
+      "An empty report is a report, not a fact; name its source and search anyway when conditions allow.",
+      "Listening is a search tool; the crew that hears banging or calls for help must transmit it clearly at once.",
+      "The plan change is a command announcement: rescue assignment, attack continues, next alarm, ambulance forward, in one transmission.",
+      "One member owns the occupant count from first removal to last transport.",
+      "Animal rescue after the human rescue is a fresh risk decision on current conditions."
     ],
     relatedSops: [
-      "SOP 223 — Ff Lodd",
       "SOP 365 — Incident Safety Officer",
-      "SOP 220 — Post Incident Analysis"
+      "SOP 697 — Thermal Imaging Cameras (Tic)",
+      "SOP 402 — Pre-Incident Planning"
     ]
   }
 };
@@ -265,6 +264,83 @@ const DAILY_DRILLS = {
 
 /* DRILL-LIBRARY-START — Prepend each morning's two drills to this array, newest first. */
 const DRILL_LIBRARY = [
+  {
+    updatedThrough: "November 5, 2026",
+    dateSort: "2026-11-05",
+    date: "November 5, 2026",
+    type: "Practical",
+    title: "Stop It at the Exposure: Exposure Protection and Line Placement When Fire Spreads House to House",
+    topic: "Exposure protection and line placement when fire spreads house to house",
+    summary: "Crews protect the threatened exposure first, place lines between the fire building and the exposure, and hold the fire to the building of origin in a Florida single-story slab-on-grade neighborhood simulation. Tied to Rochester, NY, November 4, 2026 (fire extended to three houses, two firefighters hurt) and the FDNY Sunset Park fire on November 5, 2026.",
+    nfpa: ["NFPA 1001", "NFPA 1500"],
+    relatedSops: [
+      "SOP 365 — Incident Safety Officer",
+      "SOP 689 — Water Supply",
+      "SOP 351 — General Department Safety"
+    ],
+    details: {
+      equipment: [
+        "Engine with full hose complement",
+        "Two handlines (attack and exposure)",
+        "Ground ladders",
+        "TIC",
+        "Radios",
+        "Cones or markers for the fire building and two exposures",
+        "Accountability board"
+      ],
+      evolutions: [
+        "Officer briefs the Rochester fire out loud: a car fire extended into a house, then into a second and a third house, with a third alarm struck and two firefighters hurt; the exposure line and the exposure report come early.",
+        "Size-up and first report: name the fire building, the most threatened exposure by side, the exposure line assignment, and the water supply plan, in that order.",
+        "Exposure line: stretch between the buildings, wet down the exposure wall and roof edge, report when the exposure is protected and holding.",
+        "Attack line: advance on the fire building without pulling the exposure crew off its assignment; both officers report line positions before any interior commitment.",
+        "Extension check: TIC check of the exposure attic and shared wall line, report extension found or no extension by location, command decides out loud whether the second exposure needs its own line.",
+        "Reset and rotate with the wind and threatened side changed; close by restating the first report and the exposure report word for word."
+      ],
+      safety: "Full PPE and SCBA in the simulated hazard area. No live fire; markers and verbal conditions only. Keep crews out of the collapse zone. Watch heat stress, rehab on exit. The exposure crew does not abandon the exposure without a direct command order.",
+      benchmark: "First report names the threatened exposure and assignment within 2 minutes, exposure line flowing on the exposure within 5 minutes, attack line in position without stripping the exposure crew, TIC extension check reported by location within 10 minutes."
+    }
+  },
+  {
+    updatedThrough: "November 5, 2026",
+    dateSort: "2026-11-05",
+    date: "November 5, 2026",
+    type: "Tabletop",
+    title: "Reported Empty, People Inside: Changing the Plan When the First Report Is Wrong",
+    topic: "Changing the plan when the first occupancy report is wrong",
+    summary: "First engine arrives at a single-story Florida home with a porch fire extending into the house. Dispatch and a neighbor say the house is empty. As the first line is stretched, a crew member hears banging and calls for help from inside. Tied to Torrington, CT, November 4, 2026, where a home first reported empty held four occupants, all rescued (two through a window) and taken to a hospital.",
+    nfpa: ["NFPA 1561", "NFPA 1500"],
+    relatedSops: [
+      "SOP 365 — Incident Safety Officer",
+      "SOP 697 — Thermal Imaging Cameras (Tic)",
+      "SOP 402 — Pre-Incident Planning"
+    ],
+    details: {
+      scenario: "First engine arrives at a single-story Florida home with a porch fire extending into the house. Dispatch and a neighbor say the house is empty. As the first line is stretched, a crew member hears banging and calls for help from inside. Tied to Torrington, CT, November 4, 2026, where a home first reported empty held four occupants, all rescued (two through a window) and taken to a hospital.",
+      injects: [
+        { time: "0-5 min", text: "Two sources say empty, porch fire extending; where does the first line go, who starts a primary search anyway, what is said on the radio about the occupancy report and its source?" },
+        { time: "5-10 min", text: "Banging and calls for help heard from the first floor; how does the plan change in 60 seconds, who owns the rescue, who keeps water on the fire, when are the next alarm and an ambulance to the front called?" },
+        { time: "10-15 min", text: "Two occupants out through a window, two more reported inside, heavy smoke banking down; second crew inside, window removal, or both, and how is the occupant count kept straight as patients leave by different exits?" },
+        { time: "15-20 min", text: "All four out and transported, a caller reports cats still inside; what is the risk call on going back in for animals, who makes it, and what goes into the report about the original empty report?" }
+      ],
+      questions: [
+        { group: "Firefighters", items: [
+          "What sounds and signs should override an empty report, and how do you announce them so command hears them the first time?",
+          "When you remove a patient through a window, what do you call out so the count stays right?"
+        ] },
+        { group: "Officers", items: [
+          "How do you record an occupancy report so its source and uncertainty travel with it instead of hardening into a fact?",
+          "How do you split attack, search, and rescue in the first minute after the plan changes without losing accountability?"
+        ] }
+      ],
+      teachingPoints: [
+        "An empty report is a report, not a fact; name its source and search anyway when conditions allow.",
+        "Listening is a search tool; the crew that hears banging or calls for help must transmit it clearly at once.",
+        "The plan change is a command announcement: rescue assignment, attack continues, next alarm, ambulance forward, in one transmission.",
+        "One member owns the occupant count from first removal to last transport.",
+        "Animal rescue after the human rescue is a fresh risk decision on current conditions."
+      ]
+    }
+  },
   {
     updatedThrough: "November 4, 2026",
     dateSort: "2026-11-04",
@@ -1642,69 +1718,35 @@ const DRILL_LIBRARY = [
 
 /* DAILY-DATA-START — Replace this one object during the morning artifact update. */
 const DASHBOARD_DATA = {
-  updatedThrough: "November 4, 2026",
+  updatedThrough: "November 5, 2026",
   drill: {
     duration: "20-45 minutes",
-    title: "Down Below Grade: Mayday Call, RIT Entry, and Firefighter Removal Up the Stairs",
-    intro: "Crews practice a complete mayday using the 3 Ws (Who you are, What happened / what you need, Where you are), a RIT entry into a below-grade or split-level training area, locating a downed firefighter by PASS and voice, packaging, and removal up the stairs; tied to North Royalton, Ohio, November 2, 2026, where a mayday for a firefighter down in a basement at a Broadview Heights house fire left one firefighter dead and a second seriously injured; Florida framing uses a stairwell, split-level, or sunken-area prop because most Florida homes have no basements.",
+    title: "Stop It at the Exposure: Exposure Protection and Line Placement When Fire Spreads House to House",
+    intro: "Crews protect the threatened exposure first, place lines between the fire building and the exposure, and hold the fire to the building of origin in a Florida single-story slab-on-grade neighborhood simulation. Tied to Rochester, NY, November 4, 2026 (fire extended to three houses, two firefighters hurt) and the FDNY Sunset Park fire on November 5, 2026.",
     steps: [
-      "Officer briefs the North Royalton fire: mutual aid house fire, heavy fire beneath interior crews, mayday below grade, second firefighter also injured, second squad requested; the mayday, RIT entry, and removal are one continuous job and command starts the second squad and accountability check at the mayday.",
-      "Mayday evolution: the downed firefighter transmits the mayday three times using the 3 Ws, activates PASS, and reports air status; command repeats the mayday back word for word and starts a PAR.",
-      "RIT entry evolution: RIT enters behind a charged line, the officer reports entry point, direction, and search plan, and the team follows PASS sound and voice contact without passing fire.",
-      "Locate and package: on contact the RIT notes the location, checks air, connects the RIT pack if needed, and packages the firefighter for a stair removal.",
-      "Removal: the team removes the firefighter up the stairs to the safe area, calls progress at the stairs and at the top, and hands off to EMS with location found, air status, and time from mayday to removal.",
-      "Reset and rotate every member through mayday, RIT, and command positions, closing by restating the mayday, entry report, and removal call word for word."
+      "Officer briefs the Rochester fire out loud: a car fire extended into a house, then into a second and a third house, with a third alarm struck and two firefighters hurt; the exposure line and the exposure report come early.",
+      "Size-up and first report: name the fire building, the most threatened exposure by side, the exposure line assignment, and the water supply plan, in that order.",
+      "Exposure line: stretch between the buildings, wet down the exposure wall and roof edge, report when the exposure is protected and holding.",
+      "Attack line: advance on the fire building without pulling the exposure crew off its assignment; both officers report line positions before any interior commitment.",
+      "Extension check: TIC check of the exposure attic and shared wall line, report extension found or no extension by location, command decides out loud whether the second exposure needs its own line.",
+      "Reset and rotate with the wind and threatened side changed; close by restating the first report and the exposure report word for word."
     ],
-    nfpa: "NFPA 1407 · NFPA 1500 · NFPA 1561",
+    nfpa: "NFPA 1001 · NFPA 1500",
     relatedSops: [
       "SOP 365 — Incident Safety Officer",
-      "SOP 351 — General Department Safety",
-      "SOP 359 — Personal Protective Equipment"
+      "SOP 689 — Water Supply",
+      "SOP 351 — General Department Safety"
     ]
   },
   daily: [
     {
-      tag: "LODD",
-      department: "North Royalton Fire Department (OH)",
-      date: "November 2, 2026",
-      outcome: "A firefighter died from injuries sustained at a mutual aid house fire in Broadview Heights; dispatch traffic captured a mayday with a firefighter down in the basement and a second squad requested; a second firefighter was seriously injured and in serious but stable condition; the death was announced November 3 and is not yet USFA-listed.",
-      url: "https://www.firerescue1.com/line-of-duty-death-lodd/ohio-firefighter-dies-battling-house-fire-second-seriously-injured",
+      tag: "RESCUE",
+      department: "Torrington Fire Department (CT)",
+      date: "November 4, 2026",
+      outcome: "Firefighters responded just before 4:00 PM to a porch fire at a home first reported empty; banging and calls for help were heard from inside; crews rescued four occupants from the first floor through heavy smoke and advancing flames, two of them through a window; all four were taken to a hospital, conditions not reported; five cats were also rescued; no firefighters were injured.",
       sops: [
-        "SOP 223 — Ff Lodd",
+        "SOP 697 — Thermal Imaging Cameras (Tic)",
         "SOP 365 — Incident Safety Officer"
-      ]
-    },
-    {
-      tag: "LODD · CRASH",
-      department: "Raft River Fire District (ID)",
-      date: "November 2, 2026",
-      outcome: "A fire truck carrying two firefighters went off East Yale Road in Cassia County at about 9:00 PM and crashed; both firefighters were airlifted to a hospital in Pocatello, where one firefighter died from injuries and the other remained hospitalized; cause not yet clear; Idaho State Police are investigating; not yet USFA-listed.",
-      url: "https://zestapp.ai/share/4984633928452-news?pd=0RYG01Nl&lang=en_US&s=i0&_f=app_share&send_time=1793762946&gen_by=ios",
-      sops: [
-        "SOP 355 — Apparatus Safety",
-        "SOP 350 — Accident- Injury Investigation",
-        "SOP 223 — Ff Lodd"
-      ]
-    },
-    {
-      tag: "MAYDAY",
-      department: "North Royalton Fire Department (OH)",
-      date: "November 2, 2026",
-      outcome: "Mayday at the Broadview Heights house fire with a firefighter down in the basement and a second squad requested for a firefighter; one firefighter died and a second firefighter was seriously injured; the death is counted once, under LODD.",
-      url: "https://www.firerescue1.com/line-of-duty-death-lodd/ohio-firefighter-dies-battling-house-fire-second-seriously-injured",
-      sops: [
-        "SOP 365 — Incident Safety Officer"
-      ]
-    },
-    {
-      tag: "CLOSECALL",
-      department: "Avon Fire Department (IN)",
-      date: "November 2, 2026",
-      outcome: "A firefighter was engulfed in flames when a vehicle exploded at about noon on U.S. Route 36; the blast knocked the firefighter off their feet; the firefighter rolled away and was helped up; the department confirmed full PPE was worn and there were no injuries to firefighters, bystanders, or the driver, who was not in the vehicle.",
-      url: "https://www.indystar.com/story/news/local/2026/11/03/video-shows-avon-indiana-firefighter-engulfed-in-flames-after-vehicle-explodes/92581715007/",
-      sops: [
-        "SOP 359 — Personal Protective Equipment",
-        "SOP 351 — General Department Safety"
       ]
     }
   ]
@@ -4567,7 +4609,7 @@ incidents.forEach(incident=>{incident.sops=Array.isArray(incident.sops)&&inciden
 const YTD_TOTALS = {
   lodd: { total:76, sub:"33 INCIDENT-RELATED · 35 MEDICAL · 8 CAUSE PENDING · 6 FLORIDA · 70 NATIONAL" },
   crash: { total:44, sub:"10 FATAL · 19 SERIOUS · 15 MINOR" },
-  rescue: { total:43, sub:"8 FLORIDA · 35 NATIONAL" },
+  rescue: { total:44, sub:"8 FLORIDA · 36 NATIONAL" },
   mayday: { total:82, sub:"76 VERIFIED · 6 UNVERIFIED" },
   closecall: { total:18, sub:"6 FLORIDA · 12 NATIONAL" }
 };
