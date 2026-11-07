@@ -187,75 +187,78 @@
     </div>
   </section>
 
-  <section class="section method" aria-labelledby="method-title"><h2 id="method-title">Scope and method</h2><p>This is a curated operational review for <span id="scopePeriod"></span>, built from the linked reports. Dashboard rescues are structure-fire incidents only; drowning responses are excluded. Close calls are notable near-misses reported by FirefighterCloseCalls.com, not a complete national census. Florida incidents are prioritized. Mayday scanner items are explicitly marked unverified; USFA statuses remain provisional where applicable. LODD count check: USFA lists 73 for 2026 while this dashboard counts 76 because it includes five department and news recognized LODDs not yet USFA-listed (Baltimore Oct 21, St. Lucie County Oct 24, Kansas City Oct 26, North Royalton Nov 2, Raft River Nov 2), offset by earlier USFA listings not on this dashboard; backfill audit still open.</p></section>
+  <section class="section method" aria-labelledby="method-title"><h2 id="method-title">Scope and method</h2><p>This is a curated operational review for <span id="scopePeriod"></span>, built from the linked reports. Dashboard rescues are structure-fire incidents only; drowning responses are excluded. Close calls are notable near-misses reported by FirefighterCloseCalls.com, not a complete national census. Florida incidents are prioritized. Mayday scanner items are explicitly marked unverified; USFA statuses remain provisional where applicable. LODD count check: USFA lists 75 for 2026 while this dashboard counts 76 because it includes four department and news recognized LODDs not yet USFA-listed (Baltimore Oct 21, St. Lucie County Oct 24, Kansas City Oct 26, North Royalton Nov 2), offset by earlier USFA listings not on this dashboard; backfill audit still open.</p></section>
   <footer><span>Prepared for company training and after-action discussion.</span><span>Verify local SOGs and current NFPA editions before drilling.</span></footer>
 </main>
 
 <script>
 /* DAILY-DRILLS-START — Replace only this object during the morning drill update. */
 const DAILY_DRILLS = {
-  updatedThrough: "November 6, 2026",
+  updatedThrough: "November 7, 2026",
   practical: {
     duration: "20–45 minutes",
-    title: "Set the Block: Blocker Truck Placement, Taper, and Crew Work Zone on a Highway",
-    objective: "Crews position a blocker apparatus, build a cone taper, and keep every member inside the protected work zone during a simulated highway incident, tied to the Mesquite blocker strike.",
-    nfpa: "NFPA 1451 · NFPA 1500",
+    title: "Struck and Live: Lightning-Strike House Fire, Panel Fire, and Utility Isolation",
+    objective: "Crews work a simulated lightning-strike house fire in a Florida single-story slab-on-grade home, treat every wire and panel as live until the utility confirms isolation, find extension along the wiring path with the TIC, and run every member through a symptom check on exit, tied to the Abington, Massachusetts lightning-strike fire on November 6, 2026 (lightning hit a tree, ran through the ground into the house, ignited the electrical panel, three alarms, four occupants out uninjured, one firefighter hospitalized for smoke inhalation and expected to be okay).",
+    nfpa: "NFPA 1001 · NFPA 1500",
     equipment: [
-      "Engine or blocker apparatus",
-      "Traffic cones",
-      "High-visibility vests",
+      "Engine with full hose complement",
+      "One handline",
+      "TIC",
+      "Ground ladder",
       "Radios",
+      "De-energized training panel and breaker prop",
+      "Utility notification script cards",
+      "Combustible gas and CO monitor",
       "Accountability board",
-      "Scene lighting",
-      "Marked simulated lane and work zone"
+      "Rehab supplies"
     ],
     steps: [
-      "Officer briefs the Mesquite strike: first crash about 2:30 AM, retired engine positioned as blocker, sports car hit it about 3:00 AM; blocker, taper, and work zone are set before other work pulls the crew toward traffic.",
-      "Blocker placement: driver positions blocker upstream at an angle, wheels turned away from crew, lights set for nighttime, reports blocker set.",
-      "Taper: second member in vest, from the protected side only, places cone taper and downstream buffer, calling out each cone for accountability.",
-      "Work zone: crew performs simulated patient assessment and equipment carry entirely inside the zone; anyone leaving the zone stops, announces it, and waits for repositioning first.",
-      "Second strike: officer announces a simulated second vehicle entering the taper; crew moves to the pre-briefed refuge point behind the blocker, officer completes a PAR and reports the strike, injuries, and lane closures.",
-      "Reset and rotate with approach direction changed, rotate all members through driver, taper, and officer, close restating blocker position, taper length, and refuge point."
+      "Officer briefs the Abington fire out loud: lightning hit the tree, ran through the ground into the house, and lit the panel; one firefighter went to the hospital breathing smoke; the building is an electrical hazard until the utility says otherwise and smoke exposure is a patient problem, not a toughness test.",
+      "First report names a lightning strike, fire at or near the panel, occupants accounted for or not, a utility request in the first transmission, and a no-entry zone around the panel until isolation is confirmed.",
+      "Isolation: a member simulates the utility call and panel isolation on the de-energized prop and reports power isolated, by whom, at what time; command repeats it back before any member works at the panel or pulls wiring.",
+      "Extension check: with the TIC, a crew sweeps the panel, the attic access, and the wiring path between them, reports extension found or no extension by location, and checks the garage and the trench line outside for a second ignition point.",
+      "Attack and overhaul only after the isolation report, with the monitor in use; any re-energized or unconfirmed circuit is a stop-and-back-out trigger.",
+      "Rehab and reset: every exiting member completes a symptom check asked out loud (headache, nausea, dizziness, chest symptoms), the officer states who is cleared and who is not, and the drill resets with the ignition point moved to the attic."
     ],
-    safety: "Full PPE and high-visibility vests. Training area only, no live traffic. No member turns their back to simulated traffic without a spotter. Wheels away from work zone. Watch footing and heat stress, rehab on exit.",
-    benchmark: "Blocker set and reported within 3 minutes, taper complete within 5 minutes, zero unannounced zone exits, correct PAR and strike report within 2 minutes of the simulated second strike.",
+    safety: "No live electrical prop ever, the training panel stays de-energized, treat all simulated wiring as energized until the isolation report, full PPE and SCBA until the atmosphere is monitored and cleared, brief the secondary-strike rule for real storms, watch wet and uneven footing, and any real symptom in rehab stops that member's drill.",
+    benchmark: "First report names the lightning strike, the panel, and the utility request within 2 minutes, simulated isolation confirmed and repeated back within 5 minutes, TIC extension sweep reported by location within 10 minutes, and 100 percent of exiting members complete the rehab symptom check with zero returning before clearance.",
     relatedSops: [
-      "SOP 355 — Apparatus Safety",
-      "SOP 362 — Traffic Safety Vests",
+      "SOP 366 — Lock-Out Tag-Out",
+      "SOP 365 — Incident Safety Officer",
       "SOP 351 — General Department Safety"
     ]
   },
   tabletop: {
     duration: "15–20 minutes",
-    title: "Shots on an EMS Call: Retreat, Cover, and Care After a Firefighter Is Shot",
-    scenario: "Night dispatch to a shopping center parking lot for a person reported unconscious in a vehicle; police responding but not yet arrived; as the crew approaches, a shot is fired and a firefighter is hit and down in the open lot, tied to the Renton shooting on November 5, 2026.",
+    title: "Four Gone by Sunrise: Crew Care, Peer Support, and the Dispatcher After a Fatal Family Fire",
+    scenario: "First-in crew at a townhome fire at about 4:15 AM, neighbors screaming outside, crew finds four occupants unresponsive inside and carries them out, all four later pronounced dead at hospitals, fire contained to one unit, three neighbors displaced, tied to the Chicago Rogers Park townhome fire on November 5, 2026.",
     nfpa: "NFPA 1500 · NFPA 1561",
     injects: [
-      { time: "0-5 min", text: "No weapons mentioned, police en route with no arrival time; where do you stage, what do you look for, what do you ask dispatch to confirm?" },
-      { time: "5-10 min", text: "Shot fired, firefighter down in the open; who transmits emergency traffic and what does it say, where does the crew go, who moves to the downed firefighter before police secure the shooter?" },
-      { time: "10-15 min", text: "Police engage the suspect and call the immediate area secure but the lot is not cleared; where do you treat and load, who owns hospital and department notifications, what happens to the original patient?" },
-      { time: "15-20 min", text: "Firefighter transported stable, lot is a crime scene including your apparatus and equipment; what do you preserve and document, who cares for the crew, what goes in the report?" }
+      { time: "0-5 min", text: "The last patient is out and the fire is contained, the crew is quiet in the wrong way and one member keeps replaying the carry-out; who notices, who says what first, and what does the officer do in the next ten minutes that is care and not paperwork?" },
+      { time: "5-10 min", text: "Command asks whether the crew can take the next call and whether anyone needs to come off the floor; how do you answer honestly, who makes the peer support call and to whom, and what do you tell the dispatcher who took the first screaming calls and is still on shift?" },
+      { time: "10-15 min", text: "A neighbor's video of the carry-out is circulating and a reporter is asking the station for the occupants' names and ages; what is said and not said, who owns any public statement, and what scene and report details are preserved for the fire marshal?" },
+      { time: "15-20 min", text: "Next shift, one member has not slept and says they are fine; what does the officer check, what options exist short of sending them home, and what goes into the post incident analysis about crew care?" }
     ],
     questions: [
       { group: "Firefighters", items: [
-        "What are your first three actions in five seconds after a shot on a routine scene?",
-        "How do you call emergency traffic so units know a firefighter is shot?"
+        "What are the normal reactions in the first 24 hours after carrying out patients who do not survive, and which reactions mean you should tell your officer or a peer today, not next week?",
+        "Who besides your crew was on this call and how do you check on them without making it a debrief they did not ask for?"
       ] },
       { group: "Officers", items: [
-        "How do you balance moving to the downed firefighter against an unsecured shooter, and say that decision on the radio?",
-        "What notifications go out in order in the first 15 minutes, and who owns each?"
+        "What is the difference between a peer support activation, a defusing, and just taking the crew out of service, and which fits the first hours after a fatal family fire?",
+        "How do you document that crew care was offered and provided without putting a member's private details in a report?"
       ] }
     ],
     teachingPoints: [
-      "An unconscious person in a vehicle with no police on scene is a stage and observe call until the scene reads safe.",
-      "The first transmission names the emergency plainly: firefighter shot, location, shooter status, help needed.",
-      "Rescue versus unsecured shooter is a command decision made out loud.",
-      "Care starts where cover is.",
-      "Apparatus, equipment, and statements are part of a crime scene; preserve and document early, and get the crew peer support and relief."
+      "A fatal fire where every patient dies is a high-exposure call even when tactics went right, and crew care starts at the officer's first conversation.",
+      "Peer support is activated early and offered to everyone on the call including the dispatcher, accepting it is not a fitness finding and declining it once does not close the door.",
+      "Names, ages, and patient details stay off social media and out of public station conversation, the fire marshal and medical examiner own identification and release.",
+      "The next shift is part of the incident, and sleep, appetite, and concentration changes are readiness issues the officer checks like air and apparatus.",
+      "The post incident analysis records that care was provided and what coverage was arranged so the practice is repeatable."
     ],
     relatedSops: [
       "SOP 365 — Incident Safety Officer",
-      "SOP 223 — Ff Lodd",
+      "SOP 220 — Post Incident Analysis",
       "SOP 351 — General Department Safety"
     ]
   }
@@ -264,6 +267,86 @@ const DAILY_DRILLS = {
 
 /* DRILL-LIBRARY-START — Prepend each morning's two drills to this array, newest first. */
 const DRILL_LIBRARY = [
+  {
+    updatedThrough: "November 7, 2026",
+    dateSort: "2026-11-07",
+    date: "November 7, 2026",
+    type: "Practical",
+    title: "Struck and Live: Lightning-Strike House Fire, Panel Fire, and Utility Isolation",
+    topic: "Lightning-strike house fire, panel fire, and utility isolation",
+    summary: "Crews work a simulated lightning-strike house fire in a Florida single-story slab-on-grade home, treat every wire and panel as live until the utility confirms isolation, find extension along the wiring path with the TIC, and run every member through a symptom check on exit, tied to the Abington, Massachusetts lightning-strike fire on November 6, 2026 (lightning hit a tree, ran through the ground into the house, ignited the electrical panel, three alarms, four occupants out uninjured, one firefighter hospitalized for smoke inhalation and expected to be okay).",
+    nfpa: ["NFPA 1001", "NFPA 1500"],
+    relatedSops: [
+      "SOP 366 — Lock-Out Tag-Out",
+      "SOP 365 — Incident Safety Officer",
+      "SOP 351 — General Department Safety"
+    ],
+    details: {
+      equipment: [
+        "Engine with full hose complement",
+        "One handline",
+        "TIC",
+        "Ground ladder",
+        "Radios",
+        "De-energized training panel and breaker prop",
+        "Utility notification script cards",
+        "Combustible gas and CO monitor",
+        "Accountability board",
+        "Rehab supplies"
+      ],
+      evolutions: [
+        "Officer briefs the Abington fire out loud: lightning hit the tree, ran through the ground into the house, and lit the panel; one firefighter went to the hospital breathing smoke; the building is an electrical hazard until the utility says otherwise and smoke exposure is a patient problem, not a toughness test.",
+        "First report names a lightning strike, fire at or near the panel, occupants accounted for or not, a utility request in the first transmission, and a no-entry zone around the panel until isolation is confirmed.",
+        "Isolation: a member simulates the utility call and panel isolation on the de-energized prop and reports power isolated, by whom, at what time; command repeats it back before any member works at the panel or pulls wiring.",
+        "Extension check: with the TIC, a crew sweeps the panel, the attic access, and the wiring path between them, reports extension found or no extension by location, and checks the garage and the trench line outside for a second ignition point.",
+        "Attack and overhaul only after the isolation report, with the monitor in use; any re-energized or unconfirmed circuit is a stop-and-back-out trigger.",
+        "Rehab and reset: every exiting member completes a symptom check asked out loud (headache, nausea, dizziness, chest symptoms), the officer states who is cleared and who is not, and the drill resets with the ignition point moved to the attic."
+      ],
+      safety: "No live electrical prop ever, the training panel stays de-energized, treat all simulated wiring as energized until the isolation report, full PPE and SCBA until the atmosphere is monitored and cleared, brief the secondary-strike rule for real storms, watch wet and uneven footing, and any real symptom in rehab stops that member's drill.",
+      benchmark: "First report names the lightning strike, the panel, and the utility request within 2 minutes, simulated isolation confirmed and repeated back within 5 minutes, TIC extension sweep reported by location within 10 minutes, and 100 percent of exiting members complete the rehab symptom check with zero returning before clearance."
+    }
+  },
+  {
+    updatedThrough: "November 7, 2026",
+    dateSort: "2026-11-07",
+    date: "November 7, 2026",
+    type: "Tabletop",
+    title: "Four Gone by Sunrise: Crew Care, Peer Support, and the Dispatcher After a Fatal Family Fire",
+    topic: "Crew care, peer support, and the dispatcher after a fatal family fire",
+    summary: "First-in crew at a townhome fire at about 4:15 AM, neighbors screaming outside, crew finds four occupants unresponsive inside and carries them out, all four later pronounced dead at hospitals, fire contained to one unit, three neighbors displaced, tied to the Chicago Rogers Park townhome fire on November 5, 2026.",
+    nfpa: ["NFPA 1500", "NFPA 1561"],
+    relatedSops: [
+      "SOP 365 — Incident Safety Officer",
+      "SOP 220 — Post Incident Analysis",
+      "SOP 351 — General Department Safety"
+    ],
+    details: {
+      scenario: "First-in crew at a townhome fire at about 4:15 AM, neighbors screaming outside, crew finds four occupants unresponsive inside and carries them out, all four later pronounced dead at hospitals, fire contained to one unit, three neighbors displaced, tied to the Chicago Rogers Park townhome fire on November 5, 2026.",
+      injects: [
+        { time: "0-5 min", text: "The last patient is out and the fire is contained, the crew is quiet in the wrong way and one member keeps replaying the carry-out; who notices, who says what first, and what does the officer do in the next ten minutes that is care and not paperwork?" },
+        { time: "5-10 min", text: "Command asks whether the crew can take the next call and whether anyone needs to come off the floor; how do you answer honestly, who makes the peer support call and to whom, and what do you tell the dispatcher who took the first screaming calls and is still on shift?" },
+        { time: "10-15 min", text: "A neighbor's video of the carry-out is circulating and a reporter is asking the station for the occupants' names and ages; what is said and not said, who owns any public statement, and what scene and report details are preserved for the fire marshal?" },
+        { time: "15-20 min", text: "Next shift, one member has not slept and says they are fine; what does the officer check, what options exist short of sending them home, and what goes into the post incident analysis about crew care?" }
+      ],
+      questions: [
+        { group: "Firefighters", items: [
+          "What are the normal reactions in the first 24 hours after carrying out patients who do not survive, and which reactions mean you should tell your officer or a peer today, not next week?",
+          "Who besides your crew was on this call and how do you check on them without making it a debrief they did not ask for?"
+        ] },
+        { group: "Officers", items: [
+          "What is the difference between a peer support activation, a defusing, and just taking the crew out of service, and which fits the first hours after a fatal family fire?",
+          "How do you document that crew care was offered and provided without putting a member's private details in a report?"
+        ] }
+      ],
+      teachingPoints: [
+        "A fatal fire where every patient dies is a high-exposure call even when tactics went right, and crew care starts at the officer's first conversation.",
+        "Peer support is activated early and offered to everyone on the call including the dispatcher, accepting it is not a fitness finding and declining it once does not close the door.",
+        "Names, ages, and patient details stay off social media and out of public station conversation, the fire marshal and medical examiner own identification and release.",
+        "The next shift is part of the incident, and sleep, appetite, and concentration changes are readiness issues the officer checks like air and apparatus.",
+        "The post incident analysis records that care was provided and what coverage was arranged so the practice is repeatable."
+      ]
+    }
+  },
   {
     updatedThrough: "November 6, 2026",
     dateSort: "2026-11-06",
@@ -1795,58 +1878,27 @@ const DRILL_LIBRARY = [
 
 /* DAILY-DATA-START — Replace this one object during the morning artifact update. */
 const DASHBOARD_DATA = {
-  updatedThrough: "November 6, 2026",
+  updatedThrough: "November 7, 2026",
   drill: {
     duration: "20-45 minutes",
-    title: "Set the Block: Blocker Truck Placement, Taper, and Crew Work Zone on a Highway",
-    intro: "Crews position a blocker apparatus, build a cone taper, and keep every member inside the protected work zone during a simulated highway incident, tied to the Mesquite blocker strike.",
+    title: "Struck and Live: Lightning-Strike House Fire, Panel Fire, and Utility Isolation",
+    intro: "Crews work a simulated lightning-strike house fire in a Florida single-story slab-on-grade home, treat every wire and panel as live until the utility confirms isolation, find extension along the wiring path with the TIC, and run every member through a symptom check on exit, tied to the Abington, Massachusetts lightning-strike fire on November 6, 2026 (lightning hit a tree, ran through the ground into the house, ignited the electrical panel, three alarms, four occupants out uninjured, one firefighter hospitalized for smoke inhalation and expected to be okay).",
     steps: [
-      "Officer briefs the Mesquite strike: first crash about 2:30 AM, retired engine positioned as blocker, sports car hit it about 3:00 AM; blocker, taper, and work zone are set before other work pulls the crew toward traffic.",
-      "Blocker placement: driver positions blocker upstream at an angle, wheels turned away from crew, lights set for nighttime, reports blocker set.",
-      "Taper: second member in vest, from the protected side only, places cone taper and downstream buffer, calling out each cone for accountability.",
-      "Work zone: crew performs simulated patient assessment and equipment carry entirely inside the zone; anyone leaving the zone stops, announces it, and waits for repositioning first.",
-      "Second strike: officer announces a simulated second vehicle entering the taper; crew moves to the pre-briefed refuge point behind the blocker, officer completes a PAR and reports the strike, injuries, and lane closures.",
-      "Reset and rotate with approach direction changed, rotate all members through driver, taper, and officer, close restating blocker position, taper length, and refuge point."
+      "Officer briefs the Abington fire out loud: lightning hit the tree, ran through the ground into the house, and lit the panel; one firefighter went to the hospital breathing smoke; the building is an electrical hazard until the utility says otherwise and smoke exposure is a patient problem, not a toughness test.",
+      "First report names a lightning strike, fire at or near the panel, occupants accounted for or not, a utility request in the first transmission, and a no-entry zone around the panel until isolation is confirmed.",
+      "Isolation: a member simulates the utility call and panel isolation on the de-energized prop and reports power isolated, by whom, at what time; command repeats it back before any member works at the panel or pulls wiring.",
+      "Extension check: with the TIC, a crew sweeps the panel, the attic access, and the wiring path between them, reports extension found or no extension by location, and checks the garage and the trench line outside for a second ignition point.",
+      "Attack and overhaul only after the isolation report, with the monitor in use; any re-energized or unconfirmed circuit is a stop-and-back-out trigger.",
+      "Rehab and reset: every exiting member completes a symptom check asked out loud (headache, nausea, dizziness, chest symptoms), the officer states who is cleared and who is not, and the drill resets with the ignition point moved to the attic."
     ],
-    nfpa: "NFPA 1451 · NFPA 1500",
+    nfpa: "NFPA 1001 · NFPA 1500",
     relatedSops: [
-      "SOP 355 — Apparatus Safety",
-      "SOP 362 — Traffic Safety Vests",
+      "SOP 366 — Lock-Out Tag-Out",
+      "SOP 365 — Incident Safety Officer",
       "SOP 351 — General Department Safety"
     ]
   },
-  daily: [
-    {
-      tag: "RESCUE",
-      department: "FDNY (NY)",
-      date: "November 5, 2026",
-      outcome: "Firefighters rescued four people from a two-story row home fire in Sunset Park, Brooklyn, that had fire on every floor on arrival; crews got through a rear entrance to rescue two occupants trapped behind window bars; six other occupants died, four occupants had non-life-threatening injuries, and three firefighters had minor injuries; the fire was brought under control in about 3 hours with more than 200 responders; a lithium-ion battery was found at the scene, unknown if related to the cause.",
-      sops: [
-        "SOP 697 — Thermal Imaging Cameras (Tic)",
-        "SOP 365 — Incident Safety Officer"
-      ]
-    },
-    {
-      tag: "CRASH",
-      department: "Mesquite Fire Department (TX)",
-      date: "November 6, 2026",
-      outcome: "Minor severity. A sports car struck a retired engine positioned as a blocker truck on westbound I-30 at about 3:00 AM while crews worked an earlier crash; the driver was taken to a hospital with non-life-threatening injuries; no firefighters or police officers were injured.",
-      sops: [
-        "SOP 355 — Apparatus Safety",
-        "SOP 362 — Traffic Safety Vests"
-      ]
-    },
-    {
-      tag: "CLOSE CALL",
-      department: "Renton Fire Authority (WA)",
-      date: "November 5, 2026",
-      outcome: "A firefighter assisting on an EMS call for an unconscious person in a vehicle at a shopping center parking lot was shot Thursday night and transported to a hospital in stable condition; a police officer heard the gunfire and shot and killed the suspect.",
-      sops: [
-        "SOP 365 — Incident Safety Officer",
-        "SOP 223 — Ff Lodd"
-      ]
-    }
-  ]
+  daily: []
 };
 /* DAILY-DATA-END */
 
